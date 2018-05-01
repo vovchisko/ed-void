@@ -3,22 +3,22 @@
 Simple CLI Journal reader for ED-VOID.
 Read journals and upload it to ed-void server, where server process it and re-route to online web-clients.
 
-Regular pilots can download client on your profile pahe as well.
+Registered pilots can also download client on cmdr's page as well.
 To make your own build you need "npm pkg" module installed.
 
 ### About ED-VOID
 ED-VOID is THE ULTIMATE EXPLORER'S TOOL, designed by explorers for explorers.
 http://ed-void.com/
 
-It helps you with scaning stellar boides, navigation, reporting your exploreation data, and get extended body information, based on existing reports.
+It helps you with scanned stellar bodies, navigation, reporting your exploration data, and get extended body information, based on existing reports.
 
 **dɪsˈkleɪmə:**
 
-*Unfortunately, we are not a part of Frontier Developments Plc. We using assets from original game to make people feel more comfortable playeing Elite Dangerous. All right on Elite Dangerous and assets belongs to Frontier Dev Plc.*
+*Unfortunately, I am not a part of Frontier Developments Plc. I'm using assets from original Elite Dangerous game to make people feel more comfortable playing with ED-VOID tools. All right on Elite Dangerous and assets belongs to Frontier Dev Plc.*
 
 ### VERSIONS
 **v.0.2b - CURRENT**
 - automatically retrieve api-key on first start.
 - automatically search for saved games folder and cmdr's journals.
 - filewatcher improved.
-- status & position update decreaced to ~1 sec.
+- status & position update decreased to ~1 sec.
