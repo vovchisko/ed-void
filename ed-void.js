@@ -127,7 +127,7 @@ class Journal {
 
         this.ws.on('close', (code, reason) => {
             this._stop = true;
-            log(`disconnected: [${c.red}${code}${c.rst}] ${c.white}${reason ? reason : 'unknown reason'}`);
+            log(`disconnected: [${c.red}${code}${c.rst}] ${c.white}${reason ? reason : 'ed-void connection error'}`);
 
             if (this._curr_err > 5) {
                 crash('Catn`t keep up. ED-VOID service is unavailable.\nSorry for that...');
