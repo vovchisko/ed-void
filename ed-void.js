@@ -409,30 +409,33 @@ class Config {
 
         }
 
-        log(`\nNow let's try to find your journals...`);
+        if(!this.journal_path){
+        	log(`\nNow let's try to find your journals...`);
+	        return await find_journals()
+	            .then(async (path) => {
+	                log(`This is probably it...`);
+	                log(`${c.yellow}${path}`);
+	                this.journal_path = path;
+	                log(`I'll save it too.`);
+	                log(`Okay, Config file saved. I guess we ready to go.`);
+	                log(`${c.grey}If you don't mind - first journal scan can take minute or two.`);
+	                log(`${c.grey}Dependent how long you flying.`);
+	                this.save();
+	                ask([{prompt: `${c.magenta}\nPRESS ENTER TO START!\n`}])
+	                    .then((r) => {
+	                        this._on_ready(this);
+	                    });
 
-        await find_journals()
-            .then(async (path) => {
-                log(`This is probably it...`);
-                log(`${c.yellow}${path}`);
-                this.journal_path = path;
-                log(`I'll save it too.`);
-                log(`Okay, Config file saved. I guess we ready to go.`);
-                log(`${c.grey}If you don't mind - first journal scan can take minute or two.`);
-                log(`${c.grey}Dependent how long you flying.`);
-                this.save();
-                ask([{prompt: `${c.magenta}\nPRESS ENTER TO START!\n`}])
-                    .then((r) => {
-                        this._on_ready();
-                    });
+	            })
+	            .catch((err) => {
+	                log(`${c.red}Oh, snap!\n`, err.message);
+	                log(`Sorry, I failed... I can't access this folder. I'm bad at this :3`);
+	                log(`Can you please open ${c.blue}ed-void.cfg${c.white} with text editor and set ${c.bright}journal_path${c.white} correctly.`)
+	                crash();
+	            });
+        }
 
-            })
-            .catch((err) => {
-                log(`${c.red}Oh, snap!\n`, err.message);
-                log(`Sorry, I failed... I can't access this folder. I'm bad at this :3`);
-                log(`Can you please open ${c.blue}ed-void.cfg${c.white} with text editor and set ${c.bright}journal_path${c.white} correctly.`)
-                crash();
-            });
+        this._on_ready(this);
     }
 
     read() {
@@ -450,7 +453,7 @@ class Config {
             cfg.journal_path = path.normalize(cfg.journal_path);
             extend(this, cfg);
             if (!this.journal_path || !this.api_key) return this.get_ready();
-            this._on_ready();
+            this._on_ready(this);
         } catch (e) {
             this.get_ready();
             return false;
@@ -479,13 +482,8 @@ function crash(msg) {
 
 
 const J = new Journal();
-const CONFIG = new Config(function () {
-
+const CONFIG = new Config(function (CONFIG) {
+	if(SOFT_RESET) { CONFIG.last_record = -1; }
+	if(HARD_RESET) { CONFIG.last_record = -1; CONFIG.last_journal = -1; }
     J.go(this);
 });
-
-
-
-
-
-
