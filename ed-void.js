@@ -66,10 +66,9 @@ for (let i = 0; i < process.argv.length; i++) {
 
 
 const APP_NAME = 'ed-void';
-const APP_VERSION = '0.2-dev';
+const APP_VERSION = '0.2b';
 const SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
-const API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
-const AUTH_SERVICE = `http://${SERVICE_DOMAIN}/signin`;
+const API_SERVICE = `http://${SERVICE_DOMAIN}:4200/api`;
 
 const data_files = ['Market.json', 'ModulesInfo.json', 'Outfitting.json', 'Shipyard.json', 'Status.json'];
 
@@ -392,7 +391,7 @@ class Config {
                 {prompt: 'PASS  :', type: 'pass'}
             ]).then((data) => {
                 let creds = {email: data[0], pass: data[1]};
-                return axios.post(AUTH_SERVICE, creds, {});
+                return axios.post(API_SERVICE + '/signin', creds, {});
             }).then((result) => {
                 if (!result.data.result) {
                     log(`\nHm... weird. ${c.red}${result.data.text}`);
@@ -404,7 +403,8 @@ class Config {
                 log(`I'll save it for you.`);
                 this.save();
             }).catch((e) => {
-                return this.get_ready(true); //again...
+            	log(`${c.red}Ouch! Error: ${e.code}`);
+            	return this.get_ready(true); //again...
             });
 
         }
