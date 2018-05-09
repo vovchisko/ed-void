@@ -305,7 +305,7 @@ class Journal {
                         this._curr_err = 0;
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
                     }).catch((e) => {
-                        console.log(e);
+                        //console.log(e);
                         throw this.track_fail(e);
                     });
             });
@@ -315,19 +315,33 @@ class Journal {
         return await fs.readFileAsync(this.cfg.journal_path + '/' + f, 'utf8')
             .then(async (line) => {
                 let rec = JSON.parse(line);
-                this.ws_send(rec.event, {
-                    cmdr: this.cfg.cmdr,
-                    rec: rec,
-                    lng: this.cfg.language,
-                    gv: this.cfg.gameversion,
-                });
+
+                //only status send by WS
+                if (f === 'Status.json')
+                    return this.ws_send(rec.event, {
+                        cmdr: this.cfg.cmdr,
+                        rec: rec,
+                        lng: this.cfg.language,
+                        gv: this.cfg.gameversion,
+                    });
+
+                let l = `${c.grey}REC: ` +
+                    `${c.cyan}[${this.cfg.cmdr}] ${c.grey}${rec.timestamp} ` +
+                    `${c.white}${rec.event}${c.grey} ...`;
+
+                this.report([rec])
+                    .then((res) => {
+                        this._curr_err = 0;
+                        log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
+                    }).catch((e) => { throw this.track_fail(e) });
+
             });
     }
 
     track_fail(e) {
         if (!this._curr_err)
             if (e.response) {
-                if (!this._curr_err) log(`[ + ${e.response.status} + ] ${e.response.data} `);
+                if (!this._curr_err) log(`[ ${e.response.status} ] ${e.response.data} `);
             } else {
                 log(`${c.red}${e.code} no response`);
             }
@@ -403,36 +417,36 @@ class Config {
                 log(`I'll save it for you.`);
                 this.save();
             }).catch((e) => {
-            	log(`${c.red}Ouch! Error: ${e.code}`);
-            	return this.get_ready(true); //again...
+                log(`${c.red}Ouch! Error: ${e.code}`);
+                return this.get_ready(true); //again...
             });
 
         }
 
-        if(!this.journal_path){
-        	log(`\nNow let's try to find your journals...`);
-	        return await find_journals()
-	            .then(async (path) => {
-	                log(`This is probably it...`);
-	                log(`${c.yellow}${path}`);
-	                this.journal_path = path;
-	                log(`I'll save it too.`);
-	                log(`Okay, Config file saved. I guess we ready to go.`);
-	                log(`${c.grey}If you don't mind - first journal scan can take minute or two.`);
-	                log(`${c.grey}Dependent how long you flying.`);
-	                this.save();
-	                ask([{prompt: `${c.magenta}\nPRESS ENTER TO START!\n`}])
-	                    .then((r) => {
-	                        this._on_ready(this);
-	                    });
+        if (!this.journal_path) {
+            log(`\nNow let's try to find your journals...`);
+            return await find_journals()
+                .then(async (path) => {
+                    log(`This is probably it...`);
+                    log(`${c.yellow}${path}`);
+                    this.journal_path = path;
+                    log(`I'll save it too.`);
+                    log(`Okay, Config file saved. I guess we ready to go.`);
+                    log(`${c.grey}If you don't mind - first journal scan can take minute or two.`);
+                    log(`${c.grey}Dependent how long you flying.`);
+                    this.save();
+                    ask([{prompt: `${c.magenta}\nPRESS ENTER TO START!\n`}])
+                        .then((r) => {
+                            this._on_ready(this);
+                        });
 
-	            })
-	            .catch((err) => {
-	                log(`${c.red}Oh, snap!\n`, err.message);
-	                log(`Sorry, I failed... I can't access this folder. I'm bad at this :3`);
-	                log(`Can you please open ${c.blue}ed-void.cfg${c.white} with text editor and set ${c.bright}journal_path${c.white} correctly.`)
-	                crash();
-	            });
+                })
+                .catch((err) => {
+                    log(`${c.red}Oh, snap!\n`, err.message);
+                    log(`Sorry, I failed... I can't access this folder. I'm bad at this :3`);
+                    log(`Can you please open ${c.blue}ed-void.cfg${c.white} with text editor and set ${c.bright}journal_path${c.white} correctly.`)
+                    crash();
+                });
         }
 
         this._on_ready(this);
@@ -483,7 +497,10 @@ function crash(msg) {
 
 const J = new Journal();
 const CONFIG = new Config(function (CONFIG) {
-	if(SOFT_RESET) { CONFIG.last_record = -1; }
-	if(HARD_RESET) { CONFIG.last_record = -1; CONFIG.last_journal = -1; }
+    if (SOFT_RESET) { CONFIG.last_record = -1; }
+    if (HARD_RESET) {
+        CONFIG.last_record = -1;
+        CONFIG.last_journal = -1;
+    }
     J.go(this);
 });
