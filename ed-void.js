@@ -297,7 +297,7 @@ class Journal {
                     `${c.cyan}[${this.cfg.cmdr}] ${c.grey}${records[0].timestamp} ` +
                     `${c.white}${records.length > 1 ? records.length : records[0].event}${c.grey} ...`;
 
-                await this.report(records)
+                await this.report(records, _last_jour, _last_rec)
                     .then((res) => {
                         this.cfg.last_record = _last_rec;
                         this.cfg.last_journal = _last_jour;
@@ -329,7 +329,7 @@ class Journal {
                     `${c.cyan}[${this.cfg.cmdr}] ${c.grey}${rec.timestamp} ` +
                     `${c.white}${rec.event}${c.grey} ...`;
 
-                this.report([rec])
+                this.report([rec], null, null)
                     .then((res) => {
                         this._curr_err = 0;
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
@@ -349,14 +349,16 @@ class Journal {
         return e;
     }
 
-    report(records) {
+    report(records, jpart, jline) {
         return axios.post(API_SERVICE + '/record', records, {
             headers: {
                 api_key: this.cfg.api_key,
                 client: APP_NAME + '/' + APP_VERSION,
                 cmdr: this.cfg.cmdr,
                 gv: this.cfg.gameversion,
-                lng: this.cfg.language
+                lng: this.cfg.language,
+                jp: jpart,
+                jl: jline,
             }
         });
     }
