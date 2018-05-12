@@ -52,7 +52,6 @@ function j_num(f) {
 let SOFT_RESET = false;
 let HARD_RESET = false;
 let SERVICE_DOMAIN = 'ed-void.com';
-const IGNORED = ['Music'];
 
 let CFG_TYPE = '';
 let last_arg = '';
@@ -248,6 +247,13 @@ class Journal {
         this.working = false;
     }
 
+    is_ignored_record(rec) {
+        if (['Music', 'ReceiveText'].includes(rec.event)) return true;
+        if (rec.event === 'SendText' && !rec.Message.startsWith('/void')) return true;
+        //todo: do we need to ignore something else?
+        return false;
+    }
+
     async read_log(f) {
 
         let jnum = j_num(f);
@@ -278,7 +284,7 @@ class Journal {
                     _last_rec = i;
                     _last_jour = jnum;
 
-                    if (IGNORED.includes(rec.event)) continue;
+                    if (this.is_ignored_record(rec)) continue;
 
                     if (rec.event === 'NewCommander') {this.cfg.cmdr = rec.Name;}
                     if (rec.event === 'Commander') {this.cfg.cmdr = rec.Name;}
@@ -287,6 +293,10 @@ class Journal {
                         this.cfg.language = rec.language;
                         this.cfg.gameversion = rec.gameversion;
                     }
+
+                    //we need it to reproduce journal flow
+                    rec._jp = _last_jour;
+                    rec._jl = _last_rec;
 
                     records.push(rec);
                 }
@@ -297,7 +307,7 @@ class Journal {
                     `${c.cyan}[${this.cfg.cmdr}] ${c.grey}${records[0].timestamp} ` +
                     `${c.white}${records.length > 1 ? records.length : records[0].event}${c.grey} ...`;
 
-                await this.report(records, _last_jour, _last_rec)
+                await this.report(records)
                     .then((res) => {
                         this.cfg.last_record = _last_rec;
                         this.cfg.last_journal = _last_jour;
@@ -329,7 +339,7 @@ class Journal {
                     `${c.cyan}[${this.cfg.cmdr}] ${c.grey}${rec.timestamp} ` +
                     `${c.white}${rec.event}${c.grey} ...`;
 
-                this.report([rec], null, null)
+                this.report([rec])
                     .then((res) => {
                         this._curr_err = 0;
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
@@ -349,16 +359,14 @@ class Journal {
         return e;
     }
 
-    report(records, jpart, jline) {
+    report(records) {
         return axios.post(API_SERVICE + '/record', records, {
             headers: {
                 api_key: this.cfg.api_key,
                 client: APP_NAME + '/' + APP_VERSION,
                 cmdr: this.cfg.cmdr,
                 gv: this.cfg.gameversion,
-                lng: this.cfg.language,
-                jp: jpart,
-                jl: jline,
+                lng: this.cfg.language
             }
         });
     }
