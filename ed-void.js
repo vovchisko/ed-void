@@ -69,7 +69,7 @@ const APP_VERSION = '0.2b';
 const SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
 const API_SERVICE = `http://${SERVICE_DOMAIN}:4200/api`;
 
-const data_files = ['Market.json', 'ModulesInfo.json', 'Outfitting.json', 'Shipyard.json', 'Status.json'];
+const data_files = ['Status.json', 'Market.json', 'ModulesInfo.json', 'Outfitting.json', 'Shipyard.json'];
 
 fs.readFileAsync = util.promisify(fs.readFile);
 
@@ -476,11 +476,17 @@ class Config {
                     cfg[param.trim()] = val.trim();
             }
 
-            cfg.journal_path = path.normalize(cfg.journal_path);
             extend(this, cfg);
             if (!this.journal_path || !this.api_key) return this.get_ready();
+
+            let files = fs.readdirSync(this.journal_path);
+            if (!files.includes(data_files[0])) return this.get_ready();
+
             this._on_ready(this);
+
         } catch (e) {
+
+            this.journal_path = '';
             this.get_ready();
             return false;
         }
