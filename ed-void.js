@@ -125,6 +125,12 @@ class Journal {
 
         this.ws.on('close', (code, reason) => {
             this._stop = true;
+            if(reason === 'unauthorized') {
+                this.cfg.api_key = '';
+                this.cfg.save();
+                return this.cfg.get_ready();
+            }
+
             log(`disconnected: [${c.red}${code}${c.rst}] ${c.white}${reason ? reason : 'ed-void connection error'}`);
 
             if (this._curr_err > 5) {
