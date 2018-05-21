@@ -7,7 +7,8 @@ const fs = require('fs');
 const axios = require('axios');
 const util = require('util');
 const WS = require('ws');
-const ask = require('./ask');
+const ask = require('just-ask');
+const exitHook = require('exit-hook');
 const find_journals = require('./find_journals');
 const c = {
     rst: "\x1b[0m",
@@ -37,6 +38,7 @@ const c = {
     bgcyan: "\x1b[46m",
     bgwhite: "\x1b[47m",
 };
+
 
 const log = function () {
     process.stdout.write(c.white);
@@ -86,7 +88,14 @@ class Journal {
     go(cfg) {
         this.cfg = cfg;
 
-        this.catch_exit();
+        exitHook(() => {
+            log(`${c.rst}cya!`);
+            this._stop = true;
+            this.cfg.save();
+            process.exit(0);
+        });
+
+
         this.scan_all();
 
         log(`${c.grey}ED-ASS SETUP ... ${c.cyan}[ ${(CFG_TYPE || 'DEF').toUpperCase()} ]`);
@@ -105,7 +114,7 @@ class Journal {
                 ev === 'change' ? this.file_check(f) : this.scan_all();
             });
         } catch (e) {
-            crash(`can't watch journal's directory!`);
+            return crash(`can't watch journal's directory!`);
         }
 
         this.connect();
@@ -121,11 +130,13 @@ class Journal {
             this.ws_send('auth', this.cfg.api_key);
         });
 
-        this.ws.on('error', (e) => { this._curr_err++; });
+        this.ws.on('error', (e) => {
+            this._curr_err++;
+        });
 
         this.ws.on('close', (code, reason) => {
             this._stop = true;
-            if(reason === 'unauthorized') {
+            if (reason === 'unauthorized') {
                 this.cfg.api_key = '';
                 this.cfg.save();
                 return this.cfg.get_ready();
@@ -134,8 +145,7 @@ class Journal {
             log(`disconnected: [${c.red}${code}${c.rst}] ${c.white}${reason ? reason : 'ed-void connection error'}`);
 
             if (this._curr_err > 5) {
-                crash('Catn`t keep up. ED-VOID service is unavailable.\nSorry for that...');
-                return;
+                return crash('Catn`t keep up. ED-VOID service is unavailable.\nSorry for that...');
             }
 
 
@@ -160,7 +170,7 @@ class Journal {
 
     scan_all() {
         let files = fs.readdirSync(this.cfg.journal_path);
-        if (!files) crash('can`t read journal`s directory!\n');
+        if (!files) return crash('can`t read journal`s directory!\n');
         for (let f in this.files) if (!files.includes(f)) delete this.files[f];
         for (let i = 0; i < files.length; i++) this.file_check(files[i]);
     }
@@ -204,24 +214,6 @@ class Journal {
         this.file_check('Status.json');
         if (last) this.file_check(last.f);
         //last.changed = true;
-    }
-
-    catch_exit() {
-        process.stdin.resume(); //so the program will not close instantly
-
-        function exitHandler(options, err) {
-            if (options.exit) {
-                log(`${c.rst}cya!`)
-                J._stop = true;
-                J.cfg.save();
-                process.exit(0);
-            }
-        }
-
-        process.on('exit', exitHandler.bind(null, {cleanup: true})); //do something when app is closing
-        process.on('SIGINT', exitHandler.bind(null, {exit: true})); // catches ctrl+c event
-        process.on('SIGUSR1', exitHandler.bind(null, {exit: true})); // catches "kill pid" (for example: nodemon restart)
-        process.on('SIGUSR2', exitHandler.bind(null, {exit: true}));
     }
 
 
@@ -353,6 +345,8 @@ class Journal {
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
                     }).catch((e) => { throw this.track_fail(e) });
 
+            }).catch((e) => {
+                throw this.track_fail(e);
             });
     }
 
@@ -418,26 +412,32 @@ class Config {
                 log(`\n\n${c.cyan}Can you please login again?`);
             }
 
-            await ask([
-                {prompt: 'EMAIL :', type: 'normal'},
-                {prompt: 'PASS  :', type: 'pass'}
-            ]).then((data) => {
-                let creds = {email: data[0], pass: data[1]};
-                return axios.post(API_SERVICE + '/signin', creds, {});
-            }).then((result) => {
-                if (!result.data.result) {
-                    log(`\nHm... weird. ${c.red}${result.data.text}`);
-                    log(`Let's try again.`);
-                    reject();
-                }
-                this.api_key = result.data.user.api_key;
-                log(`Cool. There is your API-Key: ${c.yellow}${this.api_key}`);
-                log(`I'll save it for you.`);
-                this.save();
-            }).catch((e) => {
-                log(`${c.red}Ouch! Error: ${e.code}`);
-                return this.get_ready(true); //again...
-            });
+            let data = {email: '', pass: ''};
+
+            await ask('EMAIL: ')
+                .then((email) => {
+                    data.email = email;
+                    return ask('PASS: ', '*');
+                })
+                .then((pass) => {
+                    data.pass = pass;
+                    return axios.post(API_SERVICE + '/signin', data, {});
+                })
+                .then((result) => {
+                    if (!result.data.result) {
+                        log(`\nHm... weird. ${c.red}${result.data.text}`);
+                        log(`Let's try again.`);
+                        reject();
+                    }
+                    this.api_key = result.data.user.api_key;
+                    log(`Cool. There is your API-Key: ${c.yellow}${this.api_key}`);
+                    log(`I'll save it for you.`);
+                    this.save();
+                }).catch((e) => {
+                    log(`${c.red}Ouch! Unable to login.`);
+                    if (!data.email || !data.pass) return crash('login canceled.');
+                    return this.get_ready(true); //again...
+                });
 
         }
 
@@ -453,21 +453,29 @@ class Config {
                     log(`${c.grey}If you don't mind - first journal scan can take minute or two.`);
                     log(`${c.grey}Dependent how long you flying.`);
                     this.save();
-                    ask([{prompt: `${c.magenta}\nPRESS ENTER TO START!\n`}])
+                    const ask = require('just-ask')
+
+
+                    return ask(`${c.magenta}\nPRESS ENTER TO START!\n`)
                         .then((r) => {
                             this._on_ready(this);
                         });
 
+
                 })
                 .catch((err) => {
                     log(`${c.red}Oh, snap!\n`, err.message);
-                    log(`Sorry, I failed... I can't access this folder. I'm bad at this :3`);
-                    log(`Can you please open ${c.blue}ed-void.cfg${c.white} with text editor and set ${c.bright}journal_path${c.white} correctly.`)
-                    crash();
+                    log(`Unable to find journal path.`);
+                    log(`Please open ${c.magenta}ed-void.cfg${c.white} with text editor and set ${c.bright}journal_path${c.white} correctly.`)
+                    return crash();
                 });
         }
 
-        this._on_ready(this);
+        if (this.journal_path && this.api_key) {
+            this._on_ready(this);
+        } else {
+            return crash('failed to start journal reader: no api-key or journal path');
+        }
     }
 
     read() {
@@ -491,7 +499,6 @@ class Config {
             this._on_ready(this);
 
         } catch (e) {
-
             this.journal_path = '';
             this.get_ready();
             return false;
@@ -508,16 +515,18 @@ class Config {
         fs.writeFileSync(this._file, lines.join('\n'));
     }
 }
-
+let CRASHED = false;
+process.on('unhandledRejection', (reason, p) => { /* it happend because we already crashed ... i know it's ugly */ })
 
 function crash(msg) {
     J._stop = true;
     if (msg) log('\n' + c.red + msg);
-    setTimeout(() => {
+    if (CRASHED) return;
+    CRASHED = true;
+    ask('press enter to exit').then(() => {
         process.exit(-1);
-    }, 5000);
+    });
 }
-
 
 const J = new Journal();
 const CONFIG = new Config(function (CONFIG) {
@@ -528,3 +537,5 @@ const CONFIG = new Config(function (CONFIG) {
     }
     J.go(this);
 });
+
+
