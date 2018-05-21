@@ -89,7 +89,7 @@ class Journal {
         this.cfg = cfg;
 
         exitHook(() => {
-            log(`${c.rst}cya!`);
+            log(`${c.rst}\ncya!`);
             this._stop = true;
             this.cfg.save();
             process.exit(0);
@@ -524,7 +524,7 @@ function crash(msg) {
     if (CRASHED) return;
     CRASHED = true;
     ask('press enter to exit').then(() => {
-        process.exit(-1);
+        process.exit(0);
     });
 }
 
