@@ -22,3 +22,4 @@ It helps you with scanned stellar bodies, navigation, reporting your exploration
 - automatically search for saved games folder and cmdr's journals.
 - filewatcher improved.
 - status & position update decreased to ~1 sec.
+- status data goes through web-socket (faster)
