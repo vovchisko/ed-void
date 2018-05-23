@@ -61,7 +61,7 @@ for (let i = 0; i < process.argv.length; i++) {
     if (process.argv[i].trim() === '-r') SOFT_RESET = true;
     if (process.argv[i].trim() === '-rx') HARD_RESET = true;
     if (last_arg.trim() === '-c') CFG_TYPE = process.argv[i].trim();
-    if (last_arg.trim() === '-server') SERVICE_DOMAIN = process.argv[i].trim();
+    if (last_arg.trim() === '-s') SERVICE_DOMAIN = process.argv[i].trim();
     last_arg = process.argv[i];
 }
 
