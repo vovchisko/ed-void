@@ -69,7 +69,7 @@ for (let i = 0; i < process.argv.length; i++) {
 const APP_NAME = 'ed-void';
 const APP_VERSION = '0.2b';
 const SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
-const API_SERVICE = `http://${SERVICE_DOMAIN}:4200/api`;
+const API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
 
 const data_files = ['Status.json', 'Market.json', 'ModulesInfo.json', 'Outfitting.json', 'Shipyard.json'];
 
@@ -314,7 +314,7 @@ class Journal {
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
                     }).catch((e) => {
                         //console.log(e);
-                        throw this.track_fail(e);
+                        throw this.track_fail(e, 'in sending journal record');
                     });
             });
     }
@@ -343,19 +343,19 @@ class Journal {
                     .then((res) => {
                         this._curr_err = 0;
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
-                    }).catch((e) => { throw this.track_fail(e) });
+                    }).catch((e) => { throw this.track_fail(e, 'in sending status record') });
 
             }).catch((e) => {
-                throw this.track_fail(e);
+                throw this.track_fail(e, 'in readding status');
             });
     }
 
-    track_fail(e) {
+    track_fail(e, sign = 'in unsigned location') {
         if (!this._curr_err)
             if (e.response) {
-                if (!this._curr_err) log(`[ ${e.response.status} ] ${e.response.data} `);
+                if (!this._curr_err) log(`[ ${e.response.status} ] ${e.response.data} :: ${sign}`);
             } else {
-                log(`${c.red}${e.code} no response`);
+                log(`${c.red} unknown error`);
             }
         this._curr_err++;
         return e;
