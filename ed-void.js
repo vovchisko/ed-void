@@ -292,7 +292,7 @@ class Journal {
 
                     let rec = parse_json(lines[i]);
 
-                    if(!rec) return this.track_fail({code: 'INVALID_JOURNAL_REC'}, 'hm.. this not supposed to happen');
+                    if (!rec) return this.track_fail({code: 'INVALID_JOURNAL_REC'}, 'hm.. this not supposed to happen');
 
                     _last_rec = i;
                     _last_jour = jnum;
@@ -337,7 +337,7 @@ class Journal {
         return await fs.readFileAsync(this.cfg.journal_path + '/' + f, 'utf8')
             .then(async (line) => {
                 let rec = parse_json(line);
-                if(!rec) return; // just ingnore empty json
+                if (!rec) return; // just ingnore empty json
                 //only status send by WS
                 if (f === 'Status.json')
                     return this.ws_send(rec.event, {
@@ -420,7 +420,7 @@ class Config {
 
             if (!again) {
                 log(`\n\n${c.yellow}Oh, wait a sec. Your config file not filled yet. Let's fix it.`);
-                log(`If you not registered on ${c.blue}http://${SERVICE_DOMAIN}/${c.white} yet`);
+                log(`If you not registered on ${c.magenta}http://${SERVICE_DOMAIN}/${c.white} yet`);
                 log(`please do it now and come back when finish.\n`);
                 log(`${c.cyan}Can you please login once?`);
             } else {
@@ -450,10 +450,10 @@ class Config {
                     this.save();
                 }).catch((e) => {
                     log(`${c.red}Ouch! Unable to login.`);
-                    if (!data.email || !data.pass) return crash('login canceled.');
+                    if (!data.email && !data.pass) console.log('login canceled. cya.');
+                    process.exit(-1);
                     return this.get_ready(true); //again...
                 });
-
         }
 
         if (!this.journal_path) {
@@ -468,15 +468,11 @@ class Config {
                     log(`${c.grey}If you don't mind - first journal scan can take minute or two.`);
                     log(`${c.grey}Dependent how long you flying.`);
                     this.save();
-                    const ask = require('just-ask')
-
-
+                    const ask = require('just-ask');
                     return ask(`${c.magenta}\nPRESS ENTER TO START!\n`)
                         .then((r) => {
                             this._on_ready(this);
                         });
-
-
                 })
                 .catch((err) => {
                     log(`${c.red}Oh, snap!\n`, err.message);
