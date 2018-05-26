@@ -39,6 +39,13 @@ const c = {
     bgwhite: "\x1b[47m",
 };
 
+function parse_json(string) {
+    try {
+        return JSON.parse(string);
+    } catch (e) {
+        return null;
+    }
+}
 
 const log = function () {
     process.stdout.write(c.white);
@@ -142,18 +149,23 @@ class Journal {
                 return this.cfg.get_ready();
             }
 
+
             log(`disconnected: [${c.red}${code}${c.rst}] ${c.white}${reason ? reason : 'ed-void connection error'}`);
 
-            if (this._curr_err > 5) {
-                return crash('Catn`t keep up. ED-VOID service is unavailable.\nSorry for that...');
+            if (reason === 'other-client-connected') {
+                return crash();
             }
 
+            if (this._curr_err > 5) {
+                return crash('ED-VOID service is unavailable.\nPlease try again later.');
+            }
 
             if (!reason) setTimeout(() => { this.connect(); }, 1000);
         });
 
         this.ws.on('message', (msg) => {
-            let m = JSON.parse(msg);
+            let m = parse_json(msg);
+            if (!m) return this.track_fail({}, 'invalid message from server');
             if (m.c === 'welcome') {
                 this._curr_err = 0;
                 this._stop = false;
@@ -278,7 +290,10 @@ class Journal {
 
                     //todo: is it another commander name? should we change it?
 
-                    let rec = JSON.parse(lines[i]);
+                    let rec = parse_json(lines[i]);
+
+                    if(!rec) return this.track_fail({code: 'INVALID_JOURNAL_REC'}, 'hm.. this not supposed to happen');
+
                     _last_rec = i;
                     _last_jour = jnum;
 
@@ -313,8 +328,7 @@ class Journal {
                         this._curr_err = 0;
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
                     }).catch((e) => {
-                        //console.log(e);
-                        throw this.track_fail(e, 'in sending journal record');
+                        this.track_fail(e, 'in sending journal record');
                     });
             });
     }
@@ -322,8 +336,8 @@ class Journal {
     async read_data(f) {
         return await fs.readFileAsync(this.cfg.journal_path + '/' + f, 'utf8')
             .then(async (line) => {
-                let rec = JSON.parse(line);
-
+                let rec = parse_json(line);
+                if(!rec) return; // just ingnore empty json
                 //only status send by WS
                 if (f === 'Status.json')
                     return this.ws_send(rec.event, {
@@ -343,19 +357,20 @@ class Journal {
                     .then((res) => {
                         this._curr_err = 0;
                         log(`${l} ${c.green}[ ok ]${c.grey} ${res.data}`);
-                    }).catch((e) => { throw this.track_fail(e, 'in sending status record') });
-
+                    }).catch((e) => { this.track_fail(e, 'in sending status record') });
             }).catch((e) => {
-                throw this.track_fail(e, 'in readding status');
+                this.track_fail(e, 'in readding status');
             });
     }
 
     track_fail(e, sign = 'in unsigned location') {
         if (!this._curr_err)
             if (e.response) {
-                if (!this._curr_err) log(`[ ${e.response.status} ] ${e.response.data} :: ${sign}`);
+                if (!this._curr_err) log(`ERR:: Bad Response: ${c.white} [${e.response.status}] ${e.response.data} :: ${c.yellow}${sign}`);
+            } else if (e.code) {
+                log(`${c.red}ERR:: ${e.code}`, sign);
             } else {
-                log(`${c.red} unknown error`);
+                log(`${c.red}ERR:: unknown error`, sign);
             }
         this._curr_err++;
         return e;
@@ -515,6 +530,7 @@ class Config {
         fs.writeFileSync(this._file, lines.join('\n'));
     }
 }
+
 let CRASHED = false;
 process.on('unhandledRejection', (reason, p) => { /* it happend because we already crashed ... i know it's ugly */ })
 
