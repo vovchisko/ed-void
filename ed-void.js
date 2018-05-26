@@ -450,8 +450,10 @@ class Config {
                     this.save();
                 }).catch((e) => {
                     log(`${c.red}Ouch! Unable to login.`);
-                    if (!data.email && !data.pass) console.log('login canceled. cya.');
-                    process.exit(-1);
+                    if (!data.email && !data.pass) {
+                        console.log('login canceled. cya.');
+                        process.exit(-1);
+                    }
                     return this.get_ready(true); //again...
                 });
         }
