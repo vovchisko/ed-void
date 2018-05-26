@@ -436,8 +436,13 @@ class Config {
                 })
                 .then((pass) => {
                     data.pass = pass;
-                    return axios.post(API_SERVICE + '/signin', data, {});
                 })
+                .catch((e) => {
+                    console.log('login canceled. cya.');
+                    process.exit(-1);
+                });
+
+            await axios.post(API_SERVICE + '/signin', data, {})
                 .then((result) => {
                     if (!result.data.result) {
                         log(`\nHm... weird. ${c.red}${result.data.text}`);
@@ -449,13 +454,15 @@ class Config {
                     log(`I'll save it for you.`);
                     this.save();
                 }).catch((e) => {
-                    log(`${c.red}Ouch! Unable to login.`);
-                    if (!data.email || !data.pass) { //seems canceled on input
-                        console.log('login canceled. cya.');
-                        process.exit(-1);
+                    if (err.message) {
+                        log(`${c.red}Oh, snap!\n`, err.message);
+                    } else {
+                        log(`${c.red}Oh, snap! Something went wrong with login request.\n`);
                     }
+
                     return this.get_ready(true); //again...
                 });
+
         }
 
         if (!this.journal_path) {
@@ -474,6 +481,10 @@ class Config {
                     return ask(`${c.magenta}\nPRESS ENTER TO START!\n`)
                         .then((r) => {
                             this._on_ready(this);
+                        })
+                        .catch((e) => {
+                            log(' - canceled!');
+                            process.exit(-1);
                         });
                 })
                 .catch((err) => {
