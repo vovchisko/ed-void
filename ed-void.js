@@ -450,7 +450,7 @@ class Config {
                     this.save();
                 }).catch((e) => {
                     log(`${c.red}Ouch! Unable to login.`);
-                    if (!data.email && !data.pass) {
+                    if (!data.email || !data.pass) { //seems canceled on input
                         console.log('login canceled. cya.');
                         process.exit(-1);
                     }
