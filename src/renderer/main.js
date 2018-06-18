@@ -28,8 +28,7 @@ new Vue({
 
 
 
-var {ipcRenderer, remote} = require('electron');
-var main = remote.require("./main.js");
+var {ipcRenderer} = require('electron');
 
 // Send async message to main process
 ipcRenderer.send('async', 1);
@@ -48,8 +47,7 @@ ipcRenderer.on('async-reply', (event, arg) => {
 ipcRenderer.on('ping', (event, arg) => {
     // Print 5
     console.log(arg);
-    // Invoke method directly on main process
-    main.pong(6);
+
 });
 
 

@@ -72,13 +72,6 @@ ipcMain.on('sync', (event, arg) => {
     mainWindow.webContents.send('ping', 5);
 });
 
-// Make method externaly visible
-exports.pong = arg => {
-    //Print 6
-    console.log(arg);
-};
-
-
 
 
 
