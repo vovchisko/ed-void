@@ -1,5 +1,15 @@
 import {app, BrowserWindow, ipcMain} from 'electron'
 
+const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
+    if (mainWindow) {
+        if (mainWindow.isMinimized()) mainWindow.restore()
+        mainWindow.focus()
+    }
+});
+
+if (isSecondInstance) app.quit();
+
+
 /**
  * Set `__static` path to static files in production
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-static-assets.html
@@ -14,19 +24,13 @@ const winURL = process.env.NODE_ENV === 'development'
     : `file://${__dirname}/index.html`;
 
 function createWindow() {
-    /**
-     * Initial window options
-     */
     mainWindow = new BrowserWindow({
         height: 563,
         useContentSize: true,
         width: 1200
     });
-
     mainWindow.loadURL(winURL);
-
     mainWindow.on('closed', () => {mainWindow = null})
-
 }
 
 app.on('ready', createWindow);
@@ -42,16 +46,6 @@ app.on('activate', () => {
         createWindow()
     }
 });
-
-
-
-
-
-
-
-
-
-
 
 
 // Listen for async message from renderer process
@@ -71,27 +65,6 @@ ipcMain.on('sync', (event, arg) => {
     // Send async message to renderer process
     mainWindow.webContents.send('ping', 5);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
