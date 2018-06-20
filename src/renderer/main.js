@@ -14,20 +14,6 @@ new Vue({
 }).$mount('#app');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var {ipcRenderer} = require('electron');
 
 // Send async message to main process
