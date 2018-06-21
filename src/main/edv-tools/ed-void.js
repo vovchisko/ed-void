@@ -25,7 +25,7 @@ const log = function () {
 
 let SOFT_RESET = false;
 let HARD_RESET = false;
-let SERVICE_DOMAIN = 'ed-void.com';
+let SERVICE_DOMAIN = 'localhost';//'ed-void.com';
 
 let last_arg = '';
 for (let i = 0; i < process.argv.length; i++) {
@@ -45,21 +45,19 @@ const data_files = ['Status.json', 'Market.json', 'ModulesInfo.json', 'Outfittin
 
 class Journal extends EE3 {
 
-    constructor() {
+    constructor(cfg) {
         super();
+        this.cfg = cfg;
         this.status = {};
-        this._curr_err = 0;
         this._stop = true;
         this.ws = null;
         this.watcher = null;
         this.files = [];
     }
 
-    go(cfg) {
-        this.cfg = cfg;
-
+    go() {
+        this._stop = false;
         this.scan_all();
-
         this.timer = setInterval(() => {
             if (this._stop) return;
             this.force_important_files();
@@ -69,10 +67,21 @@ class Journal extends EE3 {
         try {
             this.watcher = fs.watch(this.cfg.journal_path, (ev, f) => { ev === 'change' ? this.file_check(f) : this.scan_all(); });
         } catch (e) {
-            return crash(`can't watch journal's directory!`);
+            return log(`can't watch journal's directory!`);
+        }
+        this.connect();
+    }
+
+    stop(code, err) {
+        if (err) log('STOP: ', code, err);
+        try {
+            this._stop = true;
+            clearInterval(this.timer);
+            this.watcher.close()
+        } catch (e) {
+            log('stop err: ', e)
         }
 
-        this.connect();
     }
 
     j_num(f) {
@@ -109,10 +118,9 @@ class Journal extends EE3 {
 
         this.ws.on('message', (msg) => {
             let m = parse_json(msg);
-            if (!m) return this.track_fail({}, 'invalid message from server');
+            if (!m) return log('ws.on(message) parse json failed');
             if (m.c === 'welcome') {
                 this._stop = false;
-                log(`ED-VOID :: READY!`);
             }
         });
     }
@@ -233,7 +241,7 @@ class Journal extends EE3 {
 
                     let rec = parse_json(lines[i]);
 
-                    if (!rec) return this.track_fail({code: 'INVALID_JOURNAL_REC'}, 'hm.. this not supposed to happen');
+                    if (!rec) return log('unable to parse record.');
 
                     _last_rec = i;
                     _last_jour = jnum;
@@ -268,7 +276,7 @@ class Journal extends EE3 {
                         this.cfg.save();
                         log(`${l}  [ ok ] ${res.data}`);
                     }).catch((e) => {
-                        this.track_fail(e, 'in sending journal record');
+                        log(e, 'in sending journal record');
                     });
             });
     }
@@ -277,8 +285,8 @@ class Journal extends EE3 {
         return await fs.readFileAsync(this.cfg.journal_path + '/' + f, 'utf8')
             .then(async (line) => {
                 let rec = parse_json(line);
-                if (!rec) return; // just ingnore empty json
-                //only status send by WS
+                if (!rec) return;
+
                 if (f === 'Status.json')
                     return this.ws_send(rec.event, {
                         cmdr: this.cfg.cmdr,
@@ -296,21 +304,10 @@ class Journal extends EE3 {
                 this.record([rec])
                     .then((res) => {
                         log(`${l} [ ok ] ${res.data}`);
-                    }).catch((e) => { this.track_fail(e, 'in sending status record') });
+                    }).catch((e) => { log(e, 'in sending status record') });
             }).catch((e) => {
-                this.track_fail(e, 'in readding status');
+                log(e, 'in readding status');
             });
-    }
-
-    track_fail(e, sign = 'in unsigned location') {
-        if (e.response) {
-            log(`ERR:: Bad Response:  [${e.response.status}] ${e.response.data} :: ${sign}`);
-        } else if (e.code) {
-            log(`ERR:: ${e.code}`, sign);
-        } else {
-            log(`ERR:: unknown error`, sign);
-        }
-        return e;
     }
 
     record(records) {
@@ -337,12 +334,6 @@ class Journal extends EE3 {
 
 process.on('unhandledRejection', (reason, p) => { console.log(reason, p) });
 
-function crash(msg) {
-    J._stop = true;
-    if (msg) log('\n' + c.red + msg);
-    process.exit(0);
-
-}
 
 
 

@@ -4,10 +4,10 @@ const os = require('os');
 const exec = require('child_process').exec;
 const extend = require('deep-extend');
 
-class Config {
+class Cfg {
     constructor(callback) {
         this._on_ready = callback;
-        this._file = APP_NAME + (CFG_TYPE ? '-' + CFG_TYPE : '') + '.cfg';
+        this._file = APP_NAME + '.cfg';
         this.journal_path = '';
         this.api_key = '';
         this.cmdr = '';
@@ -20,9 +20,7 @@ class Config {
 
     async get_api_key(email, pass) {
         return new Promise((resolve, reject) => {
-
             let result = {code: 0, msg: 'unable to login', api_key: false, error: null};
-
             axios.post(API_SERVICE + '/signin', {email: email, pass: pass}, {})
                 .then((res) => {
 
