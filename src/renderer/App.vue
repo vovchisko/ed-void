@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
-    <pre>{{output}}</pre>
+    <div id="app">
+        <pre>{{output}}</pre>
 
-    <h3>Login!</h3>
-    <input v-model="auth.email"><br>
-    <input v-model="auth.pass"><br>
-    <button v-on:click="do_auth()">let's login</button>
-  </div>
+        <h3>Login!</h3>
+        <input v-model="auth.email"><br>
+        <input v-model="auth.pass"><br>
+        <button v-on:click="do_auth()">let's login</button>
+    </div>
 </template>
 
 <script>
@@ -19,7 +19,8 @@
         name: 'ed-void-client',
         methods: {
             do_auth: function () {
-              IPC.send('desu', {pew:1})
+                console.log('sending auth to main process');
+                IPC.send('auth', auth);
             }
         }
     }
@@ -27,5 +28,5 @@
 </script>
 
 <style>
-  /* CSS */
+    /* CSS */
 </style>

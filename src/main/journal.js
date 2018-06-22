@@ -232,10 +232,11 @@ class Journal extends EE3 {
 
         this.ws.on('message', (msg) => {
             let m = parse_json(msg);
-            if (!m) return log('ws.on(message) parse json failed');
+            if (!m) this.stop(ISSH.ERROR, 'err-server-message-parse');
             if (m.c === 'welcome') {
                 this._stop = false;
             }
+            this.emit('ws', msg.c, msg.data)
         });
     }
 

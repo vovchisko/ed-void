@@ -19,9 +19,9 @@ const winURL = process.env.NODE_ENV === 'development'
 
 function createWindow() {
     UI = new BrowserWindow({
-        height: 963,
+        height: 800,
         useContentSize: true,
-        width: 1600
+        width: 1400
     });
     UI.loadURL(winURL);
     UI.on('closed', () => {
@@ -34,7 +34,6 @@ app.on('ready', createWindow);
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() });
 app.on('activate', () => { if (UI === null) createWindow() });
 
-
 /*
 
     LET'S CHECK CONFIGS...
@@ -42,14 +41,16 @@ app.on('activate', () => { if (UI === null) createWindow() });
 */
 const J = new Journal();
 
-J.on('ready', (arg) => { console.log('yea, J seems ready', arg)});
+J.on('ready', (arg) => { console.log('yea, J seems ready', arg) });
 J.on('stop', (reason, code, err) => {
     UI.webContents.send('ipc', 'log', {reason, code, err});
     console.log('J STOPPED!', {reason, code, err});
 });
 
+J.on('ws', (c, data) => { console.log('this from server\n', c, '\n', data); });
+
 // Listen for async message from renderer process
-ipcMain.on('ipc', function (event, c, data)  {
+ipcMain.on('ipc', function (event, c, data) {
     console.log(c, data);
     //event.sender.send('ping', 'one');
     //UI.webContents.send('ping', 'two');
