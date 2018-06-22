@@ -1,5 +1,5 @@
 import {app, BrowserWindow, ipcMain} from 'electron';
-import {Journal} from './journal';
+
 
 const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
     if (UI) {
@@ -25,8 +25,8 @@ function createWindow() {
     });
     UI.loadURL(winURL);
     UI.on('closed', () => {
-        J.stop();
         UI = null;
+        app.quit();
     })
 }
 
@@ -34,27 +34,25 @@ app.on('ready', createWindow);
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() });
 app.on('activate', () => { if (UI === null) createWindow() });
 
+
 /*
 
     LET'S CHECK CONFIGS...
 
 */
-const J = new Journal();
-
-J.on('ready', (arg) => { console.log('yea, J seems ready', arg) });
-J.on('stop', (reason, code, err) => {
-    UI.webContents.send('ipc', 'log', {reason, code, err});
-    console.log('J STOPPED!', {reason, code, err});
-});
-
-J.on('ws', (c, data) => { console.log('this from server\n', c, '\n', data); });
-
-// Listen for async message from renderer process
 ipcMain.on('ipc', function (event, c, data) {
-    console.log(c, data);
-    //event.sender.send('ping', 'one');
-    //UI.webContents.send('ping', 'two');
+    switch (c) {
 
-    J.go();
+        default:
+            console.log('IPC/UI:', c, data);
+    }
+
 });
-
+// todo: decide where we going to track hot-keys and how to display overlay
+function send2UI(c, data) {
+    if (UI && UI.webContents) {
+        UI.webContents.send('ipc', c, data);
+    } else {
+        console.log(`Unable to send ${c} to UI - No UI ready`, {c, data});
+    }
+}

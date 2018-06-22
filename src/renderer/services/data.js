@@ -1,6 +1,4 @@
-const Data = {
-    output: [],
-};
+const Data = {};
 
 export {Data};
 

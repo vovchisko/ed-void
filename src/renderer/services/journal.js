@@ -1,6 +1,5 @@
 "use strict";
 
-
 const path = require('path');
 const fs = require('fs');
 const axios = require('axios');
@@ -18,7 +17,8 @@ const REG_QUERY = `reg query "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\C
 const DEFAULT_DIR = path.join(os.homedir(), 'Saved Games\\Frontier Developments\\Elite Dangerous');
 
 const log = function () {
-    console.log(...arguments);
+    //console.log(...arguments);
+    if(J)J.emit('log', arguments);
 };
 
 let SOFT_RESET = false;
@@ -49,7 +49,6 @@ const ISSH = {
     NET_SERVICE: 'service-unavailable',
 };
 
-export {Journal, ISSH};
 
 class Journal extends EE3 {
 
@@ -66,14 +65,16 @@ class Journal extends EE3 {
             last_record: -1,
         };
 
-        this._stop = true;
+        this._stopped = true;
+        this._working = false;
         this.ws = null;
         this.watcher = null;
         this.files = [];
-
-        this.cfg_read();
     }
 
+    init(){
+        this.cfg_read();
+    }
 
     pre_check() {
         return new Promise(async (ready, reject) => {
@@ -108,10 +109,10 @@ class Journal extends EE3 {
     go() {
         this.pre_check()
             .then(() => {
-                this._stop = false;
+                this._stopped = false;
                 this.scan_all();
                 this.timer = setInterval(() => {
-                    if (this._stop) return;
+                    if (this._stopped) return;
                     this.force_important_files();
                     this.do_some_work().catch((e) => { this.stop('issue', ISSH.ERROR, e) });
                 }, 1000);
@@ -132,7 +133,7 @@ class Journal extends EE3 {
 
     stop(reason = null, code, err) {
         try {
-            this._stop = true;
+            this._stopped = true;
             if (this.timer) {
                 clearInterval(this.timer);
                 this.timer = null;
@@ -142,7 +143,7 @@ class Journal extends EE3 {
                 this.watcher = null;
             }
         } catch (e) {
-            console.log('OH SHI!', e)
+            console.log('OH SHI!', e);
             process.exit(-1);
         }
         if (!reason) {
@@ -167,7 +168,7 @@ class Journal extends EE3 {
             }
 
             extend(this.cfg, cfg);
-
+            this.emit('ready', this.cfg)
         } catch (e) {
             this.stop('issue', ISSH.ERROR, e);
         }
@@ -184,22 +185,25 @@ class Journal extends EE3 {
 
     async get_api_key(email, pass) {
         return new Promise((resolve, reject) => {
-            let result = {code: 0, msg: 'unable to login', api_key: false, error: null};
-            axios.post(API_SERVICE + '/signin', {email: email, pass: pass}, {})
-                .then((res) => {
-                    if (!res.data.result) return reject(result);
-                    this.cfg.api_key = res.data.user.api_key;
-                    this.cfg_save();
-                    result.code = 1;
-                    result.msg = 'new api-key saved';
-                    result.api_key = this.cfg.api_key;
-                    return resolve(result);
+
+            fetch(API_SERVICE + '/signin', {
+                method: 'POST',
+                body: JSON.stringify({email: email, pass: pass}),
+                headers: {}
+            })
+                .then((r) => {
+                    r.json().then((data) => {
+                        if (!data.result) return reject(data);
+                        this.cfg.api_key = data.user.api_key;
+                        this.cfg_save();
+                        return resolve(data);
+                    });
+
                 })
                 .catch((err) => {
-                    result.msg = 'update_api_key > error';
-                    result.error = err;
-                    reject(result);
+                    reject({result: 0, type: 'error', text: 'unable to login', error: err});
                 });
+
         });
     }
 
@@ -210,7 +214,7 @@ class Journal extends EE3 {
             this.ws_send('auth', this.cfg.api_key);
         });
 
-        this.ws.on('error', (e) => { console.log('ws.error', e)});
+        this.ws.on('error', (e) => { log('ws.error', e)});
 
         this.ws.on('close', (code, reason) => {
 
@@ -234,9 +238,9 @@ class Journal extends EE3 {
             let m = parse_json(msg);
             if (!m) this.stop(ISSH.ERROR, 'err-server-message-parse');
             if (m.c === 'welcome') {
-                this._stop = false;
+                this._stopped = false;
             }
-            this.emit('ws', msg.c, msg.data)
+            this.emit('ws', m.c, m.dat);
         });
     }
 
@@ -294,8 +298,8 @@ class Journal extends EE3 {
 
 
     async do_some_work() {
-        if (this.working || this._stop) return;
-        this.working = true;
+        if (this._working || this._stopped) return;
+        this._working = true;
         for (let f in this.files) {
             if (!this.files[f].changed) continue;
             if (data_files.includes(f)) {
@@ -318,7 +322,7 @@ class Journal extends EE3 {
                     });
             }
         }
-        this.working = false;
+        this._working = false;
     }
 
 
@@ -468,3 +472,6 @@ function parse_json(string) {
         return null;
     }
 }
+
+const J = new Journal();
+export {J, ISSH};
