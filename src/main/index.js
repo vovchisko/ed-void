@@ -45,7 +45,7 @@ const J = new Journal();
 J.on('ready', (arg) => { console.log('yea, J seems ready', arg)});
 J.on('stop', (reason, code, err) => {
     UI.webContents.send('ipc', 'log', {reason, code, err});
-    console.log('J SOPPED!', {reason, code, err});
+    console.log('J STOPPED!', {reason, code, err});
 });
 
 // Listen for async message from renderer process
