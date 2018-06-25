@@ -18,7 +18,7 @@ const DEFAULT_DIR = path.join(os.homedir(), 'Saved Games\\Frontier Developments\
 
 const log = function () {
     //console.log(...arguments);
-    if(J)J.emit('log', arguments);
+    if (J) J.emit('log', arguments);
 };
 
 let SOFT_RESET = false;
@@ -72,8 +72,9 @@ class Journal extends EE3 {
         this.files = [];
     }
 
-    init(){
+    init() {
         this.cfg_read();
+
     }
 
     pre_check() {
@@ -83,12 +84,12 @@ class Journal extends EE3 {
             if (!this.cfg.api_key) return reject(ISSH.NO_AUTH);
 
             // JOURNALS CHECK
-            if (_check_journals(this.cfg.journal_path)) return ready();
+            if (this.cfg.journal_path && _check_journals(this.cfg.journal_path)) return ready();
             if (_check_journals(DEFAULT_DIR)) {
                 this.cfg.journal_path = DEFAULT_DIR;
                 return ready();
             }
-            exec(REG_QUERY, function (err, stdout, stderr) {
+            exec(REG_QUERY, (err, stdout, stderr) => {
                 if (err) reject(ISSH.NO_JOURNALS, err);
                 stdout.split('\n').forEach((val) => {
                     if (val.includes(REG_KEY)) {
@@ -107,9 +108,9 @@ class Journal extends EE3 {
 
 
     go() {
+        if (!this._stopped) return;
         this.pre_check()
             .then(() => {
-                this._stopped = false;
                 this.scan_all();
                 this.timer = setInterval(() => {
                     if (this._stopped) return;
@@ -121,13 +122,14 @@ class Journal extends EE3 {
                     this.watcher = fs.watch(this.cfg.journal_path, (ev, f) => {
                         ev === 'change' ? this.file_check(f) : this.scan_all();
                     });
-                } catch (e) {
-                    return this.stop('issue', ISSH.ERROR, e);
+                } catch (err) {
+                    return this.stop('issue', ISSH.ERROR, err);
                 }
-                this.connect();
+                this.ws_connect();
             })
-            .catch((issue, err) => {
-                this.stop('issue', issue, err);
+            .catch((err) => {
+                console.log('HERE');
+                this.stop('issue', ISSH.ERROR, err);
             })
     }
 
@@ -142,6 +144,8 @@ class Journal extends EE3 {
                 this.watcher.close();
                 this.watcher = null;
             }
+
+            this.ws_disconect();
         } catch (e) {
             console.log('OH SHI!', e);
             process.exit(-1);
@@ -168,9 +172,9 @@ class Journal extends EE3 {
             }
 
             extend(this.cfg, cfg);
-            this.emit('ready', this.cfg)
         } catch (e) {
-            this.stop('issue', ISSH.ERROR, e);
+            //this.stop('issue', ISSH.ERROR, e);
+            //proudly ignore this issue. seems no file yet created.
         }
     }
 
@@ -207,18 +211,22 @@ class Journal extends EE3 {
         });
     }
 
-    connect() {
+    ws_connect() {
         log(`conection to ED-VOID...`);
         this.ws = new WS(SERVICE, 'edvoid', {});
         this.ws.on('open', () => {
             this.ws_send('auth', this.cfg.api_key);
         });
 
-        this.ws.on('error', (e) => { log('ws.error', e)});
+        this.ws.on('error', (e) => {
+            this.stop('error', ISSH.NET_SERVICE, e)
+        });
 
         this.ws.on('close', (code, reason) => {
 
-            let ish = ISSH.NO_ISSUE;
+            if (code === 1006 && this._stopped) return; // error was triggered, i guess
+
+            let ish = ISSH.NET_SERVICE;
 
             if (reason === 'unauthorized') {
                 this.cfg.api_key = '';
@@ -238,14 +246,21 @@ class Journal extends EE3 {
             let m = parse_json(msg);
             if (!m) this.stop(ISSH.ERROR, 'err-server-message-parse');
             if (m.c === 'welcome') {
+                this.emit('ready', this.cfg);
                 this._stopped = false;
             }
-            this.emit('ws', m.c, m.dat);
+            this.emit('ws:any', m.c, m.dat);
         });
     }
 
+    ws_disconect() {
+        if (this.ws && this.ws.readyState === WS.OPEN) {
+            this.ws.close(1000, 'disconect by client');
+        }
+    }
+
     ws_send(c, dat) {
-        if (this.ws.readyState === WS.OPEN) {
+        if (this.ws && this.ws.readyState === WS.OPEN) {
             this.ws.send(JSON.stringify({c: c, dat: dat}));
         }
     }
@@ -387,7 +402,7 @@ class Journal extends EE3 {
                         this.cfg_save();
                         log(`${l}  [ ok ] ${res.data}`);
                     }).catch((e) => {
-                        log('error in sending journal record', e);
+                        this.stop('issue', ISSH.ERROR, e);
                     });
             });
     }
@@ -414,15 +429,17 @@ class Journal extends EE3 {
 
                 this.record([rec])
                     .then((res) => {
-                        log(`${l} [ ok ] ${res.data}`);
-                    }).catch((e) => { log('error in sending status record', e) });
+                        log(`${l} [ ok ] ${res.data}`); //todo: << there is no data. where is response text?
+                    }).catch((e) => { log('error in sending data record ' + f, e) });
             }).catch((e) => {
-                log('error in readding status', e);
+                log('error in readding data ' + f, e);
             });
     }
 
     record(records) {
-        return axios.post(API_SERVICE + '/record', records, {
+        return fetch(API_SERVICE + '/record', {
+            method: 'POST',
+            body: JSON.stringify(records),
             headers: {
                 api_key: this.cfg.api_key,
                 client: APP_NAME + '/' + APP_VERSION,
@@ -430,7 +447,10 @@ class Journal extends EE3 {
                 gv: this.cfg.gameversion,
                 lng: this.cfg.language
             }
-        });
+        }).then((r) => {
+            console.log('RESPONSE: ', r);
+            return 'ok';
+        })
     }
 
     is_new_rec(jnum, i) {
@@ -459,8 +479,10 @@ function _jnum(f) {
 
 function _check_journals(path) {
     if (path) {
-        let files = fs.readdirSync(path);
-        if (!files.includes(data_files[0])) return false;
+        try {
+            let files = fs.readdirSync(path);
+            if (!files.includes(data_files[0])) return false;
+        } catch (e) { return false; }
     }
     return true;
 }

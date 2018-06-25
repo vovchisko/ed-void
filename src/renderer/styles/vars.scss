@@ -1,0 +1,93 @@
+/*
+  MAIN COLORS
+*/
+$blue: #207fc5;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$purple-light: #7945cf;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #9ea3a7;
+//$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #191c21;
+$dark-deep: #141414;
+$black: #000;
+
+/*
+  UI COLOR PALETTE
+*/
+$ui-fg: $gray;
+$ui-bg: $dark-deep;
+$ui-text: $gray;
+$ui-err: $red;
+$ui-act-fg: $orange;
+
+$ui-line-h: 2.2em;
+
+$all-inputs: "[type=text], [type=password], [type=number], [type=email], [input=button], input:not([type]), select";
+
+@mixin hcaps { font-family: 'euro_capsregular', sans-serif; }
+@mixin ui-basic {
+  display: table-cell;
+  line-height: $ui-line-h;
+  white-space: nowrap;
+  height: $ui-line-h;
+  padding: 0 0.5em;
+  background: transparent;
+  border: 1px solid darken($ui-fg, 25%);
+  color: $ui-fg;
+  border-radius: 0;
+  &:hover { border-color: darken($ui-act-fg, 25%); color: darken($ui-act-fg, 25%);}
+  &:invalid { border-color: $danger; box-shadow: none; color: $danger}
+  &.active {
+    color: $ui-act-fg;
+    border-color: $ui-act-fg;
+    + label { color: $ui-act-fg }
+  }
+  + label { @include hcaps(); margin: 0; }
+}
+@mixin ui-input {
+  width: 100%; display: block;
+}
+@mixin ui-has-caret {
+  background: transparent url("assets/caret.svg") no-repeat calc(100% - 8px) 50%;
+}
+@mixin semiglitch {
+  text-shadow: -2px -4px 0 rgba(0, 255, 240, .15), 2px 4px 0 rgba(255, 0, 230, .15);
+  box-shadow: -2px -4px 0 0 rgba(0, 255, 240, .15), 2px 4px 0 0 rgba(255, 0, 230, .15);
+}
+@mixin glitch {
+  text-shadow: -2px -4px 0 rgba(0, 255, 240, .35), 2px 4px 0 rgba(255, 0, 230, .35);
+  box-shadow: -2px -4px 0 0 rgba(0, 255, 240, .35), 2px 4px 0 0 rgba(255, 0, 230, .35);
+}
+@mixin semiglitch-text {
+  text-shadow: -2px -4px 0 rgba(0, 255, 240, .15), 2px 4px 0 rgba(255, 0, 230, .15);
+}
+@mixin glitch-text {
+  text-shadow: -2px -4px 0 rgba(0, 255, 240, .35), 2px 4px 0 rgba(255, 0, 230, .35);
+}
+@mixin redshift($intense:0.25) {
+  text-shadow: -3px 0 1px rgba(255, 0, 0, $intense), 3px 0 1px rgba(255, 0, 0, $intense);
+  box-shadow: -3px 0 1px rgba(255, 0, 0, $intense), 3px 0 1px rgba(255, 0, 0, $intense) //, -3px 0 1px rgba(255, 0, 0, 0.25) inset, 3px 0 1px rgba(255, 0, 0, 0.25) inset;
+}
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

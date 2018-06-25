@@ -1,4 +1,4 @@
-import {app, BrowserWindow, ipcMain} from 'electron';
+import {app, BrowserWindow, ipcMain, shell} from 'electron';
 
 
 const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
@@ -17,17 +17,31 @@ const winURL = process.env.NODE_ENV === 'development'
     ? `http://localhost:9080`
     : `file://${__dirname}/index.html`;
 
+/*
+const handleRedirect = (e, url) => {
+    if (url !== UI.webContents.getURL()) {
+        e.preventDefault();
+        shell.openExternal(url);
+    }
+};
+*/
+
 function createWindow() {
     UI = new BrowserWindow({
         height: 800,
         useContentSize: true,
-        width: 1400
+        width: 1400,
     });
+    UI.maximize();
     UI.loadURL(winURL);
     UI.on('closed', () => {
         UI = null;
         app.quit();
-    })
+    });
+
+/*    UI.webContents.on('will-navigate', handleRedirect);
+    UI.webContents.on('new-window', handleRedirect);*/
+
 }
 
 app.on('ready', createWindow);
@@ -48,6 +62,7 @@ ipcMain.on('ipc', function (event, c, data) {
     }
 
 });
+
 // todo: decide where we going to track hot-keys and how to display overlay
 function send2UI(c, data) {
     if (UI && UI.webContents) {
