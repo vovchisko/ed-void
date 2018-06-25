@@ -4,10 +4,6 @@
         <auth v-if="modes.c_mode === 'auth'"></auth>
         <cfg v-if="modes.c_mode === 'cfg'"></cfg>
         <alert></alert>
-
-        <pre>{{modes}}</pre>
-        <pre>{{A}}</pre>
-
     </div>
 </template>
 
@@ -22,7 +18,6 @@
     J.on('log', (args) => { console.log('LOG: ', ...args);});
     J.on('ready', (cfg) => {
         Data.modes.c_mode = 'cfg';
-        console.log('ready? really?')
     });
     J.on('stop', (reason, code, err) => {
         console.log('J-STOPPED', {reason, code, err});
@@ -39,11 +34,12 @@
                     'set journal path': {
                         val: J.cfg.journal_path,
                         acts: {
-                            'okay then': function (input) {
+                            'apply path': function (input) {
                                 console.log('okay: ', input);
                                 J.cfg.journal_path = input;
                                 J.cfg.last_journal = -1;
                                 J.cfg.last_record = -1;
+
                                 J.cfg_save();
                                 J.go();
 
@@ -59,7 +55,6 @@
     J.init();
     J.go();
 
-
     export default {
         components: {Alert, Auth, Cfg},
         data: () => {
@@ -71,6 +66,7 @@
 </script>
 
 <style lang="scss">
+    @import '~bootstrap/dist/css/bootstrap-grid.css';
     @import './styles/vars';
     @import './styles/base';
 </style>
