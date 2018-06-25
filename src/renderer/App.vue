@@ -3,16 +3,21 @@
         <div v-if="modes.c_mode ==='loading'" class="loading">loading...</div>
         <auth v-if="modes.c_mode === 'auth'"></auth>
         <cfg v-if="modes.c_mode === 'cfg'"></cfg>
+        <alert></alert>
+
         <pre>{{modes}}</pre>
+        <pre>{{A}}</pre>
+
     </div>
 </template>
 
 <script>
 
-    import {J, ISSH} from './services/journal';
-    import Data from './services/data';
+    import {J, ISSH} from './controllers/journal';
+    import Data from './controllers/data';
     import Auth from "./components/auth";
     import Cfg from "./components/cfg";
+    import Alert, {A} from "./components/alert";
 
     J.on('log', (args) => { console.log('LOG: ', ...args);});
     J.on('ready', (cfg) => {
@@ -25,19 +30,40 @@
             Data.modes.c_mode = 'auth';
             return;
         }
+        if (reason === 'issue' && code === ISSH.NO_JOURNALS) {
+            A.error({
+                text: 'Unable to locate journals',
+                desc: 'Void can`t automatically locate journals. Specify path manually:',
+                act: {'do something': () => {console.log('something!')}},
+                prompt: {
+                    'set journal path': {
+                        val: J.cfg.journal_path,
+                        acts: {
+                            'okay then': function (input) {
+                                console.log('okay: ', input);
+                                J.cfg.journal_path = input;
+                                J.cfg.last_journal = -1;
+                                J.cfg.last_record = -1;
+                                J.cfg_save();
+                                J.go();
+
+                                return true;
+                            },
+                        }
+                    }
+                }
+            }, true);
+        }
     });
     J.on('ws:any', (c, dat) => { console.log('J-WS-ANY:', c, dat); });
     J.init();
     J.go();
 
-    const app = {
-        modes: Data.modes,
-    };
 
     export default {
-        components: {Auth, Cfg},
+        components: {Alert, Auth, Cfg},
         data: () => {
-            return app;
+            return {modes: Data.modes, A: A};
         },
         name: 'ed-void-client',
     }

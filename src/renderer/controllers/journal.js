@@ -2,7 +2,6 @@
 
 const path = require('path');
 const fs = require('fs');
-const axios = require('axios');
 const util = require('util');
 const WS = require('ws');
 const EE3 = require('eventemitter3');
@@ -21,14 +20,10 @@ const log = function () {
     if (J) J.emit('log', arguments);
 };
 
-let SOFT_RESET = false;
-let HARD_RESET = false;
 let SERVICE_DOMAIN = 'localhost';//'ed-void.com';
 
 let last_arg = '';
 for (let i = 0; i < process.argv.length; i++) {
-    if (process.argv[i].trim() === '-r') SOFT_RESET = true;
-    if (process.argv[i].trim() === '-rx') HARD_RESET = true;
     if (last_arg.trim() === '-s') SERVICE_DOMAIN = process.argv[i].trim();
     last_arg = process.argv[i];
 }
@@ -81,7 +76,7 @@ class Journal extends EE3 {
         return new Promise(async (ready, reject) => {
 
             // AUTH CHECK
-            if (!this.cfg.api_key) return reject(ISSH.NO_AUTH);
+            if (!this.cfg.api_key) return reject({issue: 'issue', code: ISSH.NO_AUTH});
 
             // JOURNALS CHECK
             if (this.cfg.journal_path && _check_journals(this.cfg.journal_path)) return ready();
@@ -90,7 +85,7 @@ class Journal extends EE3 {
                 return ready();
             }
             exec(REG_QUERY, (err, stdout, stderr) => {
-                if (err) reject(ISSH.NO_JOURNALS, err);
+                if (err) reject({issue: 'issue', code: ISSH.NO_JOURNALS, err: err});
                 stdout.split('\n').forEach((val) => {
                     if (val.includes(REG_KEY)) {
                         let ANOTHER_DIR = path.join(val.split('REG_EXPAND_SZ')[1].trim(), 'Frontier Developments\\Elite Dangerous');
@@ -98,7 +93,7 @@ class Journal extends EE3 {
                             this.cfg.journal_path = ANOTHER_DIR;
                             return ready();
                         }
-                        return reject(ISSH.NO_JOURNALS);
+                        return reject({issue: 'issue', code: ISSH.NO_JOURNALS, err: err});
                     }
                 });
             });
@@ -128,8 +123,7 @@ class Journal extends EE3 {
                 this.ws_connect();
             })
             .catch((err) => {
-                console.log('HERE');
-                this.stop('issue', ISSH.ERROR, err);
+                this.stop(err.issue, err.code, err.err);
             })
     }
 
@@ -267,7 +261,7 @@ class Journal extends EE3 {
 
     scan_all() {
         let files = fs.readdirSync(this.cfg.journal_path);
-        if (!files) return crash('can`t read journal`s directory!\n');
+        if (!files) return this.stop('issue', ISSH.NO_JOURNALS);
         for (let f in this.files) if (!files.includes(f)) delete this.files[f];
         for (let i = 0; i < files.length; i++) this.file_check(files[i]);
     }
@@ -316,6 +310,7 @@ class Journal extends EE3 {
         if (this._working || this._stopped) return;
         this._working = true;
         for (let f in this.files) {
+            if (this._stopped) return;
             if (!this.files[f].changed) continue;
             if (data_files.includes(f)) {
                 await this.read_data(f)
@@ -323,7 +318,7 @@ class Journal extends EE3 {
                         this.files[f].changed = false;
                     })
                     .catch((e) => {
-                        if (e.code && e.code === 'ENOENT') crash('Unable to read journal file: ' + f);
+                        if (e.code && e.code === 'ENOENT') this.stop('issue', ISSH.ERROR, e);
                         this.files[f].changed = true;
                     });
             } else {
@@ -332,7 +327,7 @@ class Journal extends EE3 {
                         this.files[f].changed = false;
                     })
                     .catch((e) => {
-                        if (e.code && e.code === 'ENOENT') crash('Unable to read journal file: ' + f);
+                        if (e.code && e.code === 'ENOENT') this.stop('issue', ISSH.ERROR, e);
                         this.files[f].changed = true;
                     });
             }
@@ -361,6 +356,7 @@ class Journal extends EE3 {
                 }
 
                 for (let i = 0; i < lines.length; i++) {
+
 
                     if (!lines[i]) continue;
                     if (!this.is_new_rec(jnum, i)) continue;
@@ -480,6 +476,7 @@ function _jnum(f) {
 function _check_journals(path) {
     if (path) {
         try {
+            console.log('FILES', path);
             let files = fs.readdirSync(path);
             if (!files.includes(data_files[0])) return false;
         } catch (e) { return false; }

@@ -14,7 +14,8 @@ class DataStorage {
             ui_font_size: '100%',
             ui_fx_level: 'full',
             _font_size_vars: new Array(17).fill(0).map((x, i) => {return i * 10 + 40 + '%'}),
-            _fx_level_vars: ['full', 'medium', 'low', 'disabled']
+            _fx_level_vars: ['full', 'medium', 'low', 'disabled'],
+            journal_path: '',
         };
 
         this.modes = {
@@ -25,10 +26,8 @@ class DataStorage {
         };
 
         this.auth = {
-            is_logged: false,
             email: '',
             pass: '',
-            api_key: ''
         };
 
         this.navi = {

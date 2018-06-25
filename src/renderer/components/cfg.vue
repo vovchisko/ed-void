@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-sm">
                 <h2>overlay ui settings </h2>
-
                 <div class="ui short">
                     <select v-model="cfg.ui_font_size" @change="cgf_apply()">
                         <option v-for="i in cfg._font_size_vars" v-model="cfg._font_size_vars[i]">{{i}}</option>
@@ -17,13 +16,15 @@
                     </select>
                     <label>ui effects</label>
                 </div>
+                <button>something</button>
             </div>
+
         </div>
     </div>
 </template>
 
 <script>
-    import Data from '../services/data';
+    import Data from '../controllers/data';
 
     export default {
         name: 'cfg',
@@ -47,7 +48,6 @@
 <style lang="scss">
     @import '../styles/vars';
     #cfg {
-
         .tip-box {
             margin: 2em 0;
             h5 > button.link { display: inline; line-height: inherit; vertical-align: inherit; float: right; margin-right: 1em; }

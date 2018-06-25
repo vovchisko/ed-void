@@ -17,30 +17,33 @@ const winURL = process.env.NODE_ENV === 'development'
     ? `http://localhost:9080`
     : `file://${__dirname}/index.html`;
 
-/*
+
 const handleRedirect = (e, url) => {
     if (url !== UI.webContents.getURL()) {
         e.preventDefault();
         shell.openExternal(url);
     }
 };
-*/
+
 
 function createWindow() {
     UI = new BrowserWindow({
         height: 800,
         useContentSize: true,
         width: 1400,
+        //transparent: true,
     });
-    UI.maximize();
+
     UI.loadURL(winURL);
     UI.on('closed', () => {
         UI = null;
         app.quit();
     });
 
-/*    UI.webContents.on('will-navigate', handleRedirect);
-    UI.webContents.on('new-window', handleRedirect);*/
+
+    UI.maximize();
+    UI.webContents.on('will-navigate', handleRedirect);
+    UI.webContents.on('new-window', handleRedirect);
 
 }
 

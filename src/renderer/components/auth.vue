@@ -30,8 +30,12 @@
 
 <script>
 
-    import Data from '../services/data';
-    import {J, ISSH} from '../services/journal';
+    import {J, ISSH} from '../controllers/journal';
+    import Data from '../controllers/data';
+    const auth = {
+        email: '',
+        pass: '',
+    };
 
     export default {
         name: "auth",
@@ -46,8 +50,6 @@
             signin: function () {
                 J.get_api_key(this.auth.email, this.auth.pass)
                     .then((r) => {
-                        console.log(r);
-
                         if (!r.result) {
                             this.msg.type = r.type;
                             this.msg.text = r.text;
@@ -56,8 +58,6 @@
                         }
                     })
                     .catch((r) => {
-
-
                         this.msg.type = r.type;
                         this.msg.text = r.text;
                     });

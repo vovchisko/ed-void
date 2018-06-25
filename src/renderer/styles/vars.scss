@@ -42,52 +42,53 @@ $all-inputs: "[type=text], [type=password], [type=number], [type=email], [input=
 
 @mixin hcaps { font-family: 'euro_capsregular', sans-serif; }
 @mixin ui-basic {
-  display: table-cell;
-  line-height: $ui-line-h;
-  white-space: nowrap;
-  height: $ui-line-h;
-  padding: 0 0.5em;
-  background: transparent;
-  border: 1px solid darken($ui-fg, 25%);
-  color: $ui-fg;
-  border-radius: 0;
-  &:hover { border-color: darken($ui-act-fg, 25%); color: darken($ui-act-fg, 25%);}
-  &:invalid { border-color: $danger; box-shadow: none; color: $danger}
-  &.active {
-    color: $ui-act-fg;
-    border-color: $ui-act-fg;
-    + label { color: $ui-act-fg }
-  }
-  + label { @include hcaps(); margin: 0; }
+    font-size: inherit;
+    display: table-cell;
+    line-height: $ui-line-h;
+    white-space: nowrap;
+    height: $ui-line-h;
+    padding: 0 0.5em;
+    background: transparent;
+    border: 1px solid darken($ui-fg, 25%);
+    color: $ui-fg;
+    border-radius: 0;
+    &:hover { border-color: darken($ui-act-fg, 25%); color: darken($ui-act-fg, 25%);}
+    &:invalid { border-color: $danger; box-shadow: none; color: $danger}
+    &.active {
+        color: $ui-act-fg;
+        border-color: $ui-act-fg;
+        + label { color: $ui-act-fg }
+    }
+    + label { @include hcaps(); margin: 0; }
 }
 @mixin ui-input {
-  width: 100%; display: block;
+    width: 100%; display: block;
 }
 @mixin ui-has-caret {
-  background: transparent url("assets/caret.svg") no-repeat calc(100% - 8px) 50%;
+    background: transparent url("assets/caret.svg") no-repeat calc(100% - 8px) 50%;
 }
 @mixin semiglitch {
-  text-shadow: -2px -4px 0 rgba(0, 255, 240, .15), 2px 4px 0 rgba(255, 0, 230, .15);
-  box-shadow: -2px -4px 0 0 rgba(0, 255, 240, .15), 2px 4px 0 0 rgba(255, 0, 230, .15);
+    text-shadow: -2px -4px 0 rgba(0, 255, 240, .15), 2px 4px 0 rgba(255, 0, 230, .15);
+    box-shadow: -2px -4px 0 0 rgba(0, 255, 240, .15), 2px 4px 0 0 rgba(255, 0, 230, .15);
 }
 @mixin glitch {
-  text-shadow: -2px -4px 0 rgba(0, 255, 240, .35), 2px 4px 0 rgba(255, 0, 230, .35);
-  box-shadow: -2px -4px 0 0 rgba(0, 255, 240, .35), 2px 4px 0 0 rgba(255, 0, 230, .35);
+    text-shadow: -2px -4px 0 rgba(0, 255, 240, .35), 2px 4px 0 rgba(255, 0, 230, .35);
+    box-shadow: -2px -4px 0 0 rgba(0, 255, 240, .35), 2px 4px 0 0 rgba(255, 0, 230, .35);
 }
 @mixin semiglitch-text {
-  text-shadow: -2px -4px 0 rgba(0, 255, 240, .15), 2px 4px 0 rgba(255, 0, 230, .15);
+    text-shadow: -2px -4px 0 rgba(0, 255, 240, .15), 2px 4px 0 rgba(255, 0, 230, .15);
 }
 @mixin glitch-text {
-  text-shadow: -2px -4px 0 rgba(0, 255, 240, .35), 2px 4px 0 rgba(255, 0, 230, .35);
+    text-shadow: -2px -4px 0 rgba(0, 255, 240, .35), 2px 4px 0 rgba(255, 0, 230, .35);
 }
 @mixin redshift($intense:0.25) {
-  text-shadow: -3px 0 1px rgba(255, 0, 0, $intense), 3px 0 1px rgba(255, 0, 0, $intense);
-  box-shadow: -3px 0 1px rgba(255, 0, 0, $intense), 3px 0 1px rgba(255, 0, 0, $intense) //, -3px 0 1px rgba(255, 0, 0, 0.25) inset, 3px 0 1px rgba(255, 0, 0, 0.25) inset;
+    text-shadow: -3px 0 1px rgba(255, 0, 0, $intense), 3px 0 1px rgba(255, 0, 0, $intense);
+    box-shadow: -3px 0 1px rgba(255, 0, 0, $intense), 3px 0 1px rgba(255, 0, 0, $intense) //, -3px 0 1px rgba(255, 0, 0, 0.25) inset, 3px 0 1px rgba(255, 0, 0, 0.25) inset;
 }
 @mixin clearfix() {
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
 }

@@ -16,12 +16,12 @@
   AUTOFILL STYLES IN CHROME
 */
 input, textarea, select {
-  &:-webkit-autofill {
-    border: 1px solid darken($ui-fg, 25%);
-    -webkit-text-fill-color: darken($ui-act-fg, 25%);
-    -webkit-box-shadow: 0 0 0px 1000px $ui-bg inset;
-    transition: background-color 5000s ease-in-out 0s;
-  }
+    &:-webkit-autofill {
+        border: 1px solid darken($ui-fg, 25%);
+        -webkit-text-fill-color: darken($ui-act-fg, 25%);
+        -webkit-box-shadow: 0 0 0px 1000px $ui-bg inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
 }
 * { box-sizing: border-box; }
 *::selection { background: $purple; color: $white}
@@ -42,62 +42,62 @@ select, button, navbar, header, .compass { user-select: none}
 u { text-decoration: none;}
 //
 #{$all-inputs} {
-  @include ui-basic();
-  @include ui-input();
+    @include ui-basic();
+    @include ui-input();
 }
 textarea {
-  @include ui-basic();
-  @include ui-input();
-  max-width: 100%; resize: vertical; max-height: 50vh; min-height: 6.8em; height: 6.8em;
-  padding-top: 0.7em; padding-bottom: 0.7em;
-  overflow: auto;
-  white-space: initial;
+    @include ui-basic();
+    @include ui-input();
+    max-width: 100%; resize: vertical; max-height: 50vh; min-height: 6.8em; height: 6.8em;
+    padding-top: 0.7em; padding-bottom: 0.7em;
+    overflow: auto;
+    white-space: initial;
 }
 select { -webkit-appearance: none; padding-right: 1.8em }
 select, button { @include hcaps();
-  option { text-transform: none !important}
+    option { text-transform: none !important}
 }
 button {
-  @include hcaps();
-  @include ui-basic();
-  &:active {
-    border: 1px solid $ui-act-fg;
-    @include glitch();
-  }
-  &.active {
-    @include redshift();
-    color: $ui-act-fg;
-    border-color: $ui-act-fg;
-  }
-  &.semi-active {
-    color: darken($ui-act-fg, 15%);
-    border-color: darken($ui-act-fg, 15%);
-  }
+    @include hcaps();
+    @include ui-basic();
+    &:active {
+        border: 1px solid $ui-act-fg;
+        @include glitch();
+    }
+    &.active {
+        @include redshift();
+        color: $ui-act-fg;
+        border-color: $ui-act-fg;
+    }
+    &.semi-active {
+        color: darken($ui-act-fg, 15%);
+        border-color: darken($ui-act-fg, 15%);
+    }
 }
 button.link { border: 0 none !important; line-height: inherit; display: inline; padding: 0; }
 .clearfix { @include clearfix()}
 @keyframes glitched_text {
-  0% { text-shadow: none; }
-  20% { text-shadow: none; }
-  21% { text-shadow: -1px -4px 0 rgba(0, 255, 240, .35), 1px 4px 0 rgba(255, 0, 230, .35); }
-  25% { text-shadow: -1px -4px 0 rgba(0, 255, 240, .35), 1px 4px 0 rgba(255, 0, 230, .35); }
-  26% { text-shadow: none; }
-  48% { text-shadow: none; }
-  50% { text-shadow: -1px -4px 0 rgba(0, 255, 240, .35), 1px 4px 0 rgba(255, 0, 230, .35); }
-  67% { text-shadow: none; }
-  79% { text-shadow: none; }
-  80% { text-shadow: -2px -5px 0 rgba(0, 255, 240, .35), 2px 5px 0 rgba(255, 0, 230, .35); }
-  89% { text-shadow: -2px -5px 0 rgba(0, 255, 240, .35), 2px 5px 0 rgba(255, 0, 230, .35); }
-  95% { text-shadow: none; }
-  100% { text-shadow: none; }
+    0% { text-shadow: none; }
+    20% { text-shadow: none; }
+    21% { text-shadow: -1px -4px 0 rgba(0, 255, 240, .35), 1px 4px 0 rgba(255, 0, 230, .35); }
+    25% { text-shadow: -1px -4px 0 rgba(0, 255, 240, .35), 1px 4px 0 rgba(255, 0, 230, .35); }
+    26% { text-shadow: none; }
+    48% { text-shadow: none; }
+    50% { text-shadow: -1px -4px 0 rgba(0, 255, 240, .35), 1px 4px 0 rgba(255, 0, 230, .35); }
+    67% { text-shadow: none; }
+    79% { text-shadow: none; }
+    80% { text-shadow: -2px -5px 0 rgba(0, 255, 240, .35), 2px 5px 0 rgba(255, 0, 230, .35); }
+    89% { text-shadow: -2px -5px 0 rgba(0, 255, 240, .35), 2px 5px 0 rgba(255, 0, 230, .35); }
+    95% { text-shadow: none; }
+    100% { text-shadow: none; }
 }
 input { height: auto; }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { appearance: none; }
 input, textarea { caret-color: $orange; }
 a {
-  cursor: pointer; color: darken($cyan, 5%); text-decoration: none;
-  &:hover { text-decoration: underline; color: $cyan}
+    cursor: pointer; color: darken($cyan, 5%); text-decoration: none;
+    &:hover { text-decoration: underline; color: $cyan}
 }
 .float-right {float: right }
 #app { padding-bottom: 2em; }
@@ -116,83 +116,89 @@ em > span.false { }
 em > span > small { display: block; }
 em::after, .cls::after { content: ""; clear: both; display: table; }
 .centered {
-  h4, h5 { text-align: center; }
-  em > b { text-align: right; }
-  em > span { text-align: left; }
+    h4, h5 { text-align: center; }
+    em > b { text-align: right; }
+    em > span { text-align: left; }
 }
 .justified {
-  em > b { text-align: left; }
-  em > span { text-align: right; }
+    em > b { text-align: left; }
+    em > span { text-align: right; }
 }
 .em-block {}
 .listed {
-  em { margin-bottom: 0.8em }
-  em > b { font-size: 0.8em; width: 100%; padding: 0;}
-  em > span { font-size: 1.0em; color: lighten($ui-fg, 20%); width: 100%; padding: 0;}
-  em > span > small { color: darken($ui-fg, 20%) }
+    em { margin-bottom: 0.8em }
+    em > b { font-size: 0.8em; width: 100%; padding: 0;}
+    em > span { font-size: 1.0em; color: lighten($ui-fg, 20%); width: 100%; padding: 0;}
+    em > span > small { color: darken($ui-fg, 20%) }
 }
 .solid-word { white-space: nowrap; display: inline-block }
 hr {
-  border-width: 1px 0 0 0;
-  border-color: $ui-fg;
-  padding: 0;
-  margin: 5px 0;
-  &.top { margin-top: 15px;}
-  &.bottom { margin-bottom: 15px; }
-  &.both { margin-top: 15px; margin-bottom: 15px;}
+    border-width: 1px 0 0 0;
+    border-color: $ui-fg;
+    padding: 0;
+    margin: 5px 0;
+    &.top { margin-top: 15px;}
+    &.bottom { margin-bottom: 15px; }
+    &.both { margin-top: 15px; margin-bottom: 15px;}
 }
 //
 //
 // MESSAGE BOXES
 //
 .alert {
-  color: $ui-text; text-align: center; margin: 1em;
-  & > i { font-size: 2em; display: block; margin-bottom: 1em; }
-  & > div { @include hcaps(); }
-  & > small { font-size: 0.8em; margin-top: 0.3em; display: block; text-transform: lowercase; }
-  &.info { color: $info;
-    & > small { color: darken($info, 10%) }
-  }
-  &.warn { color: $orange;
-    & > small {color: darken($orange, 10%)}
-  }
-  &.error { color: $red;
-    & > small {color: darken($red, 10%)}
-  }
-  &.modal {
-    position: fixed;
-    left: 0; top: 0; right: 0; bottom: 0;
-    z-index: 9999;
-    background: rgba(0, 0, 0, .7);
-    margin: 0; padding: 20vh 0;
-    font-size: 1.2em;
-  }
-  &.progress { animation: glitched_text 2s infinite;}
-  .ui { margin-top: 1em; text-align: center;
-    button { margin: 1em auto; padding: 0em 2em; width: auto; line-height: 2.0em; font-size: 1.1em; display: block }
-  }
+    color: $ui-text; text-align: center; margin: 1em;
+    & i { font-size: 2em; display: block; margin-bottom: 1em; }
+    & h4 { @include hcaps(); }
+    & p { color: darken($ui-text, 10%); font-size: 0.8em; margin-top: 0.3em; display: block; text-transform: lowercase; }
+    & .actions { padding: 0.5em 0;
+        button { font-size: 0.9em; padding: 0 1em }
+    }
+    &.info { color: $info;
+        & p { color: darken($info, 10%) }
+        & .actions button { border-color: $info !important; color: $info}
+    }
+    &.warn { color: $orange;
+        & p {color: darken($orange, 10%)}
+
+    }
+    &.error { color: $red;
+        & p {color: darken($red, 10%)}
+        & .actions button { border-color: $red !important; color: $red}
+    }
+    &.modal {
+        position: fixed;
+        left: 0; top: 0; right: 0; bottom: 0;
+        z-index: 9999;
+        background: rgba(0, 0, 0, .7);
+        margin: 0; padding: 20vh 0;
+        font-size: 1.2em;
+    }
+    &.progress { animation: glitched_text 2s infinite;}
+    .ui { margin-top: 1em; text-align: center;
+        button { margin: 1em auto; padding: 0em 2em; width: auto; line-height: 2.0em; font-size: 1.1em; display: block }
+    }
 }
 .ui { padding-bottom: 1em; position: relative; padding-top: 1em;
-  label { position: absolute; top: 0; left: 0; right: 0; line-height: 1em;
-    button { float: right; }
-  }
-  button { margin-right: 5px; }
-  select { @include ui-has-caret(); }
-  *:focus + label { color: $ui-act-fg }
+    label { position: absolute; top: 0; left: 0; right: 0; line-height: 1em;
+        button { float: right; }
+    }
+    button { margin-right: 5px; }
+    select { @include ui-has-caret(); }
+    *:focus + label { color: $ui-act-fg }
 
-  &.short select, &.short input, &.short button { width: auto; min-width: 8em }
+    &.short select, &.short input, &.short button { width: auto; min-width: 8em }
 }
 .starpos { color: darken($ui-text, 25%); margin-bottom: 0.5em }
 .starpos u { font-size: 0.8em; color: darken($ui-text, 25%); }
 .tip-box {
-  padding-left: 3.5em;
-  & > .icon { padding: 0.6em 0 0.3em 0; text-align: center; float: left; margin-left: -3.5em; width: 3.5em; line-height: $ui-line-h;
-    i {font-size: 2em }
-  }
-  & > div { line-height: 1.2em;
-    h5 { display: block; text-transform: uppercase; }
-    b { display: block; text-transform: uppercase; padding: 0.3em 0 }
-    p { margin: 0; padding: 0; }
-    small { display: block; font-size: 0.9em; line-height: 1.2em }
-  }
+    padding-left: 3.5em;
+    & > .icon { padding: 0.6em 0 0.3em 0; text-align: center; float: left; margin-left: -3.5em; width: 3.5em; line-height: $ui-line-h;
+        i {font-size: 2em }
+    }
+    & > div { line-height: 1.2em;
+        h5 { display: block; text-transform: uppercase; }
+        b { display: block; text-transform: uppercase; padding: 0.3em 0 }
+        p { margin: 0; padding: 0; }
+        small { display: block; font-size: 0.9em; line-height: 1.2em }
+    }
 }
