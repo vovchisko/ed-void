@@ -24,14 +24,14 @@
         Data.modes.c_mode = 'cfg';
         console.log('ready? really?')
     });
-    J.on('stop', (reason, code, err) => {
-        console.log('J-STOPPED', {reason, code, err});
-        if (reason === 'issue' && code === ISSH.NO_AUTH) {
+    J.on('stop', (code, err) => {
+        console.log('J-STOPPED', {code, err});
+        if (code === ISSH.NO_AUTH) {
             Data.modes.c_mode = 'auth';
             return;
         }
-        if (reason === 'issue' && code === ISSH.NO_JOURNALS) {
-            A.error({
+        if (code === ISSH.NO_JOURNALS) {
+            return A.warning({
                 text: 'Unable to locate journals',
                 desc: 'Void can`t automatically locate journals. Specify path manually:',
                 act: {'do something': () => {console.log('something!')}},
@@ -54,6 +54,15 @@
                 }
             }, true);
         }
+
+        if (code === ISSH.NET_SERVICE) {
+            return A.error({
+                text: 'ED-Void service unavailable',
+                desc: 'please, chek your internet connection or try again later',
+                acts: {'try again': () => {J.go();}}
+            }, true);
+        }
+
     });
     J.on('ws:any', (c, dat) => { console.log('J-WS-ANY:', c, dat); });
     J.init();

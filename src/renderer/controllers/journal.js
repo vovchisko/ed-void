@@ -37,11 +37,11 @@ const data_files = ['Status.json', 'Market.json', 'ModulesInfo.json', 'Outfittin
 
 const ISSH = {
     NO_ISSUE: null,
-    NO_AUTH: 'no-key',
-    NO_JOURNALS: 'no-journals',
-    ERROR: 'error',
-    OTHER_CLIENT: 'other-client-connected',
-    NET_SERVICE: 'service-unavailable',
+    NO_AUTH: 'void-no-key',
+    NO_JOURNALS: 'void-no-journals',
+    ERROR: 'void-error',
+    OTHER_CLIENT: 'void-other-client-connected',
+    NET_SERVICE: 'void-service-unavailable',
 };
 
 
@@ -76,7 +76,7 @@ class Journal extends EE3 {
         return new Promise(async (ready, reject) => {
 
             // AUTH CHECK
-            if (!this.cfg.api_key) return reject({issue: 'issue', code: ISSH.NO_AUTH});
+            if (!this.cfg.api_key) return reject({code: ISSH.NO_AUTH});
 
             // JOURNALS CHECK
             if (this.cfg.journal_path && _check_journals(this.cfg.journal_path)) return ready();
@@ -85,7 +85,7 @@ class Journal extends EE3 {
                 return ready();
             }
             exec(REG_QUERY, (err, stdout, stderr) => {
-                if (err) reject({issue: 'issue', code: ISSH.NO_JOURNALS, err: err});
+                if (err) reject({code: ISSH.NO_JOURNALS, err: err});
                 stdout.split('\n').forEach((val) => {
                     if (val.includes(REG_KEY)) {
                         let ANOTHER_DIR = path.join(val.split('REG_EXPAND_SZ')[1].trim(), 'Frontier Developments\\Elite Dangerous');
@@ -93,7 +93,7 @@ class Journal extends EE3 {
                             this.cfg.journal_path = ANOTHER_DIR;
                             return ready();
                         }
-                        return reject({issue: 'issue', code: ISSH.NO_JOURNALS, err: err});
+                        return reject({code: ISSH.NO_JOURNALS, err: err});
                     }
                 });
             });
@@ -110,7 +110,7 @@ class Journal extends EE3 {
                 this.timer = setInterval(() => {
                     if (this._stopped) return;
                     this.force_important_files();
-                    this.do_some_work().catch((e) => { this.stop('issue', ISSH.ERROR, e) });
+                    this.do_some_work().catch((e) => { this.stop(ISSH.ERROR, e) });
                 }, 1000);
 
                 try {
@@ -118,16 +118,16 @@ class Journal extends EE3 {
                         ev === 'change' ? this.file_check(f) : this.scan_all();
                     });
                 } catch (err) {
-                    return this.stop('issue', ISSH.ERROR, err);
+                    return this.stop(ISSH.ERROR, err);
                 }
                 this.ws_connect();
             })
             .catch((err) => {
-                this.stop(err.issue, err.code, err.err);
+                this.stop(err.code, err.err);
             })
     }
 
-    stop(reason = null, code, err) {
+    stop(code, err) {
         try {
             this._stopped = true;
             if (this.timer) {
@@ -144,11 +144,11 @@ class Journal extends EE3 {
             console.log('OH SHI!', e);
             process.exit(-1);
         }
-        if (!reason) {
+        if (!code) {
             this.cfg_save();
             //process.exit(0);
         } else {
-            this.emit('stop', reason, code, err);
+            this.emit('stop', code, err);
         }
     }
 
@@ -167,7 +167,7 @@ class Journal extends EE3 {
 
             extend(this.cfg, cfg);
         } catch (e) {
-            //this.stop('issue', ISSH.ERROR, e);
+            //this.stop( ISSH.ERROR, e);
             //proudly ignore this issue. seems no file yet created.
         }
     }
@@ -213,7 +213,7 @@ class Journal extends EE3 {
         });
 
         this.ws.on('error', (e) => {
-            this.stop('error', ISSH.NET_SERVICE, e)
+            this.stop(ISSH.NET_SERVICE, e)
         });
 
         this.ws.on('close', (code, reason) => {
@@ -232,13 +232,13 @@ class Journal extends EE3 {
                 ish = ISSH.OTHER_CLIENT;
             }
 
-            return this.stop('issue', ish, {code, reason});
+            return this.stop(ish, {code, reason});
 
         });
 
         this.ws.on('message', (msg) => {
             let m = parse_json(msg);
-            if (!m) this.stop(ISSH.ERROR, 'err-server-message-parse');
+            if (!m) this.stop(ISSH.ERROR, {code: 'Unable to parse JSON from server', msg: msg});
             if (m.c === 'welcome') {
                 this.emit('ready', this.cfg);
                 this._stopped = false;
@@ -261,7 +261,7 @@ class Journal extends EE3 {
 
     scan_all() {
         let files = fs.readdirSync(this.cfg.journal_path);
-        if (!files) return this.stop('issue', ISSH.NO_JOURNALS);
+        if (!files) return this.stop(ISSH.NO_JOURNALS);
         for (let f in this.files) if (!files.includes(f)) delete this.files[f];
         for (let i = 0; i < files.length; i++) this.file_check(files[i]);
     }
@@ -318,7 +318,7 @@ class Journal extends EE3 {
                         this.files[f].changed = false;
                     })
                     .catch((e) => {
-                        if (e.code && e.code === 'ENOENT') this.stop('issue', ISSH.ERROR, e);
+                        if (e.code && e.code === 'ENOENT') this.stop(ISSH.ERROR, e);
                         this.files[f].changed = true;
                     });
             } else {
@@ -327,7 +327,7 @@ class Journal extends EE3 {
                         this.files[f].changed = false;
                     })
                     .catch((e) => {
-                        if (e.code && e.code === 'ENOENT') this.stop('issue', ISSH.ERROR, e);
+                        if (e.code && e.code === 'ENOENT') this.stop(ISSH.ERROR, e);
                         this.files[f].changed = true;
                     });
             }
@@ -398,7 +398,7 @@ class Journal extends EE3 {
                         this.cfg_save();
                         log(`${l}  [ ok ] ${res.data}`);
                     }).catch((e) => {
-                        this.stop('issue', ISSH.ERROR, e);
+                        this.stop(ISSH.ERROR, e);
                     });
             });
     }

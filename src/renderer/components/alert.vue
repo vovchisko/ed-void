@@ -15,8 +15,8 @@
                 </div>
             </div>
 
-            <div class="actions">
-                <button v-for="(cb, action) in A.stack[0].actions" v-on:click="act(action)">{{action}}</button>
+            <div class="acts">
+                <button v-for="(cb, action) in A.stack[0].acts" v-on:click="act(action)">{{action}}</button>
             </div>
         </div>
     </div>
@@ -53,8 +53,8 @@
         data: () => { return {A: A} },
         methods: {
             act: function (ac) {
-                if (this.A.stack[0].actions[ac])
-                    this.A.stack[0].actions[ac]();
+                if (this.A.stack[0].acts[ac])
+                    this.A.stack[0].acts[ac]();
 
                 this.A.stack.splice(0, 1);
             },
