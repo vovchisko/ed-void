@@ -1,5 +1,18 @@
 import {app, BrowserWindow, ipcMain, shell} from 'electron';
 
+const UI_Settings = {
+    height: 800,
+    width: 1400,
+    useContentSize: true,
+    show: false,
+};
+
+if (process.env.NODE_ENV !== 'development') {
+    UI_Settings.transparent = true;
+    UI_Settings.alwaysOnTop = true;
+    UI_Settings.frame = false;
+    UI_Settings.toolbar = false;
+}
 
 const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
     if (UI) {
@@ -27,13 +40,7 @@ const handleRedirect = (e, url) => {
 
 
 function createWindow() {
-    UI = new BrowserWindow({
-        height: 800,
-        useContentSize: true,
-        width: 1400,
-        //transparent: true,
-    });
-
+    UI = new BrowserWindow(UI_Settings);
     UI.loadURL(winURL);
     UI.on('closed', () => {
         UI = null;
@@ -41,10 +48,16 @@ function createWindow() {
     });
 
 
+    if (process.env.NODE_ENV !== 'development') {
+        UI.webContents.on('did-finish-load', function () {
+            UI.webContents.insertCSS('html,body{ background-color: rgba(0,0,0,.9) !important;}')
+        });
+    }
+
     UI.maximize();
     UI.webContents.on('will-navigate', handleRedirect);
     UI.webContents.on('new-window', handleRedirect);
-
+    UI.webContents.on('dom-ready', () => UI.show());
 }
 
 app.on('ready', createWindow);
@@ -59,7 +72,9 @@ app.on('activate', () => { if (UI === null) createWindow() });
 */
 ipcMain.on('ipc', function (event, c, data) {
     switch (c) {
-
+        case 'shutdown':
+            app.quit();
+            break;
         default:
             console.log('IPC/UI:', c, data);
     }

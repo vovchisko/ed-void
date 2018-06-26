@@ -1,0 +1,9 @@
+{ "timestamp":"2018-04-02T20:20:21Z", "event":"Fileheader", "part":1, "language":"English\\UK", "gameversion":"3.0.5.402 EDH", "build":"r168330/r0 " }
+{ "timestamp":"2018-04-02T20:20:21Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-04-02T20:20:21Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2018-04-02T20:20:58Z", "event":"Friends", "Status":"Online", "Name":"SparrowBlack" }
+{ "timestamp":"2018-04-02T20:20:58Z", "event":"Friends", "Status":"Online", "Name":"Mar.Meow" }
+{ "timestamp":"2018-04-02T20:22:24Z", "event":"Friends", "Status":"Online", "Name":"SparrowBlack" }
+{ "timestamp":"2018-04-02T20:22:24Z", "event":"Friends", "Status":"Online", "Name":"Mar.Meow" }
+{ "timestamp":"2018-04-02T20:25:42Z", "event":"Friends", "Status":"Online", "Name":"SparrowBlack" }
+{ "timestamp":"2018-04-02T20:47:56Z", "event":"Shutdown" }

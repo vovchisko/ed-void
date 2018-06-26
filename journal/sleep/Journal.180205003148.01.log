@@ -1,0 +1,454 @@
+{ "timestamp":"2018-02-04T22:31:48Z", "event":"Fileheader", "part":1, "language":"Russian\\RU", "gameversion":"2.4", "build":"r160439/r0 " }
+{ "timestamp":"2018-02-04T22:31:48Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-04T22:31:48Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2018-02-04T22:32:22Z", "event":"Friends", "Status":"Online", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-04T22:32:26Z", "event":"Cargo", "Inventory":[  ] }
+{ "timestamp":"2018-02-04T22:32:26Z", "event":"Loadout", "Ship":"Asp", "ShipID":8, "ShipName":"A-BUG", "ShipIdent":"BUGGED", "Modules":[ { "Slot":"SmallHardpoint1", "Item":"Hpt_BeamLaser_Gimbal_Small", "On":true, "Priority":0, "Health":0.992874, "Value":67185 }, { "Slot":"SmallHardpoint2", "Item":"Hpt_BeamLaser_Gimbal_Small", "On":true, "Priority":0, "Health":0.975695, "Value":67185 }, { "Slot":"SmallHardpoint3", "Item":"Hpt_BeamLaser_Gimbal_Small", "On":true, "Priority":0, "Health":0.974743, "Value":67185 }, { "Slot":"SmallHardpoint4", "Item":"Hpt_BeamLaser_Gimbal_Small", "On":true, "Priority":0, "Health":0.975655, "Value":67185 }, { "Slot":"MediumHardpoint1", "Item":"Hpt_MultiCannon_Gimbal_Medium", "On":true, "Priority":0, "AmmoInClip":82, "AmmoInHopper":1320, "Health":0.985596, "Value":51300, "EngineerBlueprint":"Weapon_Efficient", "EngineerLevel":1 }, { "Slot":"MediumHardpoint2", "Item":"Hpt_MultiCannon_Gimbal_Medium", "On":true, "Priority":0, "AmmoInClip":12, "AmmoInHopper":1320, "Health":0.990140, "Value":51300, "EngineerBlueprint":"Weapon_Efficient", "EngineerLevel":2 }, { "Slot":"TinyHardpoint1", "Item":"Hpt_ChaffLauncher_Tiny", "On":true, "Priority":3, "AmmoInClip":1, "AmmoInHopper":10, "Health":0.975473, "Value":8500 }, { "Slot":"TinyHardpoint2", "Item":"Hpt_HeatSinkLauncher_Turret_Tiny", "On":true, "Priority":0, "AmmoInClip":1, "AmmoInHopper":2, "Health":0.971581, "Value":3500 }, { "Slot":"TinyHardpoint3", "Item":"Hpt_ShieldBooster_Size0_Class5", "On":true, "Priority":0, "Health":0.981046, "Value":281000, "EngineerBlueprint":"ShieldBooster_Resistive", "EngineerLevel":1 }, { "Slot":"TinyHardpoint4", "Item":"Hpt_PlasmaPointDefence_Turret_Tiny", "On":true, "Priority":3, "AmmoInClip":12, "AmmoInHopper":9952, "Health":0.979046, "Value":18546 }, { "Slot":"Armour", "Item":"Asp_Armour_Grade3", "On":true, "Priority":1, "Health":1.000000, "Value":5995038 }, { "Slot":"PowerPlant", "Item":"Int_Powerplant_Size5_Class5", "On":true, "Priority":1, "Health":0.989245, "Value":5103953, "EngineerBlueprint":"PowerPlant_Armoured", "EngineerLevel":1 }, { "Slot":"MainEngines", "Item":"Int_Engine_Size5_Class5", "On":false, "Priority":0, "Health":0.986087, "Value":5103953, "EngineerBlueprint":"Engine_Reinforced", "EngineerLevel":1 }, { "Slot":"FrameShiftDrive", "Item":"Int_Hyperdrive_Size5_Class5", "On":true, "Priority":0, "Health":0.968645, "Value":5103953, "EngineerBlueprint":"FSD_FastBoot", "EngineerLevel":1 }, { "Slot":"LifeSupport", "Item":"Int_LifeSupport_Size4_Class1", "On":true, "Priority":0, "Health":0.970488, "Value":11349 }, { "Slot":"PowerDistributor", "Item":"Int_PowerDistributor_Size4_Class5", "On":true, "Priority":0, "Health":0.963412, "Value":443328 }, { "Slot":"Radar", "Item":"Int_Sensors_Size5_Class4", "On":true, "Priority":1, "Health":0.969384, "Value":496527 }, { "Slot":"FuelTank", "Item":"Int_FuelTank_Size5_Class3", "On":true, "Priority":1, "Health":1.000000, "Value":97754 }, { "Slot":"Slot01_Size6", "Item":"Int_BuggyBay_Size6_Class1", "On":true, "Priority":0, "Health":0.980291, "Value":576000 }, { "Slot":"Slot02_Size5", "Item":"Int_ShieldGenerator_Size5_Class5", "On":true, "Priority":0, "Health":0.983102, "Value":5103953 }, { "Slot":"Slot03_Size3", "Item":"Int_BuggyBay_Size2_Class1", "On":true, "Priority":4, "Health":0.982207, "Value":18000 }, { "Slot":"Slot04_Size3", "Item":"Int_FuelScoop_Size3_Class5", "On":true, "Priority":4, "Health":0.973878, "Value":902954 }, { "Slot":"Slot05_Size3", "Item":"Int_StellarBodyDiscoveryScanner_Advanced", "On":true, "Priority":1, "Health":0.985800, "Value":1545000 }, { "Slot":"Slot06_Size2", "Item":"Int_Repairer_Size2_Class4", "On":false, "Priority":0, "AmmoInClip":2800, "Health":0.986735, "Value":486000 }, { "Slot":"Slot07_Size2", "Item":"Int_FSDInterdictor_Size2_Class5", "On":true, "Priority":0, "Health":0.994811, "Value":2721600 }, { "Slot":"PlanetaryApproachSuite", "Item":"Int_PlanetApproachSuite", "On":true, "Priority":1, "Health":1.000000, "Value":500 }, { "Slot":"ShipCockpit", "Item":"Asp_Cockpit", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"CargoHatch", "Item":"ModularCargoBayDoor", "On":true, "Priority":2, "Health":0.972289, "Value":0 } ] }
+{ "timestamp":"2018-02-04T22:32:26Z", "event":"Materials", "Raw":[ { "Name":"phosphorus", "Count":26 }, { "Name":"iron", "Count":1 }, { "Name":"nickel", "Count":48 }, { "Name":"carbon", "Count":17 }, { "Name":"chromium", "Count":27 }, { "Name":"molybdenum", "Count":1 }, { "Name":"manganese", "Count":17 }, { "Name":"cadmium", "Count":3 }, { "Name":"germanium", "Count":3 }, { "Name":"tin", "Count":3 }, { "Name":"selenium", "Count":14 }, { "Name":"niobium", "Count":6 }, { "Name":"vanadium", "Count":7 }, { "Name":"tungsten", "Count":3 } ], "Manufactured":[ { "Name":"gridresistors", "Count":9 }, { "Name":"mechanicalscrap", "Count":14 }, { "Name":"mechanicalequipment", "Count":11 }, { "Name":"focuscrystals", "Count":64 }, { "Name":"salvagedalloys", "Count":82 }, { "Name":"chemicalprocessors", "Count":31 }, { "Name":"phasealloys", "Count":51 }, { "Name":"shieldingsensors", "Count":48 }, { "Name":"wornshieldemitters", "Count":46 }, { "Name":"galvanisingalloys", "Count":69 }, { "Name":"uncutfocuscrystals", "Count":2 }, { "Name":"configurablecomponents", "Count":6 }, { "Name":"highdensitycomposites", "Count":24 }, { "Name":"mechanicalcomponents", "Count":3 }, { "Name":"fedproprietarycomposites", "Count":21 }, { "Name":"fedcorecomposites", "Count":6 }, { "Name":"shieldemitters", "Count":42 }, { "Name":"conductivecomponents", "Count":4 }, { "Name":"refinedfocuscrystals", "Count":21 }, { "Name":"chemicaldistillery", "Count":6 }, { "Name":"protolightalloys", "Count":15 }, { "Name":"precipitatedalloys", "Count":22 }, { "Name":"biotechconductors", "Count":2 }, { "Name":"compoundshielding", "Count":6 }, { "Name":"conductiveceramics", "Count":2 }, { "Name":"unknownorganiccircuitry", "Count":24 }, { "Name":"unknownenergysource", "Count":22 }, { "Name":"unknowncarapace", "Count":18 }, { "Name":"unknowntechnologycomponents", "Count":12 }, { "Name":"unknownenergycell", "Count":6 } ], "Encoded":[ { "Name":"decodedemissiondata", "Count":27 }, { "Name":"emissiondata", "Count":4 }, { "Name":"shieldsoakanalysis", "Count":18 }, { "Name":"shielddensityreports", "Count":39 }, { "Name":"scanarchives", "Count":18 }, { "Name":"shieldpatternanalysis", "Count":24 }, { "Name":"shieldcyclerecordings", "Count":29 }, { "Name":"encodedscandata", "Count":9 }, { "Name":"fsdtelemetry", "Count":6 }, { "Name":"scandatabanks", "Count":5 }, { "Name":"legacyfirmware", "Count":15 }, { "Name":"archivedemissiondata", "Count":4 }, { "Name":"industrialfirmware", "Count":3 }, { "Name":"bulkscandata", "Count":33 }, { "Name":"embeddedfirmware", "Count":1 }, { "Name":"scrambledemissiondata", "Count":6 }, { "Name":"encryptioncodes", "Count":3 }, { "Name":"consumerfirmware", "Count":3 }, { "Name":"encryptionarchives", "Count":3 } ] }
+{ "timestamp":"2018-02-04T22:32:26Z", "event":"LoadGame", "Commander":"Sleep Runner", "Ship":"TestBuggy", "ShipID":13, "ShipName":"", "ShipIdent":"", "FuelLevel":0.000000, "FuelCapacity":0.000000, "GameMode":"Open", "Credits":46056736, "Loan":0 }
+{ "timestamp":"2018-02-04T22:32:26Z", "event":"Rank", "Combat":2, "Trade":4, "Explore":4, "Empire":0, "Federation":2, "CQC":0 }
+{ "timestamp":"2018-02-04T22:32:26Z", "event":"Progress", "Combat":33, "Trade":1, "Explore":20, "Empire":3, "Federation":32, "CQC":0 }
+{ "timestamp":"2018-02-04T22:32:29Z", "event":"ApproachSettlement", "Name":"Egan Landing +" }
+{ "timestamp":"2018-02-04T22:32:33Z", "event":"Touchdown", "PlayerControlled":false }
+{ "timestamp":"2018-02-04T22:32:37Z", "event":"Location", "Latitude":-54.717949, "Longitude":95.715378, "Docked":false, "StarSystem":"Adeo", "StarPos":[-81.625,31.406,27.188], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":8257413685, "Body":"Adeo A 1", "BodyType":"Planet", "Factions":[ { "Name":"Adeo Independents", "FactionState":"None", "Government":"Democracy", "Influence":0.504505, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Adeo Purple Vision Corporation", "FactionState":"Boom", "Government":"Corporate", "Influence":0.038038, "Allegiance":"Independent", "PendingStates":[ { "State":"CivilUnrest", "Trend":1 } ] }, { "Name":"Official Adeo Dominion", "FactionState":"None", "Government":"Dictatorship", "Influence":0.101101, "Allegiance":"Independent" }, { "Name":"Marquis du Slavanibo", "FactionState":"War", "Government":"Feudal", "Influence":0.091091, "Allegiance":"Independent" }, { "Name":"Adeo Vision Industries", "FactionState":"Boom", "Government":"Corporate", "Influence":0.177177, "Allegiance":"Independent" }, { "Name":"Partnership of Adeo", "FactionState":"War", "Government":"Anarchy", "Influence":0.088088, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Adeo Independents" }
+{ "timestamp":"2018-02-04T22:32:37Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-04T22:32:38Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T22:34:22Z", "event":"Friends", "Status":"Online", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-04T22:37:32Z", "event":"DockSRV" }
+{ "timestamp":"2018-02-04T22:37:40Z", "event":"Liftoff", "PlayerControlled":true, "Latitude":-54.717850, "Longitude":95.728622 }
+{ "timestamp":"2018-02-04T22:38:01Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-04T22:38:02Z", "event":"ApproachSettlement", "Name":"Egan Landing +" }
+{ "timestamp":"2018-02-04T22:38:02Z", "event":"ApproachSettlement", "Name":"Sverdrup Enterprise" }
+{ "timestamp":"2018-02-04T22:38:02Z", "event":"ApproachSettlement", "Name":"Stevin Beacon" }
+{ "timestamp":"2018-02-04T22:38:06Z", "event":"SupercruiseEntry", "StarSystem":"Adeo" }
+{ "timestamp":"2018-02-04T22:38:07Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-04T22:38:18Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Russell Hutton;", "From_Localised":"Russell Hutton", "Message":"$BountyHunter_HunterHostileSC_Relevant01;", "Message_Localised":"Слышите меня? Мне удалось захватить особо важную цель.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T22:39:09Z", "event":"ApproachSettlement", "Name":"Egan Landing +" }
+{ "timestamp":"2018-02-04T22:39:11Z", "event":"SupercruiseExit", "StarSystem":"Adeo", "Body":"Adeo A 1", "BodyType":"Planet" }
+{ "timestamp":"2018-02-04T22:39:12Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T22:40:08Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-54.719124, "Longitude":95.710098 }
+{ "timestamp":"2018-02-04T22:40:13Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2018-02-04T22:40:20Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Adeo Purple Vision Corporation", "Fine":500 }
+{ "timestamp":"2018-02-04T22:40:30Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T22:40:30Z", "event":"CommitCrime", "CrimeType":"dockingMajorTresspass", "Faction":"Adeo Purple Vision Corporation", "Bounty":500 }
+{ "timestamp":"2018-02-04T22:40:44Z", "event":"Liftoff", "PlayerControlled":false }
+{ "timestamp":"2018-02-04T22:40:58Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Adeo Purple Vision Corporation", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":550 }
+{ "timestamp":"2018-02-04T22:41:14Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Adeo Purple Vision Corporation", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":550 }
+{ "timestamp":"2018-02-04T22:42:33Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Adeo Purple Vision Corporation", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":550 }
+{ "timestamp":"2018-02-04T22:42:39Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Adeo Purple Vision Corporation", "Victim":"$poi_generator_name;", "Victim_Localised":"Генератор", "Bounty":550 }
+{ "timestamp":"2018-02-04T22:42:44Z", "event":"MissionRedirected", "MissionID":308403325, "Name":"Mission_Disable_HighTech_name", "NewDestinationStation":"Werner von Siemens Vision", "NewDestinationSystem":"Amarak", "OldDestinationStation":"Egan Landing +", "OldDestinationSystem":"Adeo" }
+{ "timestamp":"2018-02-04T22:46:08Z", "event":"MissionRedirected", "MissionID":308404173, "Name":"Mission_Disable_HighTech_name", "NewDestinationStation":"Werner von Siemens Vision", "NewDestinationSystem":"Amarak", "OldDestinationStation":"Egan Landing +", "OldDestinationSystem":"Adeo" }
+{ "timestamp":"2018-02-04T22:52:48Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T22:53:30Z", "event":"MissionRedirected", "MissionID":308403701, "Name":"Mission_Disable_War_name", "NewDestinationStation":"Werner von Siemens Vision", "NewDestinationSystem":"Amarak", "OldDestinationStation":"Egan Landing +", "OldDestinationSystem":"Adeo" }
+{ "timestamp":"2018-02-04T22:53:48Z", "event":"HullDamage", "Health":0.679645, "PlayerPilot":true }
+{ "timestamp":"2018-02-04T22:53:50Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T22:53:58Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-04T22:54:07Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T22:54:07Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T22:54:13Z", "event":"Touchdown", "PlayerControlled":false }
+{ "timestamp":"2018-02-04T22:54:13Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T22:54:21Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-04T22:54:24Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T22:54:31Z", "event":"SelfDestruct" }
+{ "timestamp":"2018-02-04T22:54:33Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-04T22:54:34Z", "event":"HullDamage", "Health":0.416310, "PlayerPilot":true }
+{ "timestamp":"2018-02-04T22:54:35Z", "event":"HeatDamage" }
+{ "timestamp":"2018-02-04T22:54:38Z", "event":"HullDamage", "Health":0.394915, "PlayerPilot":true }
+{ "timestamp":"2018-02-04T22:55:00Z", "event":"HullDamage", "Health":0.191111, "PlayerPilot":true }
+{ "timestamp":"2018-02-04T22:55:02Z", "event":"VehicleSwitch" }
+{ "timestamp":"2018-02-04T22:55:04Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-04T22:55:13Z", "event":"Liftoff", "PlayerControlled":true, "Latitude":-54.720215, "Longitude":95.717850 }
+{ "timestamp":"2018-02-04T22:55:39Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-04T22:55:39Z", "event":"ApproachSettlement", "Name":"Egan Landing +" }
+{ "timestamp":"2018-02-04T22:55:39Z", "event":"ApproachSettlement", "Name":"Sverdrup Enterprise" }
+{ "timestamp":"2018-02-04T22:55:39Z", "event":"ApproachSettlement", "Name":"Stevin Beacon" }
+{ "timestamp":"2018-02-04T22:55:44Z", "event":"SupercruiseEntry", "StarSystem":"Adeo" }
+{ "timestamp":"2018-02-04T22:55:44Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-04T22:55:48Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T22:55:54Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-04T22:56:02Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T22:56:03Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-04T22:56:23Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Amarak", "StarClass":"M" }
+{ "timestamp":"2018-02-04T22:56:28Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-04T22:56:42Z", "event":"FSDJump", "StarSystem":"Amarak", "StarPos":[-68.438,26.000,26.469], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_HighTech;", "SystemEconomy_Localised":"Высокие технологии", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":10248421, "JumpDist":14.271, "FuelUsed":1.645523, "FuelLevel":28.719494, "Factions":[ { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Tarutaalli Group", "FactionState":"Boom", "Government":"Corporate", "Influence":0.123752, "Allegiance":"Federation" }, { "Name":"Amarak Comms Partners", "FactionState":"None", "Government":"Corporate", "Influence":0.583832, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Amarak Dominion", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.058882, "Allegiance":"Independent" }, { "Name":"Amarak Silver Family", "FactionState":"War", "Government":"Anarchy", "Influence":0.047904, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Syndicate of LHS 3385", "FactionState":"War", "Government":"Anarchy", "Influence":0.010978, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Amarak Republic Party", "FactionState":"None", "Government":"Democracy", "Influence":0.164671, "Allegiance":"Federation", "PendingStates":[ { "State":"CivilUnrest", "Trend":-1 } ] }, { "Name":"Ronin of Amarak", "FactionState":"None", "Government":"Anarchy", "Influence":0.009980, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Amarak Comms Partners" }
+{ "timestamp":"2018-02-04T22:56:42Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-04T22:56:47Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-04T22:56:52Z", "event":"SupercruiseExit", "StarSystem":"Amarak", "Body":"Amarak A", "BodyType":"Star" }
+{ "timestamp":"2018-02-04T22:56:53Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:08:02Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-04T23:08:16Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-04T23:08:17Z", "event":"HeatDamage" }
+{ "timestamp":"2018-02-04T23:08:21Z", "event":"SupercruiseEntry", "StarSystem":"Amarak" }
+{ "timestamp":"2018-02-04T23:08:21Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-04T23:08:21Z", "event":"HeatDamage" }
+{ "timestamp":"2018-02-04T23:08:21Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-04T23:08:33Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Gunde Svan;", "From_Localised":"Gunde Svan", "Message":"$BountyHunter_HunterHostileSC_Relevant01;", "Message_Localised":"Слышите меня? Мне удалось захватить особо важную цель.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:08:41Z", "event":"FuelScoop", "Scooped":1.186662, "Total":30.419651 }
+{ "timestamp":"2018-02-04T23:09:52Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Gunde Svan;", "From_Localised":"Gunde Svan", "Message":"$BountyHunter_StartInterdiction06;", "Message_Localised":"Не советую тебе трепыхаться.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:10:15Z", "event":"EscapeInterdiction", "Interdictor":"Gunde Svan", "IsPlayer":false }
+{ "timestamp":"2018-02-04T23:11:08Z", "event":"SupercruiseExit", "StarSystem":"Amarak", "Body":"Werner von Siemens Vision", "BodyType":"Station" }
+{ "timestamp":"2018-02-04T23:11:09Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-04T23:11:14Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:11:21Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:11:21Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"В запросе на стыковку отказано, приблизьтесь на 7500 м", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:11:21Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:12:03Z", "event":"DockingRequested", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:12:03Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingChatter_Cordial;", "Message_Localised":"С возвращением, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:12:03Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_docking_denied;", "Message_Localised":"Отказано в стыковке", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:12:03Z", "event":"DockingDenied", "Reason":"NoSpace", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:12:14Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Drew Austin;", "From_Localised":"Drew Austin", "Message":"$Escort_EscortStayAndFight04;", "Message_Localised":"Моя репутация уничтожена! Конец тебе!", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:12:30Z", "event":"DockingRequested", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:12:30Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingChatter_Cordial;", "Message_Localised":"С возвращением, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:12:30Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_docking_denied;", "Message_Localised":"Отказано в стыковке", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:12:30Z", "event":"DockingDenied", "Reason":"NoSpace", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:12:54Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingPadBlockWarningComms;", "Message_Localised":"Обнаружено нарушение – промедление, немедленно очистите подход к площадке во избежание летального ответа", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:04Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingOffenceCleared;", "Message_Localised":"Нарушения правил космопорта сняты, привилегии на стыковку восстановлены", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:12Z", "event":"DockingRequested", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:12Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingChatter_Cordial;", "Message_Localised":"С возвращением, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:12Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_docking_denied;", "Message_Localised":"Отказано в стыковке", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:12Z", "event":"DockingDenied", "Reason":"NoSpace", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:17Z", "event":"DockingRequested", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:17Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingChatter_Cordial;", "Message_Localised":"С возвращением, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:17Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_docking_denied;", "Message_Localised":"Отказано в стыковке", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:17Z", "event":"DockingDenied", "Reason":"NoSpace", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:30Z", "event":"DockingRequested", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:30Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingChatter_Cordial;", "Message_Localised":"С возвращением, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:30Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_docking_denied;", "Message_Localised":"Отказано в стыковке", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:30Z", "event":"DockingDenied", "Reason":"NoSpace", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:38Z", "event":"DockingRequested", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:38Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingChatter_Cordial;", "Message_Localised":"С возвращением, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:38Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_docking_denied;", "Message_Localised":"Отказано в стыковке", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:38Z", "event":"DockingDenied", "Reason":"NoSpace", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:45Z", "event":"DockingRequested", "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:13:45Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$DockingChatter_Cordial;", "Message_Localised":"С возвращением, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:46Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:13:46Z", "event":"DockingGranted", "LandingPad":4, "StationName":"Werner von Siemens Vision" }
+{ "timestamp":"2018-02-04T23:14:18Z", "event":"Docked", "StationName":"Werner von Siemens Vision", "StationType":"Outpost", "StarSystem":"Amarak", "StationFaction":"Tarutaalli Group", "FactionState":"Boom", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Корпоративная", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_HighTech;", "StationEconomy_Localised":"Высокие технологии", "DistFromStarLS":1605.938599 }
+{ "timestamp":"2018-02-04T23:14:27Z", "event":"RefuelAll", "Cost":117, "Amount":2.321136 }
+{ "timestamp":"2018-02-04T23:14:27Z", "event":"RepairAll", "Cost":16195 }
+{ "timestamp":"2018-02-04T23:14:28Z", "event":"BuyAmmo", "Cost":879 }
+{ "timestamp":"2018-02-04T23:14:28Z", "event":"RestockVehicle", "Type":"testbuggy", "Loadout":"starter", "Cost":1030, "Count":1 }
+{ "timestamp":"2018-02-04T23:14:28Z", "event":"RestockVehicle", "Type":"testbuggy", "Loadout":"starter", "Cost":1030, "Count":1 }
+{ "timestamp":"2018-02-04T23:14:28Z", "event":"RestockVehicle", "Type":"testbuggy", "Loadout":"starter", "Cost":1030, "Count":1 }
+{ "timestamp":"2018-02-04T23:14:41Z", "event":"MissionCompleted", "Faction":"Amarak Silver Family", "Name":"Mission_Disable_War_name", "MissionID":308403701, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":1163946 }
+{ "timestamp":"2018-02-04T23:14:46Z", "event":"MissionCompleted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech_name", "MissionID":308402977, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":588435 }
+{ "timestamp":"2018-02-04T23:14:48Z", "event":"MissionCompleted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech_name", "MissionID":308403325, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":593976 }
+{ "timestamp":"2018-02-04T23:14:48Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"disruptedwakeechoes", "Count":2 }
+{ "timestamp":"2018-02-04T23:14:56Z", "event":"MissionCompleted", "Faction":"Ronin of Amarak", "Name":"Mission_Disable_HighTech_name", "MissionID":308404173, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":953395 }
+{ "timestamp":"2018-02-04T23:15:00Z", "event":"MissionCompleted", "Faction":"Ronin of Amarak", "Name":"Mission_Disable_HighTech_name", "MissionID":308405183, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":594186 }
+{ "timestamp":"2018-02-04T23:15:02Z", "event":"MissionCompleted", "Faction":"Ronin of Amarak", "Name":"Mission_Disable_HighTech_name", "MissionID":308408051, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":592653 }
+{ "timestamp":"2018-02-04T23:15:02Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"hybridcapacitors", "Count":1 }
+{ "timestamp":"2018-02-04T23:15:47Z", "event":"MissionAccepted", "Faction":"Amarak Dominion", "Name":"Mission_Massacre_Skimmer_Refinery", "LocalisedName":"Зачистите цель. Это Оборонный беспилотник с автотурелью (Aritimi Exchange)", "TargetType":"$MissionUtil_FactionTag_Skimmer;", "TargetType_Localised":"Оборонный беспилотник с автотурелью", "TargetFaction":"Aritimi Exchange", "KillCount":3, "DestinationSystem":"Aritimi", "Expiry":"2018-02-06T19:07:57Z", "Influence":"Med", "Reputation":"High", "Reward":380627, "MissionID":308628413 }
+{ "timestamp":"2018-02-04T23:16:01Z", "event":"MissionAccepted", "Faction":"Amarak Dominion", "Name":"Mission_Massacre_Skimmer_Refinery", "LocalisedName":"Зачистите цель. Это Оборонный беспилотник с автотурелью (Aritimi Exchange)", "TargetType":"$MissionUtil_FactionTag_Skimmer;", "TargetType_Localised":"Оборонный беспилотник с автотурелью", "TargetFaction":"Aritimi Exchange", "KillCount":3, "DestinationSystem":"Aritimi", "Expiry":"2018-02-06T17:43:52Z", "Influence":"Med", "Reputation":"High", "Reward":353112, "MissionID":308628568 }
+{ "timestamp":"2018-02-04T23:16:11Z", "event":"MissionAccepted", "Faction":"Amarak Comms Partners", "Name":"Mission_Massacre_Skimmer_Corporation", "LocalisedName":"Корпоративный удар по цели. Это: Оборонный беспилотник с автотурелью (Aritimi Exchange)", "TargetType":"$MissionUtil_FactionTag_Skimmer;", "TargetType_Localised":"Оборонный беспилотник с автотурелью", "TargetFaction":"Aritimi Exchange", "KillCount":12, "DestinationSystem":"Aritimi", "Expiry":"2018-02-06T15:33:45Z", "Influence":"Med", "Reputation":"High", "Reward":7083840, "MissionID":308628709 }
+{ "timestamp":"2018-02-04T23:18:02Z", "event":"ModuleSell", "Slot":"Slot06_Size2", "SellItem":"$int_repairer_size2_class4_name;", "SellItem_Localised":"АПР-блок", "SellPrice":486000, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:18:17Z", "event":"ModuleStore", "Slot":"Slot07_Size2", "StoredItem":"$int_fsdinterdictor_size2_class5_name;", "StoredItem_Localised":"FSD-перехватчик", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:18:26Z", "event":"ModuleRetrieve", "Slot":"Slot06_Size2", "RetrievedItem":"$int_detailedsurfacescanner_tiny_name;", "RetrievedItem_Localised":"Сканер поверхностей", "Ship":"asp", "ShipID":8, "EngineerModifications":"Sensor_SurfaceScanner_LongRange" }
+{ "timestamp":"2018-02-04T23:18:34Z", "event":"ModuleBuy", "Slot":"Slot07_Size2", "BuyItem":"$int_cargorack_size2_class1_name;", "BuyItem_Localised":"Груз. стеллаж", "BuyPrice":3250, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:19:19Z", "event":"MissionAccepted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech", "LocalisedName":"Отключите электросеть цели. Это: Установка", "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Expiry":"2018-02-05T23:02:37Z", "Influence":"Med", "Reputation":"Med", "Reward":368370, "MissionID":308630910 }
+{ "timestamp":"2018-02-04T23:19:28Z", "event":"MissionAccepted", "Faction":"Ronin of Amarak", "Name":"Mission_Disable_HighTech", "LocalisedName":"Отключите электросеть цели. Это: Установка", "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Expiry":"2018-02-06T12:17:59Z", "Influence":"Med", "Reputation":"Med", "Reward":344272, "MissionID":308631013 }
+{ "timestamp":"2018-02-04T23:19:54Z", "event":"Undocked", "StationName":"Werner von Siemens Vision", "StationType":"Outpost" }
+{ "timestamp":"2018-02-04T23:20:25Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T23:20:27Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-04T23:20:31Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T23:20:32Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:20:38Z", "event":"ReceiveText", "From":"Werner von Siemens Vision", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:20:49Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-04T23:20:54Z", "event":"SupercruiseEntry", "StarSystem":"Amarak" }
+{ "timestamp":"2018-02-04T23:20:55Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-04T23:21:05Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Fernando Grassi;", "From_Localised":"Fernando Grassi", "Message":"$BountyHunter_HunterHostileSC_Relevant01;", "Message_Localised":"Слышите меня? Мне удалось захватить особо важную цель.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:22:26Z", "event":"SupercruiseExit", "StarSystem":"Amarak", "Body":"Vela Port", "BodyType":"Station" }
+{ "timestamp":"2018-02-04T23:22:26Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-04T23:22:31Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-04T23:22:32Z", "event":"ReceiveText", "From":"Vela Port", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:22:38Z", "event":"DockingRequested", "StationName":"Vela Port" }
+{ "timestamp":"2018-02-04T23:22:38Z", "event":"ReceiveText", "From":"Vela Port", "Message":"$DockingChatter_Allied;", "Message_Localised":"Такому союзнику, как вы, мы всегда рады.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:22:40Z", "event":"ReceiveText", "From":"Vela Port", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:22:40Z", "event":"DockingGranted", "LandingPad":37, "StationName":"Vela Port" }
+{ "timestamp":"2018-02-04T23:22:56Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Fernando Grassi;", "From_Localised":"Fernando Grassi", "Message":"$BountyHunter_Attack01;", "Message_Localised":"Убийства приносят кредиты – поэтому я и здесь!", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:23:08Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-04T23:23:28Z", "event":"Docked", "StationName":"Vela Port", "StationType":"Coriolis", "StarSystem":"Amarak", "StationFaction":"Amarak Comms Partners", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Корпоративная", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_HighTech;", "StationEconomy_Localised":"Высокие технологии", "DistFromStarLS":1178.841553 }
+{ "timestamp":"2018-02-04T23:23:36Z", "event":"RefuelAll", "Cost":10, "Amount":0.090689 }
+{ "timestamp":"2018-02-04T23:23:47Z", "event":"MissionCompleted", "Faction":"Amarak Silver Family", "Name":"Mission_Disable_BLOPS_War_name", "MissionID":308385397, "DestinationSystem":"Aritimi", "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":408204, "CommodityReward":[ { "Name":"CoolingHoses", "Count":4 } ] }
+{ "timestamp":"2018-02-04T23:24:25Z", "event":"ModuleStore", "Slot":"Slot01_Size6", "StoredItem":"$int_buggybay_size6_class1_name;", "StoredItem_Localised":"Гараж планет. трансп.", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:24:38Z", "event":"ModuleRetrieve", "Slot":"Slot01_Size6", "RetrievedItem":"$int_buggybay_size6_class1_name;", "RetrievedItem_Localised":"Гараж планет. трансп.", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:24:43Z", "event":"ModuleStore", "Slot":"Slot01_Size6", "StoredItem":"$int_buggybay_size6_class1_name;", "StoredItem_Localised":"Гараж планет. трансп.", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:24:54Z", "event":"FetchRemoteModule", "StorageSlot":60, "StoredItem":"$int_cargorack_size6_class1_name;", "StoredItem_Localised":"Груз. стеллаж", "ServerId":128064343, "TransferCost":100, "TransferTime":300, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:24:57Z", "event":"FetchRemoteModule", "StorageSlot":57, "StoredItem":"$int_fsdinterdictor_size2_class5_name;", "StoredItem_Localised":"FSD-перехватчик", "ServerId":128666721, "TransferCost":100, "TransferTime":300, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:25:07Z", "event":"FetchRemoteModule", "StorageSlot":59, "StoredItem":"$hpt_xenoscanner_basic_tiny_name;", "StoredItem_Localised":"Сканер «инопланетянин»", "ServerId":128793115, "TransferCost":9102, "TransferTime":4369, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:25:33Z", "event":"ModuleBuy", "Slot":"Slot01_Size6", "BuyItem":"$int_cargorack_size4_class1_name;", "BuyItem_Localised":"Груз. стеллаж", "BuyPrice":34328, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:25:41Z", "event":"MissionCompleted", "Faction":"Amarak Silver Family", "Name":"Mission_Disable_War_name", "MissionID":308385438, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":593484 }
+{ "timestamp":"2018-02-04T23:25:41Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"hybridcapacitors", "Count":1 }
+{ "timestamp":"2018-02-04T23:25:44Z", "event":"MissionCompleted", "Faction":"Amarak Silver Family", "Name":"Mission_Disable_War_name", "MissionID":308385468, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":956685 }
+{ "timestamp":"2018-02-04T23:25:47Z", "event":"MissionCompleted", "Faction":"Amarak Silver Family", "Name":"Mission_Disable_War_name", "MissionID":308385499, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":592491 }
+{ "timestamp":"2018-02-04T23:25:57Z", "event":"MissionAccepted", "Faction":"Amarak Silver Family", "Name":"Mission_Disable_War", "LocalisedName":"Отключите электросеть цели. Это: Установка", "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Expiry":"2018-02-09T16:59:23Z", "Influence":"Med", "Reputation":"Med", "Reward":959055, "MissionID":308635555 }
+{ "timestamp":"2018-02-04T23:26:08Z", "event":"MissionCompleted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech_name", "MissionID":308385713, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":589365 }
+{ "timestamp":"2018-02-04T23:26:10Z", "event":"MissionCompleted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech_name", "MissionID":308385753, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":959665 }
+{ "timestamp":"2018-02-04T23:26:11Z", "event":"MissionCompleted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech_name", "MissionID":308385787, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":955200 }
+{ "timestamp":"2018-02-04T23:26:13Z", "event":"MissionCompleted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech_name", "MissionID":308385818, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":1367079 }
+{ "timestamp":"2018-02-04T23:26:18Z", "event":"MissionCompleted", "Faction":"Syndicate of LHS 3385", "Name":"Mission_Disable_HighTech_name", "MissionID":308386811, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":730784, "CommodityReward":[ { "Name":"NeofabricInsulation", "Count":4 } ] }
+{ "timestamp":"2018-02-04T23:26:39Z", "event":"MissionCompleted", "Faction":"Ronin of Amarak", "Name":"Mission_Disable_HighTech_name", "MissionID":308385936, "Target":"$MissionUtil_Settlement_Target_Building;", "Target_Localised":"Поселение", "Reward":732672, "CommodityReward":[ { "Name":"NeofabricInsulation", "Count":4 } ] }
+{ "timestamp":"2018-02-04T23:26:45Z", "event":"MissionCompleted", "Faction":"Ronin of Amarak", "Name":"Mission_Disable_HighTech_name", "MissionID":308385986, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":593895 }
+{ "timestamp":"2018-02-04T23:27:38Z", "event":"MarketSell", "Type":"neofabricinsulation", "Count":8, "SellPrice":5871, "TotalSale":46968, "AvgPricePaid":0 }
+{ "timestamp":"2018-02-04T23:27:43Z", "event":"MarketSell", "Type":"coolinghoses", "Count":4, "SellPrice":667, "TotalSale":2668, "AvgPricePaid":0 }
+{ "timestamp":"2018-02-04T23:27:54Z", "event":"ModuleSell", "Slot":"Slot01_Size6", "SellItem":"$int_cargorack_size4_class1_name;", "SellItem_Localised":"Груз. стеллаж", "SellPrice":34328, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:28:04Z", "event":"ModuleRetrieve", "Slot":"Slot01_Size6", "RetrievedItem":"$int_buggybay_size6_class1_name;", "RetrievedItem_Localised":"Гараж планет. трансп.", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-04T23:29:01Z", "event":"Repair", "Item":"Wear", "Cost":1186 }
+{ "timestamp":"2018-02-04T23:29:04Z", "event":"Repair", "Item":"Paint", "Cost":2 }
+{ "timestamp":"2018-02-04T23:29:29Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Nils Bronstert;", "From_Localised":"Nils Bronstert", "Message":"$Commuter_HostileScan02;", "Message_Localised":"Никто, кроме сотрудников системной безопасности, не имеет права сканировать наш корабль.", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:29:33Z", "event":"Undocked", "StationName":"Vela Port", "StationType":"Coriolis" }
+{ "timestamp":"2018-02-04T23:29:41Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-04T23:29:49Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-04T23:30:03Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-04T23:30:21Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-04T23:30:50Z", "event":"ReceiveText", "From":"Vela Port", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:31:13Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Aritimi", "StarClass":"G" }
+{ "timestamp":"2018-02-04T23:31:32Z", "event":"FSDJump", "StarSystem":"Aritimi", "StarPos":[-64.656,31.063,19.875], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":680115139, "JumpDist":9.133, "FuelUsed":0.554785, "FuelLevel":31.445215, "Factions":[ { "Name":"Aritimi Free", "FactionState":"None", "Government":"Democracy", "Influence":0.147000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Nootkenk People's Co-operative", "FactionState":"None", "Government":"Cooperative", "Influence":0.055000, "Allegiance":"Independent" }, { "Name":"Future of Bhumatz", "FactionState":"Boom", "Government":"Democracy", "Influence":0.105000, "Allegiance":"Federation", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Aritimi Exchange", "FactionState":"Boom", "Government":"Corporate", "Influence":0.470000, "Allegiance":"Federation" }, { "Name":"Natural Aritimi League", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.075000, "Allegiance":"Independent" }, { "Name":"Aritimi Services", "FactionState":"Boom", "Government":"Corporate", "Influence":0.105000, "Allegiance":"Independent", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Partnership of Aritimi", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.043000, "Allegiance":"Independent" } ], "SystemFaction":"Aritimi Exchange", "FactionState":"Boom" }
+{ "timestamp":"2018-02-04T23:31:32Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-04T23:31:37Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-04T23:31:39Z", "event":"FuelScoop", "Scooped":0.005719, "Total":31.450935 }
+{ "timestamp":"2018-02-04T23:34:23Z", "event":"ApproachSettlement", "Name":"Bartoe Installation +" }
+{ "timestamp":"2018-02-04T23:34:23Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-04T23:34:23Z", "event":"ApproachSettlement", "Name":"Bernoulli Oasis" }
+{ "timestamp":"2018-02-04T23:34:39Z", "event":"ApproachSettlement", "Name":"Bernoulli Oasis" }
+{ "timestamp":"2018-02-04T23:34:41Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-04T23:34:41Z", "event":"ApproachSettlement", "Name":"Bartoe Installation +" }
+{ "timestamp":"2018-02-04T23:35:23Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-04T23:35:26Z", "event":"SupercruiseExit", "StarSystem":"Aritimi", "Body":"Aritimi 9 b", "BodyType":"Planet" }
+{ "timestamp":"2018-02-04T23:35:27Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:37:15Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"Melissa Banks", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:37:15Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-04T23:37:46Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-04T23:38:07Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Aritimi Exchange", "Fine":400 }
+{ "timestamp":"2018-02-04T23:38:14Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-04T23:38:16Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-04T23:38:17Z", "event":"HullDamage", "Health":0.797155, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-04T23:38:36Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-04T23:38:43Z", "event":"HullDamage", "Health":0.570823, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-04T23:39:11Z", "event":"HullDamage", "Health":0.396692, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-04T23:39:12Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-04T23:39:19Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-04T23:39:23Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-04T23:39:57Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"Mar.Meow", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:40:48Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-04T23:41:00Z", "event":"Bounty", "Target":"federation_gunship", "TotalReward":0, "VictimFaction":"Aritimi Exchange" }
+{ "timestamp":"2018-02-04T23:41:01Z", "event":"CommitCrime", "CrimeType":"murder", "Faction":"Aritimi Exchange", "Victim":"Melissa Banks", "Bounty":5000 }
+{ "timestamp":"2018-02-04T23:41:28Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$ShipName_Military_Federation;", "Victim_Localised":"Федеральный флотский корабль", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:41:30Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire10;", "Message_Localised":"Меня атакуют!", "Channel":"npc" }
+{ "timestamp":"2018-02-04T23:43:42Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-77.103004, "Longitude":-157.633392 }
+{ "timestamp":"2018-02-04T23:43:46Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2018-02-04T23:43:51Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:43:51Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T23:44:19Z", "event":"Liftoff", "PlayerControlled":false }
+{ "timestamp":"2018-02-04T23:44:19Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:44:22Z", "event":"WingJoin", "Others":[] }
+{ "timestamp":"2018-02-04T23:44:22Z", "event":"WingAdd", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-04T23:45:48Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T23:45:48Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$skimmerdrone_name;", "Victim_Localised":"Оборонный беспилотник с автотурелью", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:46:28Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$skimmerdrone_name;", "Victim_Localised":"Оборонный беспилотник с автотурелью", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:47:08Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:47:23Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T23:48:18Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:48:38Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$skimmerdrone_name;", "Victim_Localised":"Оборонный беспилотник с автотурелью", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:48:50Z", "event":"MissionRedirected", "MissionID":308628413, "Name":"Mission_Massacre_Skimmer_Refinery_name", "NewDestinationStation":"Werner von Siemens Vision", "NewDestinationSystem":"Amarak", "OldDestinationStation":"Leestma Stop +++", "OldDestinationSystem":"Aritimi" }
+{ "timestamp":"2018-02-04T23:50:03Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:50:20Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Aritimi Exchange", "Fine":400 }
+{ "timestamp":"2018-02-04T23:50:30Z", "event":"CommitCrime", "CrimeType":"dockingMajorTresspass", "Faction":"Aritimi Exchange", "Bounty":500 }
+{ "timestamp":"2018-02-04T23:50:51Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:51:03Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_turretbasec_name;", "Victim_Localised":"Оборонительная турель", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:51:23Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:51:34Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T23:52:46Z", "event":"HullDamage", "Health":0.784074, "PlayerPilot":true }
+{ "timestamp":"2018-02-04T23:53:19Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:53:24Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_generator_name;", "Victim_Localised":"Генератор", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:53:40Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T23:54:20Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:54:45Z", "event":"DatalinkScan", "Message":"$DataLink_ScannedInfo_Postbox;", "Message_Localised":"Есть доступ к терминалу" }
+{ "timestamp":"2018-02-04T23:55:22Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T23:56:26Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:56:53Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-04T23:57:02Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:57:12Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-04T23:57:57Z", "event":"DatalinkScan", "Message":"$DataLink_ScannedInfo_Turret;", "Message_Localised":"Есть доступ к переназначению турелей" }
+{ "timestamp":"2018-02-04T23:57:57Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-04T23:58:53Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_generator_name;", "Victim_Localised":"Генератор", "Bounty":400 }
+{ "timestamp":"2018-02-04T23:59:36Z", "event":"DatalinkScan", "Message":"$HVT_DATAPOINT_GAMEPLAY_complete;", "Message_Localised":"Доступ к базе данных получен; создан пакет с основными данными." }
+{ "timestamp":"2018-02-04T23:59:36Z", "event":"DataScanned", "Type":"DataPointHVT" }
+{ "timestamp":"2018-02-05T00:00:07Z", "event":"HullDamage", "Health":0.594287, "PlayerPilot":true }
+{ "timestamp":"2018-02-05T00:00:19Z", "event":"HullDamage", "Health":0.352329, "PlayerPilot":true }
+{ "timestamp":"2018-02-05T00:02:49Z", "event":"Touchdown", "PlayerControlled":false }
+{ "timestamp":"2018-02-05T00:03:24Z", "event":"DockSRV" }
+{ "timestamp":"2018-02-05T00:03:34Z", "event":"Liftoff", "PlayerControlled":true, "Latitude":-77.117714, "Longitude":-157.266663 }
+{ "timestamp":"2018-02-05T00:04:03Z", "event":"SelfDestruct" }
+{ "timestamp":"2018-02-05T00:04:06Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-05T00:04:36Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:04:44Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-05T00:04:44Z", "event":"ApproachSettlement", "Name":"Bartoe Installation +" }
+{ "timestamp":"2018-02-05T00:04:44Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-05T00:04:44Z", "event":"ApproachSettlement", "Name":"Bernoulli Oasis" }
+{ "timestamp":"2018-02-05T00:04:49Z", "event":"SupercruiseEntry", "StarSystem":"Aritimi" }
+{ "timestamp":"2018-02-05T00:04:49Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T00:10:35Z", "event":"SupercruiseExit", "StarSystem":"Aritimi", "Body":"Armstrong Dock", "BodyType":"Station" }
+{ "timestamp":"2018-02-05T00:10:36Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-05T00:10:41Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-05T00:10:43Z", "event":"ReceiveText", "From":"Armstrong Dock", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:10:50Z", "event":"DockingRequested", "StationName":"Armstrong Dock" }
+{ "timestamp":"2018-02-05T00:10:50Z", "event":"ReceiveText", "From":"Armstrong Dock", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:10:52Z", "event":"ReceiveText", "From":"Armstrong Dock", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:10:52Z", "event":"DockingGranted", "LandingPad":35, "StationName":"Armstrong Dock" }
+{ "timestamp":"2018-02-05T00:11:25Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2018-02-05T00:11:25Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ThankYouPassedStopAndSearch07;", "Message_Localised":"Сканирование ничего не выявило. Продолжайте путь, командир.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:11:27Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-05T00:11:43Z", "event":"Docked", "StationName":"Armstrong Dock", "StationType":"Coriolis", "StarSystem":"Aritimi", "StationFaction":"Aritimi Free", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Extraction;", "StationEconomy_Localised":"Добыча ископаемых", "DistFromStarLS":2263.617188 }
+{ "timestamp":"2018-02-05T00:11:51Z", "event":"RefuelAll", "Cost":60, "Amount":1.192261 }
+{ "timestamp":"2018-02-05T00:11:52Z", "event":"RepairAll", "Cost":30155 }
+{ "timestamp":"2018-02-05T00:11:53Z", "event":"BuyAmmo", "Cost":1404 }
+{ "timestamp":"2018-02-05T00:13:12Z", "event":"RedeemVoucher", "Type":"bounty", "Amount":26770, "Factions":[ { "Faction":"Federation", "Amount":15960 }, { "Faction":"Aritimi Exchange", "Amount":10810 } ] }
+{ "timestamp":"2018-02-05T00:13:16Z", "event":"RedeemVoucher", "Type":"scannable", "Amount":3573, "Faction":"" }
+{ "timestamp":"2018-02-05T00:13:30Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=David Henderson;", "From_Localised":"David Henderson", "Message":"$Commuter_AuthorityScan03;", "Message_Localised":"Сколько времени это займет? У меня плотный график. ", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:13:44Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-05T00:13:53Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-05T00:13:57Z", "event":"Undocked", "StationName":"Armstrong Dock", "StationType":"Coriolis" }
+{ "timestamp":"2018-02-05T00:14:28Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-05T00:14:57Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-05T00:14:58Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:14:58Z", "event":"ReceiveText", "From":"", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:15:03Z", "event":"SupercruiseEntry", "StarSystem":"Aritimi" }
+{ "timestamp":"2018-02-05T00:15:03Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T00:15:14Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Amstar;", "From_Localised":"Amstar", "Message":"$BountyHunter_HunterHostileSC_Relevant03;", "Message_Localised":"А вот и ты! Сегодня я без обеда не останусь.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:17:22Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Amstar;", "From_Localised":"Amstar", "Message":"$BountyHunter_StartInterdiction05;", "Message_Localised":"Я собираюсь получить награду за твою голову.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:17:27Z", "event":"Interdicted", "Submitted":true, "Interdictor":"Amstar", "IsPlayer":false, "Faction":"Aritimi Services" }
+{ "timestamp":"2018-02-05T00:17:28Z", "event":"SupercruiseExit", "StarSystem":"Aritimi", "Body":"Aritimi", "BodyType":"Star" }
+{ "timestamp":"2018-02-05T00:17:29Z", "event":"Music", "MusicTrack":"Interdiction" }
+{ "timestamp":"2018-02-05T00:17:35Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-05T00:17:42Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"Amstar", "Bounty":400 }
+{ "timestamp":"2018-02-05T00:18:06Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Amstar;", "From_Localised":"Amstar", "Message":"$MisfortuneCriticalDamage03;", "Message_Localised":"Мой корабль!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:18:28Z", "event":"Bounty", "Target":"vulture", "TotalReward":0, "VictimFaction":"Aritimi Services" }
+{ "timestamp":"2018-02-05T00:18:28Z", "event":"CommitCrime", "CrimeType":"murder", "Faction":"Aritimi Exchange", "Victim":"Amstar", "Bounty":5000 }
+{ "timestamp":"2018-02-05T00:18:43Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:18:44Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ArriveInvestigate01;", "Message_Localised":"Изучение криминальных отчетов", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:18:45Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ArrivedAtInvestigationLocation01;", "Message_Localised":"Законное сканирование обязаны проходить все. Не пытайтесь сбежать!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:19:18Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2018-02-05T00:19:18Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-05T00:19:19Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_Attack15;", "Message_Localised":"Вы в розыске, командир. Сдавайтесь немедленно.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:19:24Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_Attack01;", "Message_Localised":"Преступник!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:19:24Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-05T00:19:29Z", "event":"SupercruiseEntry", "StarSystem":"Aritimi" }
+{ "timestamp":"2018-02-05T00:19:30Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T00:20:59Z", "event":"ApproachSettlement", "Name":"Bartoe Installation +" }
+{ "timestamp":"2018-02-05T00:21:00Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-05T00:21:00Z", "event":"ApproachSettlement", "Name":"Bernoulli Oasis" }
+{ "timestamp":"2018-02-05T00:21:40Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-05T00:21:42Z", "event":"SupercruiseExit", "StarSystem":"Aritimi", "Body":"Aritimi 9 b", "BodyType":"Planet" }
+{ "timestamp":"2018-02-05T00:21:43Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:22:55Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-77.109932, "Longitude":-157.661713 }
+{ "timestamp":"2018-02-05T00:23:53Z", "event":"Liftoff", "PlayerControlled":true, "Latitude":-77.109917, "Longitude":-157.661713 }
+{ "timestamp":"2018-02-05T00:24:50Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"shieldsoakanalysis", "Count":3 }
+{ "timestamp":"2018-02-05T00:26:23Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Aritimi Exchange", "Fine":400 }
+{ "timestamp":"2018-02-05T00:26:24Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Bowker;", "From_Localised":"Bowker", "Message":"$Trader_AttackRun03;", "Message_Localised":"Я тебя не боюсь!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:26:24Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-05T00:26:24Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"Bowker", "Bounty":400 }
+{ "timestamp":"2018-02-05T00:26:33Z", "event":"CommitCrime", "CrimeType":"dockingMajorTresspass", "Faction":"Aritimi Exchange", "Bounty":500 }
+{ "timestamp":"2018-02-05T00:26:45Z", "event":"Bounty", "Target":"asp_scout", "TotalReward":0, "VictimFaction":"Aritimi Exchange", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-05T00:26:45Z", "event":"CommitCrime", "CrimeType":"murder", "Faction":"Aritimi Exchange", "Victim":"Bowker", "Bounty":5000 }
+{ "timestamp":"2018-02-05T00:27:06Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire10;", "Message_Localised":"Меня атакуют!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:27:06Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$ShipName_Military_Federation;", "Victim_Localised":"Федеральный флотский корабль", "Bounty":400 }
+{ "timestamp":"2018-02-05T00:27:14Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-05T00:27:26Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-05T00:27:39Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire06;", "Message_Localised":"Мой корабль получает прямые попадания!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:27:46Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-05T00:28:13Z", "event":"Bounty", "Target":"federation_dropship_mkii", "TotalReward":0, "VictimFaction":"Aritimi Exchange", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-05T00:28:28Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:29:04Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-05T00:29:54Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-77.189140, "Longitude":-157.418594 }
+{ "timestamp":"2018-02-05T00:30:02Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2018-02-05T00:31:11Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-05T00:32:29Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-05T00:33:00Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":400 }
+{ "timestamp":"2018-02-05T00:33:16Z", "event":"Liftoff", "PlayerControlled":false }
+{ "timestamp":"2018-02-05T00:33:29Z", "event":"SelfDestruct" }
+{ "timestamp":"2018-02-05T00:33:31Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-05T00:33:33Z", "event":"HeatDamage" }
+{ "timestamp":"2018-02-05T00:33:33Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:33:36Z", "event":"HullDamage", "Health":0.783905, "PlayerPilot":true }
+{ "timestamp":"2018-02-05T00:33:50Z", "event":"HullDamage", "Health":0.589534, "PlayerPilot":true }
+{ "timestamp":"2018-02-05T00:34:02Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-05T00:34:05Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-05T00:34:11Z", "event":"Location", "Docked":false, "StarSystem":"Aritimi", "StarPos":[-64.656,31.063,19.875], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":680115139, "Body":"Aritimi 9 b", "BodyType":"Planet", "Factions":[ { "Name":"Aritimi Free", "FactionState":"None", "Government":"Democracy", "Influence":0.147000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Nootkenk People's Co-operative", "FactionState":"None", "Government":"Cooperative", "Influence":0.055000, "Allegiance":"Independent" }, { "Name":"Future of Bhumatz", "FactionState":"Boom", "Government":"Democracy", "Influence":0.105000, "Allegiance":"Federation", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Aritimi Exchange", "FactionState":"Boom", "Government":"Corporate", "Influence":0.470000, "Allegiance":"Federation" }, { "Name":"Natural Aritimi League", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.075000, "Allegiance":"Independent" }, { "Name":"Aritimi Services", "FactionState":"Boom", "Government":"Corporate", "Influence":0.105000, "Allegiance":"Independent", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Partnership of Aritimi", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.043000, "Allegiance":"Independent" } ], "SystemFaction":"Aritimi Exchange", "FactionState":"Boom" }
+{ "timestamp":"2018-02-05T00:34:11Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:34:49Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-05T00:35:06Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$ShipName_Military_Federation;", "Victim_Localised":"Федеральный флотский корабль", "Bounty":400 }
+{ "timestamp":"2018-02-05T00:35:08Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire04;", "Message_Localised":"Сейчас я тебя прокомпостирую по полной программе.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:35:14Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-05T00:35:14Z", "event":"HullDamage", "Health":0.788024, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-05T00:35:16Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire07;", "Message_Localised":"Это была большая ошибка с твоей стороны.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:35:27Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire05;", "Message_Localised":"Встречайте...", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:35:44Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire06;", "Message_Localised":"Мой корабль получает прямые попадания!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:35:50Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire06;", "Message_Localised":"Мой корабль получает прямые попадания!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:36:00Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire01;", "Message_Localised":"На меня сел бандит.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:36:07Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire08;", "Message_Localised":"Враг ведет по мне огонь!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:36:18Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire05;", "Message_Localised":"Встречайте...", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:36:39Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire08;", "Message_Localised":"Враг ведет по мне огонь!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:36:42Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-05T00:36:50Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire10;", "Message_Localised":"Меня атакуют!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:36:57Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire06;", "Message_Localised":"Мой корабль получает прямые попадания!", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:37:01Z", "event":"ReceiveText", "From":"$ShipName_Military_Federation;", "From_Localised":"Федеральный флотский корабль", "Message":"$Military_UnderFire01;", "Message_Localised":"На меня сел бандит.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:37:10Z", "event":"Bounty", "Target":"viper", "TotalReward":0, "VictimFaction":"Aritimi Exchange" }
+{ "timestamp":"2018-02-05T00:37:11Z", "event":"CommitCrime", "CrimeType":"murder", "Faction":"Aritimi Exchange", "Victim":"$ShipName_Military_Federation;", "Victim_Localised":"Федеральный флотский корабль", "Bounty":5000 }
+{ "timestamp":"2018-02-05T00:37:25Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:37:39Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-05T00:38:00Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-77.112907, "Longitude":-157.830185 }
+{ "timestamp":"2018-02-05T00:38:03Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2018-02-05T00:39:37Z", "event":"Liftoff", "PlayerControlled":false }
+{ "timestamp":"2018-02-05T00:40:28Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2018-02-05T00:41:11Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$skimmerdrone_name;", "Victim_Localised":"Оборонный беспилотник с автотурелью", "Bounty":400 }
+{ "timestamp":"2018-02-05T00:42:04Z", "event":"HullDamage", "Health":0.768215, "PlayerPilot":true }
+{ "timestamp":"2018-02-05T00:43:18Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Aritimi Exchange", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":400 }
+{ "timestamp":"2018-02-05T00:44:10Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Aritimi Exchange", "Fine":400 }
+{ "timestamp":"2018-02-05T00:44:20Z", "event":"CommitCrime", "CrimeType":"dockingMajorTresspass", "Faction":"Aritimi Exchange", "Bounty":500 }
+{ "timestamp":"2018-02-05T00:44:32Z", "event":"HullDamage", "Health":0.595521, "PlayerPilot":true }
+{ "timestamp":"2018-02-05T00:48:24Z", "event":"SelfDestruct" }
+{ "timestamp":"2018-02-05T00:48:24Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:48:26Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-05T00:48:28Z", "event":"HeatDamage" }
+{ "timestamp":"2018-02-05T00:48:43Z", "event":"HullDamage", "Health":0.384389, "PlayerPilot":true }
+{ "timestamp":"2018-02-05T00:48:57Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-05T00:48:57Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-05T00:49:04Z", "event":"Location", "Docked":false, "StarSystem":"Aritimi", "StarPos":[-64.656,31.063,19.875], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":680115139, "Body":"Aritimi 9 b", "BodyType":"Planet", "Factions":[ { "Name":"Aritimi Free", "FactionState":"None", "Government":"Democracy", "Influence":0.147000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Nootkenk People's Co-operative", "FactionState":"None", "Government":"Cooperative", "Influence":0.055000, "Allegiance":"Independent" }, { "Name":"Future of Bhumatz", "FactionState":"Boom", "Government":"Democracy", "Influence":0.105000, "Allegiance":"Federation", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Aritimi Exchange", "FactionState":"Boom", "Government":"Corporate", "Influence":0.470000, "Allegiance":"Federation" }, { "Name":"Natural Aritimi League", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.075000, "Allegiance":"Independent" }, { "Name":"Aritimi Services", "FactionState":"Boom", "Government":"Corporate", "Influence":0.105000, "Allegiance":"Independent", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Partnership of Aritimi", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.043000, "Allegiance":"Independent" } ], "SystemFaction":"Aritimi Exchange", "FactionState":"Boom" }
+{ "timestamp":"2018-02-05T00:49:05Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:49:15Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-05T00:49:16Z", "event":"ApproachSettlement", "Name":"Bartoe Installation +" }
+{ "timestamp":"2018-02-05T00:49:16Z", "event":"ApproachSettlement", "Name":"Leestma Stop +++" }
+{ "timestamp":"2018-02-05T00:49:16Z", "event":"ApproachSettlement", "Name":"Bernoulli Oasis" }
+{ "timestamp":"2018-02-05T00:49:20Z", "event":"SupercruiseEntry", "StarSystem":"Aritimi" }
+{ "timestamp":"2018-02-05T00:49:21Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T00:49:39Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-05T00:49:47Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-05T00:49:57Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-05T00:49:58Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T00:50:16Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LHS 3385", "StarClass":"K" }
+{ "timestamp":"2018-02-05T00:50:22Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-05T00:50:35Z", "event":"FSDJump", "StarSystem":"LHS 3385", "StarPos":[-69.219,28.813,30.250], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Military;", "SystemEconomy_Localised":"Военная", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":129822, "JumpDist":11.555, "FuelUsed":0.987328, "FuelLevel":30.382673, "Factions":[ { "Name":"LHS 3385 People's Party", "FactionState":"CivilWar", "Government":"Communism", "Influence":0.009980, "Allegiance":"Independent" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Amarak Comms Partners", "FactionState":"None", "Government":"Corporate", "Influence":0.736527, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"LHS 3385 Dynamic Industries", "FactionState":"Boom", "Government":"Corporate", "Influence":0.059880, "Allegiance":"Federation", "PendingStates":[ { "State":"Retreat", "Trend":0 } ] }, { "Name":"LHS 3385 Regulatory State", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.009980, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":0 } ] }, { "Name":"Syndicate of LHS 3385", "FactionState":"None", "Government":"Anarchy", "Influence":0.046906, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Amarak Republic Party", "FactionState":"None", "Government":"Democracy", "Influence":0.136727, "Allegiance":"Federation", "PendingStates":[ { "State":"CivilUnrest", "Trend":-1 } ] } ], "SystemFaction":"Amarak Comms Partners" }
+{ "timestamp":"2018-02-05T00:50:35Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T00:50:46Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=El Pelipot;", "From_Localised":"El Pelipot", "Message":"$BountyHunter_HunterHostileSC_Relevant03;", "Message_Localised":"А вот и ты! Сегодня я без обеда не останусь.", "Channel":"npc" }
+{ "timestamp":"2018-02-05T00:50:53Z", "event":"FuelScoop", "Scooped":1.617298, "Total":32.000000 }
+{ "timestamp":"2018-02-05T00:51:45Z", "event":"MissionAbandoned", "Name":"Mission_Massacre_Skimmer_Corporation_name", "MissionID":308628709 }
+{ "timestamp":"2018-02-05T00:51:47Z", "event":"MissionAbandoned", "Name":"Mission_Massacre_Skimmer_Refinery_name", "MissionID":308628568 }
+{ "timestamp":"2018-02-05T00:54:10Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Ho Hsien", "StarClass":"K" }
+{ "timestamp":"2018-02-05T00:54:15Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-05T00:54:29Z", "event":"FSDJump", "StarSystem":"Ho Hsien", "StarPos":[-76.031,21.906,38.094], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_HighTech;", "SystemEconomy_Localised":"Высокие технологии", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":7437159, "JumpDist":12.475, "FuelUsed":1.191130, "FuelLevel":30.808870, "Factions":[ { "Name":"HR 7079 Exchange", "FactionState":"None", "Government":"Corporate", "Influence":0.105000, "Allegiance":"Federation", "PendingStates":[ { "State":"Outbreak", "Trend":0 } ], "RecoveringStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Tarutaalli Group", "FactionState":"Boom", "Government":"Corporate", "Influence":0.065000, "Allegiance":"Federation" }, { "Name":"Ho Hsien Corporation", "FactionState":"Boom", "Government":"Corporate", "Influence":0.397000, "Allegiance":"Federation", "PendingStates":[ { "State":"Lockdown", "Trend":1 } ] }, { "Name":"Official Ho Hsien Liberty Party", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.123000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Outbreak", "Trend":0 } ] }, { "Name":"Ho Hsien Values Party", "FactionState":"CivilWar", "Government":"Democracy", "Influence":0.170000, "Allegiance":"Independent" }, { "Name":"Ho Hsien Purple Clan", "FactionState":"None", "Government":"Anarchy", "Influence":0.066000, "Allegiance":"Independent" }, { "Name":"Ho Hsien Legal Group", "FactionState":"None", "Government":"Corporate", "Influence":0.074000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] } ], "SystemFaction":"Ho Hsien Corporation", "FactionState":"Boom" }
+{ "timestamp":"2018-02-05T00:54:29Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-05T00:54:34Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T00:54:40Z", "event":"FuelScoop", "Scooped":0.120993, "Total":30.929852 }
+{ "timestamp":"2018-02-05T00:57:31Z", "event":"ApproachSettlement", "Name":"Moseley Base +" }
+{ "timestamp":"2018-02-05T00:57:31Z", "event":"ApproachSettlement", "Name":"Onufriyenko Hub" }
+{ "timestamp":"2018-02-05T00:57:47Z", "event":"ApproachSettlement", "Name":"Onufriyenko Hub" }
+{ "timestamp":"2018-02-05T00:57:49Z", "event":"ApproachSettlement", "Name":"Moseley Base +" }
+{ "timestamp":"2018-02-05T00:57:55Z", "event":"SupercruiseExit", "StarSystem":"Ho Hsien", "Body":"Ho Hsien 7", "BodyType":"Planet" }
+{ "timestamp":"2018-02-05T00:57:55Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-05T00:58:47Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-05T00:58:48Z", "event":"ApproachSettlement", "Name":"Onufriyenko Hub" }
+{ "timestamp":"2018-02-05T00:58:48Z", "event":"ApproachSettlement", "Name":"Moseley Base +" }
+{ "timestamp":"2018-02-05T00:58:52Z", "event":"SupercruiseEntry", "StarSystem":"Ho Hsien" }
+{ "timestamp":"2018-02-05T00:58:53Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-05T01:00:05Z", "event":"ApproachSettlement", "Name":"Moseley Base +" }

@@ -29,7 +29,7 @@ input, textarea, select {
 *:focus, *:active { outline: none !important; }
 pre { margin: 0; padding: 0; overflow: visible; font-size: 0.7em}
 html, body { height: 100%; background: $dark-deep; color: $ui-text; overflow-x: hidden }
-body { padding-top: 1px; font-size: 16px; line-height: 1.1em }
+body { padding: 0.5em; font-size: 16px; line-height: 1.1em; margin: 0;}
 //
 h1 { @include hcaps(); font-size: 1.5em; padding: 1em 0 0.5em 0; margin: 0;}
 h2 { @include hcaps(); font-size: 1.4em; padding: 0.8em 0 0.4em 0; margin: 0;}
@@ -147,15 +147,13 @@ hr {
 //
 .alert {
     color: $ui-text; text-align: center; margin: 1em;
-    & i { font-size: 2em; display: block; margin-bottom: 1em; }
-    & h4 { @include hcaps(); }
-    & p { color: darken($ui-text, 10%); font-size: 0.8em; margin-top: 0.3em; display: block; text-transform: lowercase; }
-    & .actions { padding: 0.5em 0;
-        button { font-size: 0.9em; padding: 0 1em }
-    }
+    i { font-size: 2em; display: block; margin-bottom: 1em; }
+    h4 { @include hcaps(); }
+    p { color: darken($ui-text, 10%); font-size: 0.9em; margin-top: 0.3em; display: block; text-transform: lowercase; }
+
     &.info { color: $info;
         & p { color: darken($info, 10%) }
-        & .actions button { border-color: $info !important; color: $info}
+        & button { border-color: $info !important; color: $info}
     }
     &.warn { color: $orange;
         & p {color: darken($orange, 10%)}
@@ -163,20 +161,9 @@ hr {
     }
     &.error { color: $red;
         & p {color: darken($red, 10%)}
-        & .actions button { border-color: $red !important; color: $red}
-    }
-    &.modal {
-        position: fixed;
-        left: 0; top: 0; right: 0; bottom: 0;
-        z-index: 9999;
-        background: rgba(0, 0, 0, .7);
-        margin: 0; padding: 20vh 0;
-        font-size: 1.2em;
+        & button { border-color: $red !important; color: $red}
     }
     &.progress { animation: glitched_text 2s infinite;}
-    .ui { margin-top: 1em; text-align: center;
-        button { margin: 1em auto; padding: 0em 2em; width: auto; line-height: 2.0em; font-size: 1.1em; display: block }
-    }
 }
 .ui { padding-bottom: 1em; position: relative; padding-top: 1em;
     label { position: absolute; top: 0; left: 0; right: 0; line-height: 1em;

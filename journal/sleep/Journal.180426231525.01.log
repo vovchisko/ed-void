@@ -1,0 +1,5 @@
+{ "timestamp":"2018-04-26T20:15:25Z", "event":"Fileheader", "part":1, "language":"English\\UK", "gameversion":"3.0.5.402 EDH", "build":"r168330/r0 " }
+{ "timestamp":"2018-04-26T20:15:25Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-04-26T20:15:25Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2018-04-26T20:15:57Z", "event":"Friends", "Status":"Online", "Name":"Mar.Meow" }
+{ "timestamp":"2018-04-26T20:16:03Z", "event":"Shutdown" }

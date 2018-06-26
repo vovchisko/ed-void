@@ -1,0 +1,21 @@
+{ "timestamp":"2018-05-07T00:08:19Z", "event":"ModuleInfo", "Modules":[ 
+{ "Slot":"MainEngines", "Item":"int_engine_size4_class5", "Power":4.920000, "Priority":0 }, 
+{ "Slot":"TinyHardpoint1", "Item":"hpt_cloudscanner_size0_class5", "Power":4.160000, "Priority":0 }, 
+{ "Slot":"Slot03_Size3", "Item":"int_shieldgenerator_size3_class5", "Power":1.764000, "Priority":0 }, 
+{ "Slot":"Radar", "Item":"int_sensors_size3_class5", "Power":0.840000, "Priority":0 }, 
+{ "Slot":"Slot04_Size3", "Item":"int_buggybay_size2_class2", "Power":0.750000, "Priority":2 }, 
+{ "Slot":"FrameShiftDrive", "Item":"int_hyperdrive_size5_class5", "Power":0.724500, "Priority":0 }, 
+{ "Slot":"PowerDistributor", "Item":"int_powerdistributor_size4_class5", "Power":0.670000, "Priority":0 }, 
+{ "Slot":"CargoHatch", "Item":"modularcargobaydoor", "Power":0.600000, "Priority":3 }, 
+{ "Slot":"Slot02_Size4", "Item":"int_fuelscoop_size4_class5", "Power":0.570000, "Priority":1 }, 
+{ "Slot":"LifeSupport", "Item":"int_lifesupport_size3_class2", "Power":0.480000, "Priority":0 }, 
+{ "Slot":"TinyHardpoint2", "Item":"hpt_xenoscanner_basic_tiny", "Power":0.200000, "Priority":0 }, 
+{ "Slot":"TinyHardpoint3", "Item":"hpt_heatsinklauncher_turret_tiny", "Power":0.200000, "Priority":2 }, 
+{ "Slot":"TinyHardpoint4", "Item":"hpt_heatsinklauncher_turret_tiny", "Power":0.200000, "Priority":2 }, 
+{ "Slot":"ShipCockpit", "Item":"diamondbackxl_cockpit", "Power":0.000000 }, 
+{ "Slot":"PowerPlant", "Item":"int_powerplant_size4_class5", "Power":0.000000 }, 
+{ "Slot":"Slot01_Size4", "Item":"int_corrosionproofcargorack_size4_class1", "Power":0.000000 }, 
+{ "Slot":"Slot05_Size2", "Item":"int_detailedsurfacescanner_tiny", "Power":0.000000 }, 
+{ "Slot":"Slot06_Size2", "Item":"int_stellarbodydiscoveryscanner_advanced", "Power":0.000000 }, 
+{ "Slot":"DataLinkScanner", "Item":"hpt_shipdatalinkscanner", "Power":0.000000, "Priority":0 }
+ ] }

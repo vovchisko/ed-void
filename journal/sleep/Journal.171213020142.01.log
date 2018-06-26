@@ -1,0 +1,285 @@
+{ "timestamp":"2017-12-13T00:01:42Z", "event":"Fileheader", "part":1, "language":"Russian\\RU", "gameversion":"2.4", "build":"r160439/r0 " }
+{ "timestamp":"2017-12-13T00:01:42Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:01:42Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2017-12-13T00:02:19Z", "event":"Cargo", "Inventory":[ { "Name":"indite", "Count":5 }, { "Name":"bauxite", "Count":2 }, { "Name":"rutile", "Count":1 }, { "Name":"lepidolite", "Count":3 }, { "Name":"drones", "Count":32 } ] }
+{ "timestamp":"2017-12-13T00:02:19Z", "event":"Loadout", "Ship":"Type6", "ShipID":3, "ShipName":"", "ShipIdent":"", "Modules":[ { "Slot":"SmallHardpoint1", "Item":"Hpt_MiningLaser_Fixed_Small", "On":true, "Priority":0, "Health":0.989535, "Value":6800 }, { "Slot":"SmallHardpoint2", "Item":"Hpt_BeamLaser_Gimbal_Small", "On":true, "Priority":0, "Health":0.985581, "Value":74650 }, { "Slot":"TinyHardpoint1", "Item":"Hpt_ElectronicCountermeasure_Tiny", "On":true, "Priority":0, "Health":0.991040, "Value":12500 }, { "Slot":"TinyHardpoint2", "Item":"Hpt_PlasmaPointDefence_Turret_Tiny", "On":true, "Priority":0, "AmmoInClip":12, "AmmoInHopper":10000, "Health":0.982948, "Value":18546 }, { "Slot":"TinyHardpoint3", "Item":"Hpt_ShieldBooster_Size0_Class4", "On":true, "Priority":0, "Health":0.991701, "Value":122000 }, { "Slot":"Armour", "Item":"Type6_Armour_Grade1", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"PowerPlant", "Item":"Int_Powerplant_Size3_Class5", "On":true, "Priority":1, "Health":0.985408, "Value":507912 }, { "Slot":"MainEngines", "Item":"Int_Engine_Size4_Class1", "On":true, "Priority":2, "Health":0.995912, "Value":19878 }, { "Slot":"FrameShiftDrive", "Item":"Int_Hyperdrive_Size4_Class1", "On":true, "Priority":2, "Health":0.989211, "Value":19878 }, { "Slot":"LifeSupport", "Item":"Int_LifeSupport_Size2_Class1", "On":true, "Priority":2, "Health":0.983085, "Value":1448 }, { "Slot":"PowerDistributor", "Item":"Int_PowerDistributor_Size3_Class2", "On":true, "Priority":0, "Health":0.981014, "Value":10133 }, { "Slot":"Radar", "Item":"Int_Sensors_Size2_Class5", "On":true, "Priority":0, "Health":0.995401, "Value":56547 }, { "Slot":"FuelTank", "Item":"Int_FuelTank_Size4_Class3", "On":true, "Priority":1, "Health":1.000000, "Value":24734 }, { "Slot":"Slot01_Size5", "Item":"Int_CargoRack_Size4_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":34328 }, { "Slot":"Slot02_Size5", "Item":"Int_CargoRack_Size4_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":34328 }, { "Slot":"Slot03_Size4", "Item":"Int_CargoRack_Size4_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":34328 }, { "Slot":"Slot04_Size4", "Item":"Int_DroneControl_Collection_Size3_Class5", "On":true, "Priority":0, "Health":0.985615, "Value":86400 }, { "Slot":"Slot05_Size3", "Item":"Int_ShieldGenerator_Size3_Class1", "On":true, "Priority":2, "Health":0.980305, "Value":6271 }, { "Slot":"Slot06_Size2", "Item":"Int_Refinery_Size2_Class3", "On":true, "Priority":0, "Health":0.993914, "Value":113400 }, { "Slot":"Slot07_Size2", "Item":"Int_StellarBodyDiscoveryScanner_Standard", "On":true, "Priority":1, "Health":0.986573, "Value":1000 }, { "Slot":"PlanetaryApproachSuite", "Item":"Int_PlanetApproachSuite", "On":true, "Priority":1, "Health":1.000000, "Value":500 }, { "Slot":"ShipCockpit", "Item":"Type6_Cockpit", "On":true, "Priority":1, "Health":0.998739, "Value":0 }, { "Slot":"CargoHatch", "Item":"ModularCargoBayDoor", "On":true, "Priority":2, "Health":0.997195, "Value":0 } ] }
+{ "timestamp":"2017-12-13T00:02:19Z", "event":"Materials", "Raw":[ { "Name":"phosphorus", "Count":3 }, { "Name":"iron", "Count":6 }, { "Name":"sulphur", "Count":3 }, { "Name":"nickel", "Count":3 }, { "Name":"carbon", "Count":3 } ], "Manufactured":[ { "Name":"gridresistors", "Count":9 }, { "Name":"mechanicalscrap", "Count":9 }, { "Name":"mechanicalequipment", "Count":9 }, { "Name":"heatconductionwiring", "Count":6 }, { "Name":"focuscrystals", "Count":9 }, { "Name":"salvagedalloys", "Count":27 }, { "Name":"chemicalprocessors", "Count":9 }, { "Name":"heatdispersionplate", "Count":3 }, { "Name":"phasealloys", "Count":6 }, { "Name":"shieldingsensors", "Count":3 }, { "Name":"wornshieldemitters", "Count":21 }, { "Name":"galvanisingalloys", "Count":18 }, { "Name":"uncutfocuscrystals", "Count":1 }, { "Name":"hybridcapacitors", "Count":1 }, { "Name":"configurablecomponents", "Count":6 }, { "Name":"highdensitycomposites", "Count":6 }, { "Name":"mechanicalcomponents", "Count":3 }, { "Name":"fedproprietarycomposites", "Count":12 }, { "Name":"fedcorecomposites", "Count":3 }, { "Name":"shieldemitters", "Count":3 }, { "Name":"conductivecomponents", "Count":1 }, { "Name":"refinedfocuscrystals", "Count":3 }, { "Name":"chemicaldistillery", "Count":3 } ], "Encoded":[ { "Name":"decodedemissiondata", "Count":3 }, { "Name":"emissiondata", "Count":6 }, { "Name":"shieldsoakanalysis", "Count":12 }, { "Name":"shielddensityreports", "Count":18 }, { "Name":"scanarchives", "Count":6 }, { "Name":"shieldpatternanalysis", "Count":9 }, { "Name":"shieldcyclerecordings", "Count":30 }, { "Name":"encodedscandata", "Count":9 }, { "Name":"fsdtelemetry", "Count":5 }, { "Name":"scandatabanks", "Count":4 }, { "Name":"legacyfirmware", "Count":4 }, { "Name":"archivedemissiondata", "Count":3 }, { "Name":"disruptedwakeechoes", "Count":4 }, { "Name":"industrialfirmware", "Count":1 }, { "Name":"bulkscandata", "Count":4 } ] }
+{ "timestamp":"2017-12-13T00:02:19Z", "event":"LoadGame", "Commander":"Sleep Runner", "Ship":"Type6", "ShipID":3, "ShipName":"", "ShipIdent":"", "FuelLevel":15.400011, "FuelCapacity":16.000000, "GameMode":"Open", "Credits":24036, "Loan":0 }
+{ "timestamp":"2017-12-13T00:02:19Z", "event":"Rank", "Combat":0, "Trade":2, "Explore":2, "Empire":0, "Federation":0, "CQC":0 }
+{ "timestamp":"2017-12-13T00:02:19Z", "event":"Progress", "Combat":58, "Trade":54, "Explore":20, "Empire":0, "Federation":100, "CQC":0 }
+{ "timestamp":"2017-12-13T00:02:27Z", "event":"Location", "Docked":false, "StarSystem":"HR 7793", "StarPos":[-70.188,-19.406,45.063], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Dictatorship;", "SystemGovernment_Localised":"Диктатура", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":8557556, "Body":"HR 7793 1", "BodyType":"Planet", "Factions":[ { "Name":"HR 7793 Independents", "FactionState":"Boom", "Government":"Democracy", "Influence":0.129000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Election", "Trend":0 } ] }, { "Name":"United Pontus League", "FactionState":"None", "Government":"Confederacy", "Influence":0.224000, "Allegiance":"Federation", "PendingStates":[ { "State":"Expansion", "Trend":0 } ], "RecoveringStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Liberals of Wolf 871", "FactionState":"Boom", "Government":"Democracy", "Influence":0.154000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Election", "Trend":0 } ] }, { "Name":"HR 7793 Order of Heroes", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.030000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"HR 7793 Energy Corp.", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.037000, "Allegiance":"Federation" }, { "Name":"HR 7793 Gold Cartel", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.078000, "Allegiance":"Independent" }, { "Name":"Official HR 7793 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.348000, "Allegiance":"Independent" } ], "SystemFaction":"Official HR 7793 Order", "FactionState":"Boom" }
+{ "timestamp":"2017-12-13T00:02:27Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:02:27Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T00:02:45Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-13T00:02:50Z", "event":"SupercruiseEntry", "StarSystem":"HR 7793" }
+{ "timestamp":"2017-12-13T00:02:50Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T00:03:36Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol02;", "Message_Localised":"Пока мы движемся в пределах системы, приглашаем воспользоваться нашими бортовыми услугами.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:04:00Z", "event":"SupercruiseExit", "StarSystem":"HR 7793", "Body":"Benyovszky Ring", "BodyType":"Station" }
+{ "timestamp":"2017-12-13T00:04:00Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-13T00:04:05Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:04:07Z", "event":"ReceiveText", "From":"Benyovszky Ring", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:04:23Z", "event":"DockingRequested", "StationName":"Benyovszky Ring" }
+{ "timestamp":"2017-12-13T00:04:23Z", "event":"ReceiveText", "From":"Benyovszky Ring", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:04:24Z", "event":"ReceiveText", "From":"Benyovszky Ring", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:04:24Z", "event":"DockingGranted", "LandingPad":15, "StationName":"Benyovszky Ring" }
+{ "timestamp":"2017-12-13T00:04:45Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-13T00:04:50Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Elric;", "From_Localised":"Elric", "Message":"$Commuter_AuthorityScan10;", "Message_Localised":"Инспектор, я не создам вам каких-либо проблем.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:04:54Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Bomber;", "From_Localised":"Bomber", "Message":"$Commuter_AuthorityScan01;", "Message_Localised":"Мы что-то нарушили, командир?", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:05:32Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Sam Doddington;", "From_Localised":"Sam Doddington", "Message":"$Commuter_AuthorityScan06;", "Message_Localised":"Что происходит, инспектор?", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:05:40Z", "event":"Docked", "StationName":"Benyovszky Ring", "StationType":"Coriolis", "StarSystem":"HR 7793", "StationFaction":"Official HR 7793 Order", "FactionState":"Boom", "StationGovernment":"$government_Dictatorship;", "StationGovernment_Localised":"Диктатура", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":3661.540771 }
+{ "timestamp":"2017-12-13T00:05:49Z", "event":"RepairAll", "Cost":147 }
+{ "timestamp":"2017-12-13T00:05:50Z", "event":"RefuelAll", "Cost":37, "Amount":0.731445 }
+{ "timestamp":"2017-12-13T00:06:04Z", "event":"MarketSell", "Type":"bauxite", "Count":2, "SellPrice":45, "TotalSale":90, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T00:06:10Z", "event":"MarketSell", "Type":"indite", "Count":5, "SellPrice":1770, "TotalSale":8850, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T00:06:14Z", "event":"MarketSell", "Type":"lepidolite", "Count":3, "SellPrice":397, "TotalSale":1191, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T00:06:18Z", "event":"MarketSell", "Type":"rutile", "Count":1, "SellPrice":190, "TotalSale":190, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T00:06:54Z", "event":"SellDrones", "Type":"Drones", "Count":16, "SellPrice":101, "TotalSale":1616 }
+{ "timestamp":"2017-12-13T00:07:44Z", "event":"ModuleBuy", "Slot":"SmallHardpoint2", "SellItem":"$hpt_beamlaser_gimbal_small_name;", "SellItem_Localised":"Пучковый лазер", "SellPrice":74650, "BuyItem":"$hpt_mininglaser_fixed_small_name;", "BuyItem_Localised":"Проходочный лазер", "BuyPrice":6800, "Ship":"type6", "ShipID":3 }
+{ "timestamp":"2017-12-13T00:07:58Z", "event":"ModuleSell", "Slot":"TinyHardpoint1", "SellItem":"$hpt_electroniccountermeasure_tiny_name;", "SellItem_Localised":"ЭПД", "SellPrice":12500, "Ship":"type6", "ShipID":3 }
+{ "timestamp":"2017-12-13T00:08:04Z", "event":"ModuleSell", "Slot":"TinyHardpoint2", "SellItem":"$hpt_plasmapointdefence_turret_tiny_name;", "SellItem_Localised":"Точечная оборона", "SellPrice":18546, "Ship":"type6", "ShipID":3 }
+{ "timestamp":"2017-12-13T00:09:31Z", "event":"ModuleBuy", "Slot":"Slot01_Size5", "SellItem":"$int_cargorack_size4_class1_name;", "SellItem_Localised":"Груз. стеллаж", "SellPrice":34328, "BuyItem":"$int_cargorack_size5_class1_name;", "BuyItem_Localised":"Груз. стеллаж", "BuyPrice":111566, "Ship":"type6", "ShipID":3 }
+{ "timestamp":"2017-12-13T00:13:37Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:13:41Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-13T00:14:17Z", "event":"MissionAccepted", "Faction":"Liberals of Wolf 871", "Name":"Mission_Delivery_Boom", "LocalisedName":"Срочно доставьте 22 шт. товара Военное оружие", "Commodity":"$BattleWeapons_Name;", "Commodity_Localised":"Военное оружие", "Count":22, "TargetFaction":"Attach Democrats", "DestinationSystem":"Attach", "DestinationStation":"Otiman Terminal", "Expiry":"2017-12-14T00:13:23Z", "Influence":"Low", "Reputation":"Low", "Reward":234045, "MissionID":262219093 }
+{ "timestamp":"2017-12-13T00:14:59Z", "event":"Undocked", "StationName":"Benyovszky Ring", "StationType":"Coriolis" }
+{ "timestamp":"2017-12-13T00:15:27Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:15:43Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:15:48Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:15:58Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:15:59Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:16:03Z", "event":"ReceiveText", "From":"Benyovszky Ring", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:16:36Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Attach", "StarClass":"M" }
+{ "timestamp":"2017-12-13T00:16:54Z", "event":"FSDJump", "StarSystem":"Attach", "StarPos":[-74.344,-24.250,49.594], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Dictatorship;", "SystemGovernment_Localised":"Диктатура", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":2283927, "JumpDist":7.827, "FuelUsed":1.058304, "FuelLevel":14.941696, "Factions":[ { "Name":"Confederation of 7 Kappa Delphini", "FactionState":"Lockdown", "Government":"Confederacy", "Influence":0.100899, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Attach Federal & Co", "FactionState":"Boom", "Government":"Corporate", "Influence":0.288711, "Allegiance":"Federation" }, { "Name":"Revolutionary Turd Wura Future", "FactionState":"Boom", "Government":"Democracy", "Influence":0.021978, "Allegiance":"Independent", "PendingStates":[ { "State":"Retreat", "Trend":0 } ] }, { "Name":"Attach Focus", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.385614, "Allegiance":"Independent" }, { "Name":"Attach Democrats", "FactionState":"CivilWar", "Government":"Democracy", "Influence":0.038961, "Allegiance":"Federation" }, { "Name":"Attach Hand Gang", "FactionState":"CivilWar", "Government":"Anarchy", "Influence":0.013986, "Allegiance":"Independent" }, { "Name":"Traditional Attach Dominion", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.149850, "Allegiance":"Independent" } ], "SystemFaction":"Attach Focus", "FactionState":"Boom" }
+{ "timestamp":"2017-12-13T00:16:55Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-13T00:17:00Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T00:19:47Z", "event":"SupercruiseExit", "StarSystem":"Attach", "Body":"Otiman Terminal", "BodyType":"Station" }
+{ "timestamp":"2017-12-13T00:19:48Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-13T00:19:53Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:19:55Z", "event":"ReceiveText", "From":"Otiman Terminal", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:19:57Z", "event":"DockingRequested", "StationName":"Otiman Terminal" }
+{ "timestamp":"2017-12-13T00:19:57Z", "event":"ReceiveText", "From":"Otiman Terminal", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:19:58Z", "event":"ReceiveText", "From":"Otiman Terminal", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:19:58Z", "event":"DockingGranted", "LandingPad":38, "StationName":"Otiman Terminal" }
+{ "timestamp":"2017-12-13T00:20:29Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-13T00:20:59Z", "event":"Docked", "StationName":"Otiman Terminal", "StationType":"Coriolis", "StarSystem":"Attach", "StationFaction":"Attach Focus", "FactionState":"Boom", "StationGovernment":"$government_Dictatorship;", "StationGovernment_Localised":"Диктатура", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":1411.047119 }
+{ "timestamp":"2017-12-13T00:21:10Z", "event":"RefuelAll", "Cost":58, "Amount":1.157808 }
+{ "timestamp":"2017-12-13T00:21:36Z", "event":"MissionCompleted", "Faction":"Attach Democrats", "Name":"Mission_Delivery_Boom_name", "MissionID":262219093, "Commodity":"$BattleWeapons_Name;", "Commodity_Localised":"Военное оружие", "Count":22, "TargetFaction":"Attach Democrats", "DestinationSystem":"Attach", "DestinationStation":"Otiman Terminal", "Reward":234045 }
+{ "timestamp":"2017-12-13T00:21:36Z", "event":"MaterialDiscovered", "Category":"Encoded", "Name":"embeddedfirmware", "DiscoveryNumber":16 }
+{ "timestamp":"2017-12-13T00:21:36Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"embeddedfirmware", "Count":1 }
+{ "timestamp":"2017-12-13T00:22:34Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Filip Andreas Iversen;", "From_Localised":"Filip Andreas Iversen", "Message":"$Commuter_AuthorityScan04;", "Message_Localised":"А без этого нельзя обойтись?", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:24:34Z", "event":"ModuleBuy", "Slot":"Slot02_Size5", "SellItem":"$int_cargorack_size4_class1_name;", "SellItem_Localised":"Груз. стеллаж", "SellPrice":34328, "BuyItem":"$int_cargorack_size5_class1_name;", "BuyItem_Localised":"Груз. стеллаж", "BuyPrice":111566, "Ship":"type6", "ShipID":3 }
+{ "timestamp":"2017-12-13T00:25:37Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:26:01Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:26:14Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:26:24Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:26:34Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:26:41Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:27:00Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:27:24Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:27:27Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:27:46Z", "event":"BuyTradeData", "System":"Turd Wura", "Cost":100 }
+{ "timestamp":"2017-12-13T00:28:02Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:28:07Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:28:44Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:28:51Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:29:32Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:30:00Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:30:12Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:30:41Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T00:30:42Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-13T00:31:04Z", "event":"Undocked", "StationName":"Otiman Terminal", "StationType":"Coriolis" }
+{ "timestamp":"2017-12-13T00:31:27Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:32:04Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-13T00:32:04Z", "event":"ReceiveText", "From":"$ShipName_Police_Independent;", "From_Localised":"Корабль властей системы", "Message":"$Police_ThankYouPassedStopAndSearch06;", "Message_Localised":"Мы закончили, пилот, можете лететь.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:34:54Z", "event":"ReceiveText", "From":"Otiman Terminal", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-13T00:34:58Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Alrai Sector DL-Y c27", "StarClass":"K" }
+{ "timestamp":"2017-12-13T00:35:17Z", "event":"FSDJump", "StarSystem":"Alrai Sector DL-Y c27", "StarPos":[-79.344,-19.156,50.719], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"Нет", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"Нет", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Анархия", "Population":0, "JumpDist":7.226, "FuelUsed":0.718766, "FuelLevel":15.281234 }
+{ "timestamp":"2017-12-13T00:35:17Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T00:35:38Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:35:51Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T00:36:10Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Freng", "StarClass":"M" }
+{ "timestamp":"2017-12-13T00:36:16Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T00:36:29Z", "event":"FSDJump", "StarSystem":"Freng", "StarPos":[-74.938,-10.969,54.125], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Refinery;", "SystemEconomy_Localised":"Переработка", "SystemGovernment":"$government_Dictatorship;", "SystemGovernment_Localised":"Диктатура", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":2876891, "JumpDist":9.902, "FuelUsed":1.473385, "FuelLevel":13.807849, "Factions":[ { "Name":"Contegus Holdings", "FactionState":"None", "Government":"Corporate", "Influence":0.019000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Verbigeni Electronics Industry", "FactionState":"Boom", "Government":"Corporate", "Influence":0.156000, "Allegiance":"Federation" }, { "Name":"Freng Gold Legal Partners", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.064000, "Allegiance":"Independent" }, { "Name":"Freng Freedom Party", "FactionState":"None", "Government":"Dictatorship", "Influence":0.493000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Social Freng Independents", "FactionState":"None", "Government":"Democracy", "Influence":0.233000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Freng Organisation", "FactionState":"CivilWar", "Government":"Anarchy", "Influence":0.035000, "Allegiance":"Independent" } ], "SystemFaction":"Freng Freedom Party" }
+{ "timestamp":"2017-12-13T00:36:29Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-13T00:36:34Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T00:36:47Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:36:54Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T00:37:37Z", "event":"SupercruiseExit", "StarSystem":"Freng", "Body":"Freng A Belt Cluster 1", "BodyType":"AsteroidCluster" }
+{ "timestamp":"2017-12-13T00:37:38Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T00:39:59Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:40:01Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T00:40:42Z", "event":"MiningRefined", "Type":"$bauxite_name;", "Type_Localised":"Боксит" }
+{ "timestamp":"2017-12-13T00:41:04Z", "event":"MaterialCollected", "Category":"Raw", "Name":"sulphur", "Count":3 }
+{ "timestamp":"2017-12-13T00:43:47Z", "event":"MiningRefined", "Type":"$uraninite_name;", "Type_Localised":"Уранинит" }
+{ "timestamp":"2017-12-13T00:44:01Z", "event":"MiningRefined", "Type":"$indite_name;", "Type_Localised":"Индит" }
+{ "timestamp":"2017-12-13T00:44:57Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2017-12-13T00:45:27Z", "event":"MiningRefined", "Type":"$uraninite_name;", "Type_Localised":"Уранинит" }
+{ "timestamp":"2017-12-13T00:47:07Z", "event":"MiningRefined", "Type":"$uraninite_name;", "Type_Localised":"Уранинит" }
+{ "timestamp":"2017-12-13T00:48:19Z", "event":"MiningRefined", "Type":"$uraninite_name;", "Type_Localised":"Уранинит" }
+{ "timestamp":"2017-12-13T00:48:55Z", "event":"MiningRefined", "Type":"$uraninite_name;", "Type_Localised":"Уранинит" }
+{ "timestamp":"2017-12-13T00:49:16Z", "event":"MaterialCollected", "Category":"Raw", "Name":"carbon", "Count":3 }
+{ "timestamp":"2017-12-13T00:49:48Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2017-12-13T00:50:53Z", "event":"MiningRefined", "Type":"$indite_name;", "Type_Localised":"Индит" }
+{ "timestamp":"2017-12-13T00:51:18Z", "event":"MiningRefined", "Type":"$indite_name;", "Type_Localised":"Индит" }
+{ "timestamp":"2017-12-13T00:54:45Z", "event":"MiningRefined", "Type":"$rutile_name;", "Type_Localised":"Рутил" }
+{ "timestamp":"2017-12-13T00:55:43Z", "event":"MiningRefined", "Type":"$rutile_name;", "Type_Localised":"Рутил" }
+{ "timestamp":"2017-12-13T00:58:07Z", "event":"EjectCargo", "Type":"bauxite", "Count":1, "Abandoned":false }
+{ "timestamp":"2017-12-13T00:58:35Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:58:40Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-13T00:58:41Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T00:58:46Z", "event":"SupercruiseEntry", "StarSystem":"Freng" }
+{ "timestamp":"2017-12-13T00:58:46Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T00:59:11Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T00:59:18Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:02:26Z", "event":"SupercruiseExit", "StarSystem":"Freng", "Body":"Freng 5 A Ring", "BodyType":"PlanetaryRing" }
+{ "timestamp":"2017-12-13T01:02:27Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T01:07:36Z", "event":"MiningRefined", "Type":"$lepidolite_name;", "Type_Localised":"Лепидолит" }
+{ "timestamp":"2017-12-13T01:11:29Z", "event":"MiningRefined", "Type":"$rutile_name;", "Type_Localised":"Рутил" }
+{ "timestamp":"2017-12-13T01:12:20Z", "event":"MaterialCollected", "Category":"Raw", "Name":"iron", "Count":3 }
+{ "timestamp":"2017-12-13T01:14:16Z", "event":"MaterialCollected", "Category":"Raw", "Name":"nickel", "Count":3 }
+{ "timestamp":"2017-12-13T01:14:36Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:14:37Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T01:14:46Z", "event":"MiningRefined", "Type":"$lepidolite_name;", "Type_Localised":"Лепидолит" }
+{ "timestamp":"2017-12-13T01:15:03Z", "event":"MaterialCollected", "Category":"Raw", "Name":"nickel", "Count":3 }
+{ "timestamp":"2017-12-13T01:15:11Z", "event":"MiningRefined", "Type":"$lepidolite_name;", "Type_Localised":"Лепидолит" }
+{ "timestamp":"2017-12-13T01:16:29Z", "event":"MiningRefined", "Type":"$indite_name;", "Type_Localised":"Индит" }
+{ "timestamp":"2017-12-13T01:17:38Z", "event":"MiningRefined", "Type":"$lepidolite_name;", "Type_Localised":"Лепидолит" }
+{ "timestamp":"2017-12-13T01:19:20Z", "event":"MiningRefined", "Type":"$lepidolite_name;", "Type_Localised":"Лепидолит" }
+{ "timestamp":"2017-12-13T01:20:04Z", "event":"MaterialCollected", "Category":"Raw", "Name":"nickel", "Count":3 }
+{ "timestamp":"2017-12-13T01:20:10Z", "event":"MaterialCollected", "Category":"Raw", "Name":"phosphorus", "Count":3 }
+{ "timestamp":"2017-12-13T01:20:16Z", "event":"MiningRefined", "Type":"$lepidolite_name;", "Type_Localised":"Лепидолит" }
+{ "timestamp":"2017-12-13T01:20:38Z", "event":"MaterialDiscovered", "Category":"Raw", "Name":"chromium", "DiscoveryNumber":6 }
+{ "timestamp":"2017-12-13T01:20:38Z", "event":"MaterialCollected", "Category":"Raw", "Name":"chromium", "Count":3 }
+{ "timestamp":"2017-12-13T01:25:13Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T01:25:27Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:25:42Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T01:25:44Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T01:26:04Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Allowair", "StarClass":"M" }
+{ "timestamp":"2017-12-13T01:26:10Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T01:26:23Z", "event":"FSDJump", "StarSystem":"Allowair", "StarPos":[-80.750,-3.500,55.563], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Extraction;", "SystemEconomy_Localised":"Добыча ископаемых", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":3064592, "JumpDist":9.573, "FuelUsed":1.418173, "FuelLevel":11.999676, "Factions":[ { "Name":"Social Allowair Future", "FactionState":"None", "Government":"Democracy", "Influence":0.144144, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Democrats of Aphra", "FactionState":"Boom", "Government":"Democracy", "Influence":0.198198, "Allegiance":"Federation" }, { "Name":"Progressive Party of Abukunin", "FactionState":"War", "Government":"Democracy", "Influence":0.031031, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Allowair Constitution Party", "FactionState":"War", "Government":"Dictatorship", "Influence":0.016016, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Allowair Silver Gang", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.357357, "Allegiance":"Independent" }, { "Name":"Warwal Dominion", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.185185, "Allegiance":"Independent" }, { "Name":"Allowair Solutions", "FactionState":"None", "Government":"Corporate", "Influence":0.068068, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Social Allowair Future" }
+{ "timestamp":"2017-12-13T01:26:23Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:26:54Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:27:05Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:27:23Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Alrai Sector DL-Y c25", "StarClass":"K" }
+{ "timestamp":"2017-12-13T01:27:28Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T01:27:42Z", "event":"FSDJump", "StarSystem":"Alrai Sector DL-Y c25", "StarPos":[-85.031,-2.125,50.469], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"Нет", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"Нет", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Анархия", "Population":0, "JumpDist":6.795, "FuelUsed":0.636009, "FuelLevel":11.363667 }
+{ "timestamp":"2017-12-13T01:27:42Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:28:34Z", "event":"Scan", "BodyName":"Alrai Sector DL-Y c25", "DistanceFromArrivalLS":0.000000, "StarType":"K", "StellarMass":0.644531, "Radius":530772928.000000, "AbsoluteMagnitude":6.588821, "Age_MY":11944, "SurfaceTemperature":4412.000000, "Luminosity":"Va", "RotationPeriod":248664.390625, "AxialTilt":0.000000 }
+{ "timestamp":"2017-12-13T01:28:55Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:28:59Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:29:03Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Yu Di Yi", "StarClass":"M" }
+{ "timestamp":"2017-12-13T01:29:08Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T01:29:22Z", "event":"FSDJump", "StarSystem":"Yu Di Yi", "StarPos":[-86.656,-3.875,47.500], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Dictatorship;", "SystemGovernment_Localised":"Диктатура", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":6328978, "JumpDist":3.810, "FuelUsed":0.167106, "FuelLevel":11.196561, "Factions":[ { "Name":"Social Allowair Future", "FactionState":"None", "Government":"Democracy", "Influence":0.037000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Yu Di Yi Republic Party", "FactionState":"Boom", "Government":"Democracy", "Influence":0.207000, "Allegiance":"Federation", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Regulatory State of Yu Di Yi", "FactionState":"None", "Government":"Dictatorship", "Influence":0.388000, "Allegiance":"Independent" }, { "Name":"Yu Di Yi Crimson Natural Inc", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.069000, "Allegiance":"Independent" }, { "Name":"Warwal Dominion", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.207000, "Allegiance":"Independent", "PendingStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Yu Di Yi Bureau", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.066000, "Allegiance":"Independent" }, { "Name":"LTT 15838 Life Limited", "FactionState":"Boom", "Government":"Corporate", "Influence":0.026000, "Allegiance":"Federation" } ], "SystemFaction":"Regulatory State of Yu Di Yi" }
+{ "timestamp":"2017-12-13T01:29:22Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-13T01:29:27Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:30:18Z", "event":"SupercruiseExit", "StarSystem":"Yu Di Yi", "Body":"Yu Di Yi A A Belt Cluster 1", "BodyType":"AsteroidCluster" }
+{ "timestamp":"2017-12-13T01:30:18Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T01:31:15Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:31:23Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T01:31:35Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-13T01:31:40Z", "event":"SupercruiseEntry", "StarSystem":"Yu Di Yi" }
+{ "timestamp":"2017-12-13T01:31:40Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:33:50Z", "event":"SupercruiseExit", "StarSystem":"Yu Di Yi", "Body":"Aksyonov Orbital", "BodyType":"Station" }
+{ "timestamp":"2017-12-13T01:33:51Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-13T01:33:56Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T01:34:01Z", "event":"ReceiveText", "From":"Aksyonov Orbital", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-13T01:34:06Z", "event":"DockingRequested", "StationName":"Aksyonov Orbital" }
+{ "timestamp":"2017-12-13T01:34:06Z", "event":"ReceiveText", "From":"Aksyonov Orbital", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T01:34:07Z", "event":"ReceiveText", "From":"Aksyonov Orbital", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-13T01:34:07Z", "event":"DockingGranted", "LandingPad":22, "StationName":"Aksyonov Orbital" }
+{ "timestamp":"2017-12-13T01:34:41Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-13T01:34:51Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Dan Porter-Brown;", "From_Localised":"Dan Porter-Brown", "Message":"$Commuter_AuthorityScan01;", "Message_Localised":"Мы что-то нарушили, командир?", "Channel":"npc" }
+{ "timestamp":"2017-12-13T01:35:04Z", "event":"Docked", "StationName":"Aksyonov Orbital", "StationType":"Bernal", "StarSystem":"Yu Di Yi", "StationFaction":"Regulatory State of Yu Di Yi", "StationGovernment":"$government_Dictatorship;", "StationGovernment_Localised":"Диктатура", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":15.820544 }
+{ "timestamp":"2017-12-13T01:35:14Z", "event":"RefuelAll", "Cost":265, "Amount":5.292507 }
+{ "timestamp":"2017-12-13T01:35:51Z", "event":"MarketSell", "Type":"indite", "Count":4, "SellPrice":1888, "TotalSale":7552, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T01:35:58Z", "event":"MarketSell", "Type":"lepidolite", "Count":6, "SellPrice":447, "TotalSale":2682, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T01:36:09Z", "event":"MarketSell", "Type":"rutile", "Count":3, "SellPrice":222, "TotalSale":666, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T01:36:15Z", "event":"MarketSell", "Type":"uraninite", "Count":5, "SellPrice":730, "TotalSale":3650, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-13T01:36:50Z", "event":"BuyDrones", "Type":"Drones", "Count":12, "BuyPrice":101, "TotalCost":1212 }
+{ "timestamp":"2017-12-13T01:36:59Z", "event":"BuyDrones", "Type":"Drones", "Count":9, "BuyPrice":101, "TotalCost":909 }
+{ "timestamp":"2017-12-13T01:37:30Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:37:33Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-13T01:37:37Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T01:37:49Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:37:54Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T01:38:14Z", "event":"BuyExplorationData", "System":"Alrai Sector DB-X b1-0", "Cost":160 }
+{ "timestamp":"2017-12-13T01:38:18Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:38:22Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T01:39:23Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:39:58Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-13T01:39:59Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-13T01:40:21Z", "event":"Undocked", "StationName":"Aksyonov Orbital", "StationType":"Bernal" }
+{ "timestamp":"2017-12-13T01:40:38Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T01:41:14Z", "event":"ReceiveText", "From":"Aksyonov Orbital", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-13T01:41:18Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Alrai Sector EB-X b1-0", "StarClass":"M" }
+{ "timestamp":"2017-12-13T01:41:37Z", "event":"FSDJump", "StarSystem":"Alrai Sector EB-X b1-0", "StarPos":[-83.938,-0.406,39.750], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"Нет", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"Нет", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Анархия", "Population":0, "JumpDist":8.916, "FuelUsed":1.269078, "FuelLevel":14.730922 }
+{ "timestamp":"2017-12-13T01:41:37Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:41:53Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:41:57Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:42:14Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Meticuli", "StarClass":"G" }
+{ "timestamp":"2017-12-13T01:42:20Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-13T01:42:33Z", "event":"FSDJump", "StarSystem":"Meticuli", "StarPos":[-77.094,1.281,37.156], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":30636706, "JumpDist":7.511, "FuelUsed":0.845464, "FuelLevel":13.885457, "Factions":[ { "Name":"Meticuli for Equality", "FactionState":"Boom", "Government":"Democracy", "Influence":0.544000, "Allegiance":"Federation" }, { "Name":"United HR 7386 Labour", "FactionState":"None", "Government":"Democracy", "Influence":0.086000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ], "RecoveringStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Meticuli Justice Party", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.158000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":0 } ] }, { "Name":"Meticuli Silver Natural Ltd", "FactionState":"None", "Government":"Corporate", "Influence":0.066000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ], "RecoveringStates":[ { "State":"War", "Trend":0 } ] }, { "Name":"United Meticuli Autocracy", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.059000, "Allegiance":"Independent" }, { "Name":"Law Party of Pareco", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.087000, "Allegiance":"Independent" } ], "SystemFaction":"Meticuli for Equality", "FactionState":"Boom" }
+{ "timestamp":"2017-12-13T01:42:33Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-13T01:42:38Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:42:50Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T01:42:58Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T01:43:12Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol04;", "Message_Localised":"Прошу внимания: сейчас стюарды ознакомят вас с краткой техникой безопасности.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T01:45:43Z", "event":"SupercruiseExit", "StarSystem":"Meticuli", "Body":"Meticuli A Belt Cluster 1", "BodyType":"AsteroidCluster" }
+{ "timestamp":"2017-12-13T01:45:43Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T01:48:32Z", "event":"MaterialCollected", "Category":"Raw", "Name":"sulphur", "Count":3 }
+{ "timestamp":"2017-12-13T01:48:57Z", "event":"MiningRefined", "Type":"$coltan_name;", "Type_Localised":"Колтан" }
+{ "timestamp":"2017-12-13T01:49:04Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-13T01:49:04Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ThankYouPassedStopAndSearch07;", "Message_Localised":"Сканирование ничего не выявило. Продолжайте путь, командир.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T01:52:34Z", "event":"MiningRefined", "Type":"$uraninite_name;", "Type_Localised":"Уранинит" }
+{ "timestamp":"2017-12-13T01:52:48Z", "event":"MiningRefined", "Type":"$rutile_name;", "Type_Localised":"Рутил" }
+{ "timestamp":"2017-12-13T01:54:01Z", "event":"MaterialCollected", "Category":"Raw", "Name":"iron", "Count":3 }
+{ "timestamp":"2017-12-13T01:54:15Z", "event":"MaterialDiscovered", "Category":"Raw", "Name":"molybdenum", "DiscoveryNumber":7 }
+{ "timestamp":"2017-12-13T01:54:15Z", "event":"MaterialCollected", "Category":"Raw", "Name":"molybdenum", "Count":3 }
+{ "timestamp":"2017-12-13T02:00:05Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T02:00:18Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T02:00:44Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-13T02:00:49Z", "event":"SupercruiseEntry", "StarSystem":"Meticuli" }
+{ "timestamp":"2017-12-13T02:00:49Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T02:04:20Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T02:04:53Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T02:05:47Z", "event":"SupercruiseExit", "StarSystem":"Meticuli", "Body":"Meticuli 2 B Ring", "BodyType":"PlanetaryRing" }
+{ "timestamp":"2017-12-13T02:05:47Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T02:06:23Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Michael David Barnes;", "From_Localised":"Michael David Barnes", "Message":"$Miner_OnJumpNoAsteroids04;", "Message_Localised":"Тут только пыль да песок.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T02:08:14Z", "event":"MiningRefined", "Type":"$bauxite_name;", "Type_Localised":"Боксит" }
+{ "timestamp":"2017-12-13T02:08:49Z", "event":"MiningRefined", "Type":"$bauxite_name;", "Type_Localised":"Боксит" }
+{ "timestamp":"2017-12-13T02:09:28Z", "event":"MiningRefined", "Type":"$coltan_name;", "Type_Localised":"Колтан" }
+{ "timestamp":"2017-12-13T02:10:04Z", "event":"MiningRefined", "Type":"$coltan_name;", "Type_Localised":"Колтан" }
+{ "timestamp":"2017-12-13T02:11:11Z", "event":"MiningRefined", "Type":"$rutile_name;", "Type_Localised":"Рутил" }
+{ "timestamp":"2017-12-13T02:11:46Z", "event":"MiningRefined", "Type":"$rutile_name;", "Type_Localised":"Рутил" }
+{ "timestamp":"2017-12-13T02:12:00Z", "event":"MaterialCollected", "Category":"Raw", "Name":"nickel", "Count":3 }
+{ "timestamp":"2017-12-13T02:12:15Z", "event":"MiningRefined", "Type":"$bauxite_name;", "Type_Localised":"Боксит" }
+{ "timestamp":"2017-12-13T02:12:27Z", "event":"MaterialCollected", "Category":"Raw", "Name":"nickel", "Count":3 }
+{ "timestamp":"2017-12-13T02:12:40Z", "event":"MiningRefined", "Type":"$bauxite_name;", "Type_Localised":"Боксит" }
+{ "timestamp":"2017-12-13T02:13:01Z", "event":"MaterialDiscovered", "Category":"Raw", "Name":"manganese", "DiscoveryNumber":8 }
+{ "timestamp":"2017-12-13T02:13:01Z", "event":"MaterialCollected", "Category":"Raw", "Name":"manganese", "Count":3 }
+{ "timestamp":"2017-12-13T02:13:08Z", "event":"MiningRefined", "Type":"$bauxite_name;", "Type_Localised":"Боксит" }
+{ "timestamp":"2017-12-13T02:14:02Z", "event":"MiningRefined", "Type":"$bauxite_name;", "Type_Localised":"Боксит" }
+{ "timestamp":"2017-12-13T02:14:09Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T02:14:16Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T02:16:04Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T02:17:39Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T02:17:47Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-13T02:17:52Z", "event":"SupercruiseEntry", "StarSystem":"Meticuli" }
+{ "timestamp":"2017-12-13T02:17:52Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-13T02:18:31Z", "event":"SupercruiseExit", "StarSystem":"Meticuli", "Body":"Meticuli 2 A Ring", "BodyType":"PlanetaryRing" }
+{ "timestamp":"2017-12-13T02:18:32Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T02:20:16Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-13T02:20:16Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ThankYouPassedStopAndSearch11;", "Message_Localised":"Сегодня мы ничего у вас не нашли.", "Channel":"npc" }
+{ "timestamp":"2017-12-13T02:20:32Z", "event":"MaterialCollected", "Category":"Raw", "Name":"iron", "Count":3 }
+{ "timestamp":"2017-12-13T02:23:24Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T02:23:26Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T02:23:35Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T02:23:40Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-13T02:24:19Z", "event":"MaterialCollected", "Category":"Raw", "Name":"sulphur", "Count":3 }
+{ "timestamp":"2017-12-13T02:24:37Z", "event":"MaterialCollected", "Category":"Raw", "Name":"phosphorus", "Count":3 }
+{ "timestamp":"2017-12-13T02:29:12Z", "event":"MiningRefined", "Type":"$gold_name;", "Type_Localised":"Золото" }
+{ "timestamp":"2017-12-13T02:29:33Z", "event":"MiningRefined", "Type":"$indite_name;", "Type_Localised":"Индит" }
+{ "timestamp":"2017-12-13T02:30:34Z", "event":"MiningRefined", "Type":"$gold_name;", "Type_Localised":"Золото" }
+{ "timestamp":"2017-12-13T02:30:53Z", "event":"MiningRefined", "Type":"$bertrandite_name;", "Type_Localised":"Бертрандит" }
+{ "timestamp":"2017-12-13T02:34:57Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-13T02:34:58Z", "event":"Music", "MusicTrack":"Exploration" }

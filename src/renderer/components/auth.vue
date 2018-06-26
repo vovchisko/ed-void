@@ -30,12 +30,7 @@
 
 <script>
 
-    import {J, ISSH} from '../controllers/journal';
-    import Data from '../controllers/data';
-    const auth = {
-        email: '',
-        pass: '',
-    };
+    import {J} from '../ctrl/journal';
 
     export default {
         name: "auth",
@@ -43,7 +38,10 @@
             return {
                 sign_: 'in',
                 msg: {type: '', text: 'welcome back commander'},
-                auth: Data.auth,
+                auth: {
+                    email: '',
+                    pass: '',
+                }
             }
         },
         methods: {

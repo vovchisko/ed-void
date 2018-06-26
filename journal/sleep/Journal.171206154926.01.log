@@ -1,0 +1,315 @@
+{ "timestamp":"2017-12-06T13:49:26Z", "event":"Fileheader", "part":1, "language":"Russian\\RU", "gameversion":"2.4", "build":"r160439/r0 " }
+{ "timestamp":"2017-12-06T13:49:26Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T13:49:26Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2017-12-06T14:06:02Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2017-12-06T14:30:42Z", "event":"Cargo", "Inventory":[  ] }
+{ "timestamp":"2017-12-06T14:30:42Z", "event":"Loadout", "Ship":"SideWinder", "ShipID":0, "ShipName":"SLEEPY-ONE", "ShipIdent":"", "Modules":[ { "Slot":"SmallHardpoint1", "Item":"Hpt_PulseLaser_Gimbal_Small", "On":true, "Priority":2, "Health":0.877967, "Value":0 }, { "Slot":"SmallHardpoint2", "Item":"Hpt_PulseLaser_Gimbal_Small", "On":true, "Priority":2, "Health":0.972432, "Value":0 }, { "Slot":"Armour", "Item":"SideWinder_Armour_Grade1", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"PowerPlant", "Item":"Int_PowerPlant_Size2_Class1", "On":true, "Priority":1, "Health":0.963275, "Value":0 }, { "Slot":"MainEngines", "Item":"Int_Engine_Size2_Class1", "On":true, "Priority":3, "Health":0.891785, "Value":0 }, { "Slot":"FrameShiftDrive", "Item":"Int_Hyperdrive_Size2_Class1", "On":true, "Priority":2, "Health":0.947761, "Value":0 }, { "Slot":"LifeSupport", "Item":"Int_LifeSupport_Size1_Class1", "On":true, "Priority":2, "Health":0.937599, "Value":0 }, { "Slot":"PowerDistributor", "Item":"Int_PowerDistributor_Size1_Class1", "On":true, "Priority":2, "Health":0.913184, "Value":0 }, { "Slot":"Radar", "Item":"Int_Sensors_Size1_Class1", "On":true, "Priority":2, "Health":0.879621, "Value":0 }, { "Slot":"FuelTank", "Item":"Int_FuelTank_Size1_Class3", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"Slot01_Size2", "Item":"Int_ShieldGenerator_Size2_Class1", "On":true, "Priority":2, "Health":0.951813, "Value":0 }, { "Slot":"Slot02_Size2", "Item":"Int_CargoRack_Size2_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"Slot03_Size1", "Item":"Int_StellarBodyDiscoveryScanner_Standard", "On":true, "Priority":1, "Health":0.938834, "Value":0 }, { "Slot":"PlanetaryApproachSuite", "Item":"Int_PlanetApproachSuite", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"ShipCockpit", "Item":"Sidewinder_Cockpit", "On":true, "Priority":1, "Health":0.956325, "Value":0 }, { "Slot":"CargoHatch", "Item":"ModularCargoBayDoor", "On":true, "Priority":2, "Health":0.882690, "Value":0 } ] }
+{ "timestamp":"2017-12-06T14:30:42Z", "event":"Materials", "Raw":[  ], "Manufactured":[  ], "Encoded":[ { "Name":"decodedemissiondata", "Count":3 }, { "Name":"emissiondata", "Count":3 } ] }
+{ "timestamp":"2017-12-06T14:30:42Z", "event":"LoadGame", "Commander":"Sleep Runner", "Ship":"SideWinder", "ShipID":0, "ShipName":"SLEEPY-ONE", "ShipIdent":"", "FuelLevel":0.584015, "FuelCapacity":2.000000, "GameMode":"Open", "Credits":1000, "Loan":0 }
+{ "timestamp":"2017-12-06T14:30:42Z", "event":"Rank", "Combat":0, "Trade":0, "Explore":0, "Empire":0, "Federation":0, "CQC":0 }
+{ "timestamp":"2017-12-06T14:30:42Z", "event":"Progress", "Combat":0, "Trade":0, "Explore":0, "Empire":0, "Federation":0, "CQC":0 }
+{ "timestamp":"2017-12-06T14:30:55Z", "event":"Location", "Docked":false, "StarSystem":"LHS 3447", "StarPos":[-43.188,-5.281,56.156], "SystemAllegiance":"PilotsFederation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":1148206412, "Body":"Gliese 748.2 B", "BodyType":"Star", "Factions":[ { "Name":"LHS 3447 Academy for Novitiate Pilots", "FactionState":"None", "Government":"Cooperative", "Influence":0.097000, "Allegiance":"Independent", "PendingStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"LTT 18486 Jet Energy Company", "FactionState":"CivilUnrest", "Government":"Corporate", "Influence":0.116000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Bust", "Trend":-1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Future of LHS 3447", "FactionState":"Lockdown", "Government":"Democracy", "Influence":0.278000, "Allegiance":"Federation", "PendingStates":[ { "State":"CivilUnrest", "Trend":0 }, { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Liberty Party of GD 219", "FactionState":"None", "Government":"Dictatorship", "Influence":0.010000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Retreat", "Trend":0 } ] }, { "Name":"LHS 3447 Co", "FactionState":"None", "Government":"Corporate", "Influence":0.220000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":-1 } ], "RecoveringStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Freedom Party of LHS 3447", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.187000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"LHS 3447 Cartel", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.062000, "Allegiance":"Independent", "PendingStates":[ { "State":"Bust", "Trend":-1 }, { "State":"Lockdown", "Trend":1 }, { "State":"Outbreak", "Trend":1 } ], "RecoveringStates":[ { "State":"CivilUnrest", "Trend":0 } ] }, { "Name":"LHS 3447 Dynamic & Co", "FactionState":"None", "Government":"Corporate", "Influence":0.030000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":1 } ] } ], "SystemFaction":"Pilots Federation Local Branch" }
+{ "timestamp":"2017-12-06T14:30:55Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T14:30:55Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T14:31:33Z", "event":"MissionAbandoned", "Name":"Mission_Collect_name", "MissionID":258272635 }
+{ "timestamp":"2017-12-06T14:31:36Z", "event":"MissionAbandoned", "Name":"Mission_Courier_name", "MissionID":258272595 }
+{ "timestamp":"2017-12-06T14:31:57Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T14:32:08Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T14:32:35Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Eravate", "StarClass":"K" }
+{ "timestamp":"2017-12-06T14:32:41Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T14:32:54Z", "event":"FSDJump", "StarSystem":"Eravate", "StarPos":[-42.438,-3.156,59.656], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":740380179, "JumpDist":4.163, "FuelUsed":0.171151, "FuelLevel":0.412864, "Factions":[ { "Name":"Eravate School of Commerce", "FactionState":"None", "Government":"Cooperative", "Influence":0.117000, "Allegiance":"Independent", "PendingStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Independent Eravate Free", "FactionState":"Outbreak", "Government":"Democracy", "Influence":0.114000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Eravate Network", "FactionState":"Boom", "Government":"Corporate", "Influence":0.166000, "Allegiance":"Federation", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Traditional Eravate Autocracy", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.101000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Eravate Life Services", "FactionState":"Boom", "Government":"Corporate", "Influence":0.115000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Official Eravate Flag", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.093000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Adle's Armada", "FactionState":"Boom", "Government":"Corporate", "Influence":0.294000, "Allegiance":"Federation" } ], "SystemFaction":"Adle's Armada", "FactionState":"Boom" }
+{ "timestamp":"2017-12-06T14:32:55Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-06T14:32:59Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T14:36:00Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Russell Ring", "BodyType":"Station" }
+{ "timestamp":"2017-12-06T14:36:01Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-06T14:36:02Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:36:06Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T14:36:29Z", "event":"DockingRequested", "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:36:29Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:36:30Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:36:30Z", "event":"DockingGranted", "LandingPad":43, "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:37:05Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Christopher Jarvis;", "From_Localised":"Christopher Jarvis", "Message":"$Commuter_HostileScan01;", "Message_Localised":"Требую прекратить это незаконное сканирование.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:38:08Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T14:38:35Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingPadBlockWarningComms;", "Message_Localised":"Обнаружено нарушение – промедление, немедленно очистите подход к площадке во избежание летального ответа", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:38:46Z", "event":"CommitCrime", "CrimeType":"dockingMinorBlockingLandingPad", "Faction":"Pilots Federation Local Branch", "Fine":200 }
+{ "timestamp":"2017-12-06T14:39:09Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingOffenceCleared;", "Message_Localised":"Нарушения правил космопорта сняты, привилегии на стыковку восстановлены", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:39:10Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$STATION_docking_cancelled;", "Message_Localised":"Запрос на стыковку отозван", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:39:10Z", "event":"DockingCancelled", "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:39:10Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingTresspassWarningComms;", "Message_Localised":"Обнаружено нарушение – промедление, немедленно покиньте космопорт во избежание летального ответа", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:39:13Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingFailed_Offences:#offencetimer=2;", "Message_Localised":"Отказано в запросе на стыковку, действует наказание за нарушения правил космопорта (остается 2 с)", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:39:13Z", "event":"DockingDenied", "Reason":"Offences", "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:39:20Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingFailed_Offences:#offencetimer=10;", "Message_Localised":"Отказано в запросе на стыковку, действует наказание за нарушения правил космопорта (остается 10 с)", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:39:20Z", "event":"DockingDenied", "Reason":"Offences", "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:39:21Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Pilots Federation Local Branch", "Fine":200 }
+{ "timestamp":"2017-12-06T14:39:41Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T14:39:52Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingFailed_Offences:#offencetimer=26;", "Message_Localised":"Отказано в запросе на стыковку, действует наказание за нарушения правил космопорта (остается 26 с)", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:39:52Z", "event":"DockingDenied", "Reason":"Offences", "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:40:18Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingOffenceCleared;", "Message_Localised":"Нарушения правил космопорта сняты, привилегии на стыковку восстановлены", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:40:46Z", "event":"DockingRequested", "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:40:46Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:40:47Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:40:47Z", "event":"DockingGranted", "LandingPad":19, "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T14:41:29Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T14:43:27Z", "event":"Docked", "StationName":"Russell Ring", "StationType":"Orbis", "StarSystem":"Eravate", "StationFaction":"Pilots Federation Local Branch", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"PilotsFederation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":99.475800 }
+{ "timestamp":"2017-12-06T14:45:47Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Elvis;", "From_Localised":"Elvis", "Message":"$Commuter_HostileScan02;", "Message_Localised":"Никто, кроме сотрудников системной безопасности, не имеет права сканировать наш корабль.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:47:27Z", "event":"MissionCompleted", "Faction":"Independent Eravate Free", "Name":"Mission_Welcome_name", "MissionID":258266138, "DestinationSystem":"Eravate", "DestinationStation":"Russell Ring", "Reward":10000 }
+{ "timestamp":"2017-12-06T14:55:39Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Exobyte Corp;", "From_Localised":"Exobyte Corp", "Message":"$Commuter_HostileScan01;", "Message_Localised":"Требую прекратить это незаконное сканирование.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T14:57:24Z", "event":"SetUserShipName", "Ship":"sidewinder", "ShipID":0, "UserShipName":"SLEEPY-ONE", "UserShipId":"SLEEPY" }
+{ "timestamp":"2017-12-06T15:03:05Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=hoonyan;", "From_Localised":"hoonyan", "Message":"$Commuter_AuthorityScan01;", "Message_Localised":"Мы что-то нарушили, командир?", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:08:16Z", "event":"ModuleBuy", "Slot":"SmallHardpoint1", "StoredItem":"$hpt_pulselaser_gimbal_small_name;", "StoredItem_Localised":"Импульсный лазер", "BuyItem":"$hpt_mininglaser_fixed_small_name;", "BuyItem_Localised":"Проходочный лазер", "BuyPrice":6800, "Ship":"sidewinder", "ShipID":0 }
+{ "timestamp":"2017-12-06T15:12:13Z", "event":"Undocked", "StationName":"Russell Ring", "StationType":"Orbis" }
+{ "timestamp":"2017-12-06T15:12:55Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T15:18:06Z", "event":"MaterialDiscovered", "Category":"Encoded", "Name":"shieldsoakanalysis", "DiscoveryNumber":3 }
+{ "timestamp":"2017-12-06T15:18:06Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"shieldsoakanalysis", "Count":3 }
+{ "timestamp":"2017-12-06T15:18:27Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-06T15:19:25Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingTresspassWarningComms;", "Message_Localised":"Обнаружено нарушение – промедление, немедленно покиньте космопорт во избежание летального ответа", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:19:35Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Pilots Federation Local Branch", "Fine":200 }
+{ "timestamp":"2017-12-06T15:19:47Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingOffenceCleared;", "Message_Localised":"Нарушения правил космопорта сняты, привилегии на стыковку восстановлены", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:20:43Z", "event":"DockingRequested", "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T15:20:43Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:20:44Z", "event":"ReceiveText", "From":"Russell Ring", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:20:44Z", "event":"DockingGranted", "LandingPad":34, "StationName":"Russell Ring" }
+{ "timestamp":"2017-12-06T15:21:12Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T15:22:49Z", "event":"Docked", "StationName":"Russell Ring", "StationType":"Orbis", "StarSystem":"Eravate", "StationFaction":"Pilots Federation Local Branch", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"PilotsFederation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":99.494850 }
+{ "timestamp":"2017-12-06T15:23:25Z", "event":"RefuelAll", "Cost":98, "Amount":1.941619 }
+{ "timestamp":"2017-12-06T15:23:58Z", "event":"Repair", "Item":"All", "Cost":69 }
+{ "timestamp":"2017-12-06T15:24:00Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2017-12-06T15:25:22Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:26:12Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T15:27:11Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T15:27:24Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:27:42Z", "event":"BuyExplorationData", "System":"Alrai Sector KH-V b2-3", "Cost":80 }
+{ "timestamp":"2017-12-06T15:27:55Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T15:27:59Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:28:10Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T15:28:57Z", "event":"Undocked", "StationName":"Russell Ring", "StationType":"Orbis" }
+{ "timestamp":"2017-12-06T15:29:37Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T15:30:01Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Chris Zaremba;", "From_Localised":"Chris Zaremba", "Message":"$Commuter_HostileScan05;", "Message_Localised":"Ваш корабль идентифицирован, в случае агрессивных действий вас привлекут к уголовной ответственности.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:30:32Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:30:34Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Chris Zaremba;", "From_Localised":"Chris Zaremba", "Message":"$Commuter_HostileScan05;", "Message_Localised":"Ваш корабль идентифицирован, в случае агрессивных действий вас привлекут к уголовной ответственности.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:30:44Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T15:31:14Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Ross 142", "StarClass":"M" }
+{ "timestamp":"2017-12-06T15:31:33Z", "event":"FSDJump", "StarSystem":"Ross 142", "StarPos":[-40.594,1.438,56.125], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"Нет", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"Нет", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Анархия", "Population":0, "JumpDist":6.080, "FuelUsed":0.388262, "FuelLevel":1.611738 }
+{ "timestamp":"2017-12-06T15:31:34Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-06T15:31:39Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T15:33:17Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Alrai Sector KH-V b2-3", "StarClass":"M" }
+{ "timestamp":"2017-12-06T15:33:23Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T15:33:36Z", "event":"FSDJump", "StarSystem":"Alrai Sector KH-V b2-3", "StarPos":[-38.875,-1.750,56.969], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"Нет", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"Нет", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Анархия", "Population":0, "JumpDist":3.718, "FuelUsed":0.142803, "FuelLevel":1.468935 }
+{ "timestamp":"2017-12-06T15:33:36Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-06T15:33:41Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T15:34:13Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T15:34:18Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T15:34:28Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:34:58Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T15:35:02Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:35:27Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T15:35:32Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:35:55Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T15:36:21Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:36:22Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T15:36:47Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LHS 3447", "StarClass":"K" }
+{ "timestamp":"2017-12-06T15:36:52Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T15:37:06Z", "event":"FSDJump", "StarSystem":"LHS 3447", "StarPos":[-43.188,-5.281,56.156], "SystemAllegiance":"PilotsFederation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":1148206412, "JumpDist":5.633, "FuelUsed":0.325687, "FuelLevel":1.143247, "Factions":[ { "Name":"LHS 3447 Academy for Novitiate Pilots", "FactionState":"None", "Government":"Cooperative", "Influence":0.097000, "Allegiance":"Independent", "PendingStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"LTT 18486 Jet Energy Company", "FactionState":"CivilUnrest", "Government":"Corporate", "Influence":0.116000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Bust", "Trend":-1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Future of LHS 3447", "FactionState":"Lockdown", "Government":"Democracy", "Influence":0.278000, "Allegiance":"Federation", "PendingStates":[ { "State":"CivilUnrest", "Trend":0 }, { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Liberty Party of GD 219", "FactionState":"None", "Government":"Dictatorship", "Influence":0.010000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Retreat", "Trend":0 } ] }, { "Name":"LHS 3447 Co", "FactionState":"None", "Government":"Corporate", "Influence":0.220000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":-1 } ], "RecoveringStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Freedom Party of LHS 3447", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.187000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"LHS 3447 Cartel", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.062000, "Allegiance":"Independent", "PendingStates":[ { "State":"Bust", "Trend":-1 }, { "State":"Lockdown", "Trend":1 }, { "State":"Outbreak", "Trend":1 } ], "RecoveringStates":[ { "State":"CivilUnrest", "Trend":0 } ] }, { "Name":"LHS 3447 Dynamic & Co", "FactionState":"None", "Government":"Corporate", "Influence":0.030000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":1 } ] } ], "SystemFaction":"Pilots Federation Local Branch" }
+{ "timestamp":"2017-12-06T15:37:06Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T15:38:36Z", "event":"SupercruiseExit", "StarSystem":"LHS 3447", "Body":"LHS 3447 B A Belt Cluster 1", "BodyType":"AsteroidCluster" }
+{ "timestamp":"2017-12-06T15:38:37Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T15:41:19Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-06T15:41:19Z", "event":"ReceiveText", "From":"$ShipName_Police_Independent;", "From_Localised":"Корабль властей системы", "Message":"$Police_ThankYouPassedStopAndSearch07;", "Message_Localised":"Сканирование ничего не выявило. Продолжайте путь, командир.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:43:32Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T15:43:37Z", "event":"SupercruiseEntry", "StarSystem":"LHS 3447" }
+{ "timestamp":"2017-12-06T15:43:39Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T15:43:48Z", "event":"SupercruiseExit", "StarSystem":"LHS 3447", "Body":"LHS 3447 B A Belt", "BodyType":"StellarRing" }
+{ "timestamp":"2017-12-06T15:43:49Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T15:44:04Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T15:44:09Z", "event":"SupercruiseEntry", "StarSystem":"LHS 3447" }
+{ "timestamp":"2017-12-06T15:44:10Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T15:46:12Z", "event":"MaterialDiscovered", "Category":"Encoded", "Name":"shielddensityreports", "DiscoveryNumber":4 }
+{ "timestamp":"2017-12-06T15:46:12Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"shielddensityreports", "Count":3 }
+{ "timestamp":"2017-12-06T15:47:51Z", "event":"SupercruiseExit", "StarSystem":"LHS 3447", "Body":"Bluford Orbital", "BodyType":"Station" }
+{ "timestamp":"2017-12-06T15:47:51Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-06T15:47:56Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T15:48:38Z", "event":"ReceiveText", "From":"Bluford Orbital", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"В запросе на стыковку отказано, приблизьтесь на 7500 м", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:48:38Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"Bluford Orbital" }
+{ "timestamp":"2017-12-06T15:48:48Z", "event":"DataScanned", "Type":"TouristBeacon" }
+{ "timestamp":"2017-12-06T15:48:55Z", "event":"ReceiveText", "From":"Bluford Orbital", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"В запросе на стыковку отказано, приблизьтесь на 7500 м", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:48:55Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"Bluford Orbital" }
+{ "timestamp":"2017-12-06T15:49:28Z", "event":"ReceiveText", "From":"Bluford Orbital", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:49:58Z", "event":"DockingRequested", "StationName":"Bluford Orbital" }
+{ "timestamp":"2017-12-06T15:49:58Z", "event":"ReceiveText", "From":"Bluford Orbital", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:50:00Z", "event":"ReceiveText", "From":"Bluford Orbital", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:50:00Z", "event":"DockingGranted", "LandingPad":14, "StationName":"Bluford Orbital" }
+{ "timestamp":"2017-12-06T15:50:47Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T15:51:47Z", "event":"Docked", "StationName":"Bluford Orbital", "StationType":"Orbis", "StarSystem":"LHS 3447", "StationFaction":"Pilots Federation Local Branch", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"PilotsFederation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Agri;", "StationEconomy_Localised":"Сельское хозяйство", "DistFromStarLS":2106.340088 }
+{ "timestamp":"2017-12-06T15:55:03Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=ABW Galactic Travel Agency;", "From_Localised":"ABW Galactic Travel Agency", "Message":"$Commuter_AuthorityScan07;", "Message_Localised":"Инспектор, нет никакого смысла меня сканировать. Я ничего не скрываю.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:55:53Z", "event":"RefuelAll", "Cost":56, "Amount":1.114570 }
+{ "timestamp":"2017-12-06T15:56:00Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=ABW Galactic Travel Agency;", "From_Localised":"ABW Galactic Travel Agency", "Message":"$Commuter_AuthorityScan05;", "Message_Localised":"На каких основаниях вы сканируете мой корабль?", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:56:22Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=DG Space Tours;", "From_Localised":"DG Space Tours", "Message":"$Commuter_HostileScan01;", "Message_Localised":"Требую прекратить это незаконное сканирование.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:57:34Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Beautiful Corner Tours;", "From_Localised":"Beautiful Corner Tours", "Message":"$Commuter_HostileScan03;", "Message_Localised":"Просьба прекратить сканирование, мы не везем ценностей.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:58:00Z", "event":"MissionAccepted", "Faction":"LHS 3447 Academy for Novitiate Pilots", "Name":"Mission_Delivery_Cooperative", "LocalisedName":"Поддержите кооператив, доставив 2 шт. товара Нефть", "Commodity":"$MineralOil_Name;", "Commodity_Localised":"Нефть", "Count":2, "TargetFaction":"Frigaha Gold Netcoms Ltd", "DestinationSystem":"Frigaha", "DestinationStation":"Onizuka Landing", "Expiry":"2017-12-07T15:37:34Z", "Influence":"Low", "Reputation":"Low", "Reward":17583, "MissionID":258555688 }
+{ "timestamp":"2017-12-06T15:58:05Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=ABW Galactic Travel Agency;", "From_Localised":"ABW Galactic Travel Agency", "Message":"$Commuter_HostileScan04;", "Message_Localised":"Ты ищешь не этот торговый корабль.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T15:58:56Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T15:59:06Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T15:59:25Z", "event":"Undocked", "StationName":"Bluford Orbital", "StationType":"Orbis" }
+{ "timestamp":"2017-12-06T15:59:32Z", "event":"MaterialDiscovered", "Category":"Encoded", "Name":"scanarchives", "DiscoveryNumber":5 }
+{ "timestamp":"2017-12-06T15:59:32Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"scanarchives", "Count":3 }
+{ "timestamp":"2017-12-06T15:59:32Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"scanarchives", "Count":3 }
+{ "timestamp":"2017-12-06T15:59:55Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T16:00:13Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Beautiful Corner Tours;", "From_Localised":"Beautiful Corner Tours", "Message":"$Commuter_AuthorityScan02;", "Message_Localised":"Чем могу быть полезен?", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:00:52Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Frigaha", "StarClass":"G" }
+{ "timestamp":"2017-12-06T16:00:57Z", "event":"ReceiveText", "From":"Bluford Orbital", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:01:10Z", "event":"FSDJump", "StarSystem":"Frigaha", "StarPos":[-47.344,-0.156,56.250], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Refinery;", "SystemEconomy_Localised":"Переработка", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":299296, "JumpDist":6.599, "FuelUsed":0.497169, "FuelLevel":1.502831, "Factions":[ { "Name":"Zeta Aquilae Blue Transport Org", "FactionState":"Boom", "Government":"Corporate", "Influence":0.032869, "Allegiance":"Federation" }, { "Name":"LTT 18486 Jet Energy Company", "FactionState":"CivilUnrest", "Government":"Corporate", "Influence":0.242032, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Bust", "Trend":-1 } ] }, { "Name":"Frigaha Gold Netcoms Ltd", "FactionState":"CivilUnrest", "Government":"Corporate", "Influence":0.296813, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Left Party of Frigaha", "FactionState":"CivilWar", "Government":"Communism", "Influence":0.009960, "Allegiance":"Independent" }, { "Name":"Nationals of LP 510-10", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.121514, "Allegiance":"Independent", "PendingStates":[ { "State":"Bust", "Trend":1 } ], "RecoveringStates":[ { "State":"Election", "Trend":0 } ] }, { "Name":"Frigaha Purple Pirates", "FactionState":"Bust", "Government":"Anarchy", "Influence":0.122510, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":0 }, { "State":"Lockdown", "Trend":1 } ] }, { "Name":"New Frigaha Dominion", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.153386, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Election", "Trend":0 } ] }, { "Name":"Frigaha Services", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.020916, "Allegiance":"Federation" } ], "SystemFaction":"Frigaha Gold Netcoms Ltd", "FactionState":"CivilUnrest" }
+{ "timestamp":"2017-12-06T16:01:11Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-06T16:01:16Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T16:02:33Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Fansy;", "From_Localised":"Fansy", "Message":"$Propagandist_Patrol02;", "Message_Localised":"Покажи им, чего мы стоим! Поддержи наших пилотов!", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:03:00Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Fansy;", "From_Localised":"Fansy", "Message":"$Propagandist_Patrol04;", "Message_Localised":"Враги ждут, что мы сбежим. Не дождутся! Сразись за нашу свободу!", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:03:14Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T16:03:25Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T16:03:27Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ian 'Wilko' Wilkinson;", "From_Localised":"Ian 'Wilko' Wilkinson", "Message":"$Pirate_StartInterdiction04;", "Message_Localised":"Приготовься!", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:03:27Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T16:03:27Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T16:03:38Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Fansy;", "From_Localised":"Fansy", "Message":"$Propagandist_Patrol05;", "Message_Localised":"Подпиши боевые контракты сегодня – сражайся за победителя!", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:03:58Z", "event":"EscapeInterdiction", "Interdictor":"Ian 'Wilko' Wilkinson", "IsPlayer":false }
+{ "timestamp":"2017-12-06T16:04:11Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Fansy;", "From_Localised":"Fansy", "Message":"$Propagandist_Patrol01;", "Message_Localised":"Не подводи систему, подключайся сегодня.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:04:21Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-06T16:04:24Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T16:04:41Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T16:07:09Z", "event":"SupercruiseExit", "StarSystem":"Frigaha", "Body":"Onizuka Landing", "BodyType":"Station" }
+{ "timestamp":"2017-12-06T16:07:10Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-06T16:07:15Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T16:07:22Z", "event":"ReceiveText", "From":"Onizuka Landing", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:07:56Z", "event":"DockingRequested", "StationName":"Onizuka Landing" }
+{ "timestamp":"2017-12-06T16:07:56Z", "event":"ReceiveText", "From":"Onizuka Landing", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:07:57Z", "event":"ReceiveText", "From":"Onizuka Landing", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:07:57Z", "event":"DockingGranted", "LandingPad":2, "StationName":"Onizuka Landing" }
+{ "timestamp":"2017-12-06T16:09:37Z", "event":"Docked", "StationName":"Onizuka Landing", "StationType":"Outpost", "StarSystem":"Frigaha", "StationFaction":"Frigaha Gold Netcoms Ltd", "FactionState":"CivilUnrest", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Корпоративная", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Refuel", "Repair", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Refinery;", "StationEconomy_Localised":"Переработка", "DistFromStarLS":135.615479 }
+{ "timestamp":"2017-12-06T16:10:45Z", "event":"Promotion", "Trade":1 }
+{ "timestamp":"2017-12-06T16:10:46Z", "event":"MissionCompleted", "Faction":"Frigaha Gold Netcoms Ltd", "Name":"Mission_Delivery_Cooperative_name", "MissionID":258555688, "Commodity":"$MineralOil_Name;", "Commodity_Localised":"Нефть", "Count":2, "TargetFaction":"Frigaha Gold Netcoms Ltd", "DestinationSystem":"Frigaha", "DestinationStation":"Onizuka Landing", "Reward":17583, "CommodityReward":[ { "Name":"TelemetrySuite", "Count":4 } ] }
+{ "timestamp":"2017-12-06T16:11:23Z", "event":"Repair", "Item":"Paint", "Cost":2 }
+{ "timestamp":"2017-12-06T16:11:30Z", "event":"RefuelAll", "Cost":32, "Amount":0.627724 }
+{ "timestamp":"2017-12-06T16:11:48Z", "event":"Undocked", "StationName":"Onizuka Landing", "StationType":"Outpost" }
+{ "timestamp":"2017-12-06T16:12:49Z", "event":"ReceiveText", "From":"Onizuka Landing", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:14:54Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Eravate", "StarClass":"K" }
+{ "timestamp":"2017-12-06T16:14:59Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T16:15:22Z", "event":"FSDJump", "StarSystem":"Eravate", "StarPos":[-42.438,-3.156,59.656], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":740380179, "JumpDist":6.684, "FuelUsed":0.552585, "FuelLevel":1.447415, "Factions":[ { "Name":"Eravate School of Commerce", "FactionState":"None", "Government":"Cooperative", "Influence":0.117000, "Allegiance":"Independent", "PendingStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Independent Eravate Free", "FactionState":"Outbreak", "Government":"Democracy", "Influence":0.114000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Eravate Network", "FactionState":"Boom", "Government":"Corporate", "Influence":0.166000, "Allegiance":"Federation", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Traditional Eravate Autocracy", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.101000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Eravate Life Services", "FactionState":"Boom", "Government":"Corporate", "Influence":0.115000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Official Eravate Flag", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.093000, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":1 } ] }, { "Name":"Adle's Armada", "FactionState":"Boom", "Government":"Corporate", "Influence":0.294000, "Allegiance":"Federation" } ], "SystemFaction":"Adle's Armada", "FactionState":"Boom" }
+{ "timestamp":"2017-12-06T16:15:23Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T16:16:43Z", "event":"ApproachSettlement", "Name":"Toll Holdings" }
+{ "timestamp":"2017-12-06T16:16:44Z", "event":"ApproachSettlement", "Name":"Tiptree Gateway" }
+{ "timestamp":"2017-12-06T16:16:44Z", "event":"ApproachSettlement", "Name":"Bradshaw Vision ++" }
+{ "timestamp":"2017-12-06T16:16:44Z", "event":"ApproachSettlement", "Name":"Scott Prospect ++" }
+{ "timestamp":"2017-12-06T16:16:46Z", "event":"ApproachSettlement", "Name":"Linenger's Inheritance ++" }
+{ "timestamp":"2017-12-06T16:17:23Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Свадебное судно", "Message":"$ConvoyWedding_Patrol05;", "Message_Localised":"Церемония скоро начнется! Убедитесь, что ваши экраны настроены на соответствующую частоту!", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:17:25Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol03;", "Message_Localised":"В ходе сегодняшнего круиза вы увидите восхитительные пейзажи, а наши стюарды подробно расскажут вам обо всем.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:17:34Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Cleve Hub", "BodyType":"Station" }
+{ "timestamp":"2017-12-06T16:17:35Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-06T16:17:36Z", "event":"ReceiveText", "From":"Cleve Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:17:40Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T16:17:44Z", "event":"ReceiveText", "From":"Cleve Hub", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"В запросе на стыковку отказано, приблизьтесь на 7500 м", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:17:44Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"Cleve Hub" }
+{ "timestamp":"2017-12-06T16:18:11Z", "event":"ReceiveText", "From":"Cleve Hub", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"В запросе на стыковку отказано, приблизьтесь на 7500 м", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:18:11Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"Cleve Hub" }
+{ "timestamp":"2017-12-06T16:18:18Z", "event":"DockingRequested", "StationName":"Cleve Hub" }
+{ "timestamp":"2017-12-06T16:18:18Z", "event":"ReceiveText", "From":"Cleve Hub", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:18:19Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Viglin;", "From_Localised":"Viglin", "Message":"$BadKarmaCriticalDamage03;", "Message_Localised":"Ты неплохо дерешься!", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:18:20Z", "event":"ReceiveText", "From":"Cleve Hub", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:18:20Z", "event":"DockingGranted", "LandingPad":29, "StationName":"Cleve Hub" }
+{ "timestamp":"2017-12-06T16:19:06Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-06T16:19:52Z", "event":"Docked", "StationName":"Cleve Hub", "StationType":"Orbis", "StarSystem":"Eravate", "StationFaction":"Adle's Armada", "FactionState":"Boom", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Корпоративная", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":37.224350 }
+{ "timestamp":"2017-12-06T16:23:59Z", "event":"ModuleBuy", "Slot":"Slot04_Size1", "BuyItem":"$int_refinery_size1_class2_name;", "BuyItem_Localised":"Устройство переработки", "BuyPrice":18000, "Ship":"sidewinder", "ShipID":0 }
+{ "timestamp":"2017-12-06T16:24:46Z", "event":"RefuelAll", "Cost":32, "Amount":0.622953 }
+{ "timestamp":"2017-12-06T16:33:09Z", "event":"Undocked", "StationName":"Cleve Hub", "StationType":"Orbis" }
+{ "timestamp":"2017-12-06T16:33:41Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-06T16:35:02Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T16:35:03Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T16:35:03Z", "event":"ApproachSettlement", "Name":"Tiptree Gateway" }
+{ "timestamp":"2017-12-06T16:35:03Z", "event":"ApproachSettlement", "Name":"Toll Holdings" }
+{ "timestamp":"2017-12-06T16:35:03Z", "event":"ApproachSettlement", "Name":"Linenger's Inheritance ++" }
+{ "timestamp":"2017-12-06T16:35:03Z", "event":"ApproachSettlement", "Name":"Scott Prospect ++" }
+{ "timestamp":"2017-12-06T16:35:03Z", "event":"ApproachSettlement", "Name":"Bradshaw Vision ++" }
+{ "timestamp":"2017-12-06T16:35:03Z", "event":"ReceiveText", "From":"", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:35:07Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T16:35:08Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T16:36:59Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate A Belt", "BodyType":"StellarRing" }
+{ "timestamp":"2017-12-06T16:37:00Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T16:37:36Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T16:37:41Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T16:37:42Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T16:37:56Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate A Belt Cluster 6", "BodyType":"AsteroidCluster" }
+{ "timestamp":"2017-12-06T16:37:57Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T16:39:10Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-06T16:39:10Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ThankYouPassedStopAndSearch07;", "Message_Localised":"Сканирование ничего не выявило. Продолжайте путь, командир.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T16:40:42Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2017-12-06T16:42:50Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2017-12-06T16:53:20Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2017-12-06T16:56:37Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2017-12-06T17:00:22Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2017-12-06T17:03:26Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:03:30Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2017-12-06T17:03:31Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:03:33Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:04:09Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol01;", "Message_Localised":"И не забывайте, этот лайнер – в числе 1% лучших лайнеров.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:05:05Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Свадебное судно", "Message":"$ConvoyWedding_Patrol08;", "Message_Localised":"Сегодня я впервые увижу всю семью в сборе.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:05:09Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate A Belt", "BodyType":"StellarRing" }
+{ "timestamp":"2017-12-06T17:05:10Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:05:26Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:05:31Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:05:31Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:05:45Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate A Belt Cluster 4", "BodyType":"AsteroidCluster" }
+{ "timestamp":"2017-12-06T17:05:46Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:16:21Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Felix Paralax;", "From_Localised":"Felix Paralax", "Message":"$Miner_OnJumpNoAsteroids02;", "Message_Localised":"Отчет по сектору, полезных ископаемых не осталось, улетаю.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:16:56Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:17:07Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:17:08Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:17:16Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol01;", "Message_Localised":"И не забывайте, этот лайнер – в числе 1% лучших лайнеров.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:18:12Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol04;", "Message_Localised":"Прошу внимания: сейчас стюарды ознакомят вас с краткой техникой безопасности.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:19:00Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol05;", "Message_Localised":"Говорит капитан. Из-за непредвиденных задержек мы прибываем в очередную точку назначения позднее запланированного.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:19:43Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol03;", "Message_Localised":"В ходе сегодняшнего круиза вы увидите восхитительные пейзажи, а наши стюарды подробно расскажут вам обо всем.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:20:30Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol04;", "Message_Localised":"Прошу внимания: сейчас стюарды ознакомят вас с краткой техникой безопасности.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:20:33Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-06T17:20:34Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:21:57Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:22:02Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:22:02Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:22:08Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-06T17:22:08Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:24:25Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:24:30Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:24:31Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:25:22Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-06T17:25:23Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:25:39Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:25:44Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:25:45Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:26:24Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol02;", "Message_Localised":"Пока мы движемся в пределах системы, приглашаем воспользоваться нашими бортовыми услугами.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:26:56Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol03;", "Message_Localised":"В ходе сегодняшнего круиза вы увидите восхитительные пейзажи, а наши стюарды подробно расскажут вам обо всем.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:27:55Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-06T17:27:56Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:29:08Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:29:13Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:29:13Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:29:33Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-06T17:29:33Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:30:24Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:30:29Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:30:30Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:30:35Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Свадебное судно", "Message":"$ConvoyWedding_Patrol06;", "Message_Localised":"У меня еще текст свадебной клятвы не написан. Что же мне там говорить?..", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:31:00Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Круизное судно", "Message":"$CruiseLiner_SCPatrol03;", "Message_Localised":"В ходе сегодняшнего круиза вы увидите восхитительные пейзажи, а наши стюарды подробно расскажут вам обо всем.", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:31:10Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-06T17:31:11Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-06T17:32:38Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-06T17:32:43Z", "event":"SupercruiseEntry", "StarSystem":"Eravate" }
+{ "timestamp":"2017-12-06T17:32:44Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:33:10Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Свадебное судно", "Message":"$ConvoyWedding_Patrol01;", "Message_Localised":"Помогите нам отпраздновать это счастливое событие!", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:33:44Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-06T17:33:57Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-06T17:34:10Z", "event":"SendText", "To":"local", "Message":"NOOOOO!" }
+{ "timestamp":"2017-12-06T17:34:22Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Свадебное судно", "Message":"$ConvoyWedding_Patrol09;", "Message_Localised":"Ох, не знаю... Может, все-таки отменить эту свадьбу?", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:35:10Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Свадебное судно", "Message":"$ConvoyWedding_Patrol06;", "Message_Localised":"У меня еще текст свадебной клятвы не написан. Что же мне там говорить?..", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:36:00Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Свадебное судно", "Message":"$ConvoyWedding_Patrol06;", "Message_Localised":"У меня еще текст свадебной клятвы не написан. Что же мне там говорить?..", "Channel":"npc" }
+{ "timestamp":"2017-12-06T17:36:08Z", "event":"ApproachSettlement", "Name":"Linenger's Inheritance ++" }
+{ "timestamp":"2017-12-06T17:36:09Z", "event":"ApproachSettlement", "Name":"Tiptree Gateway" }
+{ "timestamp":"2017-12-06T17:36:10Z", "event":"ApproachSettlement", "Name":"Scott Prospect ++" }
+{ "timestamp":"2017-12-06T17:36:10Z", "event":"ApproachSettlement", "Name":"Bradshaw Vision ++" }
+{ "timestamp":"2017-12-06T17:36:10Z", "event":"ApproachSettlement", "Name":"Toll Holdings" }
+{ "timestamp":"2017-12-06T17:36:39Z", "event":"ApproachSettlement", "Name":"Linenger's Inheritance ++" }
+{ "timestamp":"2017-12-06T17:36:43Z", "event":"SupercruiseExit", "StarSystem":"Eravate", "Body":"Eravate 2", "BodyType":"Planet" }
+{ "timestamp":"2017-12-06T17:36:44Z", "event":"Music", "MusicTrack":"Exploration" }

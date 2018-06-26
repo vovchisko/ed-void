@@ -24,21 +24,16 @@
 </template>
 
 <script>
-    import Data from '../controllers/data';
+    import CFG from '../ctrl/cfg';
 
     export default {
         name: 'cfg',
-        data: () => {
-            return {
-                data: Data,
-                cfg: Data.cfg,
-            }
-        },
+        data: () => { return {cfg: CFG} },
         mounted: function () { this.cgf_apply(); },
         methods: {
             cgf_apply: function () {
-                Data.apply_ui_cfg();
-                Data.save();
+                CFG.apply_ui_cfg();
+                CFG.save();
             },
         }
     }

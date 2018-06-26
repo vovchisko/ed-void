@@ -1,0 +1,381 @@
+{ "timestamp":"2017-12-11T00:02:18Z", "event":"Fileheader", "part":1, "language":"Russian\\RU", "gameversion":"2.4", "build":"r160439/r0 " }
+{ "timestamp":"2017-12-11T00:02:18Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:02:19Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2017-12-11T00:03:22Z", "event":"Cargo", "Inventory":[  ] }
+{ "timestamp":"2017-12-11T00:03:22Z", "event":"Loadout", "Ship":"CobraMkIII", "ShipID":1, "ShipName":"SLEEPY-ONE", "ShipIdent":"#SLEEP", "Modules":[ { "Slot":"MediumHardpoint1", "Item":"Hpt_PulseLaser_Fixed_Small", "On":true, "Priority":0, "Health":1.000000, "Value":2200 }, { "Slot":"MediumHardpoint2", "Item":"Hpt_PulseLaser_Fixed_Small", "On":true, "Priority":0, "Health":1.000000, "Value":2200 }, { "Slot":"SmallHardpoint1", "Item":"Hpt_MultiCannon_Gimbal_Small", "On":true, "Priority":0, "AmmoInClip":90, "AmmoInHopper":2100, "Health":1.000000, "Value":12825 }, { "Slot":"SmallHardpoint2", "Item":"Hpt_MultiCannon_Gimbal_Small", "On":true, "Priority":0, "AmmoInClip":90, "AmmoInHopper":2100, "Health":1.000000, "Value":12825 }, { "Slot":"TinyHardpoint1", "Item":"Hpt_ShieldBooster_Size0_Class2", "On":true, "Priority":0, "Health":1.000000, "Value":23000 }, { "Slot":"TinyHardpoint2", "Item":"Hpt_CrimeScanner_Size0_Class2", "On":true, "Priority":0, "Health":1.000000, "Value":40633 }, { "Slot":"PaintJob", "Item":"PaintJob_CobraMkIII_Militaire_Sand", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"Armour", "Item":"CobraMkIII_Armour_Grade1", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"PowerPlant", "Item":"Int_PowerPlant_Size4_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":19878 }, { "Slot":"MainEngines", "Item":"Int_Engine_Size4_Class1", "On":true, "Priority":2, "Health":1.000000, "Value":19878 }, { "Slot":"FrameShiftDrive", "Item":"Int_Hyperdrive_Size4_Class1", "On":true, "Priority":2, "Health":1.000000, "Value":19878 }, { "Slot":"LifeSupport", "Item":"Int_LifeSupport_Size3_Class1", "On":true, "Priority":2, "Health":1.000000, "Value":4053 }, { "Slot":"PowerDistributor", "Item":"Int_PowerDistributor_Size3_Class1", "On":true, "Priority":2, "Health":1.000000, "Value":4053 }, { "Slot":"Radar", "Item":"Int_Sensors_Size3_Class1", "On":true, "Priority":2, "Health":1.000000, "Value":4053 }, { "Slot":"FuelTank", "Item":"Int_FuelTank_Size4_Class3", "On":true, "Priority":1, "Health":1.000000, "Value":24734 }, { "Slot":"Slot01_Size4", "Item":"Int_CargoRack_Size3_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":10563 }, { "Slot":"Slot02_Size4", "Item":"Int_CargoRack_Size3_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":10563 }, { "Slot":"Slot03_Size4", "Item":"Int_ShieldGenerator_Size4_Class1", "On":true, "Priority":2, "Health":1.000000, "Value":19878 }, { "Slot":"Slot04_Size2", "Item":"Int_BuggyBay_Size2_Class1", "On":true, "Priority":0, "Health":1.000000, "Value":18000 }, { "Slot":"Slot05_Size2", "Item":"Int_Refinery_Size2_Class3", "On":true, "Priority":0, "Health":1.000000, "Value":113400 }, { "Slot":"Slot06_Size2", "Item":"Int_StellarBodyDiscoveryScanner_Standard", "On":true, "Priority":1, "Health":1.000000, "Value":1000 }, { "Slot":"PlanetaryApproachSuite", "Item":"Int_PlanetApproachSuite", "On":true, "Priority":1, "Health":1.000000, "Value":500 }, { "Slot":"ShipCockpit", "Item":"CobraMkIII_Cockpit", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"CargoHatch", "Item":"ModularCargoBayDoor", "On":true, "Priority":2, "Health":1.000000, "Value":0 } ] }
+{ "timestamp":"2017-12-11T00:03:22Z", "event":"Materials", "Raw":[ { "Name":"phosphorus", "Count":3 } ], "Manufactured":[ { "Name":"gridresistors", "Count":6 }, { "Name":"mechanicalscrap", "Count":9 }, { "Name":"mechanicalequipment", "Count":9 }, { "Name":"heatconductionwiring", "Count":6 }, { "Name":"focuscrystals", "Count":9 }, { "Name":"salvagedalloys", "Count":12 }, { "Name":"chemicalprocessors", "Count":6 }, { "Name":"heatdispersionplate", "Count":3 }, { "Name":"phasealloys", "Count":6 }, { "Name":"shieldingsensors", "Count":3 }, { "Name":"wornshieldemitters", "Count":18 }, { "Name":"galvanisingalloys", "Count":15 }, { "Name":"uncutfocuscrystals", "Count":1 }, { "Name":"hybridcapacitors", "Count":1 }, { "Name":"configurablecomponents", "Count":6 }, { "Name":"highdensitycomposites", "Count":6 }, { "Name":"mechanicalcomponents", "Count":3 }, { "Name":"fedproprietarycomposites", "Count":12 }, { "Name":"fedcorecomposites", "Count":3 }, { "Name":"shieldemitters", "Count":3 } ], "Encoded":[ { "Name":"decodedemissiondata", "Count":3 }, { "Name":"emissiondata", "Count":6 }, { "Name":"shieldsoakanalysis", "Count":12 }, { "Name":"shielddensityreports", "Count":15 }, { "Name":"scanarchives", "Count":6 }, { "Name":"shieldpatternanalysis", "Count":6 }, { "Name":"shieldcyclerecordings", "Count":30 }, { "Name":"encodedscandata", "Count":9 }, { "Name":"fsdtelemetry", "Count":4 }, { "Name":"scandatabanks", "Count":3 }, { "Name":"legacyfirmware", "Count":3 }, { "Name":"archivedemissiondata", "Count":3 }, { "Name":"disruptedwakeechoes", "Count":3 }, { "Name":"industrialfirmware", "Count":1 }, { "Name":"bulkscandata", "Count":3 } ] }
+{ "timestamp":"2017-12-11T00:03:22Z", "event":"LoadGame", "Commander":"Sleep Runner", "Ship":"CobraMkIII", "ShipID":1, "ShipName":"SLEEPY-ONE", "ShipIdent":"#SLEEP", "FuelLevel":16.000000, "FuelCapacity":16.000000, "GameMode":"Open", "Credits":289541, "Loan":0 }
+{ "timestamp":"2017-12-11T00:03:22Z", "event":"Rank", "Combat":0, "Trade":2, "Explore":2, "Empire":0, "Federation":0, "CQC":0 }
+{ "timestamp":"2017-12-11T00:03:22Z", "event":"Progress", "Combat":35, "Trade":48, "Explore":15, "Empire":0, "Federation":100, "CQC":0 }
+{ "timestamp":"2017-12-11T00:03:36Z", "event":"Location", "Docked":true, "StationName":"McNair Gateway", "StationType":"Coriolis", "StarSystem":"Sun Takush", "StarPos":[-54.531,-17.219,57.594], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_low;", "SystemSecurity_Localised":"Низк. ур. безопасности", "Population":1979367, "Body":"McNair Gateway", "BodyType":"Station", "Factions":[ { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Sun Takush Power PLC", "FactionState":"None", "Government":"Corporate", "Influence":0.389000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Revolutionary Party of Chamunda", "FactionState":"None", "Government":"Democracy", "Influence":0.037000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Traditional BD-10 5238 Nationalists", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.137000, "Allegiance":"Independent" }, { "Name":"Forculus Citizen Party", "FactionState":"War", "Government":"Communism", "Influence":0.130000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Unionists of Sun Takush", "FactionState":"None", "Government":"Communism", "Influence":0.036000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pirates of Sun Takush", "FactionState":"None", "Government":"Anarchy", "Influence":0.074000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":-1 } ], "RecoveringStates":[ { "State":"Lockdown", "Trend":-1 } ] }, { "Name":"Sun Takush Limited", "FactionState":"None", "Government":"Corporate", "Influence":0.047000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Sun Takush Conservatives", "FactionState":"War", "Government":"Dictatorship", "Influence":0.128000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Boom", "Trend":1 }, { "State":"Outbreak", "Trend":0 } ] }, { "Name":"Valyn's Dragons", "FactionState":"None", "Government":"Democracy", "Influence":0.022000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] } ], "SystemFaction":"Sun Takush Power PLC" }
+{ "timestamp":"2017-12-11T00:03:37Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:03:37Z", "event":"Docked", "StationName":"McNair Gateway", "StationType":"Coriolis", "StarSystem":"Sun Takush", "StationFaction":"Sun Takush Power PLC", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Корпоративная", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "Facilitator", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":1376.278687 }
+{ "timestamp":"2017-12-11T00:03:37Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-11T00:05:34Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T00:05:38Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-11T00:05:41Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T00:05:54Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T00:05:57Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T00:06:19Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-11T00:06:38Z", "event":"Undocked", "StationName":"McNair Gateway", "StationType":"Coriolis" }
+{ "timestamp":"2017-12-11T00:06:48Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:07:28Z", "event":"ReceiveText", "From":"McNair Gateway", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:07:32Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"NLTT 48288", "StarClass":"M" }
+{ "timestamp":"2017-12-11T00:07:51Z", "event":"FSDJump", "StarSystem":"NLTT 48288", "StarPos":[-60.438,-13.094,56.313], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"Нет", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"Нет", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Анархия", "Population":0, "JumpDist":7.317, "FuelUsed":1.029137, "FuelLevel":14.970863 }
+{ "timestamp":"2017-12-11T00:07:51Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:08:07Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Inari de Elementia;", "From_Localised":"Inari de Elementia", "Message":"$Hitman_HunterHostileSC_Relevant05;", "Message_Localised":"Орел в гнезде. Повторяю, орел в гнезде.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:08:10Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Inari de Elementia;", "From_Localised":"Inari de Elementia", "Message":"$HitmanMissionFailure_OnEnemyDetect02;", "Message_Localised":"Получай оплату по своему контракту.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:08:30Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Verbigeni", "StarClass":"M" }
+{ "timestamp":"2017-12-11T00:08:36Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:08:49Z", "event":"FSDJump", "StarSystem":"Verbigeni", "StarPos":[-64.750,-7.688,57.000], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Refinery;", "SystemEconomy_Localised":"Переработка", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":41225, "JumpDist":6.950, "FuelUsed":0.906273, "FuelLevel":14.064590, "Factions":[ { "Name":"Zeta Aquilae Blue Transport Org", "FactionState":"None", "Government":"Corporate", "Influence":0.081000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Democrats of Aphra", "FactionState":"Boom", "Government":"Democracy", "Influence":0.155000, "Allegiance":"Federation" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Sun Takush Power PLC", "FactionState":"None", "Government":"Corporate", "Influence":0.154000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Verbigeni Electronics Industry", "FactionState":"Boom", "Government":"Corporate", "Influence":0.408000, "Allegiance":"Federation" }, { "Name":"Verbigeni One", "FactionState":"Boom", "Government":"Cooperative", "Influence":0.073000, "Allegiance":"Independent", "PendingStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"Verbigeni Ring", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.056000, "Allegiance":"Independent" }, { "Name":"Verbigeni Vision Group", "FactionState":"Boom", "Government":"Corporate", "Influence":0.073000, "Allegiance":"Independent", "PendingStates":[ { "State":"CivilWar", "Trend":0 } ] } ], "SystemFaction":"Verbigeni Electronics Industry", "FactionState":"Boom" }
+{ "timestamp":"2017-12-11T00:08:49Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-11T00:08:54Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:10:25Z", "event":"SupercruiseExit", "StarSystem":"Verbigeni", "Body":"Archambault Plant", "BodyType":"Station" }
+{ "timestamp":"2017-12-11T00:10:25Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-11T00:10:30Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T00:10:32Z", "event":"ReceiveText", "From":"Archambault Plant", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:10:36Z", "event":"DockingRequested", "StationName":"Archambault Plant" }
+{ "timestamp":"2017-12-11T00:10:36Z", "event":"ReceiveText", "From":"Archambault Plant", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:10:37Z", "event":"ReceiveText", "From":"Archambault Plant", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:10:37Z", "event":"DockingGranted", "LandingPad":1, "StationName":"Archambault Plant" }
+{ "timestamp":"2017-12-11T00:11:43Z", "event":"Docked", "StationName":"Archambault Plant", "StationType":"Outpost", "StarSystem":"Verbigeni", "StationFaction":"Verbigeni Electronics Industry", "FactionState":"Boom", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Корпоративная", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Refinery;", "StationEconomy_Localised":"Переработка", "DistFromStarLS":233.874969 }
+{ "timestamp":"2017-12-11T00:11:57Z", "event":"RefuelAll", "Cost":101, "Amount":2.009468 }
+{ "timestamp":"2017-12-11T00:12:12Z", "event":"MissionCompleted", "Faction":"Verbigeni Electronics Industry", "Name":"Mission_Courier_Democracy_name", "MissionID":260485505, "TargetFaction":"Verbigeni Electronics Industry", "DestinationSystem":"Verbigeni", "DestinationStation":"Archambault Plant", "Reward":11384 }
+{ "timestamp":"2017-12-11T00:12:20Z", "event":"MissionCompleted", "Faction":"Democrats of Aphra", "Name":"Mission_Courier_name", "MissionID":260485429, "TargetFaction":"Democrats of Aphra", "DestinationSystem":"Verbigeni", "DestinationStation":"Archambault Plant", "Reward":5692 }
+{ "timestamp":"2017-12-11T00:12:27Z", "event":"MissionCompleted", "Faction":"Sun Takush Power PLC", "Name":"Mission_Courier_CivilWar_name", "MissionID":260485804, "TargetFaction":"Sun Takush Power PLC", "DestinationSystem":"Verbigeni", "DestinationStation":"Archambault Plant", "Reward":9961 }
+{ "timestamp":"2017-12-11T00:12:34Z", "event":"MissionCompleted", "Faction":"Verbigeni Ring", "Name":"Mission_Courier_Democracy_name", "MissionID":260485551, "TargetFaction":"Verbigeni Ring", "DestinationSystem":"Verbigeni", "DestinationStation":"Archambault Plant", "Reward":9961 }
+{ "timestamp":"2017-12-11T00:12:34Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"scandatabanks", "Count":1 }
+{ "timestamp":"2017-12-11T00:13:10Z", "event":"Undocked", "StationName":"Archambault Plant", "StationType":"Outpost" }
+{ "timestamp":"2017-12-11T00:13:31Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T00:13:46Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T00:13:50Z", "event":"ReceiveText", "From":"Archambault Plant", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:14:03Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T00:14:03Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T00:14:09Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-11T00:14:10Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Федеральный агент;", "From_Localised":"Федеральный агент", "Message":"$Generic_NoAttackGeneric05;", "Message_Localised":"Очередной корабль, очередной бесполезный пилот. Вали отсюда!", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:14:30Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Brani", "StarClass":"M" }
+{ "timestamp":"2017-12-11T00:14:35Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:14:48Z", "event":"FSDJump", "StarSystem":"Brani", "StarPos":[-65.906,-11.813,52.531], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Agri;", "SystemEconomy_Localised":"Сельское хозяйство", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Корпоративная", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":4276068270, "JumpDist":6.190, "FuelUsed":0.700571, "FuelLevel":15.299429, "Factions":[ { "Name":"Ross 754 Labour", "FactionState":"None", "Government":"Democracy", "Influence":0.054000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Union of Brani Green Party", "FactionState":"None", "Government":"Democracy", "Influence":0.232000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Brani Creative Interstellar", "FactionState":"None", "Government":"Corporate", "Influence":0.401000, "Allegiance":"Federation" }, { "Name":"Allied Brani First", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.050000, "Allegiance":"Independent" }, { "Name":"Brani Blue Syndicate", "FactionState":"None", "Government":"Anarchy", "Influence":0.028000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ], "RecoveringStates":[ { "State":"Lockdown", "Trend":-1 } ] }, { "Name":"Brani Federal Holdings", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.050000, "Allegiance":"Independent" }, { "Name":"Vector Security Solutions", "FactionState":"Boom", "Government":"Corporate", "Influence":0.185000, "Allegiance":"Federation" } ], "SystemFaction":"Brani Creative Interstellar" }
+{ "timestamp":"2017-12-11T00:14:49Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:15:30Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T00:15:37Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:15:54Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Ross 754", "StarClass":"M" }
+{ "timestamp":"2017-12-11T00:16:00Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:16:13Z", "event":"FSDJump", "StarSystem":"Ross 754", "StarPos":[-68.438,-17.594,47.781], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":11468232, "JumpDist":7.899, "FuelUsed":1.219948, "FuelLevel":14.079481, "Factions":[ { "Name":"Ross 754 Labour", "FactionState":"None", "Government":"Democracy", "Influence":0.119880, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"League of Ross 754 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.116883, "Allegiance":"Independent" }, { "Name":"LHS 3564 Conservatives", "FactionState":"War", "Government":"Dictatorship", "Influence":0.040959, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Lockdown", "Trend":0 } ] }, { "Name":"Ross 754 Universal & Co", "FactionState":"Boom", "Government":"Corporate", "Influence":0.307692, "Allegiance":"Federation" }, { "Name":"Ross 754 Cartel", "FactionState":"War", "Government":"Anarchy", "Influence":0.034965, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Order of Ross 754", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.238761, "Allegiance":"Independent" }, { "Name":"Official HR 7793 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.140859, "Allegiance":"Independent" } ], "SystemFaction":"Ross 754 Labour" }
+{ "timestamp":"2017-12-11T00:16:13Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-11T00:16:18Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:16:31Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Inari de Elementia;", "From_Localised":"Inari de Elementia", "Message":"$Hitman_HunterHostileSC_Relevant04;", "Message_Localised":"Наконец-то мне удалось тебя найти! Плыви ко мне, рыбка...", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:16:36Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Inari de Elementia;", "From_Localised":"Inari de Elementia", "Message":"$HitmanMissionFailure_OnEnemyDetect03;", "Message_Localised":"И не грусти. Тебе смерть, а мне денежки.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:17:09Z", "event":"EscapeInterdiction", "Interdictor":"Inari de Elementia", "IsPlayer":false }
+{ "timestamp":"2017-12-11T00:21:20Z", "event":"SupercruiseExit", "StarSystem":"Ross 754", "Body":"Dana Gateway", "BodyType":"Station" }
+{ "timestamp":"2017-12-11T00:21:20Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-11T00:21:25Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:21:26Z", "event":"ReceiveText", "From":"Dana Gateway", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:21:28Z", "event":"DockingRequested", "StationName":"Dana Gateway" }
+{ "timestamp":"2017-12-11T00:21:28Z", "event":"ReceiveText", "From":"Dana Gateway", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:21:29Z", "event":"ReceiveText", "From":"Dana Gateway", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:21:29Z", "event":"DockingGranted", "LandingPad":14, "StationName":"Dana Gateway" }
+{ "timestamp":"2017-12-11T00:21:53Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-11T00:22:32Z", "event":"Docked", "StationName":"Dana Gateway", "StationType":"Coriolis", "StarSystem":"Ross 754", "StationFaction":"Ross 754 Labour", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":8126.848145 }
+{ "timestamp":"2017-12-11T00:22:51Z", "event":"RefuelAll", "Cost":106, "Amount":2.084445 }
+{ "timestamp":"2017-12-11T00:23:10Z", "event":"MissionCompleted", "Faction":"Official HR 7793 Order", "Name":"Mission_Courier_Democracy_name", "MissionID":260485175, "TargetFaction":"Official HR 7793 Order", "DestinationSystem":"Ross 754", "DestinationStation":"Dana Gateway", "Reward":12172 }
+{ "timestamp":"2017-12-11T00:23:37Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T00:23:45Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2017-12-11T00:24:00Z", "event":"Undocked", "StationName":"Dana Gateway", "StationType":"Coriolis" }
+{ "timestamp":"2017-12-11T00:24:24Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:24:54Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-11T00:24:54Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ThankYouPassedStopAndSearch02;", "Message_Localised":"Вы чисты. Можете лететь, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:25:15Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-11T00:25:20Z", "event":"SupercruiseEntry", "StarSystem":"Ross 754" }
+{ "timestamp":"2017-12-11T00:25:21Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:35:23Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T00:35:36Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:43:26Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T00:43:27Z", "event":"ApproachSettlement", "Name":"McMullen Vision" }
+{ "timestamp":"2017-12-11T00:43:28Z", "event":"ApproachSettlement", "Name":"Barnes Terminal +" }
+{ "timestamp":"2017-12-11T00:43:31Z", "event":"SupercruiseExit", "StarSystem":"Ross 754", "Body":"Northrop Orbital", "BodyType":"Station" }
+{ "timestamp":"2017-12-11T00:43:31Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2017-12-11T00:43:36Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T00:43:38Z", "event":"ReceiveText", "From":"Northrop Orbital", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:43:40Z", "event":"DockingRequested", "StationName":"Northrop Orbital" }
+{ "timestamp":"2017-12-11T00:43:40Z", "event":"ReceiveText", "From":"Northrop Orbital", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:43:42Z", "event":"ReceiveText", "From":"Northrop Orbital", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:43:42Z", "event":"DockingGranted", "LandingPad":1, "StationName":"Northrop Orbital" }
+{ "timestamp":"2017-12-11T00:44:38Z", "event":"Docked", "StationName":"Northrop Orbital", "StationType":"Outpost", "StarSystem":"Ross 754", "StationFaction":"Ross 754 Labour", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Rearm", "Refuel", "Repair", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Промышленность", "DistFromStarLS":411690.031250 }
+{ "timestamp":"2017-12-11T00:44:52Z", "event":"MissionCompleted", "Faction":"Ross 754 Universal & Co", "Name":"Mission_Courier_Democracy_name", "MissionID":260485159, "TargetFaction":"Ross 754 Universal & Co", "DestinationSystem":"Ross 754", "DestinationStation":"Northrop Orbital", "Reward":91408 }
+{ "timestamp":"2017-12-11T00:44:52Z", "event":"MaterialDiscovered", "Category":"Manufactured", "Name":"conductivecomponents", "DiscoveryNumber":21 }
+{ "timestamp":"2017-12-11T00:44:52Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"conductivecomponents", "Count":1 }
+{ "timestamp":"2017-12-11T00:45:03Z", "event":"MissionCompleted", "Faction":"Ross 754 Cartel", "Name":"Mission_Courier_Democracy_name", "MissionID":260485190, "TargetFaction":"Ross 754 Cartel", "DestinationSystem":"Ross 754", "DestinationStation":"Northrop Orbital", "Reward":114260 }
+{ "timestamp":"2017-12-11T00:45:03Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"fsdtelemetry", "Count":1 }
+{ "timestamp":"2017-12-11T00:45:45Z", "event":"RefuelAll", "Cost":22, "Amount":0.423467 }
+{ "timestamp":"2017-12-11T00:47:15Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2017-12-11T00:47:31Z", "event":"Undocked", "StationName":"Northrop Orbital", "StationType":"Outpost" }
+{ "timestamp":"2017-12-11T00:47:59Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-11T00:47:59Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T00:47:59Z", "event":"ApproachSettlement", "Name":"Barnes Terminal +" }
+{ "timestamp":"2017-12-11T00:47:59Z", "event":"ApproachSettlement", "Name":"McMullen Vision" }
+{ "timestamp":"2017-12-11T00:48:00Z", "event":"ReceiveText", "From":"Northrop Orbital", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:48:04Z", "event":"SupercruiseEntry", "StarSystem":"Ross 754" }
+{ "timestamp":"2017-12-11T00:48:04Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:49:34Z", "event":"USSDrop", "USSType":"$USS_Type_Salvage;", "USSType_Localised":"Зарегистрирован слабый сигнал", "USSThreat":0 }
+{ "timestamp":"2017-12-11T00:49:36Z", "event":"SupercruiseExit", "StarSystem":"Ross 754", "Body":"Ross 754 B", "BodyType":"Star" }
+{ "timestamp":"2017-12-11T00:49:36Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T00:50:11Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"wornshieldemitters", "Count":3 }
+{ "timestamp":"2017-12-11T00:50:27Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"chemicalprocessors", "Count":3 }
+{ "timestamp":"2017-12-11T00:50:42Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"salvagedalloys", "Count":3 }
+{ "timestamp":"2017-12-11T00:51:05Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"salvagedalloys", "Count":3 }
+{ "timestamp":"2017-12-11T00:51:22Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"gridresistors", "Count":3 }
+{ "timestamp":"2017-12-11T00:51:42Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"salvagedalloys", "Count":3 }
+{ "timestamp":"2017-12-11T00:51:56Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-11T00:52:01Z", "event":"SupercruiseEntry", "StarSystem":"Ross 754" }
+{ "timestamp":"2017-12-11T00:52:01Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T00:52:09Z", "event":"MissionFailed", "Name":"Mission_Courier_Democracy_name", "MissionID":260485534 }
+{ "timestamp":"2017-12-11T00:52:15Z", "event":"MissionFailed", "Name":"Mission_Courier_name", "MissionID":260485461 }
+{ "timestamp":"2017-12-11T00:52:15Z", "event":"MissionFailed", "Name":"Mission_Courier_name", "MissionID":260485441 }
+{ "timestamp":"2017-12-11T00:52:16Z", "event":"MissionFailed", "Name":"Mission_Courier_Boom_name", "MissionID":260485386 }
+{ "timestamp":"2017-12-11T00:52:17Z", "event":"MissionFailed", "Name":"Mission_Courier_Boom_name", "MissionID":260485303 }
+{ "timestamp":"2017-12-11T00:52:18Z", "event":"MissionFailed", "Name":"Mission_Courier_Boom_name", "MissionID":260485292 }
+{ "timestamp":"2017-12-11T00:52:19Z", "event":"MissionFailed", "Name":"Mission_Courier_Democracy_name", "MissionID":260485229 }
+{ "timestamp":"2017-12-11T00:52:20Z", "event":"MissionFailed", "Name":"Mission_Courier_Democracy_name", "MissionID":260485209 }
+{ "timestamp":"2017-12-11T00:52:21Z", "event":"MissionFailed", "Name":"Mission_Courier_Democracy_name", "MissionID":260485209 }
+{ "timestamp":"2017-12-11T00:52:22Z", "event":"MissionFailed", "Name":"Mission_Courier_Democracy_name", "MissionID":260485600 }
+{ "timestamp":"2017-12-11T00:52:23Z", "event":"MissionFailed", "Name":"Mission_Courier_CivilWar_name", "MissionID":260485834 }
+{ "timestamp":"2017-12-11T00:52:24Z", "event":"MissionFailed", "Name":"Mission_Courier_CivilWar_name", "MissionID":260485742 }
+{ "timestamp":"2017-12-11T00:54:55Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T00:55:07Z", "event":"ApproachSettlement", "Name":"Anderson Holdings" }
+{ "timestamp":"2017-12-11T00:55:16Z", "event":"ApproachSettlement", "Name":"Barnes Terminal +" }
+{ "timestamp":"2017-12-11T00:55:21Z", "event":"ApproachSettlement", "Name":"McMullen Vision" }
+{ "timestamp":"2017-12-11T00:56:50Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T00:56:52Z", "event":"SupercruiseExit", "StarSystem":"Ross 754", "Body":"Ross 754 B 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-11T00:56:53Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T00:58:26Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T00:58:42Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"В запросе на стыковку отказано, приблизьтесь на 7500 м", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:58:42Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"" }
+{ "timestamp":"2017-12-11T00:58:47Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:58:52Z", "event":"DockingRequested", "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T00:58:52Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:58:53Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-11T00:58:53Z", "event":"DockingGranted", "LandingPad":2, "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T00:59:49Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-11T00:59:49Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ThankYouPassedStopAndSearch04;", "Message_Localised":"Преступлений не выявлено. Вы свободны, командир.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:00:13Z", "event":"Docked", "StationName":"Roberts Hub", "StationType":"SurfaceStation", "StarSystem":"Ross 754", "StationFaction":"Ross 754 Labour", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Military;", "StationEconomy_Localised":"Военная", "DistFromStarLS":411690.250000 }
+{ "timestamp":"2017-12-11T01:00:24Z", "event":"RefuelAll", "Cost":11, "Amount":0.200223 }
+{ "timestamp":"2017-12-11T01:00:44Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_EndPatrol01;", "Message_Localised":"Парни, смена окончена, возвращаюсь на базу.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:02:31Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_EndPatrol02;", "Message_Localised":"Штаб, запрашиваю стыковку.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:03:37Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol02;", "Message_Localised":"Диспетчер, это патруль. Запуск выполнен.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:05:47Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol03;", "Message_Localised":"Слышу вас отлично, я в воздухе, начинаю патрулирование.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:06:53Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol01;", "Message_Localised":"Патрульный корабль на связи. Проверка перед вылетом завершена, выдвигаюсь.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:10:03Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol03;", "Message_Localised":"Слышу вас отлично, я в воздухе, начинаю патрулирование.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:10:41Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_EndPatrol01;", "Message_Localised":"Парни, смена окончена, возвращаюсь на базу.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:12:12Z", "event":"MissionAccepted", "Faction":"Order of Ross 754", "Name":"Mission_Salvage_Planet", "LocalisedName":"Спасите товар Самогон (1)", "Commodity":"$BootlegLiquor_Name;", "Commodity_Localised":"Самогон", "Count":1, "DestinationSystem":"HR 7793", "Expiry":"2017-12-15T09:22:19Z", "Influence":"Med", "Reputation":"High", "Reward":99592, "MissionID":261225020 }
+{ "timestamp":"2017-12-11T01:13:09Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol04;", "Message_Localised":"Ухожу на маршрут патрулирования «альфа».", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:13:59Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol02;", "Message_Localised":"Диспетчер, это патруль. Запуск выполнен.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:16:18Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol02;", "Message_Localised":"Диспетчер, это патруль. Запуск выполнен.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:16:19Z", "event":"Undocked", "StationName":"Roberts Hub", "StationType":"SurfaceStation" }
+{ "timestamp":"2017-12-11T01:17:02Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T01:17:31Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"HR 7793", "StarClass":"F" }
+{ "timestamp":"2017-12-11T01:17:50Z", "event":"FSDJump", "StarSystem":"HR 7793", "StarPos":[-70.188,-19.406,45.063], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Dictatorship;", "SystemGovernment_Localised":"Диктатура", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":8557556, "JumpDist":3.707, "FuelUsed":0.215348, "FuelLevel":15.784652, "Factions":[ { "Name":"HR 7793 Independents", "FactionState":"Election", "Government":"Democracy", "Influence":0.147000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"United Pontus League", "FactionState":"Boom", "Government":"Confederacy", "Influence":0.200000, "Allegiance":"Federation", "PendingStates":[ { "State":"Expansion", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Liberals of Wolf 871", "FactionState":"Election", "Government":"Democracy", "Influence":0.176000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"HR 7793 Order of Heroes", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.037000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"HR 7793 Energy Corp.", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.049000, "Allegiance":"Federation" }, { "Name":"HR 7793 Gold Cartel", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.062000, "Allegiance":"Independent" }, { "Name":"Official HR 7793 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.329000, "Allegiance":"Independent" } ], "SystemFaction":"Official HR 7793 Order", "FactionState":"Boom" }
+{ "timestamp":"2017-12-11T01:17:50Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-11T01:17:55Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T01:19:20Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T01:19:34Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T01:19:56Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T01:20:44Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T01:20:49Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T01:24:21Z", "event":"ApproachSettlement", "Name":"Moseley Holdings +" }
+{ "timestamp":"2017-12-11T01:24:38Z", "event":"ApproachSettlement", "Name":"Moseley Holdings +" }
+{ "timestamp":"2017-12-11T01:26:50Z", "event":"ApproachSettlement", "Name":"Petaja Enterprise +++" }
+{ "timestamp":"2017-12-11T01:28:03Z", "event":"ApproachSettlement", "Name":"Petaja Enterprise +++" }
+{ "timestamp":"2017-12-11T01:28:05Z", "event":"SupercruiseExit", "StarSystem":"HR 7793", "Body":"HR 7793 2 b", "BodyType":"Planet" }
+{ "timestamp":"2017-12-11T01:28:06Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T01:31:35Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-52.784008, "Longitude":-67.498085 }
+{ "timestamp":"2017-12-11T01:31:44Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2017-12-11T01:37:15Z", "event":"Screenshot", "Filename":"\\ED_Pictures\\Screenshot_0000.bmp", "Width":1920, "Height":1080, "System":"HR 7793", "Body":"HR 7793 2 b", "Latitude":-52.778187, "Longitude":-67.519875 }
+{ "timestamp":"2017-12-11T01:37:46Z", "event":"CollectCargo", "Type":"beryllium", "Stolen":false }
+{ "timestamp":"2017-12-11T01:38:59Z", "event":"CollectCargo", "Type":"bootlegliquor", "Stolen":false }
+{ "timestamp":"2017-12-11T01:43:47Z", "event":"EjectCargo", "Type":"beryllium", "Count":1, "Abandoned":false }
+{ "timestamp":"2017-12-11T01:44:14Z", "event":"DockSRV" }
+{ "timestamp":"2017-12-11T01:44:32Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2017-12-11T01:45:26Z", "event":"CollectCargo", "Type":"beryllium", "Stolen":false }
+{ "timestamp":"2017-12-11T01:46:08Z", "event":"CollectCargo", "Type":"silver", "Stolen":false }
+{ "timestamp":"2017-12-11T01:51:24Z", "event":"CollectCargo", "Type":"moissanite", "Stolen":false }
+{ "timestamp":"2017-12-11T01:51:39Z", "event":"CollectCargo", "Type":"beryllium", "Stolen":false }
+{ "timestamp":"2017-12-11T01:53:02Z", "event":"CollectCargo", "Type":"cryolite", "Stolen":false }
+{ "timestamp":"2017-12-11T01:53:55Z", "event":"DockSRV" }
+{ "timestamp":"2017-12-11T01:54:11Z", "event":"Liftoff", "PlayerControlled":true, "Latitude":-52.784008, "Longitude":-67.498077 }
+{ "timestamp":"2017-12-11T01:54:22Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T01:54:29Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T01:54:48Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T01:54:49Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T01:56:27Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-11T01:56:28Z", "event":"ApproachSettlement", "Name":"Petaja Enterprise +++" }
+{ "timestamp":"2017-12-11T01:56:32Z", "event":"SupercruiseEntry", "StarSystem":"HR 7793" }
+{ "timestamp":"2017-12-11T01:56:33Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T01:56:55Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T01:56:59Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T01:57:19Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Ross 754", "StarClass":"M" }
+{ "timestamp":"2017-12-11T01:57:24Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T01:57:37Z", "event":"FSDJump", "StarSystem":"Ross 754", "StarPos":[-68.438,-17.594,47.781], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":11468232, "JumpDist":3.707, "FuelUsed":0.225898, "FuelLevel":15.558754, "Factions":[ { "Name":"Ross 754 Labour", "FactionState":"None", "Government":"Democracy", "Influence":0.119880, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"League of Ross 754 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.116883, "Allegiance":"Independent" }, { "Name":"LHS 3564 Conservatives", "FactionState":"War", "Government":"Dictatorship", "Influence":0.040959, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Lockdown", "Trend":0 } ] }, { "Name":"Ross 754 Universal & Co", "FactionState":"Boom", "Government":"Corporate", "Influence":0.307692, "Allegiance":"Federation" }, { "Name":"Ross 754 Cartel", "FactionState":"War", "Government":"Anarchy", "Influence":0.034965, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Order of Ross 754", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.238761, "Allegiance":"Independent" }, { "Name":"Official HR 7793 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.140859, "Allegiance":"Independent" } ], "SystemFaction":"Ross 754 Labour" }
+{ "timestamp":"2017-12-11T01:57:37Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T01:58:18Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T01:58:25Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T02:15:45Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T02:15:46Z", "event":"ApproachSettlement", "Name":"Barnes Terminal +" }
+{ "timestamp":"2017-12-11T02:15:50Z", "event":"ApproachSettlement", "Name":"McMullen Vision" }
+{ "timestamp":"2017-12-11T02:16:03Z", "event":"ApproachSettlement", "Name":"Anderson Holdings" }
+{ "timestamp":"2017-12-11T02:16:49Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T02:16:51Z", "event":"SupercruiseExit", "StarSystem":"Ross 754", "Body":"Ross 754 B 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-11T02:16:52Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T02:17:06Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T02:17:10Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:17:18Z", "event":"DockingRequested", "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T02:17:18Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:17:19Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:17:19Z", "event":"DockingGranted", "LandingPad":1, "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T02:17:37Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$DockingPadBlockWarningComms;", "Message_Localised":"Обнаружено нарушение – промедление, немедленно очистите подход к площадке во избежание летального ответа", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:17:41Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$DockingOffenceCleared;", "Message_Localised":"Нарушения правил космопорта сняты, привилегии на стыковку восстановлены", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:18:26Z", "event":"Docked", "StationName":"Roberts Hub", "StationType":"SurfaceStation", "StarSystem":"Ross 754", "StationFaction":"Ross 754 Labour", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Military;", "StationEconomy_Localised":"Военная", "DistFromStarLS":411691.343750 }
+{ "timestamp":"2017-12-11T02:18:45Z", "event":"MissionCompleted", "Faction":"Order of Ross 754", "Name":"Mission_Salvage_Planet_name", "MissionID":261225020, "Commodity":"$BootlegLiquor_Name;", "Commodity_Localised":"Самогон", "Count":1, "DestinationSystem":"HR 7793", "Reward":99592 }
+{ "timestamp":"2017-12-11T02:19:14Z", "event":"MarketSell", "Type":"silver", "Count":1, "SellPrice":3192, "TotalSale":3192, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-11T02:19:19Z", "event":"MarketSell", "Type":"beryllium", "Count":2, "SellPrice":5832, "TotalSale":11664, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-11T02:19:23Z", "event":"MarketSell", "Type":"cryolite", "Count":1, "SellPrice":1293, "TotalSale":1293, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-11T02:19:26Z", "event":"MarketSell", "Type":"moissanite", "Count":1, "SellPrice":4963, "TotalSale":4963, "AvgPricePaid":0 }
+{ "timestamp":"2017-12-11T02:19:48Z", "event":"RefuelAll", "Cost":67, "Amount":1.319844 }
+{ "timestamp":"2017-12-11T02:21:40Z", "event":"Undocked", "StationName":"Roberts Hub", "StationType":"SurfaceStation" }
+{ "timestamp":"2017-12-11T02:22:42Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-13.643500, "Longitude":11.790825 }
+{ "timestamp":"2017-12-11T02:22:48Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2017-12-11T02:22:51Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T02:22:52Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:23:46Z", "event":"CommitCrime", "CrimeType":"fireInNoFireZone", "Faction":"Ross 754 Labour", "Fine":100 }
+{ "timestamp":"2017-12-11T02:24:19Z", "event":"CommitCrime", "CrimeType":"fireInNoFireZone", "Faction":"Ross 754 Labour", "Fine":100 }
+{ "timestamp":"2017-12-11T02:24:44Z", "event":"CommitCrime", "CrimeType":"fireInNoFireZone", "Faction":"Ross 754 Labour", "Fine":100 }
+{ "timestamp":"2017-12-11T02:25:09Z", "event":"DockSRV" }
+{ "timestamp":"2017-12-11T02:25:10Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T02:25:17Z", "event":"Liftoff", "PlayerControlled":true, "Latitude":-13.643501, "Longitude":11.790827 }
+{ "timestamp":"2017-12-11T02:25:25Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:25:47Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:26:00Z", "event":"DockingRequested", "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T02:26:00Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:26:01Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:26:01Z", "event":"DockingGranted", "LandingPad":3, "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T02:26:16Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_EndPatrol03;", "Message_Localised":"Диспетчер, это патруль. Иду на приземление.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:27:14Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-11T02:27:14Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_ThankYouPassedStopAndSearch08;", "Message_Localised":"Все процедуры завершены. Вы свободны, командир.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:27:49Z", "event":"Docked", "StationName":"Roberts Hub", "StationType":"SurfaceStation", "StarSystem":"Ross 754", "StationFaction":"Ross 754 Labour", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Military;", "StationEconomy_Localised":"Военная", "DistFromStarLS":411691.468750 }
+{ "timestamp":"2017-12-11T02:27:59Z", "event":"RefuelAll", "Cost":10, "Amount":0.049555 }
+{ "timestamp":"2017-12-11T02:29:49Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_StartPatrol04;", "Message_Localised":"Ухожу на маршрут патрулирования «альфа».", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:30:59Z", "event":"MissionAccepted", "Faction":"Ross 754 Cartel", "Name":"Mission_Disable_War", "LocalisedName":"Отключите электросеть цели. Это: Установка", "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Expiry":"2017-12-12T11:55:32Z", "Influence":"Med", "Reputation":"Med", "Reward":373066, "MissionID":261251998 }
+{ "timestamp":"2017-12-11T02:31:17Z", "event":"ReceiveText", "From":"$ShipName_Police_Federation;", "From_Localised":"Федеральная служба безопасности", "Message":"$Police_EndPatrol05;", "Message_Localised":"Штаб, патрулирование завершено, я возвращаюсь.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:31:30Z", "event":"Undocked", "StationName":"Roberts Hub", "StationType":"SurfaceStation" }
+{ "timestamp":"2017-12-11T02:32:08Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"Вы вышли из зоны запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:32:11Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Wolf 871", "StarClass":"G" }
+{ "timestamp":"2017-12-11T02:32:29Z", "event":"FSDJump", "StarSystem":"Wolf 871", "StarPos":[-64.219,-12.344,41.000], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Extraction;", "SystemEconomy_Localised":"Добыча ископаемых", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Средн. ур. безопасности", "Population":19653, "JumpDist":9.557, "FuelUsed":1.902281, "FuelLevel":14.097719, "Factions":[ { "Name":"Ross 754 Labour", "FactionState":"None", "Government":"Democracy", "Influence":0.032000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"United Pontus League", "FactionState":"Boom", "Government":"Confederacy", "Influence":0.480000, "Allegiance":"Federation", "PendingStates":[ { "State":"Expansion", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Liberals of Wolf 871", "FactionState":"None", "Government":"Democracy", "Influence":0.276000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Ngolibardu Electronics Solutions", "FactionState":"None", "Government":"Corporate", "Influence":0.087000, "Allegiance":"Federation", "PendingStates":[ { "State":"CivilUnrest", "Trend":0 }, { "State":"Lockdown", "Trend":0 } ] }, { "Name":"Wolf 871 Transport Industry", "FactionState":"None", "Government":"Corporate", "Influence":0.082000, "Allegiance":"Federation", "RecoveringStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"Wolf 871 Blue Syndicate", "FactionState":"None", "Government":"Anarchy", "Influence":0.043000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ], "RecoveringStates":[ { "State":"CivilWar", "Trend":0 } ] } ], "SystemFaction":"Liberals of Wolf 871" }
+{ "timestamp":"2017-12-11T02:32:30Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2017-12-11T02:32:35Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T02:32:48Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T02:32:52Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T02:33:02Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T02:33:07Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T02:33:28Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T02:33:41Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T02:33:50Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T02:33:51Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T02:35:11Z", "event":"USSDrop", "USSType":"$USS_Type_DistressSignal;", "USSType_Localised":"Сигнал о помощи", "USSThreat":3 }
+{ "timestamp":"2017-12-11T02:35:12Z", "event":"SupercruiseExit", "StarSystem":"Wolf 871", "Body":"Wolf 871 A", "BodyType":"Star" }
+{ "timestamp":"2017-12-11T02:35:12Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T02:35:17Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Avery;", "From_Localised":"Avery", "Message":"$AmbushedPilot_OnPlayerNear03;", "Message_Localised":"А вот и помощь! Ты ведь тоже будешь помогать, не так ли?", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:35:33Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Jessica Drake;", "From_Localised":"Jessica Drake", "Message":"$Pirate_OnStartScanCargo07;", "Message_Localised":"Есть что-нибудь ценное?", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:35:43Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Jessica Drake;", "From_Localised":"Jessica Drake", "Message":"$Pirate_OnNoCargoFound10;", "Message_Localised":"Для меня тут нет ничего стоящего.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:35:43Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-11T02:35:46Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Avery;", "From_Localised":"Avery", "Message":"$DistressCallDamagedPilot_Stationed_04;", "Message_Localised":"SOS! Мне срочно нужна помощь. Топливо на нуле, все системы отказывают. Кто-нибудь прилетит?", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:35:52Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"shieldpatternanalysis", "Count":3 }
+{ "timestamp":"2017-12-11T02:36:39Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Avery;", "From_Localised":"Avery", "Message":"$DistressCallAmbushedPilot_02;", "Message_Localised":"SOS! Меня подкараулили пираты! Мне долго против них не выстоять! Пожалуйста, помогите!", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:37:19Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Avery;", "From_Localised":"Avery", "Message":"$DistressCallAmbushedPilot_01;", "Message_Localised":"SOS! SOS! Меня атакуют! Они повредили двигатели, и я быстро теряю топливо. SOS!", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:37:56Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Avery;", "From_Localised":"Avery", "Message":"$DistressCallAmbushedPilot_03;", "Message_Localised":"Меня кто-нибудь слышит? Меня подло атаковали пираты, требуется срочная помощь! Пожалуйста, не бросайте меня в беде!", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:38:18Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-11T02:38:23Z", "event":"SupercruiseEntry", "StarSystem":"Wolf 871" }
+{ "timestamp":"2017-12-11T02:38:24Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T02:42:41Z", "event":"USSDrop", "USSType":"$USS_Type_WeaponsFire;", "USSType_Localised":"Зарегистрирован огонь из орудий", "USSThreat":2 }
+{ "timestamp":"2017-12-11T02:42:43Z", "event":"SupercruiseExit", "StarSystem":"Wolf 871", "Body":"Wolf 871 B 3", "BodyType":"Planet" }
+{ "timestamp":"2017-12-11T02:42:43Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T02:42:49Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Nathan Carter;", "From_Localised":"Nathan Carter", "Message":"$Pirate_OnStartScanCargo01;", "Message_Localised":"Я все вижу!", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:42:59Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Nathan Carter;", "From_Localised":"Nathan Carter", "Message":"$Pirate_OnNoCargoFound09;", "Message_Localised":"Надеюсь, в следующий раз у тебя тут будет куча золота.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T02:42:59Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2017-12-11T02:45:06Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-11T02:45:11Z", "event":"SupercruiseEntry", "StarSystem":"Wolf 871" }
+{ "timestamp":"2017-12-11T02:45:12Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T02:45:17Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T02:45:21Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T02:45:33Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T02:45:34Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T02:46:25Z", "event":"ApproachSettlement", "Name":"Reynolds Landing +" }
+{ "timestamp":"2017-12-11T02:47:29Z", "event":"ApproachSettlement", "Name":"Reynolds Landing +" }
+{ "timestamp":"2017-12-11T02:47:32Z", "event":"SupercruiseExit", "StarSystem":"Wolf 871", "Body":"Wolf 871 B 3 f", "BodyType":"Planet" }
+{ "timestamp":"2017-12-11T02:47:32Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T02:50:10Z", "event":"Bounty", "Faction":"Liberals of Wolf 871", "Target":"Skimmer", "Reward":1000, "VictimFaction":"Liberals of Wolf 871" }
+{ "timestamp":"2017-12-11T02:50:45Z", "event":"Touchdown", "PlayerControlled":true, "Latitude":-5.783781, "Longitude":-43.268982 }
+{ "timestamp":"2017-12-11T02:50:55Z", "event":"LaunchSRV", "Loadout":"starter", "PlayerControlled":true }
+{ "timestamp":"2017-12-11T02:52:26Z", "event":"Liftoff", "PlayerControlled":false }
+{ "timestamp":"2017-12-11T02:53:14Z", "event":"DatalinkScan", "Message":"$DataLink_ScannedInfo_Operations;", "Message_Localised":"Есть доступ к военной сети" }
+{ "timestamp":"2017-12-11T02:55:49Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2017-12-11T02:55:49Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Liberals of Wolf 871", "Victim":"$poi_generator_name;", "Victim_Localised":"Генератор", "Bounty":200 }
+{ "timestamp":"2017-12-11T02:55:54Z", "event":"MissionRedirected", "MissionID":261251998, "Name":"Mission_Disable_War_name", "NewDestinationStation":"Roberts Hub", "NewDestinationSystem":"Ross 754", "OldDestinationStation":"Reynolds Landing +", "OldDestinationSystem":"Wolf 871" }
+{ "timestamp":"2017-12-11T02:55:59Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Liberals of Wolf 871", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":200 }
+{ "timestamp":"2017-12-11T02:56:19Z", "event":"HullDamage", "Health":0.794592, "PlayerPilot":true }
+{ "timestamp":"2017-12-11T02:57:11Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2017-12-11T02:57:53Z", "event":"CommitCrime", "CrimeType":"assault", "Faction":"Liberals of Wolf 871", "Victim":"$poi_turretbasea_name;", "Victim_Localised":"Оборонительная турель", "Bounty":200 }
+{ "timestamp":"2017-12-11T02:57:57Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T02:58:53Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2017-12-11T02:59:00Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2017-12-11T02:59:52Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T03:02:52Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2017-12-11T03:03:26Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T03:03:28Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2017-12-11T03:04:02Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T03:05:04Z", "event":"HullDamage", "Health":0.561444, "PlayerPilot":true }
+{ "timestamp":"2017-12-11T03:05:13Z", "event":"Touchdown", "PlayerControlled":false }
+{ "timestamp":"2017-12-11T03:05:15Z", "event":"Music", "MusicTrack":"Combat_SRV" }
+{ "timestamp":"2017-12-11T03:05:49Z", "event":"DockSRV" }
+{ "timestamp":"2017-12-11T03:05:50Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T03:05:59Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T03:06:02Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2017-12-11T03:06:14Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2017-12-11T03:06:14Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T03:06:16Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Liberals of Wolf 871", "Fine":400 }
+{ "timestamp":"2017-12-11T03:06:23Z", "event":"Liftoff", "PlayerControlled":true, "Latitude":-5.698739, "Longitude":-43.331966 }
+{ "timestamp":"2017-12-11T03:06:26Z", "event":"CommitCrime", "CrimeType":"dockingMajorTresspass", "Faction":"Liberals of Wolf 871", "Bounty":600 }
+{ "timestamp":"2017-12-11T03:06:59Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Ross 754", "StarClass":"M" }
+{ "timestamp":"2017-12-11T03:07:05Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T03:07:18Z", "event":"FSDJump", "StarSystem":"Ross 754", "StarPos":[-68.438,-17.594,47.781], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Промышленность", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Демократия", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"Высок. ур. безопасности", "Population":11468232, "JumpDist":9.557, "FuelUsed":1.872185, "FuelLevel":12.225534, "Factions":[ { "Name":"Ross 754 Labour", "FactionState":"None", "Government":"Democracy", "Influence":0.119880, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"League of Ross 754 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.116883, "Allegiance":"Independent" }, { "Name":"LHS 3564 Conservatives", "FactionState":"War", "Government":"Dictatorship", "Influence":0.040959, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Lockdown", "Trend":0 } ] }, { "Name":"Ross 754 Universal & Co", "FactionState":"Boom", "Government":"Corporate", "Influence":0.307692, "Allegiance":"Federation" }, { "Name":"Ross 754 Cartel", "FactionState":"War", "Government":"Anarchy", "Influence":0.034965, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Order of Ross 754", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.238761, "Allegiance":"Independent" }, { "Name":"Official HR 7793 Order", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.140859, "Allegiance":"Independent" } ], "SystemFaction":"Ross 754 Labour" }
+{ "timestamp":"2017-12-11T03:07:18Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T03:25:05Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T03:25:06Z", "event":"ApproachSettlement", "Name":"Anderson Holdings" }
+{ "timestamp":"2017-12-11T03:25:36Z", "event":"ApproachSettlement", "Name":"Barnes Terminal +" }
+{ "timestamp":"2017-12-11T03:25:39Z", "event":"ApproachSettlement", "Name":"McMullen Vision" }
+{ "timestamp":"2017-12-11T03:26:08Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T03:26:10Z", "event":"SupercruiseExit", "StarSystem":"Ross 754", "Body":"Ross 754 B 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-11T03:26:10Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T03:26:26Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2017-12-11T03:26:27Z", "event":"ApproachSettlement", "Name":"Anderson Holdings" }
+{ "timestamp":"2017-12-11T03:26:27Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T03:26:27Z", "event":"ApproachSettlement", "Name":"Barnes Terminal +" }
+{ "timestamp":"2017-12-11T03:26:27Z", "event":"ApproachSettlement", "Name":"McMullen Vision" }
+{ "timestamp":"2017-12-11T03:26:31Z", "event":"SupercruiseEntry", "StarSystem":"Ross 754" }
+{ "timestamp":"2017-12-11T03:26:32Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2017-12-11T03:27:06Z", "event":"ApproachSettlement", "Name":"Roberts Hub" }
+{ "timestamp":"2017-12-11T03:27:08Z", "event":"SupercruiseExit", "StarSystem":"Ross 754", "Body":"Ross 754 B 1", "BodyType":"Planet" }
+{ "timestamp":"2017-12-11T03:27:09Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2017-12-11T03:27:22Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2017-12-11T03:27:54Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"Вы вошли в зону запрета огня", "Channel":"npc" }
+{ "timestamp":"2017-12-11T03:28:13Z", "event":"DockingRequested", "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T03:28:13Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Строго соблюдайте правила поведения в порту, пилот.", "Channel":"npc" }
+{ "timestamp":"2017-12-11T03:28:15Z", "event":"ReceiveText", "From":"Roberts Hub", "Message":"$STATION_docking_granted;", "Message_Localised":"Стыковка разрешена", "Channel":"npc" }
+{ "timestamp":"2017-12-11T03:28:15Z", "event":"DockingGranted", "LandingPad":4, "StationName":"Roberts Hub" }
+{ "timestamp":"2017-12-11T03:29:07Z", "event":"Docked", "StationName":"Roberts Hub", "StationType":"SurfaceStation", "StarSystem":"Ross 754", "StationFaction":"Ross 754 Labour", "StationGovernment":"$government_Democracy;", "StationGovernment_Localised":"Демократия", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Military;", "StationEconomy_Localised":"Военная", "DistFromStarLS":411692.156250 }
+{ "timestamp":"2017-12-11T03:29:17Z", "event":"RefuelAll", "Cost":230, "Amount":4.567674 }
+{ "timestamp":"2017-12-11T03:29:18Z", "event":"BuyAmmo", "Cost":80 }
+{ "timestamp":"2017-12-11T03:29:38Z", "event":"MissionCompleted", "Faction":"Ross 754 Cartel", "Name":"Mission_Disable_War_name", "MissionID":261251998, "Target":"$MissionUtil_Settlement_Target_Turret;", "Target_Localised":"Установка", "Reward":373066, "CommodityReward":[ { "Name":"HNShockMount", "Count":4 } ] }
+{ "timestamp":"2017-12-11T03:29:38Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"legacyfirmware", "Count":1 }
+{ "timestamp":"2017-12-11T03:30:11Z", "event":"PayFines", "Amount":300 }
+{ "timestamp":"2017-12-11T03:35:00Z", "event":"ModuleBuy", "Slot":"TinyHardpoint1", "SellItem":"$hpt_shieldbooster_size0_class2_name;", "SellItem_Localised":"Усилитель щита", "SellPrice":23000, "BuyItem":"$hpt_cloudscanner_size0_class2_name;", "BuyItem_Localised":"Следовой сканер", "BuyPrice":40633, "Ship":"cobramkiii", "ShipID":1 }
+{ "timestamp":"2017-12-11T03:36:38Z", "event":"Music", "MusicTrack":"Exploration" }

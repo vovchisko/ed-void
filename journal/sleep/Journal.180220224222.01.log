@@ -1,0 +1,874 @@
+{ "timestamp":"2018-02-20T20:42:22Z", "event":"Fileheader", "part":1, "language":"English\\UK", "gameversion":"2.4", "build":"r160439/r0 " }
+{ "timestamp":"2018-02-20T20:42:22Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:42:22Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2018-02-20T20:43:31Z", "event":"Cargo", "Inventory":[  ] }
+{ "timestamp":"2018-02-20T20:43:31Z", "event":"Loadout", "Ship":"Asp", "ShipID":8, "ShipName":"A-BUG", "ShipIdent":"BUGGED", "Modules":[ { "Slot":"SmallHardpoint1", "Item":"Hpt_MultiCannon_Gimbal_Small", "On":true, "Priority":0, "AmmoInClip":90, "AmmoInHopper":2100, "Health":1.000000, "Value":14250, "EngineerBlueprint":"Weapon_Efficient", "EngineerLevel":3 }, { "Slot":"SmallHardpoint2", "Item":"Hpt_MultiCannon_Gimbal_Small", "On":true, "Priority":0, "AmmoInClip":90, "AmmoInHopper":2100, "Health":1.000000, "Value":14250, "EngineerBlueprint":"Weapon_Efficient", "EngineerLevel":3 }, { "Slot":"SmallHardpoint3", "Item":"Hpt_MultiCannon_Gimbal_Small", "On":true, "Priority":0, "AmmoInClip":90, "AmmoInHopper":2100, "Health":1.000000, "Value":14250, "EngineerBlueprint":"Weapon_Efficient", "EngineerLevel":3 }, { "Slot":"SmallHardpoint4", "Item":"Hpt_MultiCannon_Gimbal_Small", "On":true, "Priority":0, "AmmoInClip":90, "AmmoInHopper":2100, "Health":1.000000, "Value":14250, "EngineerBlueprint":"Weapon_Efficient", "EngineerLevel":3 }, { "Slot":"MediumHardpoint1", "Item":"Hpt_PulseLaser_Gimbal_Medium", "On":true, "Priority":0, "Health":1.000000, "Value":35400 }, { "Slot":"MediumHardpoint2", "Item":"Hpt_PulseLaser_Gimbal_Medium", "On":true, "Priority":0, "Health":1.000000, "Value":35400 }, { "Slot":"TinyHardpoint1", "Item":"Hpt_ChaffLauncher_Tiny", "On":true, "Priority":0, "AmmoInClip":1, "AmmoInHopper":10, "Health":1.000000, "Value":8500 }, { "Slot":"TinyHardpoint2", "Item":"Hpt_HeatSinkLauncher_Turret_Tiny", "On":true, "Priority":0, "AmmoInClip":1, "AmmoInHopper":2, "Health":1.000000, "Value":3500 }, { "Slot":"TinyHardpoint3", "Item":"Hpt_CloudScanner_Size0_Class1", "On":true, "Priority":0, "Health":1.000000, "Value":13544 }, { "Slot":"TinyHardpoint4", "Item":"Hpt_ChaffLauncher_Tiny", "On":true, "Priority":0, "AmmoInClip":1, "AmmoInHopper":10, "Health":1.000000, "Value":8500 }, { "Slot":"Armour", "Item":"Asp_Armour_Grade1", "On":true, "Priority":1, "Health":1.000000, "Value":0, "EngineerBlueprint":"Armour_Advanced", "EngineerLevel":3 }, { "Slot":"PowerPlant", "Item":"Int_Powerplant_Size5_Class5", "On":true, "Priority":1, "Health":1.000000, "Value":5103953, "EngineerBlueprint":"PowerPlant_Armoured", "EngineerLevel":1 }, { "Slot":"MainEngines", "Item":"Int_Engine_Size5_Class5", "On":true, "Priority":1, "Health":1.000000, "Value":5103953, "EngineerBlueprint":"Engine_Reinforced", "EngineerLevel":1 }, { "Slot":"FrameShiftDrive", "Item":"Int_Hyperdrive_Size5_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":5103953, "EngineerBlueprint":"FSD_LongRange", "EngineerLevel":2 }, { "Slot":"LifeSupport", "Item":"Int_LifeSupport_Size4_Class3", "On":true, "Priority":0, "Health":1.000000, "Value":70932 }, { "Slot":"PowerDistributor", "Item":"Int_PowerDistributor_Size4_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":443328 }, { "Slot":"Radar", "Item":"Int_Sensors_Size5_Class2", "On":true, "Priority":0, "Health":1.000000, "Value":79444 }, { "Slot":"FuelTank", "Item":"Int_FuelTank_Size5_Class3", "On":true, "Priority":1, "Health":1.000000, "Value":97754 }, { "Slot":"Decal1", "Item":"Decal_Explorer_Trailblazer", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"Slot01_Size6", "Item":"Int_ShieldGenerator_Size5_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":5103953 }, { "Slot":"Slot02_Size5", "Item":"Int_HullReinforcement_Size5_Class2", "On":true, "Priority":1, "Health":1.000000, "Value":450000 }, { "Slot":"Slot03_Size3", "Item":"Int_HullReinforcement_Size3_Class2", "On":true, "Priority":1, "Health":1.000000, "Value":84000 }, { "Slot":"Slot04_Size3", "Item":"Int_ModuleReinforcement_Size3_Class2", "On":true, "Priority":1, "Health":1.000000, "Value":84000 }, { "Slot":"Slot05_Size3", "Item":"Int_FSDInterdictor_Size2_Class2", "On":true, "Priority":0, "Health":1.000000, "Value":100800, "EngineerBlueprint":"FSDinterdictor_Expanded", "EngineerLevel":1 }, { "Slot":"Slot06_Size2", "Item":"Int_DetailedSurfaceScanner_Tiny", "On":true, "Priority":1, "Health":1.000000, "Value":250000, "EngineerBlueprint":"Sensor_SurfaceScanner_LongRange", "EngineerLevel":3 }, { "Slot":"Slot07_Size2", "Item":"Int_StellarBodyDiscoveryScanner_Advanced", "On":true, "Priority":1, "Health":1.000000, "Value":1545000 }, { "Slot":"PlanetaryApproachSuite", "Item":"Int_PlanetApproachSuite", "On":true, "Priority":1, "Health":1.000000, "Value":500 }, { "Slot":"ShipCockpit", "Item":"Asp_Cockpit", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"CargoHatch", "Item":"ModularCargoBayDoor", "On":true, "Priority":2, "Health":1.000000, "Value":0 } ] }
+{ "timestamp":"2018-02-20T20:43:31Z", "event":"Materials", "Raw":[ { "Name":"phosphorus", "Count":26 }, { "Name":"carbon", "Count":18 }, { "Name":"chromium", "Count":47 }, { "Name":"molybdenum", "Count":5 }, { "Name":"manganese", "Count":39 }, { "Name":"cadmium", "Count":17 }, { "Name":"selenium", "Count":15 }, { "Name":"sulphur", "Count":19 }, { "Name":"antimony", "Count":15 }, { "Name":"arsenic", "Count":6 }, { "Name":"zinc", "Count":4 }, { "Name":"nickel", "Count":18 }, { "Name":"iron", "Count":10 } ], "Manufactured":[ { "Name":"gridresistors", "Count":9 }, { "Name":"mechanicalequipment", "Count":23 }, { "Name":"focuscrystals", "Count":32 }, { "Name":"salvagedalloys", "Count":32 }, { "Name":"chemicalprocessors", "Count":43 }, { "Name":"phasealloys", "Count":45 }, { "Name":"shieldingsensors", "Count":42 }, { "Name":"wornshieldemitters", "Count":41 }, { "Name":"galvanisingalloys", "Count":33 }, { "Name":"uncutfocuscrystals", "Count":2 }, { "Name":"configurablecomponents", "Count":7 }, { "Name":"highdensitycomposites", "Count":19 }, { "Name":"mechanicalcomponents", "Count":4 }, { "Name":"fedproprietarycomposites", "Count":11 }, { "Name":"fedcorecomposites", "Count":6 }, { "Name":"shieldemitters", "Count":49 }, { "Name":"refinedfocuscrystals", "Count":27 }, { "Name":"chemicaldistillery", "Count":21 }, { "Name":"protolightalloys", "Count":17 }, { "Name":"precipitatedalloys", "Count":23 }, { "Name":"compoundshielding", "Count":9 }, { "Name":"unknownorganiccircuitry", "Count":24 }, { "Name":"unknownenergysource", "Count":22 }, { "Name":"unknowncarapace", "Count":18 }, { "Name":"unknowntechnologycomponents", "Count":12 }, { "Name":"unknownenergycell", "Count":6 }, { "Name":"hybridcapacitors", "Count":2 }, { "Name":"electrochemicalarrays", "Count":3 }, { "Name":"conductivecomponents", "Count":4 }, { "Name":"heatdispersionplate", "Count":6 }, { "Name":"heatexchangers", "Count":5 }, { "Name":"conductivepolymers", "Count":3 }, { "Name":"mechanicalscrap", "Count":8 }, { "Name":"heatconductionwiring", "Count":9 }, { "Name":"conductiveceramics", "Count":3 }, { "Name":"biotechconductors", "Count":1 }, { "Name":"exquisitefocuscrystals", "Count":3 } ], "Encoded":[ { "Name":"decodedemissiondata", "Count":78 }, { "Name":"emissiondata", "Count":22 }, { "Name":"shieldsoakanalysis", "Count":48 }, { "Name":"shielddensityreports", "Count":69 }, { "Name":"scanarchives", "Count":18 }, { "Name":"shieldpatternanalysis", "Count":54 }, { "Name":"shieldcyclerecordings", "Count":76 }, { "Name":"encodedscandata", "Count":21 }, { "Name":"fsdtelemetry", "Count":7 }, { "Name":"scandatabanks", "Count":17 }, { "Name":"archivedemissiondata", "Count":5 }, { "Name":"industrialfirmware", "Count":4 }, { "Name":"bulkscandata", "Count":40 }, { "Name":"embeddedfirmware", "Count":2 }, { "Name":"scrambledemissiondata", "Count":1 }, { "Name":"encryptioncodes", "Count":3 }, { "Name":"encryptionarchives", "Count":3 }, { "Name":"shieldfrequencydata", "Count":3 }, { "Name":"compactemissionsdata", "Count":9 }, { "Name":"disruptedwakeechoes", "Count":5 }, { "Name":"classifiedscandata", "Count":3 } ] }
+{ "timestamp":"2018-02-20T20:43:31Z", "event":"LoadGame", "Commander":"Sleep Runner", "Ship":"Asp", "ShipID":8, "ShipName":"A-BUG", "ShipIdent":"BUGGED", "FuelLevel":32.000000, "FuelCapacity":32.000000, "GameMode":"Open", "Credits":4885151, "Loan":0 }
+{ "timestamp":"2018-02-20T20:43:31Z", "event":"Rank", "Combat":3, "Trade":4, "Explore":5, "Empire":0, "Federation":2, "CQC":0 }
+{ "timestamp":"2018-02-20T20:43:31Z", "event":"Progress", "Combat":33, "Trade":61, "Explore":26, "Empire":12, "Federation":80, "CQC":0 }
+{ "timestamp":"2018-02-20T20:43:33Z", "event":"ApproachSettlement", "Name":"Prospector's Rest" }
+{ "timestamp":"2018-02-20T20:43:33Z", "event":"ApproachSettlement", "Name":"Sawyer's Progress" }
+{ "timestamp":"2018-02-20T20:44:03Z", "event":"Location", "Docked":true, "StationName":"Prospector's Rest", "StationType":"SurfaceStation", "StarSystem":"Kuk", "StarPos":[-21.281,69.094,-16.313], "SystemAllegiance":"Alliance", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"High Security", "Population":60876597, "Body":"Kuk B 3", "BodyType":"Planet", "Factions":[ { "Name":"Selene Jean", "FactionState":"None", "Government":"Engineer", "Influence":0.000000, "Allegiance":"Alliance" }, { "Name":"Alioth Independents", "FactionState":"Boom", "Government":"Democracy", "Influence":0.244244, "Allegiance":"Alliance" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Social Kuk Liberals", "FactionState":"CivilWar", "Government":"Democracy", "Influence":0.107107, "Allegiance":"Alliance", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"LHS 2651 Alliance Governance", "FactionState":"Boom", "Government":"Patronage", "Influence":0.091091, "Allegiance":"Alliance" }, { "Name":"Kuk Jet Comms & Co", "FactionState":"Boom", "Government":"Corporate", "Influence":0.043043, "Allegiance":"Alliance" }, { "Name":"Kuk Bureau", "FactionState":"None", "Government":"Dictatorship", "Influence":0.023023, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 }, { "State":"Famine", "Trend":0 } ], "RecoveringStates":[ { "State":"CivilUnrest", "Trend":-1 } ] }, { "Name":"Kuk Silver Fortune Company", "FactionState":"None", "Government":"Corporate", "Influence":0.450450, "Allegiance":"Alliance", "RecoveringStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Order of Kuk", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.041041, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] } ], "SystemFaction":"Kuk Silver Fortune Company" }
+{ "timestamp":"2018-02-20T20:44:04Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:44:04Z", "event":"Docked", "StationName":"Prospector's Rest", "StationType":"SurfaceStation", "StarSystem":"Kuk", "StationFaction":"Selene Jean", "StationGovernment":"$government_Engineer;", "StationGovernment_Localised":"Workshop", "StationAllegiance":"Alliance", "StationServices":[ "Dock", "Autodock", "Commodities", "Exploration", "Outfitting", "Rearm", "Refuel", "Repair", "Tuning", "Workshop", "FlightController", "StationOperations" ], "StationEconomy":"$economy_Colony;", "StationEconomy_Localised":"Colony", "DistFromStarLS":12395.726563 }
+{ "timestamp":"2018-02-20T20:44:12Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T20:44:17Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T20:44:26Z", "event":"Undocked", "StationName":"Prospector's Rest", "StationType":"SurfaceStation" }
+{ "timestamp":"2018-02-20T20:44:31Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T20:44:31Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:44:51Z", "event":"Friends", "Status":"Online", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"ApproachSettlement", "Name":"Napier Platform" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"ApproachSettlement", "Name":"Salgari's Progress" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"ApproachSettlement", "Name":"Prospector's Rest" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"ApproachSettlement", "Name":"Barnes Penal colony" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"ApproachSettlement", "Name":"Sawyer's Progress" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"ApproachSettlement", "Name":"Gabriel Silo" }
+{ "timestamp":"2018-02-20T20:45:02Z", "event":"ApproachSettlement", "Name":"Guin Plant ++" }
+{ "timestamp":"2018-02-20T20:45:07Z", "event":"SupercruiseEntry", "StarSystem":"Kuk" }
+{ "timestamp":"2018-02-20T20:45:07Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T20:46:38Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LP 263-64", "StarClass":"M" }
+{ "timestamp":"2018-02-20T20:46:44Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:46:57Z", "event":"FSDJump", "StarSystem":"LP 263-64", "StarPos":[1.656,58.063,-26.750], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"None", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"None", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":0, "JumpDist":27.509, "FuelUsed":3.649433, "FuelLevel":28.350567 }
+{ "timestamp":"2018-02-20T20:46:57Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T20:47:27Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LTT 12680", "StarClass":"DC" }
+{ "timestamp":"2018-02-20T20:47:32Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:47:45Z", "event":"FSDJump", "StarSystem":"LTT 12680", "StarPos":[31.094,53.250,-34.969], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Medium Security", "Population":3261341, "JumpDist":30.940, "FuelUsed":4.773924, "FuelLevel":23.576643, "Factions":[ { "Name":"United EGGR 431 Free", "FactionState":"None", "Government":"Democracy", "Influence":0.174174, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"BD+27 1739 Values Party", "FactionState":"Boom", "Government":"Democracy", "Influence":0.224224, "Allegiance":"Federation" }, { "Name":"LTT 12680 Interstellar", "FactionState":"None", "Government":"Corporate", "Influence":0.292292, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"LTT 12680 Unionists", "FactionState":"CivilWar", "Government":"Communism", "Influence":0.049049, "Allegiance":"Independent" }, { "Name":"40 Leonis Future", "FactionState":"None", "Government":"Democracy", "Influence":0.166166, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Official LTT 12680 Order", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.047047, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"LTT 12680 Crimson Clan", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.047047, "Allegiance":"Independent" } ], "SystemFaction":"LTT 12680 Interstellar" }
+{ "timestamp":"2018-02-20T20:47:45Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T20:48:11Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Puppis Sector DG-X b1-3", "StarClass":"M" }
+{ "timestamp":"2018-02-20T20:48:16Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:48:29Z", "event":"FSDJump", "StarSystem":"Puppis Sector DG-X b1-3", "StarPos":[59.250,42.406,-35.781], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"None", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"None", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":0, "JumpDist":30.183, "FuelUsed":4.379693, "FuelLevel":19.196951 }
+{ "timestamp":"2018-02-20T20:48:29Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T20:49:01Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Andel", "StarClass":"K" }
+{ "timestamp":"2018-02-20T20:49:06Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:49:19Z", "event":"FSDJump", "StarSystem":"Andel", "StarPos":[75.219,18.844,-48.344], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_HighTech;", "SystemEconomy_Localised":"High Tech", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"High Security", "Population":13103893, "JumpDist":31.113, "FuelUsed":4.607348, "FuelLevel":14.589603, "Factions":[ { "Name":"Andel Jet State Exchange", "FactionState":"Famine", "Government":"Corporate", "Influence":0.010000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 }, { "State":"CivilUnrest", "Trend":0 }, { "State":"Lockdown", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Chagin Jet Comms Ltd", "FactionState":"None", "Government":"Corporate", "Influence":0.117000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":-1 } ], "RecoveringStates":[ { "State":"Lockdown", "Trend":-1 }, { "State":"Famine", "Trend":0 } ] }, { "Name":"Freedom Party of Andel", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.042000, "Allegiance":"Independent" }, { "Name":"Future of Andel", "FactionState":"Boom", "Government":"Democracy", "Influence":0.151000, "Allegiance":"Federation", "PendingStates":[ { "State":"Famine", "Trend":0 } ] }, { "Name":"Andel Crew", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.026000, "Allegiance":"Independent" }, { "Name":"Liberty Party of Andel", "FactionState":"Boom", "Government":"Dictatorship", "Influence":0.055000, "Allegiance":"Independent" }, { "Name":"Federal Liberal Command", "FactionState":"Boom", "Government":"Corporate", "Influence":0.599000, "Allegiance":"Federation" } ], "SystemFaction":"Federal Liberal Command", "FactionState":"Boom" }
+{ "timestamp":"2018-02-20T20:49:20Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T20:49:45Z", "event":"HeatWarning" }
+{ "timestamp":"2018-02-20T20:49:54Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Kanamba", "StarClass":"M" }
+{ "timestamp":"2018-02-20T20:50:00Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:50:13Z", "event":"FSDJump", "StarSystem":"Kanamba", "StarPos":[103.438,10.938,-56.844], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Colony;", "SystemEconomy_Localised":"Colony", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Democracy", "SystemSecurity":"$SYSTEM_SECURITY_low;", "SystemSecurity_Localised":"Low Security", "Population":1755, "JumpDist":30.513, "FuelUsed":4.283813, "FuelLevel":10.305790, "Factions":[ { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Kanamba League", "FactionState":"None", "Government":"Confederacy", "Influence":0.128000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Social Mombilar Revolutionary Party", "FactionState":"Boom", "Government":"Democracy", "Influence":0.554000, "Allegiance":"Federation", "PendingStates":[ { "State":"Retreat", "Trend":0 } ] }, { "Name":"Kanamba Rats", "FactionState":"Famine", "Government":"Anarchy", "Influence":0.318000, "Allegiance":"Independent", "PendingStates":[ { "State":"Boom", "Trend":0 } ] } ], "SystemFaction":"Social Mombilar Revolutionary Party", "FactionState":"Boom" }
+{ "timestamp":"2018-02-20T20:50:13Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T20:50:41Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Deciat", "StarClass":"K" }
+{ "timestamp":"2018-02-20T20:50:46Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:50:59Z", "event":"FSDJump", "StarSystem":"Deciat", "StarPos":[122.625,-0.813,-47.281], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Democracy;", "SystemGovernment_Localised":"Democracy", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"High Security", "Population":31740050, "JumpDist":24.447, "FuelUsed":2.430779, "FuelLevel":7.875010, "Factions":[ { "Name":"Felicity Farseer", "FactionState":"None", "Government":"Engineer", "Influence":0.000000, "Allegiance":"Federation" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Independent Deciat Green Party", "FactionState":"Boom", "Government":"Democracy", "Influence":0.627000, "Allegiance":"Federation" }, { "Name":"Kremata Incorporated", "FactionState":"None", "Government":"Corporate", "Influence":0.018000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Lockdown", "Trend":0 } ] }, { "Name":"Thrigpa League", "FactionState":"Boom", "Government":"Confederacy", "Influence":0.097000, "Allegiance":"Federation" }, { "Name":"Windri & Co", "FactionState":"None", "Government":"Corporate", "Influence":0.118000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":1 }, { "State":"Lockdown", "Trend":1 }, { "State":"Famine", "Trend":0 } ] }, { "Name":"Deciat Flag", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.051000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Deciat Corp.", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.044000, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Deciat Blue Dragons", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.045000, "Allegiance":"Independent", "PendingStates":[ { "State":"Bust", "Trend":0 } ] } ], "SystemFaction":"Independent Deciat Green Party", "FactionState":"Boom" }
+{ "timestamp":"2018-02-20T20:51:00Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-20T20:51:05Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T20:51:14Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Cruise Ship", "Message":"$CruiseLiner_SCPatrol02;", "Message_Localised":"We will be cruising in-system for a while, please feel free to take advantage of our in-flight entertainment.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T20:51:15Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Wedding Barge", "Message":"$ConvoyWedding_Patrol05;", "Message_Localised":"The ceremony will be starting soon! Please make sure your screens are set to the appropriate frequencies!", "Channel":"npc" }
+{ "timestamp":"2018-02-20T20:51:52Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Cruise;", "From_Localised":"Cruise Ship", "Message":"$CruiseLiner_SCPatrol04;", "Message_Localised":"I'd like to direct your attention to our flight attendants for a brief safety demonstration.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T20:51:59Z", "event":"ReceiveText", "From":"$ShipName_PassengerLiner_Wedding;", "From_Localised":"Wedding Barge", "Message":"$ConvoyWedding_Patrol09;", "Message_Localised":"I don't know if I can go through with the wedding.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T20:53:35Z", "event":"ApproachSettlement", "Name":"Farseer Inc" }
+{ "timestamp":"2018-02-20T20:54:23Z", "event":"ApproachSettlement", "Name":"Farseer Inc" }
+{ "timestamp":"2018-02-20T20:54:28Z", "event":"SupercruiseExit", "StarSystem":"Deciat", "Body":"Deciat 6 a", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T20:54:29Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T20:54:51Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T20:54:54Z", "event":"ReceiveText", "From":"Farseer Inc", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T20:55:01Z", "event":"DockingRequested", "StationName":"Farseer Inc" }
+{ "timestamp":"2018-02-20T20:55:01Z", "event":"ReceiveText", "From":"Farseer Inc", "Message":"$DockingChatter_Allied;", "Message_Localised":"An ally like you is always welcome here.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T20:55:03Z", "event":"ReceiveText", "From":"Farseer Inc", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T20:55:03Z", "event":"DockingGranted", "LandingPad":3, "StationName":"Farseer Inc" }
+{ "timestamp":"2018-02-20T20:56:03Z", "event":"Docked", "StationName":"Farseer Inc", "StationType":"SurfaceStation", "StarSystem":"Deciat", "StationFaction":"Felicity Farseer", "StationGovernment":"$government_Engineer;", "StationGovernment_Localised":"Workshop", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "Exploration", "Outfitting", "Rearm", "Refuel", "Repair", "Tuning", "Workshop", "FlightController", "StationOperations" ], "StationEconomy":"$economy_Colony;", "StationEconomy_Localised":"Colony", "DistFromStarLS":2039.934326 }
+{ "timestamp":"2018-02-20T20:56:13Z", "event":"RefuelAll", "Cost":1221, "Amount":24.397905 }
+{ "timestamp":"2018-02-20T20:56:13Z", "event":"RepairAll", "Cost":567 }
+{ "timestamp":"2018-02-20T20:56:14Z", "event":"BuyAmmo", "Cost":25 }
+{ "timestamp":"2018-02-20T20:59:09Z", "event":"ModuleStore", "Slot":"MainEngines", "StoredItem":"$int_engine_size5_class5_name;", "StoredItem_Localised":"Thrusters", "Ship":"asp", "ShipID":8, "EngineerModifications":"Engine_Reinforced" }
+{ "timestamp":"2018-02-20T20:59:41Z", "event":"ModuleRetrieve", "Slot":"MainEngines", "RetrievedItem":"$int_engine_size5_class5_name;", "RetrievedItem_Localised":"Thrusters", "Ship":"asp", "ShipID":8, "EngineerModifications":"Engine_Reinforced", "SwapOutItem":"$int_engine_size5_class1_name;", "SwapOutItem_Localised":"Thrusters", "Cost":0 }
+{ "timestamp":"2018-02-20T20:59:50Z", "event":"ModuleSellRemote", "StorageSlot":47, "SellItem":"$int_engine_size5_class1_name;", "SellItem_Localised":"Thrusters", "ServerId":128064083, "SellPrice":63012, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:00:11Z", "event":"ModuleSell", "Slot":"Slot02_Size5", "SellItem":"$int_hullreinforcement_size5_class2_name;", "SellItem_Localised":"Hull Reinforcement", "SellPrice":450000, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:00:15Z", "event":"ModuleSell", "Slot":"Slot03_Size3", "SellItem":"$int_hullreinforcement_size3_class2_name;", "SellItem_Localised":"Hull Reinforcement", "SellPrice":84000, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:00:18Z", "event":"ModuleSell", "Slot":"Slot04_Size3", "SellItem":"$int_modulereinforcement_size3_class2_name;", "SellItem_Localised":"Module Reinforcement", "SellPrice":84000, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:01:08Z", "event":"SellExplorationData", "Systems":[ "Ross 991", "Puppis Sector DG-X b1-3", "Kanamba", "LP 263-64" ], "Discovered":[  ], "BaseValue":43320, "Bonus":0 }
+{ "timestamp":"2018-02-20T21:02:22Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":2, "Ingredients":[ { "Name":"phosphorus", "Count":1 }, { "Name":"uncutfocuscrystals", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:02:42Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":2, "Ingredients":[ { "Name":"phosphorus", "Count":1 }, { "Name":"uncutfocuscrystals", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:03:30Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:03:44Z", "event":"EngineerApply", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1 }
+{ "timestamp":"2018-02-20T21:04:27Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_LongRange", "Level":1, "Ingredients":[ { "Name":"iron", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:04:39Z", "event":"EngineerApply", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_LongRange", "Level":1 }
+{ "timestamp":"2018-02-20T21:04:54Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:05:08Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:05:17Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:05:26Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:05:29Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:05:36Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:05:54Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:06:04Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1, "Ingredients":[ { "Name":"phosphorus", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:06:13Z", "event":"EngineerApply", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_SurfaceScanner_FastScan", "Level":1 }
+{ "timestamp":"2018-02-20T21:06:43Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_Sensor_LightWeight", "Level":3, "Ingredients":[ { "Name":"salvagedalloys", "Count":1 }, { "Name":"manganese", "Count":1 }, { "Name":"conductiveceramics", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:07:00Z", "event":"EngineerApply", "Engineer":"Felicity Farseer", "Blueprint":"Sensor_Sensor_LightWeight", "Level":3 }
+{ "timestamp":"2018-02-20T21:07:35Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:07:42Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:07:49Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:07:56Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:08:00Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:08:06Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:08:13Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:08:18Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"Engine_Reinforced", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:09:22Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"FSDinterdictor_Expanded", "Level":1, "Ingredients":[ { "Name":"mechanicalscrap", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:09:39Z", "event":"EngineerCraft", "Engineer":"Felicity Farseer", "Blueprint":"FSDinterdictor_Expanded", "Level":1, "Ingredients":[ { "Name":"mechanicalscrap", "Count":1 } ] }
+{ "timestamp":"2018-02-20T21:09:55Z", "event":"EngineerApply", "Engineer":"Felicity Farseer", "Blueprint":"FSDinterdictor_Expanded", "Level":1 }
+{ "timestamp":"2018-02-20T21:13:30Z", "event":"ModuleSellRemote", "StorageSlot":48, "SellItem":"$asp_armour_reactive_name;", "SellItem_Localised":"Reactive Surface Composite", "ServerId":128049308, "SellPrice":15700339, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:13:58Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T21:14:06Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T21:14:10Z", "event":"Undocked", "StationName":"Farseer Inc", "StationType":"SurfaceStation" }
+{ "timestamp":"2018-02-20T21:14:13Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T21:14:55Z", "event":"ReceiveText", "From":"Farseer Inc", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T21:15:14Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LTT 3075", "StarClass":"K" }
+{ "timestamp":"2018-02-20T21:15:20Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T21:15:20Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T21:15:33Z", "event":"FSDJump", "StarSystem":"LTT 3075", "StarPos":[108.313,-9.406,-20.313], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"None", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"None", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":0, "JumpDist":31.718, "FuelUsed":4.412013, "FuelLevel":27.587988 }
+{ "timestamp":"2018-02-20T21:15:34Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T21:16:25Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Mundii", "StarClass":"M" }
+{ "timestamp":"2018-02-20T21:16:30Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T21:16:44Z", "event":"FSDJump", "StarSystem":"Mundii", "StarPos":[85.563,-1.063,-0.375], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_high;", "SystemSecurity_Localised":"High Security", "Population":7432466, "JumpDist":31.380, "FuelUsed":4.191714, "FuelLevel":23.396275, "Factions":[ { "Name":"Taured Coalition", "FactionState":"Boom", "Government":"Confederacy", "Influence":0.148148, "Allegiance":"Federation" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Kwattrages Labour", "FactionState":"Boom", "Government":"Democracy", "Influence":0.208208, "Allegiance":"Federation" }, { "Name":"Anukam Values Party", "FactionState":"War", "Government":"Democracy", "Influence":0.069069, "Allegiance":"Federation", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Values Party of Mundii", "FactionState":"CivilWar", "Government":"Democracy", "Influence":0.062062, "Allegiance":"Independent" }, { "Name":"Official Mundii First", "FactionState":"None", "Government":"Dictatorship", "Influence":0.043043, "Allegiance":"Independent" }, { "Name":"Mundii Holdings", "FactionState":"War", "Government":"Corporate", "Influence":0.447447, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Posse of Mundii", "FactionState":"CivilWar", "Government":"Anarchy", "Influence":0.022022, "Allegiance":"Independent" } ], "SystemFaction":"Mundii Holdings", "FactionState":"War" }
+{ "timestamp":"2018-02-20T21:16:44Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-20T21:16:49Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T21:17:30Z", "event":"ApproachSettlement", "Name":"Birmingham Prospect" }
+{ "timestamp":"2018-02-20T21:18:12Z", "event":"SupercruiseExit", "StarSystem":"Mundii", "Body":"Elder Hub", "BodyType":"Station" }
+{ "timestamp":"2018-02-20T21:18:13Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-20T21:18:18Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T21:18:18Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T21:18:28Z", "event":"DockingRequested", "StationName":"Elder Hub" }
+{ "timestamp":"2018-02-20T21:18:28Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingChatter_Allied;", "Message_Localised":"An ally like you is always welcome here.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T21:18:30Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T21:18:30Z", "event":"DockingGranted", "LandingPad":30, "StationName":"Elder Hub" }
+{ "timestamp":"2018-02-20T21:18:42Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T21:18:52Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingPadBlockWarningComms;", "Message_Localised":"Loitering infraction detected, clear pad approach immediately to avoid lethal response", "Channel":"npc" }
+{ "timestamp":"2018-02-20T21:18:54Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingOffenceCleared;", "Message_Localised":"Starport infractions cleared, docking privileges restored.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T21:19:00Z", "event":"Docked", "StationName":"Elder Hub", "StationType":"Coriolis", "StarSystem":"Mundii", "StationFaction":"Mundii Holdings", "FactionState":"War", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":5.728767 }
+{ "timestamp":"2018-02-20T21:19:05Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Edward Edmondson;", "From_Localised":"Edward Edmondson", "Message":"$Commuter_AuthorityScan02;", "Message_Localised":"How can I be of assistance?", "Channel":"npc" }
+{ "timestamp":"2018-02-20T21:19:08Z", "event":"RefuelAll", "Cost":437, "Amount":8.709437 }
+{ "timestamp":"2018-02-20T21:20:30Z", "event":"ModuleStore", "Slot":"SmallHardpoint4", "StoredItem":"$hpt_multicannon_gimbal_small_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:20:39Z", "event":"ModuleStore", "Slot":"SmallHardpoint3", "StoredItem":"$hpt_multicannon_gimbal_small_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:20:55Z", "event":"ModuleRetrieve", "Slot":"SmallHardpoint3", "RetrievedItem":"$hpt_multicannon_gimbal_small_name;", "RetrievedItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:21:01Z", "event":"ModuleRetrieve", "Slot":"SmallHardpoint4", "RetrievedItem":"$hpt_multicannon_gimbal_small_name;", "RetrievedItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:21:37Z", "event":"ModuleStore", "Slot":"SmallHardpoint1", "StoredItem":"$hpt_multicannon_gimbal_small_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:21:51Z", "event":"ModuleStore", "Slot":"SmallHardpoint2", "StoredItem":"$hpt_multicannon_gimbal_small_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:22:00Z", "event":"ModuleStore", "Slot":"SmallHardpoint3", "StoredItem":"$hpt_multicannon_gimbal_small_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:22:10Z", "event":"ModuleStore", "Slot":"SmallHardpoint4", "StoredItem":"$hpt_multicannon_gimbal_small_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_Efficient" }
+{ "timestamp":"2018-02-20T21:22:48Z", "event":"ModuleRetrieve", "Slot":"SmallHardpoint4", "RetrievedItem":"$hpt_basicmissilerack_fixed_small_name;", "RetrievedItem_Localised":"Seeker Missile Rack", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_HighCapacity" }
+{ "timestamp":"2018-02-20T21:23:00Z", "event":"ModuleRetrieve", "Slot":"SmallHardpoint3", "RetrievedItem":"$hpt_basicmissilerack_fixed_small_name;", "RetrievedItem_Localised":"Seeker Missile Rack", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_HighCapacity" }
+{ "timestamp":"2018-02-20T21:23:06Z", "event":"ModuleRetrieve", "Slot":"SmallHardpoint2", "RetrievedItem":"$hpt_basicmissilerack_fixed_small_name;", "RetrievedItem_Localised":"Seeker Missile Rack", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_HighCapacity" }
+{ "timestamp":"2018-02-20T21:23:13Z", "event":"ModuleRetrieve", "Slot":"SmallHardpoint1", "RetrievedItem":"$hpt_basicmissilerack_fixed_small_name;", "RetrievedItem_Localised":"Seeker Missile Rack", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_HighCapacity" }
+{ "timestamp":"2018-02-20T21:23:29Z", "event":"ModuleStore", "Slot":"MediumHardpoint1", "StoredItem":"$hpt_pulselaser_gimbal_medium_name;", "StoredItem_Localised":"Pulse Laser", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:24:13Z", "event":"ModuleStore", "Slot":"MediumHardpoint2", "StoredItem":"$hpt_pulselaser_gimbal_medium_name;", "StoredItem_Localised":"Pulse Laser", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:24:40Z", "event":"ModuleRetrieve", "Slot":"MediumHardpoint2", "RetrievedItem":"$hpt_pulselaser_gimbal_medium_name;", "RetrievedItem_Localised":"Pulse Laser", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:24:48Z", "event":"ModuleRetrieve", "Slot":"MediumHardpoint1", "RetrievedItem":"$hpt_pulselaser_gimbal_medium_name;", "RetrievedItem_Localised":"Pulse Laser", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:25:11Z", "event":"ModuleRetrieve", "Slot":"Slot01_Size6", "RetrievedItem":"$int_fuelscoop_size6_class3_name;", "RetrievedItem_Localised":"Fuel Scoop", "Ship":"asp", "ShipID":8, "SwapOutItem":"$int_shieldgenerator_size5_class5_name;", "SwapOutItem_Localised":"Shield Generator", "Cost":0 }
+{ "timestamp":"2018-02-20T21:25:46Z", "event":"ModuleRetrieve", "Slot":"Slot02_Size5", "RetrievedItem":"$int_shieldgenerator_size5_class3_fast_name;", "RetrievedItem_Localised":"Bi-Weave Shield", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:25:55Z", "event":"ModuleStore", "Slot":"Slot05_Size3", "StoredItem":"$int_fsdinterdictor_size2_class2_name;", "StoredItem_Localised":"FSD Interdictor", "Ship":"asp", "ShipID":8, "EngineerModifications":"FSDinterdictor_Expanded" }
+{ "timestamp":"2018-02-20T21:26:09Z", "event":"ModuleSell", "Slot":"TinyHardpoint1", "SellItem":"$hpt_chafflauncher_tiny_name;", "SellItem_Localised":"Chaff", "SellPrice":8500, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:26:25Z", "event":"ModuleRetrieve", "Slot":"TinyHardpoint1", "RetrievedItem":"$hpt_xenoscanner_basic_tiny_name;", "RetrievedItem_Localised":"Xeno Scanner", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:26:57Z", "event":"ModuleBuy", "Slot":"LifeSupport", "SellItem":"$int_lifesupport_size4_class3_name;", "SellItem_Localised":"Life Support", "SellPrice":70932, "BuyItem":"$int_lifesupport_size4_class5_name;", "BuyItem_Localised":"Life Support", "BuyPrice":443328, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:29:02Z", "event":"ModuleBuy", "Slot":"PowerDistributor", "SellItem":"$int_powerdistributor_size4_class5_name;", "SellItem_Localised":"Power Distributor", "SellPrice":443328, "BuyItem":"$int_powerdistributor_size3_class5_name;", "BuyItem_Localised":"Power Distributor", "BuyPrice":158331, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:32:50Z", "event":"ModuleBuy", "Slot":"PowerDistributor", "SellItem":"$int_powerdistributor_size3_class5_name;", "SellItem_Localised":"Power Distributor", "SellPrice":158331, "BuyItem":"$int_powerdistributor_size4_class5_name;", "BuyItem_Localised":"Power Distributor", "BuyPrice":443328, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:35:02Z", "event":"ModuleRetrieve", "Slot":"Slot05_Size3", "RetrievedItem":"$int_buggybay_size2_class2_name;", "RetrievedItem_Localised":"Planetary Vehicle Hangar", "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:35:29Z", "event":"ModuleBuy", "Slot":"Slot04_Size3", "BuyItem":"$int_repairer_size3_class5_name;", "BuyItem_Localised":"AFM Unit", "BuyPrice":2624400, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:35:45Z", "event":"ModuleBuy", "Slot":"Slot03_Size3", "BuyItem":"$int_cargorack_size3_class1_name;", "BuyItem_Localised":"Cargo Rack", "BuyPrice":10563, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:37:06Z", "event":"ModuleStore", "Slot":"SmallHardpoint3", "StoredItem":"$hpt_basicmissilerack_fixed_small_name;", "StoredItem_Localised":"Seeker Missile Rack", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_HighCapacity" }
+{ "timestamp":"2018-02-20T21:37:16Z", "event":"ModuleStore", "Slot":"SmallHardpoint4", "StoredItem":"$hpt_basicmissilerack_fixed_small_name;", "StoredItem_Localised":"Seeker Missile Rack", "Ship":"asp", "ShipID":8, "EngineerModifications":"Weapon_HighCapacity" }
+{ "timestamp":"2018-02-20T21:41:00Z", "event":"ModuleBuy", "Slot":"MediumHardpoint1", "SellItem":"$hpt_pulselaser_gimbal_medium_name;", "SellItem_Localised":"Pulse Laser", "SellPrice":35400, "BuyItem":"$hpt_pulselaserburst_gimbal_medium_name;", "BuyItem_Localised":"Burst Laser", "BuyPrice":48500, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:41:21Z", "event":"ModuleBuy", "Slot":"MediumHardpoint2", "StoredItem":"$hpt_pulselaser_gimbal_medium_name;", "StoredItem_Localised":"Pulse Laser", "BuyItem":"$hpt_pulselaserburst_gimbal_medium_name;", "BuyItem_Localised":"Burst Laser", "BuyPrice":48500, "Ship":"asp", "ShipID":8 }
+{ "timestamp":"2018-02-20T21:43:05Z", "event":"ShipyardSwap", "ShipType":"cobramkiii", "ShipID":10, "StoreOldShip":"Asp", "StoreShipID":8 }
+{ "timestamp":"2018-02-20T21:43:06Z", "event":"Cargo", "Inventory":[  ] }
+{ "timestamp":"2018-02-20T21:43:06Z", "event":"Loadout", "Ship":"CobraMkIII", "ShipID":10, "ShipName":"SCAN ERROR!", "ShipIdent":"ERR-42", "Modules":[ { "Slot":"Decal1", "Item":"Decal_Combat_Competent", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"ShipName0", "Item":"Nameplate_ShipID_White", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"ShipName1", "Item":"Nameplate_Raider03_White", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"PaintJob", "Item":"PaintJob_CobraMkIII_Gradient2_03", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"Armour", "Item":"CobraMkIII_Armour_Reactive", "On":true, "Priority":1, "Health":1.000000, "Value":824285, "EngineerBlueprint":"Armour_Advanced", "EngineerLevel":4 }, { "Slot":"PowerPlant", "Item":"Int_Powerplant_Size4_Class5", "On":true, "Priority":1, "Health":1.000000, "Value":1610080, "EngineerBlueprint":"PowerPlant_Boosted", "EngineerLevel":1 }, { "Slot":"MainEngines", "Item":"Int_Engine_Size4_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":1610080, "EngineerBlueprint":"Engine_Tuned", "EngineerLevel":1 }, { "Slot":"FrameShiftDrive", "Item":"Int_Hyperdrive_Size4_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":1610080, "EngineerBlueprint":"FSD_Shielded", "EngineerLevel":1 }, { "Slot":"LifeSupport", "Item":"Int_LifeSupport_Size3_Class2", "On":true, "Priority":0, "Health":1.000000, "Value":10133 }, { "Slot":"PowerDistributor", "Item":"Int_PowerDistributor_Size3_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":158331 }, { "Slot":"Radar", "Item":"Int_Sensors_Size3_Class3", "On":true, "Priority":0, "Health":1.000000, "Value":25333, "EngineerBlueprint":"Sensor_Sensor_LongRange", "EngineerLevel":3 }, { "Slot":"FuelTank", "Item":"Int_FuelTank_Size4_Class3", "On":true, "Priority":1, "Health":1.000000, "Value":24734 }, { "Slot":"Slot01_Size4", "Item":"Int_ShieldGenerator_Size4_Class3_Fast", "On":true, "Priority":0, "Health":1.000000, "Value":268347, "EngineerBlueprint":"ShieldGenerator_Optimised", "EngineerLevel":1 }, { "Slot":"Slot02_Size4", "Item":"Int_HullReinforcement_Size4_Class2", "On":true, "Priority":1, "Health":1.000000, "Value":195000, "EngineerBlueprint":"HullReinforcement_Advanced", "EngineerLevel":4 }, { "Slot":"Slot03_Size4", "Item":"Int_CargoRack_Size4_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":34328 }, { "Slot":"Slot04_Size2", "Item":"Int_ModuleReinforcement_Size2_Class1", "On":true, "Priority":1, "Health":1.000000, "Value":12000 }, { "Slot":"Slot06_Size2", "Item":"Int_StellarBodyDiscoveryScanner_Advanced", "On":true, "Priority":1, "Health":1.000000, "Value":1545000 }, { "Slot":"PlanetaryApproachSuite", "Item":"Int_PlanetApproachSuite", "On":true, "Priority":1, "Health":1.000000, "Value":500 }, { "Slot":"WeaponColour", "Item":"WeaponCustomisation_Cyan", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"EngineColour", "Item":"EngineCustomisation_Cyan", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"ShipCockpit", "Item":"CobraMkIII_Cockpit", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"CargoHatch", "Item":"ModularCargoBayDoor", "On":true, "Priority":2, "Health":1.000000, "Value":0 } ] }
+{ "timestamp":"2018-02-20T21:43:06Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T21:43:15Z", "event":"Docked", "StationName":"Elder Hub", "StationType":"Coriolis", "StarSystem":"Mundii", "StationFaction":"Mundii Holdings", "FactionState":"War", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":5.732590 }
+{ "timestamp":"2018-02-20T21:43:15Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T21:44:22Z", "event":"ModuleRetrieve", "Slot":"MediumHardpoint1", "RetrievedItem":"$hpt_multicannon_gimbal_medium_name;", "RetrievedItem_Localised":"Multi-Cannon", "Ship":"cobramkiii", "ShipID":10, "EngineerModifications":"Weapon_ShortRange" }
+{ "timestamp":"2018-02-20T21:44:37Z", "event":"ModuleRetrieve", "Slot":"MediumHardpoint2", "RetrievedItem":"$hpt_multicannon_gimbal_medium_name;", "RetrievedItem_Localised":"Multi-Cannon", "Ship":"cobramkiii", "ShipID":10, "EngineerModifications":"Weapon_ShortRange" }
+{ "timestamp":"2018-02-20T21:57:11Z", "event":"ModuleBuy", "Slot":"SmallHardpoint1", "BuyItem":"$hpt_pulselaserburst_gimbal_small_name;", "BuyItem_Localised":"Burst Laser", "BuyPrice":8600, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T21:57:19Z", "event":"ModuleBuy", "Slot":"SmallHardpoint2", "BuyItem":"$hpt_pulselaserburst_gimbal_small_name;", "BuyItem_Localised":"Burst Laser", "BuyPrice":8600, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T22:00:22Z", "event":"ModuleRetrieve", "Slot":"Slot05_Size2", "RetrievedItem":"$int_fsdinterdictor_size2_class2_name;", "RetrievedItem_Localised":"FSD Interdictor", "Ship":"cobramkiii", "ShipID":10, "EngineerModifications":"FSDinterdictor_Expanded" }
+{ "timestamp":"2018-02-20T22:00:53Z", "event":"ModuleBuy", "Slot":"TinyHardpoint1", "BuyItem":"$hpt_chafflauncher_tiny_name;", "BuyItem_Localised":"Chaff", "BuyPrice":8500, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T22:01:37Z", "event":"ModuleBuy", "Slot":"TinyHardpoint2", "BuyItem":"$hpt_cloudscanner_size0_class2_name;", "BuyItem_Localised":"Wake Scanner", "BuyPrice":40633, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T22:02:32Z", "event":"ModuleBuy", "Slot":"SmallHardpoint1", "SellItem":"$hpt_pulselaserburst_gimbal_small_name;", "SellItem_Localised":"Burst Laser", "SellPrice":8600, "BuyItem":"$hpt_beamlaser_gimbal_small_name;", "BuyItem_Localised":"Beam Laser", "BuyPrice":74650, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T22:02:47Z", "event":"ModuleBuy", "Slot":"SmallHardpoint2", "SellItem":"$hpt_pulselaserburst_gimbal_small_name;", "SellItem_Localised":"Burst Laser", "SellPrice":8600, "BuyItem":"$hpt_beamlaser_gimbal_small_name;", "BuyItem_Localised":"Beam Laser", "BuyPrice":74650, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T22:05:27Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2018-02-20T22:05:29Z", "event":"Repair", "Item":"Paint", "Cost":1 }
+{ "timestamp":"2018-02-20T22:07:10Z", "event":"Undocked", "StationName":"Elder Hub", "StationType":"Coriolis" }
+{ "timestamp":"2018-02-20T22:07:39Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:08:02Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T22:08:07Z", "event":"SupercruiseEntry", "StarSystem":"Mundii" }
+{ "timestamp":"2018-02-20T22:08:07Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:08:32Z", "event":"ApproachSettlement", "Name":"Birmingham Prospect" }
+{ "timestamp":"2018-02-20T22:10:45Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Gobson Peel;", "From_Localised":"Gobson Peel", "Message":"$RefugeeFlotillaWar_Patrol04;", "Message_Localised":"Stay away, you don't want to get caught in the cross fire.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:11:18Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Gobson Peel;", "From_Localised":"Gobson Peel", "Message":"$RefugeeFlotillaWar_Patrol01;", "Message_Localised":"This war has gone too far, we're leavin' here before we get killed. ", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:12:17Z", "event":"SupercruiseExit", "StarSystem":"Mundii", "Body":"Mundii 2", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T22:12:18Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T22:12:42Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T22:13:04Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T22:13:12Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T22:13:29Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T22:13:37Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T22:14:00Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T22:14:04Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-20T22:15:59Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T22:16:40Z", "event":"HullDamage", "Health":0.798059, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-20T22:16:42Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Posse of Mundii" }
+{ "timestamp":"2018-02-20T22:16:42Z", "event":"FactionKillBond", "Reward":59800, "AwardingFaction":"Values Party of Mundii", "VictimFaction":"Posse of Mundii" }
+{ "timestamp":"2018-02-20T22:17:28Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-20T22:17:39Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T22:17:43Z", "event":"HullDamage", "Health":0.589121, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-20T22:18:07Z", "event":"Bounty", "Target":"asp", "TotalReward":0, "VictimFaction":"Posse of Mundii" }
+{ "timestamp":"2018-02-20T22:18:07Z", "event":"FactionKillBond", "Reward":32200, "AwardingFaction":"Values Party of Mundii", "VictimFaction":"Posse of Mundii" }
+{ "timestamp":"2018-02-20T22:18:17Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T22:18:22Z", "event":"SupercruiseEntry", "StarSystem":"Mundii" }
+{ "timestamp":"2018-02-20T22:18:22Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:20:46Z", "event":"SupercruiseExit", "StarSystem":"Mundii", "Body":"Elder Hub", "BodyType":"Station" }
+{ "timestamp":"2018-02-20T22:20:46Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-20T22:20:51Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"Docking request denied, please approach to 7500m", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:20:51Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"Elder Hub" }
+{ "timestamp":"2018-02-20T22:20:51Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:20:51Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:21:12Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingTresspassWarningComms;", "Message_Localised":"Unauthorised access infraction detected, clear starport immediately to avoid lethal response", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:21:14Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T22:21:23Z", "event":"CommitCrime", "CrimeType":"dockingMinorTresspass", "Faction":"Mundii Holdings", "Fine":400 }
+{ "timestamp":"2018-02-20T22:21:28Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:21:43Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingFailed_Offences:#offencetimer=5;", "Message_Localised":"Docking request denied, starport infractions pending (5 seconds remaining)", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:21:43Z", "event":"DockingDenied", "Reason":"Offences", "StationName":"Elder Hub" }
+{ "timestamp":"2018-02-20T22:21:48Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingOffenceCleared;", "Message_Localised":"Starport infractions cleared, docking privileges restored.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:22:19Z", "event":"DockingRequested", "StationName":"Elder Hub" }
+{ "timestamp":"2018-02-20T22:22:19Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$DockingChatter_Allied;", "Message_Localised":"An ally like you is always welcome here.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:22:20Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:22:20Z", "event":"DockingGranted", "LandingPad":28, "StationName":"Elder Hub" }
+{ "timestamp":"2018-02-20T22:22:42Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T22:22:51Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T22:23:08Z", "event":"Docked", "StationName":"Elder Hub", "StationType":"Coriolis", "StarSystem":"Mundii", "StationFaction":"Mundii Holdings", "FactionState":"War", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationAllegiance":"Federation", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":5.733682 }
+{ "timestamp":"2018-02-20T22:23:09Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-20T22:23:17Z", "event":"RefuelAll", "Cost":15, "Amount":0.299324 }
+{ "timestamp":"2018-02-20T22:23:18Z", "event":"RepairAll", "Cost":9341 }
+{ "timestamp":"2018-02-20T22:23:19Z", "event":"BuyAmmo", "Cost":892 }
+{ "timestamp":"2018-02-20T22:25:32Z", "event":"ModuleStore", "Slot":"MediumHardpoint2", "StoredItem":"$hpt_multicannon_gimbal_medium_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"cobramkiii", "ShipID":10, "EngineerModifications":"Weapon_ShortRange" }
+{ "timestamp":"2018-02-20T22:26:01Z", "event":"ModuleStore", "Slot":"MediumHardpoint1", "StoredItem":"$hpt_multicannon_gimbal_medium_name;", "StoredItem_Localised":"Multi-Cannon", "Ship":"cobramkiii", "ShipID":10, "EngineerModifications":"Weapon_ShortRange" }
+{ "timestamp":"2018-02-20T22:29:28Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T22:29:29Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T22:29:31Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T22:29:32Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T22:29:33Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T22:29:34Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T22:29:35Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T22:29:38Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T22:29:39Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T22:30:23Z", "event":"ModuleBuy", "Slot":"MediumHardpoint1", "BuyItem":"$hpt_basicmissilerack_fixed_medium_name;", "BuyItem_Localised":"Seeker Missile Rack", "BuyPrice":512400, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T22:31:04Z", "event":"ModuleBuy", "Slot":"MediumHardpoint2", "BuyItem":"$hpt_basicmissilerack_fixed_medium_name;", "BuyItem_Localised":"Seeker Missile Rack", "BuyPrice":512400, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T22:31:15Z", "event":"BuyAmmo", "Cost":24000 }
+{ "timestamp":"2018-02-20T22:32:21Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T22:32:30Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T22:32:49Z", "event":"Undocked", "StationName":"Elder Hub", "StationType":"Coriolis" }
+{ "timestamp":"2018-02-20T22:33:00Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:33:07Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T22:33:13Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:33:19Z", "event":"ReceiveText", "From":"Elder Hub", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:33:30Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Hiradhea", "StarClass":"G" }
+{ "timestamp":"2018-02-20T22:33:48Z", "event":"FSDJump", "StarSystem":"Hiradhea", "StarPos":[74.875,-8.500,-9.563], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Colony;", "SystemEconomy_Localised":"Colony", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Medium Security", "Population":204655, "JumpDist":15.936, "FuelUsed":1.880359, "FuelLevel":14.119640, "Factions":[ { "Name":"Hiradhea Democrats", "FactionState":"CivilWar", "Government":"Democracy", "Influence":0.223000, "Allegiance":"Federation" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Chuelche General Interstellar", "FactionState":"War", "Government":"Corporate", "Influence":0.051000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Expansion", "Trend":0 } ] }, { "Name":"Hiradhea Justice Party", "FactionState":"CivilWar", "Government":"Dictatorship", "Influence":0.198000, "Allegiance":"Independent" }, { "Name":"Silver Dynamic Systems", "FactionState":"None", "Government":"Corporate", "Influence":0.219000, "Allegiance":"Federation" }, { "Name":"Hiradhea Crimson Partnership", "FactionState":"War", "Government":"Anarchy", "Influence":0.032000, "Allegiance":"Independent" }, { "Name":"Hiradhea Crimson Universal Corp", "FactionState":"None", "Government":"Corporate", "Influence":0.082000, "Allegiance":"Independent" }, { "Name":"Ice Storm Squadron", "FactionState":"Expansion", "Government":"Corporate", "Influence":0.195000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Ice Storm Squadron", "FactionState":"Expansion" }
+{ "timestamp":"2018-02-20T22:33:49Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:34:34Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Anmatyerre", "StarClass":"K" }
+{ "timestamp":"2018-02-20T22:34:39Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:34:52Z", "event":"FSDJump", "StarSystem":"Anmatyerre", "StarPos":[64.563,-20.750,-13.531], "SystemAllegiance":"Federation", "SystemEconomy":"$economy_Colony;", "SystemEconomy_Localised":"Colony", "SystemGovernment":"$government_Confederacy;", "SystemGovernment_Localised":"Confederacy", "SystemSecurity":"$SYSTEM_SECURITY_low;", "SystemSecurity_Localised":"Low Security", "Population":20877, "JumpDist":16.497, "FuelUsed":2.006308, "FuelLevel":12.113333, "Factions":[ { "Name":"LTT 2581 League", "FactionState":"War", "Government":"Confederacy", "Influence":0.009980, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Partnership of Anmatyerre", "FactionState":"Boom", "Government":"Confederacy", "Influence":0.693613, "Allegiance":"Federation" }, { "Name":"Chuelche General Interstellar", "FactionState":"None", "Government":"Corporate", "Influence":0.097804, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"Expansion", "Trend":0 } ] }, { "Name":"I Puppis Federal Industry", "FactionState":"Boom", "Government":"Corporate", "Influence":0.125749, "Allegiance":"Federation" }, { "Name":"Anmatyerre Blue Bridge Int", "FactionState":"War", "Government":"Corporate", "Influence":0.009980, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Anmatyerre Jet Council", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.062874, "Allegiance":"Independent", "PendingStates":[ { "State":"Outbreak", "Trend":0 } ] } ], "SystemFaction":"Partnership of Anmatyerre", "FactionState":"Boom" }
+{ "timestamp":"2018-02-20T22:34:52Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:35:28Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Puppis Sector BQ-P a5-0", "StarClass":"L" }
+{ "timestamp":"2018-02-20T22:35:33Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:35:46Z", "event":"FSDJump", "StarSystem":"Puppis Sector BQ-P a5-0", "StarPos":[57.125,-32.406,-23.656], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"None", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"None", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":0, "JumpDist":17.138, "FuelUsed":2.155390, "FuelLevel":9.957943 }
+{ "timestamp":"2018-02-20T22:35:46Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:36:29Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Puppis Sector YE-R a4-8", "StarClass":"Y" }
+{ "timestamp":"2018-02-20T22:36:35Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:36:48Z", "event":"FSDJump", "StarSystem":"Puppis Sector YE-R a4-8", "StarPos":[51.625,-41.813,-28.844], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"None", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"None", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":0, "JumpDist":12.068, "FuelUsed":0.945632, "FuelLevel":9.012311 }
+{ "timestamp":"2018-02-20T22:36:48Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:37:31Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Eurybia", "StarClass":"K" }
+{ "timestamp":"2018-02-20T22:37:37Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:37:50Z", "event":"FSDJump", "StarSystem":"Eurybia", "StarPos":[51.406,-54.406,-30.500], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Anarchy;", "SystemGovernment_Localised":"Anarchy", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":125000, "JumpDist":12.704, "FuelUsed":1.056155, "FuelLevel":7.956156, "Factions":[ { "Name":"Liz Ryder", "FactionState":"None", "Government":"Engineer", "Influence":0.000000, "Allegiance":"Empire" }, { "Name":"Eurybia Empire Consulate", "FactionState":"None", "Government":"Patronage", "Influence":0.284284, "Allegiance":"Empire", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":0 } ], "RecoveringStates":[ { "State":"Lockdown", "Trend":0 } ] }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Eurybia Jet Major Systems", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.097097, "Allegiance":"Empire", "PendingStates":[ { "State":"CivilUnrest", "Trend":1 } ], "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Eurybia Blue Mafia", "FactionState":"CivilWar", "Government":"Anarchy", "Influence":0.404404, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Boom", "Trend":0 } ] }, { "Name":"Democrats of Eurybia", "FactionState":"Boom", "Government":"Democracy", "Influence":0.065065, "Allegiance":"Independent" }, { "Name":"Collangbaka Energy Exchange", "FactionState":"CivilUnrest", "Government":"Corporate", "Influence":0.149149, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Eurybia Blue Mafia", "FactionState":"CivilWar" }
+{ "timestamp":"2018-02-20T22:37:50Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-20T22:37:55Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:39:29Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"compactemissionsdata", "Count":3 }
+{ "timestamp":"2018-02-20T22:39:29Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"compactemissionsdata", "Count":3 }
+{ "timestamp":"2018-02-20T22:39:30Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"classifiedscandata", "Count":3 }
+{ "timestamp":"2018-02-20T22:39:30Z", "event":"MaterialCollected", "Category":"Encoded", "Name":"shieldcyclerecordings", "Count":3 }
+{ "timestamp":"2018-02-20T22:39:31Z", "event":"SendText", "To":"local", "Message":"o7" }
+{ "timestamp":"2018-02-20T22:39:51Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Michael Fryer;", "From_Localised":"Michael Fryer", "Message":"$Pirate_StartInterdiction05;", "Message_Localised":"You have something that I want.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:40:09Z", "event":"Interdicted", "Submitted":false, "Interdictor":"Michael Fryer", "IsPlayer":false, "Faction":"Collangbaka Energy Exchange" }
+{ "timestamp":"2018-02-20T22:40:10Z", "event":"SupercruiseExit", "StarSystem":"Eurybia", "Body":"Tira Flirble", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T22:40:11Z", "event":"Music", "MusicTrack":"Interdiction" }
+{ "timestamp":"2018-02-20T22:40:14Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Michael Fryer;", "From_Localised":"Michael Fryer", "Message":"$Pirate_OnStartScanCargo01;", "Message_Localised":"I see all!", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:40:39Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-20T22:41:23Z", "event":"Bounty", "Rewards":[ { "Faction":"Eurybia Blue Mafia", "Reward":22770 } ], "Target":"adder", "TotalReward":22770, "VictimFaction":"Collangbaka Energy Exchange" }
+{ "timestamp":"2018-02-20T22:41:38Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T22:41:46Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"salvagedalloys", "Count":3 }
+{ "timestamp":"2018-02-20T22:42:03Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"wornshieldemitters", "Count":3 }
+{ "timestamp":"2018-02-20T22:42:22Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"galvanisingalloys", "Count":3 }
+{ "timestamp":"2018-02-20T22:42:35Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"wornshieldemitters", "Count":3 }
+{ "timestamp":"2018-02-20T22:42:49Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"salvagedalloys", "Count":3 }
+{ "timestamp":"2018-02-20T22:42:58Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T22:43:03Z", "event":"SupercruiseEntry", "StarSystem":"Eurybia" }
+{ "timestamp":"2018-02-20T22:43:04Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T22:43:44Z", "event":"ApproachSettlement", "Name":"Heiles Laboratory" }
+{ "timestamp":"2018-02-20T22:43:45Z", "event":"ApproachSettlement", "Name":"Michell Depot" }
+{ "timestamp":"2018-02-20T22:43:47Z", "event":"ApproachSettlement", "Name":"Gill Point" }
+{ "timestamp":"2018-02-20T22:43:49Z", "event":"ApproachSettlement", "Name":"Demolition Unlimited" }
+{ "timestamp":"2018-02-20T22:43:50Z", "event":"ApproachSettlement", "Name":"Tusi Beacon ++" }
+{ "timestamp":"2018-02-20T22:43:55Z", "event":"ApproachSettlement", "Name":"Adams Installation ++" }
+{ "timestamp":"2018-02-20T22:44:47Z", "event":"ApproachSettlement", "Name":"Demolition Unlimited" }
+{ "timestamp":"2018-02-20T22:44:49Z", "event":"SupercruiseExit", "StarSystem":"Eurybia", "Body":"Makalu", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T22:44:50Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T22:45:26Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T22:45:29Z", "event":"ReceiveText", "From":"Demolition Unlimited", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:45:39Z", "event":"DockingRequested", "StationName":"Demolition Unlimited" }
+{ "timestamp":"2018-02-20T22:45:39Z", "event":"ReceiveText", "From":"Demolition Unlimited", "Message":"$DockingChatter_Allied;", "Message_Localised":"An ally like you is always welcome here.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:45:40Z", "event":"ReceiveText", "From":"Demolition Unlimited", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T22:45:40Z", "event":"DockingGranted", "LandingPad":1, "StationName":"Demolition Unlimited" }
+{ "timestamp":"2018-02-20T22:46:15Z", "event":"Docked", "StationName":"Demolition Unlimited", "StationType":"SurfaceStation", "StarSystem":"Eurybia", "StationFaction":"Liz Ryder", "StationGovernment":"$government_Engineer;", "StationGovernment_Localised":"Workshop", "StationAllegiance":"Empire", "StationServices":[ "Dock", "Autodock", "Commodities", "Outfitting", "Rearm", "Refuel", "Repair", "Tuning", "Workshop", "FlightController", "StationOperations" ], "StationEconomy":"$economy_Colony;", "StationEconomy_Localised":"Colony", "DistFromStarLS":323.630280 }
+{ "timestamp":"2018-02-20T22:47:03Z", "event":"RefuelAll", "Cost":416, "Amount":8.298985 }
+{ "timestamp":"2018-02-20T22:47:04Z", "event":"RepairAll", "Cost":105 }
+{ "timestamp":"2018-02-20T22:47:06Z", "event":"BuyAmmo", "Cost":4100 }
+{ "timestamp":"2018-02-20T22:50:17Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"Weapon_HighCapacity", "Level":1, "Ingredients":[ { "Name":"mechanicalscrap", "Count":1 } ] }
+{ "timestamp":"2018-02-20T22:53:05Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"Weapon_HighCapacity", "Level":1, "Override":"special_drag_munitions" }
+{ "timestamp":"2018-02-20T22:53:05Z", "event":"EngineerProgress", "Engineer":"Liz Ryder", "Rank":3 }
+{ "timestamp":"2018-02-20T22:54:16Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"Weapon_HighCapacity", "Level":1, "Ingredients":[ { "Name":"mechanicalscrap", "Count":1 } ] }
+{ "timestamp":"2018-02-20T22:56:20Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"Weapon_HighCapacity", "Level":1, "Override":"special_drag_munitions" }
+{ "timestamp":"2018-02-20T22:56:21Z", "event":"EngineerProgress", "Engineer":"Liz Ryder", "Rank":1 }
+{ "timestamp":"2018-02-20T22:57:14Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T22:57:32Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T22:57:48Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T22:58:19Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T22:58:28Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T22:58:31Z", "event":"EngineerProgress", "Engineer":"Liz Ryder", "Rank":2 }
+{ "timestamp":"2018-02-20T22:58:59Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T22:59:12Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T22:59:31Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T22:59:48Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T22:59:57Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T23:00:08Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T23:00:24Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T23:00:30Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T23:00:44Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T23:00:51Z", "event":"EngineerCraft", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1, "Ingredients":[ { "Name":"carbon", "Count":1 } ] }
+{ "timestamp":"2018-02-20T23:01:18Z", "event":"EngineerApply", "Engineer":"Liz Ryder", "Blueprint":"HullReinforcement_HeavyDuty", "Level":1 }
+{ "timestamp":"2018-02-20T23:01:28Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T23:01:34Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T23:01:40Z", "event":"Undocked", "StationName":"Demolition Unlimited", "StationType":"SurfaceStation" }
+{ "timestamp":"2018-02-20T23:01:47Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:02:12Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:02:12Z", "event":"ApproachSettlement", "Name":"Adams Installation ++" }
+{ "timestamp":"2018-02-20T23:02:12Z", "event":"ApproachSettlement", "Name":"Michell Depot" }
+{ "timestamp":"2018-02-20T23:02:12Z", "event":"ApproachSettlement", "Name":"Tusi Beacon ++" }
+{ "timestamp":"2018-02-20T23:02:12Z", "event":"ApproachSettlement", "Name":"Gill Point" }
+{ "timestamp":"2018-02-20T23:02:12Z", "event":"ApproachSettlement", "Name":"Demolition Unlimited" }
+{ "timestamp":"2018-02-20T23:02:12Z", "event":"ApproachSettlement", "Name":"Heiles Laboratory" }
+{ "timestamp":"2018-02-20T23:02:14Z", "event":"ReceiveText", "From":"Demolition Unlimited", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:02:17Z", "event":"SupercruiseEntry", "StarSystem":"Eurybia" }
+{ "timestamp":"2018-02-20T23:02:18Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:02:43Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T23:02:45Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:03:59Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Hyades Sector MF-J a24-1", "StarClass":"TTS" }
+{ "timestamp":"2018-02-20T23:04:04Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:04:17Z", "event":"FSDJump", "StarSystem":"Hyades Sector MF-J a24-1", "StarPos":[41.656,-42.438,-20.438], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"None", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"None", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":0, "JumpDist":18.427, "FuelUsed":2.673836, "FuelLevel":13.326164 }
+{ "timestamp":"2018-02-20T23:04:18Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:04:43Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"Puppis Sector DW-N a6-0", "StarClass":"L" }
+{ "timestamp":"2018-02-20T23:04:49Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:05:02Z", "event":"FSDJump", "StarSystem":"Puppis Sector DW-N a6-0", "StarPos":[36.563,-33.219,-14.406], "SystemAllegiance":"", "SystemEconomy":"$economy_None;", "SystemEconomy_Localised":"None", "SystemGovernment":"$government_None;", "SystemGovernment_Localised":"None", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":0, "JumpDist":12.137, "FuelUsed":1.002163, "FuelLevel":12.324001 }
+{ "timestamp":"2018-02-20T23:05:02Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:05:43Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LHS 1650", "StarClass":"K" }
+{ "timestamp":"2018-02-20T23:05:49Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:06:02Z", "event":"FSDJump", "StarSystem":"LHS 1650", "StarPos":[30.188,-29.688,-4.219], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Medium Security", "Population":55000, "JumpDist":12.526, "FuelUsed":1.069061, "FuelLevel":11.254940, "Factions":[ { "Name":"Last Chance Services", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.362000, "Allegiance":"Independent" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"LHS 1650 Gold Ring", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.078000, "Allegiance":"Independent" }, { "Name":"LHS 1650 Alliance", "FactionState":"CivilWar", "Government":"Confederacy", "Influence":0.307000, "Allegiance":"Federation" }, { "Name":"Ennead & Co", "FactionState":"Lockdown", "Government":"Corporate", "Influence":0.169000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ], "RecoveringStates":[ { "State":"CivilUnrest", "Trend":0 } ] }, { "Name":"Yinjian Silver Travel PLC", "FactionState":"None", "Government":"Corporate", "Influence":0.084000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Last Chance Services", "FactionState":"CivilWar" }
+{ "timestamp":"2018-02-20T23:06:02Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-20T23:06:07Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:06:21Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"LHS 1650", "BodyType":"Star" }
+{ "timestamp":"2018-02-20T23:06:21Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:07:32Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:07:37Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-20T23:07:37Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:08:45Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T23:09:16Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:09:36Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T23:09:40Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:09:44Z", "event":"WingInvite", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-20T23:09:48Z", "event":"WingJoin", "Others":[ "Mar.Meow" ] }
+{ "timestamp":"2018-02-20T23:09:48Z", "event":"WingAdd", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-20T23:10:05Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LHS 205", "StarClass":"M" }
+{ "timestamp":"2018-02-20T23:10:11Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:10:24Z", "event":"FSDJump", "StarSystem":"LHS 205", "StarPos":[34.031,-22.063,12.625], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Refinery;", "SystemEconomy_Localised":"Refinery", "SystemGovernment":"$government_Anarchy;", "SystemGovernment_Localised":"Anarchy", "SystemSecurity":"$GAlAXY_MAP_INFO_state_anarchy;", "SystemSecurity_Localised":"Anarchy", "Population":110172, "JumpDist":18.885, "FuelUsed":2.725374, "FuelLevel":8.529567, "Factions":[ { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"Liberals of LHS 205", "FactionState":"None", "Government":"Democracy", "Influence":0.060060, "Allegiance":"Independent", "RecoveringStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"Chambo Life Services", "FactionState":"None", "Government":"Corporate", "Influence":0.098098, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 }, { "State":"CivilUnrest", "Trend":-1 }, { "State":"Lockdown", "Trend":-1 }, { "State":"Famine", "Trend":0 } ] }, { "Name":"LHS 205 Crimson Dynamic Holdings", "FactionState":"None", "Government":"Corporate", "Influence":0.151151, "Allegiance":"Federation", "PendingStates":[ { "State":"Famine", "Trend":0 } ], "RecoveringStates":[ { "State":"CivilWar", "Trend":0 } ] }, { "Name":"LHS 205 Blue Council", "FactionState":"None", "Government":"Anarchy", "Influence":0.497497, "Allegiance":"Independent" }, { "Name":"LHS 205 Bureau", "FactionState":"None", "Government":"Dictatorship", "Influence":0.043043, "Allegiance":"Independent", "RecoveringStates":[ { "State":"Famine", "Trend":0 } ] }, { "Name":"LHS 205 Corp.", "FactionState":"None", "Government":"Corporate", "Influence":0.150150, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"LHS 205 Blue Council" }
+{ "timestamp":"2018-02-20T23:10:24Z", "event":"Music", "MusicTrack":"DestinationFromHyperspace" }
+{ "timestamp":"2018-02-20T23:10:29Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:11:30Z", "event":"SupercruiseExit", "StarSystem":"LHS 205", "Body":"LHS 205", "BodyType":"Star" }
+{ "timestamp":"2018-02-20T23:11:31Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:12:00Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T23:12:04Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:12:13Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:12:18Z", "event":"SupercruiseEntry", "StarSystem":"LHS 205" }
+{ "timestamp":"2018-02-20T23:12:19Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:12:42Z", "event":"Music", "MusicTrack":"SystemMap" }
+{ "timestamp":"2018-02-20T23:12:52Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:13:15Z", "event":"Scan", "BodyName":"LHS 205 9", "DistanceFromArrivalLS":640.483704, "PlanetClass":"Sudarsky class I gas giant", "MassEM":267.424164, "Radius":71302760.000000, "SurfaceGravity":20.965120, "SemiMajorAxis":399222752.000000, "Eccentricity":0.070970, "OrbitalInclination":0.514818, "Periapsis":67.182236, "OrbitalPeriod":17953984.000000, "RotationPeriod":68615.617188, "AxialTilt":-0.103526 }
+{ "timestamp":"2018-02-20T23:15:17Z", "event":"SupercruiseExit", "StarSystem":"LHS 205", "Body":"LHS 205 9 A Ring", "BodyType":"PlanetaryRing" }
+{ "timestamp":"2018-02-20T23:15:18Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:16:15Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-20T23:17:18Z", "event":"Bounty", "Target":"anaconda", "TotalReward":0, "VictimFaction":"LHS 205 Blue Council", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-20T23:17:33Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:17:45Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ed Canning;", "From_Localised":"Ed Canning", "Message":"$Pirate_OnStartScanCargo01;", "Message_Localised":"I see all!", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:17:52Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ed Canning;", "From_Localised":"Ed Canning", "Message":"$Pirate_OnStartScanCargo05;", "Message_Localised":"What treats do you carry?", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:18:01Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ed Canning;", "From_Localised":"Ed Canning", "Message":"$Pirate_OnStartScanCargo08;", "Message_Localised":"What do you have in your cargo hold?", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:18:48Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ed Canning;", "From_Localised":"Ed Canning", "Message":"$Pirate_OnStartScanCargo05;", "Message_Localised":"What treats do you carry?", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:19:02Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-20T23:19:12Z", "event":"Bounty", "Target":"sidewinder", "TotalReward":0, "VictimFaction":"LHS 205 Crimson Dynamic Holdings", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-20T23:19:24Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ed Canning;", "From_Localised":"Ed Canning", "Message":"$Pirate_OnStartScanCargo07;", "Message_Localised":"Do you have anything of value?", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:19:31Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T23:19:34Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ed Canning;", "From_Localised":"Ed Canning", "Message":"$Pirate_OnNoCargoFound07;", "Message_Localised":"Nothing for me here.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:19:34Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2018-02-20T23:19:37Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Emma Bonson;", "From_Localised":"Emma Bonson", "Message":"$MinerEnemySighted04;", "Message_Localised":"You're not taking my stuff!", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:20:15Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-20T23:20:23Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Newsam;", "From_Localised":"Newsam", "Message":"$MisfortuneCriticalDamage06;", "Message_Localised":"Tis but a scratch!", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:20:27Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Emma Bonson;", "From_Localised":"Emma Bonson", "Message":"$MinerFlee03;", "Message_Localised":"Mining ain't worth boiling for!", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:20:55Z", "event":"Bounty", "Target":"independant_trader", "TotalReward":0, "VictimFaction":"LHS 205 Crimson Dynamic Holdings", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-20T23:21:10Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:21:46Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2018-02-20T23:22:05Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"heatconductionwiring", "Count":3 }
+{ "timestamp":"2018-02-20T23:22:16Z", "event":"Scanned", "ScanType":"Crime" }
+{ "timestamp":"2018-02-20T23:22:32Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-20T23:23:03Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Ed Canning;", "From_Localised":"Ed Canning", "Message":"$Pirate_OnDeclarePiracyAttack03;", "Message_Localised":"Now you die, victim.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:23:13Z", "event":"Bounty", "Target":"viper_mkiv", "TotalReward":0, "VictimFaction":"LHS 205 Corp." }
+{ "timestamp":"2018-02-20T23:23:28Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:23:42Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"salvagedalloys", "Count":3 }
+{ "timestamp":"2018-02-20T23:23:55Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"focuscrystals", "Count":3 }
+{ "timestamp":"2018-02-20T23:24:35Z", "event":"Music", "MusicTrack":"GalaxyMap" }
+{ "timestamp":"2018-02-20T23:24:49Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Timo Black;", "From_Localised":"Timo Black", "Message":"$Pirate_OnStartScanCargo02;", "Message_Localised":"Carrying anything nice?", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:24:51Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:24:59Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Timo Black;", "From_Localised":"Timo Black", "Message":"$Pirate_OnNoCargoFound02;", "Message_Localised":"Bah, nothing.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:24:59Z", "event":"Scanned", "ScanType":"Cargo" }
+{ "timestamp":"2018-02-20T23:26:39Z", "event":"StartJump", "JumpType":"Hyperspace", "StarSystem":"LHS 1650", "StarClass":"K" }
+{ "timestamp":"2018-02-20T23:26:45Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:26:58Z", "event":"FSDJump", "StarSystem":"LHS 1650", "StarPos":[30.188,-29.688,-4.219], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Medium Security", "Population":55000, "JumpDist":18.885, "FuelUsed":2.666903, "FuelLevel":5.862663, "Factions":[ { "Name":"Last Chance Services", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.362000, "Allegiance":"Independent" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"LHS 1650 Gold Ring", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.078000, "Allegiance":"Independent" }, { "Name":"LHS 1650 Alliance", "FactionState":"CivilWar", "Government":"Confederacy", "Influence":0.307000, "Allegiance":"Federation" }, { "Name":"Ennead & Co", "FactionState":"Lockdown", "Government":"Corporate", "Influence":0.169000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ], "RecoveringStates":[ { "State":"CivilUnrest", "Trend":0 } ] }, { "Name":"Yinjian Silver Travel PLC", "FactionState":"None", "Government":"Corporate", "Influence":0.084000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Last Chance Services", "FactionState":"CivilWar" }
+{ "timestamp":"2018-02-20T23:26:58Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:29:06Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=James Prior;", "From_Localised":"James Prior", "Message":"$Propagandist_Patrol01;", "Message_Localised":"Don't let your system down, join up today.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:29:23Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-20T23:29:24Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-20T23:29:25Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:29:29Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:29:31Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-20T23:29:31Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:29:33Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:29:33Z", "event":"DockingGranted", "LandingPad":1, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-20T23:29:51Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T23:30:10Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.939331 }
+{ "timestamp":"2018-02-20T23:30:19Z", "event":"RefuelAll", "Cost":536, "Amount":10.690614 }
+{ "timestamp":"2018-02-20T23:30:20Z", "event":"RepairAll", "Cost":3466 }
+{ "timestamp":"2018-02-20T23:30:21Z", "event":"BuyAmmo", "Cost":14500 }
+{ "timestamp":"2018-02-20T23:30:52Z", "event":"Repair", "Item":"Wear", "Cost":30 }
+{ "timestamp":"2018-02-20T23:30:54Z", "event":"Repair", "Item":"Paint", "Cost":1 }
+{ "timestamp":"2018-02-20T23:32:32Z", "event":"MissionAccepted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War", "LocalisedName":"Massacre the Last Chance Services ships", "TargetFaction":"Last Chance Services", "KillCount":16, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Expiry":"2018-02-21T20:48:37Z", "Influence":"High", "Reputation":"Med", "Reward":765745, "MissionID":321190985 }
+{ "timestamp":"2018-02-20T23:32:34Z", "event":"MissionAccepted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War", "LocalisedName":"Massacre the Last Chance Services ships", "TargetFaction":"Last Chance Services", "KillCount":3, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Expiry":"2018-02-21T21:05:17Z", "Influence":"High", "Reputation":"Med", "Reward":49017, "MissionID":321191004 }
+{ "timestamp":"2018-02-20T23:33:03Z", "event":"SellExplorationData", "Systems":[ "Puppis Sector BQ-P a5-0", "Anmatyerre", "Hyades Sector MF-J a24-1", "Puppis Sector YE-R a4-8" ], "Discovered":[  ], "BaseValue":19275, "Bonus":0 }
+{ "timestamp":"2018-02-20T23:36:41Z", "event":"ShipyardSell", "ShipType":"Type9", "SellShipID":16, "ShipPrice":94055497, "System":"Mundii" }
+{ "timestamp":"2018-02-20T23:37:09Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-20T23:37:20Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:37:43Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:37:57Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:38:02Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-20T23:38:02Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:39:07Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T23:39:07Z", "event":"WingLeave" }
+{ "timestamp":"2018-02-20T23:39:07Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:39:24Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:39:24Z", "event":"ApproachSettlement", "Name":"Gagarin Landing" }
+{ "timestamp":"2018-02-20T23:39:29Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-20T23:39:29Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:40:16Z", "event":"WingInvite", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-20T23:40:22Z", "event":"WingJoin", "Others":[ "Mar.Meow" ] }
+{ "timestamp":"2018-02-20T23:40:22Z", "event":"WingAdd", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-20T23:40:49Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T23:40:49Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:40:58Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-20T23:42:06Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire07;", "Message_Localised":"You've just made a big mistake.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:42:19Z", "event":"FactionKillBond", "Reward":23000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-20T23:42:19Z", "event":"Bounty", "Target":"viper", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-20T23:43:00Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T23:43:15Z", "event":"HullDamage", "Health":0.797205, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-20T23:43:48Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire01;", "Message_Localised":"Bandit on my six...", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:44:02Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-20T23:44:46Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire05;", "Message_Localised":"Incoming...", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:46:36Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:48:32Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-20T23:48:32Z", "event":"FactionKillBond", "Reward":59800, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-20T23:49:25Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T23:49:33Z", "event":"HullDamage", "Health":0.587730, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-20T23:49:36Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire09;", "Message_Localised":"Allow me to show you the error of your ways.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:49:46Z", "event":"HullDamage", "Health":0.392101, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-20T23:49:56Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:50:01Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-20T23:50:02Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:51:00Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-20T23:51:00Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-20T23:51:01Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:51:05Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:51:15Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-20T23:51:15Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:51:16Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:51:16Z", "event":"DockingGranted", "LandingPad":12, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-20T23:51:35Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-20T23:51:49Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.928223 }
+{ "timestamp":"2018-02-20T23:51:57Z", "event":"RefuelAll", "Cost":14, "Amount":0.275596 }
+{ "timestamp":"2018-02-20T23:51:58Z", "event":"RepairAll", "Cost":19072 }
+{ "timestamp":"2018-02-20T23:51:59Z", "event":"BuyAmmo", "Cost":29800 }
+{ "timestamp":"2018-02-20T23:52:02Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2018-02-20T23:52:04Z", "event":"Repair", "Item":"Paint", "Cost":1 }
+{ "timestamp":"2018-02-20T23:52:43Z", "event":"ModuleStore", "Slot":"Slot05_Size2", "StoredItem":"$int_fsdinterdictor_size2_class2_name;", "StoredItem_Localised":"FSD Interdictor", "Ship":"cobramkiii", "ShipID":10, "EngineerModifications":"FSDinterdictor_Expanded" }
+{ "timestamp":"2018-02-20T23:52:54Z", "event":"ModuleBuy", "Slot":"Slot05_Size2", "BuyItem":"$int_hullreinforcement_size2_class2_name;", "BuyItem_Localised":"Hull Reinforcement", "BuyPrice":36000, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T23:53:00Z", "event":"ModuleSell", "Slot":"Slot03_Size4", "SellItem":"$int_cargorack_size4_class1_name;", "SellItem_Localised":"Cargo Rack", "SellPrice":34328, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T23:53:07Z", "event":"ModuleBuy", "Slot":"Slot03_Size4", "BuyItem":"$int_hullreinforcement_size4_class2_name;", "BuyItem_Localised":"Hull Reinforcement", "BuyPrice":195000, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-20T23:53:55Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-20T23:54:13Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-20T23:54:36Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:54:37Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:54:37Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:54:42Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-20T23:54:42Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:55:17Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T23:55:18Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:55:27Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-20T23:55:51Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T23:56:20Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-20T23:56:25Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-20T23:56:25Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-20T23:56:43Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-20T23:56:43Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-20T23:56:50Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-20T23:56:56Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-20T23:57:04Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire10;", "Message_Localised":"I'm under attack.", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:57:27Z", "event":"HullDamage", "Health":0.798100, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-20T23:57:27Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-20T23:57:47Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire08;", "Message_Localised":"Enemy fire incoming!", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:58:01Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire03;", "Message_Localised":"Time to show you what a real pilot can do... ", "Channel":"npc" }
+{ "timestamp":"2018-02-20T23:58:49Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:00:57Z", "event":"Bounty", "Target":"cobramkiii", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:00:57Z", "event":"FactionKillBond", "Reward":18400, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:01:24Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:01:54Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:02:22Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire06;", "Message_Localised":"I'm taking hits!", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:02:27Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:02:58Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire01;", "Message_Localised":"Bandit on my six...", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:03:26Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:03:42Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T00:03:54Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:03:59Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:03:59Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:04:56Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-21T00:04:57Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-21T00:04:58Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:05:02Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:05:06Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:05:06Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:05:07Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:05:07Z", "event":"DockingGranted", "LandingPad":27, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:05:29Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-21T00:05:53Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.921143 }
+{ "timestamp":"2018-02-21T00:06:00Z", "event":"RefuelAll", "Cost":11, "Amount":0.209147 }
+{ "timestamp":"2018-02-21T00:06:01Z", "event":"RepairAll", "Cost":11810 }
+{ "timestamp":"2018-02-21T00:06:02Z", "event":"BuyAmmo", "Cost":34300 }
+{ "timestamp":"2018-02-21T00:06:07Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2018-02-21T00:06:09Z", "event":"Repair", "Item":"Paint", "Cost":1 }
+{ "timestamp":"2018-02-21T00:06:20Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-21T00:06:34Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:06:53Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:06:58Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:06:58Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:07:33Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-21T00:07:33Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T00:07:39Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-21T00:08:42Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire09;", "Message_Localised":"Allow me to show you the error of your ways.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:10:56Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:10:56Z", "event":"FactionKillBond", "Reward":59800, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:11:25Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:11:26Z", "event":"Bounty", "Target":"viper", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:11:26Z", "event":"FactionKillBond", "Reward":23000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:11:59Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:12:17Z", "event":"Bounty", "Target":"vulture", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:13:15Z", "event":"Bounty", "Target":"vulture", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:13:15Z", "event":"FactionKillBond", "Reward":41400, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:14:18Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:14:30Z", "event":"Bounty", "Target":"viper_mkiv", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:14:30Z", "event":"FactionKillBond", "Reward":23000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:15:14Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:15:24Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:16:28Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire04;", "Message_Localised":"Your ticket is about to get well and truly punched.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:16:35Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:17:22Z", "event":"Bounty", "Target":"anaconda", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:18:13Z", "event":"ReceiveText", "From":"$ShipName_MilitaryFighter_Independent;", "From_Localised":"System Defence Fighter", "Message":"$Military_UnderFire01;", "Message_Localised":"Bandit on my six...", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:19:05Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:19:10Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:19:10Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:20:04Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-21T00:20:04Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-21T00:20:05Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:20:09Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:20:11Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:20:11Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:20:13Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:20:13Z", "event":"DockingGranted", "LandingPad":14, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:20:28Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:20:37Z", "event":"CommitCrime", "CrimeType":"collidedAtSpeedInNoFireZone", "Faction":"Last Chance Services", "Fine":290 }
+{ "timestamp":"2018-02-21T00:20:45Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-21T00:20:56Z", "event":"HullDamage", "Health":0.788815, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-21T00:21:03Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.913635 }
+{ "timestamp":"2018-02-21T00:21:04Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:21:11Z", "event":"RepairAll", "Cost":967 }
+{ "timestamp":"2018-02-21T00:21:12Z", "event":"BuyAmmo", "Cost":34000 }
+{ "timestamp":"2018-02-21T00:21:13Z", "event":"RefuelAll", "Cost":14, "Amount":0.262088 }
+{ "timestamp":"2018-02-21T00:21:16Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2018-02-21T00:21:19Z", "event":"Repair", "Item":"Paint", "Cost":1 }
+{ "timestamp":"2018-02-21T00:22:28Z", "event":"PayFines", "Amount":290 }
+{ "timestamp":"2018-02-21T00:22:37Z", "event":"RedeemVoucher", "Type":"CombatBond", "Amount":441600, "Faction":"LHS 1650 Alliance" }
+{ "timestamp":"2018-02-21T00:23:25Z", "event":"MissionAccepted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War", "LocalisedName":"Massacre the Last Chance Services ships", "TargetFaction":"Last Chance Services", "KillCount":12, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Expiry":"2018-02-21T21:48:14Z", "Influence":"High", "Reputation":"Med", "Reward":713118, "MissionID":321218598 }
+{ "timestamp":"2018-02-21T00:24:00Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-21T00:24:10Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:24:11Z", "event":"CommitCrime", "CrimeType":"collidedAtSpeedInNoFireZone_hulldamage", "Faction":"Last Chance Services", "Fine":560 }
+{ "timestamp":"2018-02-21T00:24:33Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:24:37Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:24:42Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:24:43Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:25:27Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-21T00:25:28Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T00:25:30Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-21T00:25:38Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-21T00:26:11Z", "event":"FactionKillBond", "Reward":92000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:26:11Z", "event":"Bounty", "Target":"anaconda", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:26:46Z", "event":"Bounty", "Target":"asp", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:28:12Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:28:53Z", "event":"FactionKillBond", "Reward":4600, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:29:10Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire09;", "Message_Localised":"Allow me to show you the error of your ways.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:29:34Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire05;", "Message_Localised":"Incoming...", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:29:50Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:30:12Z", "event":"CockpitBreached" }
+{ "timestamp":"2018-02-21T00:30:27Z", "event":"HullDamage", "Health":0.796990, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-21T00:30:51Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:31:23Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:31:47Z", "event":"HullDamage", "Health":0.596571, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-21T00:31:57Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:32:44Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:33:17Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:33:20Z", "event":"HullDamage", "Health":0.398211, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-21T00:33:20Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:33:25Z", "event":"HullDamage", "Health":0.190101, "PlayerPilot":true, "Fighter":false }
+{ "timestamp":"2018-02-21T00:34:04Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T00:34:18Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:34:23Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:34:23Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:35:21Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-21T00:35:22Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-21T00:35:23Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:35:27Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:35:30Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingFailed_Distance:#distance=7500;", "Message_Localised":"Docking request denied, please approach to 7500m", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:35:30Z", "event":"DockingDenied", "Reason":"Distance", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:35:43Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:35:43Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:35:44Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:35:44Z", "event":"DockingGranted", "LandingPad":14, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:35:59Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-21T00:36:29Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.906189, "CockpitBreach":true }
+{ "timestamp":"2018-02-21T00:36:47Z", "event":"RefuelAll", "Cost":11, "Amount":0.219324 }
+{ "timestamp":"2018-02-21T00:36:47Z", "event":"RepairAll", "Cost":18336 }
+{ "timestamp":"2018-02-21T00:36:48Z", "event":"BuyAmmo", "Cost":30300 }
+{ "timestamp":"2018-02-21T00:36:51Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2018-02-21T00:36:54Z", "event":"Repair", "Item":"Paint", "Cost":1 }
+{ "timestamp":"2018-02-21T00:37:05Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-21T00:37:19Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:37:38Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:37:43Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:37:43Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:38:23Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-21T00:38:24Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T00:38:29Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-21T00:38:50Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire09;", "Message_Localised":"Allow me to show you the error of your ways.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:39:38Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-21T00:39:49Z", "event":"Bounty", "Target":"asp", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:41:08Z", "event":"Bounty", "Target":"type9", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:41:08Z", "event":"FactionKillBond", "Reward":36800, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:41:59Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:42:34Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:42:34Z", "event":"FactionKillBond", "Reward":59800, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:42:35Z", "event":"MissionRedirected", "MissionID":321190985, "Name":"Mission_Massacre_Conflict_War_name", "NewDestinationStation":"SDM Galactic Starpost", "NewDestinationSystem":"LHS 1650", "OldDestinationStation":"", "OldDestinationSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:43:46Z", "event":"Bounty", "Target":"anaconda", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:43:46Z", "event":"FactionKillBond", "Reward":92000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:44:06Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:44:57Z", "event":"Bounty", "Target":"type9", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:45:32Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire03;", "Message_Localised":"Time to show you what a real pilot can do... ", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:46:01Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire01;", "Message_Localised":"Bandit on my six...", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:46:08Z", "event":"FactionKillBond", "Reward":9200, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:46:08Z", "event":"Bounty", "Target":"eagle", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T00:46:08Z", "event":"MissionRedirected", "MissionID":321191004, "Name":"Mission_Massacre_Conflict_War_name", "NewDestinationStation":"SDM Galactic Starpost", "NewDestinationSystem":"LHS 1650", "OldDestinationStation":"", "OldDestinationSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:46:41Z", "event":"Bounty", "Target":"viper_mkiv", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:46:41Z", "event":"FactionKillBond", "Reward":23000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:47:33Z", "event":"Bounty", "Target":"vulture", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:47:33Z", "event":"FactionKillBond", "Reward":41400, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T00:47:58Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:48:03Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:48:03Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:48:21Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-21T00:48:21Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T00:48:33Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-21T00:48:53Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T00:49:01Z", "event":"WingLeave" }
+{ "timestamp":"2018-02-21T00:49:13Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:49:18Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:49:18Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:49:44Z", "event":"Music", "MusicTrack":"MainMenu" }
+{ "timestamp":"2018-02-21T00:52:37Z", "event":"Cargo", "Inventory":[  ] }
+{ "timestamp":"2018-02-21T00:52:37Z", "event":"Loadout", "Ship":"CobraMkIII", "ShipID":10, "ShipName":"SCAN ERROR!", "ShipIdent":"ERR-42", "Modules":[ { "Slot":"MediumHardpoint1", "Item":"Hpt_BasicMissileRack_Fixed_Medium", "On":true, "Priority":0, "AmmoInClip":8, "AmmoInHopper":2, "Health":1.000000, "Value":512400, "EngineerBlueprint":"Weapon_HighCapacity", "EngineerLevel":1 }, { "Slot":"MediumHardpoint2", "Item":"Hpt_BasicMissileRack_Fixed_Medium", "On":true, "Priority":0, "AmmoInClip":2, "AmmoInHopper":7, "Health":1.000000, "Value":512400, "EngineerBlueprint":"Weapon_HighCapacity", "EngineerLevel":1 }, { "Slot":"SmallHardpoint1", "Item":"Hpt_BeamLaser_Gimbal_Small", "On":true, "Priority":0, "Health":1.000000, "Value":74650 }, { "Slot":"SmallHardpoint2", "Item":"Hpt_BeamLaser_Gimbal_Small", "On":true, "Priority":0, "Health":1.000000, "Value":74650 }, { "Slot":"TinyHardpoint1", "Item":"Hpt_ChaffLauncher_Tiny", "On":true, "Priority":3, "AmmoInClip":1, "AmmoInHopper":10, "Health":0.983636, "Value":8500 }, { "Slot":"TinyHardpoint2", "Item":"Hpt_CloudScanner_Size0_Class2", "On":true, "Priority":4, "Health":0.901503, "Value":40633 }, { "Slot":"Decal1", "Item":"Decal_Combat_Competent", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"ShipName0", "Item":"Nameplate_ShipID_White", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"ShipName1", "Item":"Nameplate_Raider03_White", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"PaintJob", "Item":"PaintJob_CobraMkIII_Gradient2_01", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"Armour", "Item":"CobraMkIII_Armour_Reactive", "On":true, "Priority":1, "Health":1.000000, "Value":824285, "EngineerBlueprint":"Armour_Advanced", "EngineerLevel":4 }, { "Slot":"PowerPlant", "Item":"Int_Powerplant_Size4_Class5", "On":true, "Priority":1, "Health":1.000000, "Value":1610080, "EngineerBlueprint":"PowerPlant_Boosted", "EngineerLevel":1 }, { "Slot":"MainEngines", "Item":"Int_Engine_Size4_Class5", "On":true, "Priority":0, "Health":0.771585, "Value":1610080, "EngineerBlueprint":"Engine_Tuned", "EngineerLevel":1 }, { "Slot":"FrameShiftDrive", "Item":"Int_Hyperdrive_Size4_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":1610080, "EngineerBlueprint":"FSD_Shielded", "EngineerLevel":1 }, { "Slot":"LifeSupport", "Item":"Int_LifeSupport_Size3_Class2", "On":true, "Priority":0, "Health":1.000000, "Value":10133 }, { "Slot":"PowerDistributor", "Item":"Int_PowerDistributor_Size3_Class5", "On":true, "Priority":0, "Health":1.000000, "Value":158331 }, { "Slot":"Radar", "Item":"Int_Sensors_Size3_Class3", "On":true, "Priority":0, "Health":1.000000, "Value":25333, "EngineerBlueprint":"Sensor_Sensor_LongRange", "EngineerLevel":3 }, { "Slot":"FuelTank", "Item":"Int_FuelTank_Size4_Class3", "On":true, "Priority":1, "Health":1.000000, "Value":24734 }, { "Slot":"Slot01_Size4", "Item":"Int_ShieldGenerator_Size4_Class3_Fast", "On":true, "Priority":0, "Health":1.000000, "Value":268347, "EngineerBlueprint":"ShieldGenerator_Optimised", "EngineerLevel":1 }, { "Slot":"Slot02_Size4", "Item":"Int_HullReinforcement_Size4_Class2", "On":true, "Priority":1, "Health":1.000000, "Value":195000, "EngineerBlueprint":"HullReinforcement_HeavyDuty", "EngineerLevel":1 }, { "Slot":"Slot03_Size4", "Item":"Int_HullReinforcement_Size4_Class2", "On":true, "Priority":1, "Health":1.000000, "Value":195000 }, { "Slot":"Slot04_Size2", "Item":"Int_ModuleReinforcement_Size2_Class1", "On":true, "Priority":1, "Health":0.916690, "Value":12000 }, { "Slot":"Slot05_Size2", "Item":"Int_HullReinforcement_Size2_Class2", "On":true, "Priority":1, "Health":1.000000, "Value":36000 }, { "Slot":"Slot06_Size2", "Item":"Int_StellarBodyDiscoveryScanner_Advanced", "On":true, "Priority":1, "Health":1.000000, "Value":1545000 }, { "Slot":"PlanetaryApproachSuite", "Item":"Int_PlanetApproachSuite", "On":true, "Priority":1, "Health":1.000000, "Value":500 }, { "Slot":"WeaponColour", "Item":"WeaponCustomisation_Cyan", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"EngineColour", "Item":"EngineCustomisation_Cyan", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"ShipCockpit", "Item":"CobraMkIII_Cockpit", "On":true, "Priority":1, "Health":1.000000, "Value":0 }, { "Slot":"CargoHatch", "Item":"ModularCargoBayDoor", "On":true, "Priority":4, "Health":1.000000, "Value":0 } ] }
+{ "timestamp":"2018-02-21T00:52:37Z", "event":"Materials", "Raw":[ { "Name":"phosphorus", "Count":15 }, { "Name":"carbon", "Count":2 }, { "Name":"chromium", "Count":47 }, { "Name":"molybdenum", "Count":5 }, { "Name":"manganese", "Count":38 }, { "Name":"cadmium", "Count":17 }, { "Name":"selenium", "Count":15 }, { "Name":"sulphur", "Count":19 }, { "Name":"antimony", "Count":15 }, { "Name":"arsenic", "Count":6 }, { "Name":"zinc", "Count":4 }, { "Name":"nickel", "Count":18 }, { "Name":"iron", "Count":9 } ], "Manufactured":[ { "Name":"gridresistors", "Count":9 }, { "Name":"mechanicalequipment", "Count":23 }, { "Name":"focuscrystals", "Count":35 }, { "Name":"salvagedalloys", "Count":40 }, { "Name":"chemicalprocessors", "Count":43 }, { "Name":"phasealloys", "Count":45 }, { "Name":"shieldingsensors", "Count":42 }, { "Name":"wornshieldemitters", "Count":47 }, { "Name":"galvanisingalloys", "Count":36 }, { "Name":"configurablecomponents", "Count":7 }, { "Name":"highdensitycomposites", "Count":19 }, { "Name":"mechanicalcomponents", "Count":4 }, { "Name":"fedproprietarycomposites", "Count":11 }, { "Name":"fedcorecomposites", "Count":6 }, { "Name":"shieldemitters", "Count":49 }, { "Name":"refinedfocuscrystals", "Count":27 }, { "Name":"chemicaldistillery", "Count":21 }, { "Name":"protolightalloys", "Count":17 }, { "Name":"precipitatedalloys", "Count":23 }, { "Name":"compoundshielding", "Count":9 }, { "Name":"unknownorganiccircuitry", "Count":24 }, { "Name":"unknownenergysource", "Count":22 }, { "Name":"unknowncarapace", "Count":18 }, { "Name":"unknowntechnologycomponents", "Count":12 }, { "Name":"unknownenergycell", "Count":6 }, { "Name":"hybridcapacitors", "Count":2 }, { "Name":"electrochemicalarrays", "Count":3 }, { "Name":"conductivecomponents", "Count":4 }, { "Name":"heatdispersionplate", "Count":6 }, { "Name":"heatexchangers", "Count":5 }, { "Name":"conductivepolymers", "Count":3 }, { "Name":"mechanicalscrap", "Count":4 }, { "Name":"heatconductionwiring", "Count":12 }, { "Name":"conductiveceramics", "Count":2 }, { "Name":"biotechconductors", "Count":1 }, { "Name":"exquisitefocuscrystals", "Count":3 } ], "Encoded":[ { "Name":"decodedemissiondata", "Count":78 }, { "Name":"emissiondata", "Count":22 }, { "Name":"shieldsoakanalysis", "Count":48 }, { "Name":"shielddensityreports", "Count":69 }, { "Name":"scanarchives", "Count":18 }, { "Name":"shieldpatternanalysis", "Count":54 }, { "Name":"shieldcyclerecordings", "Count":79 }, { "Name":"encodedscandata", "Count":21 }, { "Name":"fsdtelemetry", "Count":7 }, { "Name":"scandatabanks", "Count":17 }, { "Name":"archivedemissiondata", "Count":5 }, { "Name":"industrialfirmware", "Count":4 }, { "Name":"bulkscandata", "Count":40 }, { "Name":"embeddedfirmware", "Count":2 }, { "Name":"scrambledemissiondata", "Count":1 }, { "Name":"encryptioncodes", "Count":3 }, { "Name":"encryptionarchives", "Count":3 }, { "Name":"shieldfrequencydata", "Count":3 }, { "Name":"compactemissionsdata", "Count":15 }, { "Name":"disruptedwakeechoes", "Count":5 }, { "Name":"classifiedscandata", "Count":6 } ] }
+{ "timestamp":"2018-02-21T00:52:37Z", "event":"LoadGame", "Commander":"Sleep Runner", "Ship":"CobraMkIII", "ShipID":10, "ShipName":"SCAN ERROR!", "ShipIdent":"ERR-42", "FuelLevel":16.000000, "FuelCapacity":16.000000, "GameMode":"Open", "Credits":111043943, "Loan":0 }
+{ "timestamp":"2018-02-21T00:52:37Z", "event":"Rank", "Combat":3, "Trade":4, "Explore":5, "Empire":0, "Federation":2, "CQC":0 }
+{ "timestamp":"2018-02-21T00:52:37Z", "event":"Progress", "Combat":41, "Trade":61, "Explore":26, "Empire":12, "Federation":80, "CQC":0 }
+{ "timestamp":"2018-02-21T00:52:41Z", "event":"Location", "Docked":false, "StarSystem":"LHS 1650", "StarPos":[30.188,-29.688,-4.219], "SystemAllegiance":"Independent", "SystemEconomy":"$economy_Industrial;", "SystemEconomy_Localised":"Industrial", "SystemGovernment":"$government_Corporate;", "SystemGovernment_Localised":"Corporate", "SystemSecurity":"$SYSTEM_SECURITY_medium;", "SystemSecurity_Localised":"Medium Security", "Population":55000, "Body":"Trileukon", "BodyType":"Planet", "Factions":[ { "Name":"Last Chance Services", "FactionState":"CivilWar", "Government":"Corporate", "Influence":0.362000, "Allegiance":"Independent" }, { "Name":"Pilots Federation Local Branch", "FactionState":"None", "Government":"Democracy", "Influence":0.000000, "Allegiance":"PilotsFederation" }, { "Name":"LHS 1650 Gold Ring", "FactionState":"Boom", "Government":"Anarchy", "Influence":0.078000, "Allegiance":"Independent" }, { "Name":"LHS 1650 Alliance", "FactionState":"CivilWar", "Government":"Confederacy", "Influence":0.307000, "Allegiance":"Federation" }, { "Name":"Ennead & Co", "FactionState":"Lockdown", "Government":"Corporate", "Influence":0.169000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ], "RecoveringStates":[ { "State":"CivilUnrest", "Trend":0 } ] }, { "Name":"Yinjian Silver Travel PLC", "FactionState":"None", "Government":"Corporate", "Influence":0.084000, "Allegiance":"Federation", "PendingStates":[ { "State":"Boom", "Trend":1 } ] } ], "SystemFaction":"Last Chance Services", "FactionState":"CivilWar" }
+{ "timestamp":"2018-02-21T00:52:41Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:52:41Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T00:52:47Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:52:52Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:52:52Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:53:46Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-21T00:53:46Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-21T00:53:47Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:53:51Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:53:52Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:53:52Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:53:53Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T00:53:53Z", "event":"DockingGranted", "LandingPad":13, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T00:54:13Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-21T00:54:32Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.897705 }
+{ "timestamp":"2018-02-21T00:54:40Z", "event":"RefuelAll", "Cost":13, "Amount":0.258491 }
+{ "timestamp":"2018-02-21T00:54:41Z", "event":"RepairAll", "Cost":3809 }
+{ "timestamp":"2018-02-21T00:54:42Z", "event":"BuyAmmo", "Cost":24500 }
+{ "timestamp":"2018-02-21T00:54:46Z", "event":"PayFines", "Amount":560 }
+{ "timestamp":"2018-02-21T00:54:51Z", "event":"RedeemVoucher", "Type":"CombatBond", "Amount":519800, "Faction":"LHS 1650 Alliance" }
+{ "timestamp":"2018-02-21T00:54:59Z", "event":"MissionCompleted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War_name", "MissionID":321190985, "TargetFaction":"Last Chance Services", "KillCount":16, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Reward":765745 }
+{ "timestamp":"2018-02-21T00:54:59Z", "event":"MaterialCollected", "Category":"Manufactured", "Name":"biotechconductors", "Count":1 }
+{ "timestamp":"2018-02-21T00:55:01Z", "event":"MissionCompleted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War_name", "MissionID":321191004, "TargetFaction":"Last Chance Services", "KillCount":3, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Reward":49017, "CommodityReward":[ { "Name":"Nanobreakers", "Count":0 } ] }
+{ "timestamp":"2018-02-21T00:55:53Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-21T00:56:03Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T00:56:22Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T00:56:27Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T00:56:27Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T00:57:02Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-21T00:57:03Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T00:57:03Z", "event":"Music", "MusicTrack":"Combat_Dogfight" }
+{ "timestamp":"2018-02-21T00:58:30Z", "event":"WingInvite", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-21T00:58:53Z", "event":"WingJoin", "Others":[ "Mar.Meow" ] }
+{ "timestamp":"2018-02-21T00:58:53Z", "event":"WingAdd", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-21T00:59:21Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire06;", "Message_Localised":"I'm taking hits!", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:01:59Z", "event":"Bounty", "Target":"cobramkiii", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:01:59Z", "event":"FactionKillBond", "Reward":18400, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:03:00Z", "event":"Bounty", "Target":"viper", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:03:00Z", "event":"FactionKillBond", "Reward":23000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:03:59Z", "event":"Bounty", "Target":"vulture", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T01:04:52Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire07;", "Message_Localised":"You've just made a big mistake.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:04:58Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-21T01:05:04Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T01:05:04Z", "event":"FactionKillBond", "Reward":59800, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:06:35Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T01:06:35Z", "event":"FactionKillBond", "Reward":59800, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:07:29Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:07:47Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T01:08:04Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T01:08:09Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T01:08:10Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T01:09:00Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-21T01:09:00Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-21T01:09:01Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:09:05Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T01:09:09Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T01:09:09Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:09:11Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:09:11Z", "event":"DockingGranted", "LandingPad":36, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T01:09:22Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-21T01:09:49Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.890686 }
+{ "timestamp":"2018-02-21T01:09:57Z", "event":"RefuelAll", "Cost":13, "Amount":0.250307 }
+{ "timestamp":"2018-02-21T01:09:58Z", "event":"BuyAmmo", "Cost":34000 }
+{ "timestamp":"2018-02-21T01:11:32Z", "event":"ModuleBuy", "Slot":"SmallHardpoint1", "SellItem":"$hpt_beamlaser_gimbal_small_name;", "SellItem_Localised":"Beam Laser", "SellPrice":74650, "BuyItem":"$hpt_pulselaserburst_gimbal_small_name;", "BuyItem_Localised":"Burst Laser", "BuyPrice":8600, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-21T01:12:01Z", "event":"ModuleBuy", "Slot":"SmallHardpoint2", "SellItem":"$hpt_beamlaser_gimbal_small_name;", "SellItem_Localised":"Beam Laser", "SellPrice":74650, "BuyItem":"$hpt_pulselaserburst_gimbal_small_name;", "BuyItem_Localised":"Burst Laser", "BuyPrice":8600, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-21T01:12:32Z", "event":"ModuleBuy", "Slot":"TinyHardpoint2", "SellItem":"$hpt_cloudscanner_size0_class2_name;", "SellItem_Localised":"Wake Scanner", "SellPrice":40633, "BuyItem":"$hpt_plasmapointdefence_turret_tiny_name;", "BuyItem_Localised":"Point Defence", "BuyPrice":18546, "Ship":"cobramkiii", "ShipID":10 }
+{ "timestamp":"2018-02-21T01:13:34Z", "event":"RedeemVoucher", "Type":"CombatBond", "Amount":262200, "Faction":"LHS 1650 Alliance" }
+{ "timestamp":"2018-02-21T01:14:05Z", "event":"MissionAccepted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War", "LocalisedName":"Massacre the Last Chance Services ships", "TargetFaction":"Last Chance Services", "KillCount":63, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Expiry":"2018-02-21T21:43:39Z", "Influence":"High", "Reputation":"Med", "Reward":7298085, "MissionID":321243987 }
+{ "timestamp":"2018-02-21T01:14:12Z", "event":"MissionAccepted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War", "LocalisedName":"Massacre the Last Chance Services ships", "TargetFaction":"Last Chance Services", "KillCount":48, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Expiry":"2018-02-21T22:06:20Z", "Influence":"High", "Reputation":"Med", "Reward":5703105, "MissionID":321244060 }
+{ "timestamp":"2018-02-21T01:14:49Z", "event":"ReceiveText", "From":"$npc_name_decorate:#name=Umark Oarsbane;", "From_Localised":"Umark Oarsbane", "Message":"$Smuggler_NearDeath05;", "Message_Localised":"The boss isn't going to like this.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:14:55Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-21T01:15:05Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T01:15:44Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T01:15:44Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T01:15:44Z", "event":"ReceiveText", "From":"", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:15:49Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T01:15:49Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T01:16:24Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-21T01:16:24Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T01:16:35Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-21T01:17:12Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire01;", "Message_Localised":"Bandit on my six...", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:17:59Z", "event":"Bounty", "Target":"viper_mkiv", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:17:59Z", "event":"FactionKillBond", "Reward":23000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:18:14Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire06;", "Message_Localised":"I'm taking hits!", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:19:33Z", "event":"Bounty", "Target":"type9", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T01:20:57Z", "event":"Bounty", "Target":"python", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T01:22:07Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire09;", "Message_Localised":"Allow me to show you the error of your ways.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:22:13Z", "event":"Bounty", "Target":"asp_scout", "TotalReward":0, "VictimFaction":"Last Chance Services", "SharedWithOthers":1 }
+{ "timestamp":"2018-02-21T01:22:13Z", "event":"FactionKillBond", "Reward":27600, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:22:13Z", "event":"MissionRedirected", "MissionID":321218598, "Name":"Mission_Massacre_Conflict_War_name", "NewDestinationStation":"SDM Galactic Starpost", "NewDestinationSystem":"LHS 1650", "OldDestinationStation":"", "OldDestinationSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T01:22:30Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T01:22:54Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T01:22:59Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T01:22:59Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T01:24:03Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-21T01:24:04Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-21T01:24:05Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:24:09Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T01:24:10Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T01:24:10Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:24:12Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:24:12Z", "event":"DockingGranted", "LandingPad":27, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T01:24:27Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-21T01:24:41Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.884094 }
+{ "timestamp":"2018-02-21T01:24:48Z", "event":"RefuelAll", "Cost":10, "Amount":0.173594 }
+{ "timestamp":"2018-02-21T01:24:49Z", "event":"RepairAll", "Cost":11084 }
+{ "timestamp":"2018-02-21T01:24:50Z", "event":"BuyAmmo", "Cost":16150 }
+{ "timestamp":"2018-02-21T01:24:52Z", "event":"WingLeave" }
+{ "timestamp":"2018-02-21T01:24:52Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2018-02-21T01:24:55Z", "event":"Repair", "Item":"Paint", "Cost":1 }
+{ "timestamp":"2018-02-21T01:25:17Z", "event":"MissionCompleted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War_name", "MissionID":321218598, "TargetFaction":"Last Chance Services", "KillCount":12, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Reward":713118 }
+{ "timestamp":"2018-02-21T01:25:23Z", "event":"WingInvite", "Name":"Mar.Meow" }
+{ "timestamp":"2018-02-21T01:25:30Z", "event":"MissionAccepted", "Faction":"LHS 1650 Alliance", "Name":"Mission_Massacre_Conflict_War", "LocalisedName":"Massacre the Last Chance Services ships", "TargetFaction":"Last Chance Services", "KillCount":36, "DestinationSystem":"LHS 1650", "DestinationStation":"SDM Galactic Starpost", "Expiry":"2018-02-21T22:24:25Z", "Influence":"High", "Reputation":"Med", "Reward":3601338, "MissionID":321250087 }
+{ "timestamp":"2018-02-21T01:25:50Z", "event":"RedeemVoucher", "Type":"CombatBond", "Amount":147200, "Faction":"LHS 1650 Alliance" }
+{ "timestamp":"2018-02-21T01:26:02Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-21T01:26:12Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T01:26:35Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_exited;", "Message_Localised":"No fire zone left.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:26:43Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T01:26:48Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T01:26:48Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T01:27:26Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"Trileukon", "BodyType":"Planet" }
+{ "timestamp":"2018-02-21T01:27:27Z", "event":"Music", "MusicTrack":"Exploration" }
+{ "timestamp":"2018-02-21T01:27:50Z", "event":"Music", "MusicTrack":"Combat_LargeDogFight" }
+{ "timestamp":"2018-02-21T01:28:36Z", "event":"FactionKillBond", "Reward":23000, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:28:36Z", "event":"Bounty", "Target":"viper_mkiv", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:30:22Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire03;", "Message_Localised":"Time to show you what a real pilot can do... ", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:30:37Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire02;", "Message_Localised":"You picked the wrong fight today, Commander.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:31:35Z", "event":"ShieldState", "ShieldsUp":false }
+{ "timestamp":"2018-02-21T01:32:32Z", "event":"ShieldState", "ShieldsUp":true }
+{ "timestamp":"2018-02-21T01:32:58Z", "event":"Bounty", "Target":"asp_scout", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:32:58Z", "event":"FactionKillBond", "Reward":27600, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:34:00Z", "event":"Bounty", "Target":"eagle", "TotalReward":0, "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:34:00Z", "event":"FactionKillBond", "Reward":9200, "AwardingFaction":"LHS 1650 Alliance", "VictimFaction":"Last Chance Services" }
+{ "timestamp":"2018-02-21T01:34:32Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire10;", "Message_Localised":"I'm under attack.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:36:54Z", "event":"ReceiveText", "From":"$ShipName_Military_Independent;", "From_Localised":"System Defence Force", "Message":"$Military_UnderFire06;", "Message_Localised":"I'm taking hits!", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:41:17Z", "event":"StartJump", "JumpType":"Supercruise" }
+{ "timestamp":"2018-02-21T01:41:23Z", "event":"SupercruiseEntry", "StarSystem":"LHS 1650" }
+{ "timestamp":"2018-02-21T01:41:23Z", "event":"Music", "MusicTrack":"Supercruise" }
+{ "timestamp":"2018-02-21T01:42:25Z", "event":"SupercruiseExit", "StarSystem":"LHS 1650", "Body":"SDM Galactic Starpost", "BodyType":"Station" }
+{ "timestamp":"2018-02-21T01:42:25Z", "event":"Music", "MusicTrack":"DestinationFromSupercruise" }
+{ "timestamp":"2018-02-21T01:42:26Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_NoFireZone_entered;", "Message_Localised":"No fire zone entered.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:42:30Z", "event":"Music", "MusicTrack":"NoTrack" }
+{ "timestamp":"2018-02-21T01:42:35Z", "event":"DockingRequested", "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T01:42:35Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$DockingChatter_Neutral;", "Message_Localised":"Ensure to observe starport protocol during your visit, pilot.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:42:36Z", "event":"ReceiveText", "From":"SDM Galactic Starpost", "Message":"$STATION_docking_granted;", "Message_Localised":"Docking request granted.", "Channel":"npc" }
+{ "timestamp":"2018-02-21T01:42:36Z", "event":"DockingGranted", "LandingPad":36, "StationName":"SDM Galactic Starpost" }
+{ "timestamp":"2018-02-21T01:42:57Z", "event":"Music", "MusicTrack":"Starport" }
+{ "timestamp":"2018-02-21T01:43:29Z", "event":"Docked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis", "StarSystem":"LHS 1650", "StationFaction":"Last Chance Services", "FactionState":"CivilWar", "StationGovernment":"$government_Corporate;", "StationGovernment_Localised":"Corporate", "StationServices":[ "Dock", "Autodock", "BlackMarket", "Commodities", "Contacts", "Exploration", "Missions", "Outfitting", "CrewLounge", "Rearm", "Refuel", "Repair", "Shipyard", "Tuning", "MissionsGenerated", "FlightController", "StationOperations", "Powerplay", "SearchAndRescue" ], "StationEconomy":"$economy_Industrial;", "StationEconomy_Localised":"Industrial", "DistFromStarLS":899.876038 }
+{ "timestamp":"2018-02-21T01:43:40Z", "event":"RefuelAll", "Cost":16, "Amount":0.310508 }
+{ "timestamp":"2018-02-21T01:43:41Z", "event":"RepairAll", "Cost":8934 }
+{ "timestamp":"2018-02-21T01:43:42Z", "event":"BuyAmmo", "Cost":34068 }
+{ "timestamp":"2018-02-21T01:44:22Z", "event":"Repair", "Item":"Wear", "Cost":10 }
+{ "timestamp":"2018-02-21T01:44:39Z", "event":"Undocked", "StationName":"SDM Galactic Starpost", "StationType":"Orbis" }
+{ "timestamp":"2018-02-21T01:44:42Z", "event":"Music", "MusicTrack":"Exploration" }
