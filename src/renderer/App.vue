@@ -98,6 +98,7 @@
 </script>
 
 <style lang="scss">
+    @import '~bootstrap/dist/css/bootstrap-reboot.css';
     @import '~bootstrap/dist/css/bootstrap-grid.css';
     @import './styles/vars';
     @import './styles/base';
