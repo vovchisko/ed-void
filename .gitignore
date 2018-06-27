@@ -8,7 +8,6 @@ npm-debug.log
 npm-debug.log.*
 thumbs.db
 !.gitkeep
-test_journal
-_v1
 .idea/
 ed-void.cfg
+journal
