@@ -8,8 +8,8 @@ let STAT = {
     },
     push: function (line) {
         this.log.push(line);
-        if(this.log.length > this._log_limit) {
-            this.log.splice(0,1)
+        if (this.log.length > this._log_limit) {
+            this.log.splice(0, 1);
         }
     }
 };

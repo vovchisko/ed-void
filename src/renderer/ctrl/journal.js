@@ -171,7 +171,7 @@ class Journal extends EE3 {
     cfg_save() {
         let lines = [];
         for (let p in this.cfg)
-            if (p[0] !== '_')
+            if (p[0] !== '_' && typeof this.cfg[p] !== 'function')
                 lines.push(p + ' = ' + this.cfg[p]);
 
         fs.writeFileSync(CFG_FILE, lines.join('\n'));

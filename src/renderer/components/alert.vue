@@ -13,7 +13,6 @@
                 <button v-for="(cb, p_act) in prompt.acts" v-on:click="prompt_act(p, p_act, prompt.val)">{{p_act}}</button>
             </div>
 
-
             <div class="acts" v-if="A.stack[0].acts">
                 <button v-for="(cb, action) in A.stack[0].acts" v-on:click="act(action)">{{action}}</button>
             </div>

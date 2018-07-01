@@ -1,4 +1,4 @@
-import {app, BrowserWindow, ipcMain, shell} from 'electron';
+import {app, BrowserWindow, ipcMain, shell, globalShortcut} from 'electron';
 
 const UI_Settings = {
     height: 800,
@@ -7,12 +7,7 @@ const UI_Settings = {
     show: false,
 };
 
-if (process.env.NODE_ENV !== 'development') {
-    UI_Settings.transparent = true;
-    UI_Settings.alwaysOnTop = true;
-    UI_Settings.frame = false;
-    UI_Settings.toolbar = false;
-}
+const IS_DEV = (process.env.NODE_ENV === 'development');
 
 const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
     if (UI) {
@@ -23,10 +18,19 @@ const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) 
 
 if (isSecondInstance) app.quit();
 
-if (process.env.NODE_ENV !== 'development') global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
+if (!IS_DEV) {
+    global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
+
+    UI_Settings.transparent = true;
+    UI_Settings.alwaysOnTop = true;
+    UI_Settings.frame = false;
+    UI_Settings.toolbar = false;
+} else {
+
+}
 
 let UI;
-const winURL = process.env.NODE_ENV === 'development'
+const winURL = IS_DEV
     ? `http://localhost:9080`
     : `file://${__dirname}/index.html`;
 
@@ -48,19 +52,26 @@ function createWindow() {
     });
 
 
-    if (process.env.NODE_ENV !== 'development') {
+    if (!IS_DEV) {
+        UI.maximize();
         UI.webContents.on('did-finish-load', function () {
             UI.webContents.insertCSS('html,body{ background-color: rgba(0,0,0,.9) !important;}')
         });
     }
 
-    UI.maximize();
+
     UI.webContents.on('will-navigate', handleRedirect);
     UI.webContents.on('new-window', handleRedirect);
     UI.webContents.on('dom-ready', () => UI.show());
 }
 
-app.on('ready', createWindow);
+app.on('ready', () => {
+    globalShortcut.register('CommandOrControl+F1', () => {
+        console.log('CommandOrControl+F1 is pressed');
+    });
+
+    createWindow();
+});
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() });
 app.on('activate', () => { if (UI === null) createWindow() });
 
@@ -89,3 +100,4 @@ function send2UI(c, data) {
         console.log(`Unable to send ${c} to UI - No UI ready`, {c, data});
     }
 }
+

@@ -5,14 +5,14 @@
                 <h2>overlay ui settings </h2>
                 <div class="ui short">
                     <select v-model="cfg.ui_font_size" @change="cgf_apply()">
-                        <option v-for="i in cfg._font_size_vars" v-model="cfg._font_size_vars[i]">{{i}}</option>
+                        <option v-for="i in variant_font_size" v-model="variant_font_size[i]">{{i}}</option>
                     </select>
                     <label>font size</label>
                 </div>
 
                 <div class="ui short">
                     <select v-model="cfg.ui_fx_level" @change="cgf_apply()">
-                        <option v-for="i in cfg._fx_level_vars" v-model="cfg._fx_level_vars[i]">{{i}}</option>
+                        <option v-for="i in variant_fx_level" v-model="variant_fx_level[i]">{{i}}</option>
                     </select>
                     <label>ui effects</label>
                 </div>
@@ -28,7 +28,13 @@
 
     export default {
         name: 'cfg',
-        data: () => { return {cfg: CFG} },
+        data: () => {
+            return {
+                cfg: CFG,
+                variant_font_size: new Array(17).fill(0).map((x, i) => {return i * 10 + 40 + '%'}),
+                variant_fx_level: ['full', 'medium', 'low', 'disabled']
+            }
+        },
         mounted: function () { this.cgf_apply(); },
         methods: {
             cgf_apply: function () {
