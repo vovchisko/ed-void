@@ -35,7 +35,6 @@
                 variant_fx_level: ['full', 'medium', 'low', 'disabled']
             }
         },
-        mounted: function () { this.cgf_apply(); },
         methods: {
             cgf_apply: function () {
                 CFG.apply_ui_cfg();

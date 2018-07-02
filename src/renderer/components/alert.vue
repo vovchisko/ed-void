@@ -26,7 +26,7 @@
         stack: [],
         add: function (opt, the_only = false) {
             if (the_only) this.stack.splice(0, this.stack.length);
-            if (!opt.act && !opt.prompt) opt.act = {'roger that': null};
+            if (!opt.acts && !opt.prompt) opt.acts = {'roger that': null};
             this.stack.push(opt);
         },
         info: function (opt, the_only = false) {

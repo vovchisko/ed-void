@@ -37,7 +37,7 @@ h3 { @include hcaps(); font-size: 1.3em; padding: 0.7em 0 0.4em 0; margin: 0;}
 h4 { @include hcaps(); font-size: 1.2em; padding: 0.6em 0 0.3em 0; margin: 0; }
 h5 { @include hcaps(); font-size: 1.1em; padding: 0.6em 0 0.3em 0; margin: 0; }
 .caps { @include hcaps(); }
-select, button, navbar, header, .compass { user-select: none}
+select, button, a.button, navbar, header, .compass { user-select: none}
 //
 u { text-decoration: none;}
 //
@@ -54,10 +54,10 @@ textarea {
     white-space: initial;
 }
 select { -webkit-appearance: none; padding-right: 1.8em }
-select, button { @include hcaps();
+select, button, a.button { @include hcaps();
     option { text-transform: none !important}
 }
-button {
+button, a.button {
     @include hcaps();
     @include ui-basic();
     &:active {
@@ -74,7 +74,7 @@ button {
         border-color: darken($ui-act-fg, 15%);
     }
 }
-button.link { border: 0 none !important; line-height: inherit; display: inline; padding: 0; }
+button.link, a.button.link { border: 0 none !important; line-height: inherit; display: inline; padding: 0; }
 .clearfix { @include clearfix()}
 @keyframes glitched_text {
     0% { text-shadow: none; }
@@ -153,7 +153,7 @@ hr {
 
     &.info { color: $info;
         & p { color: darken($info, 10%) }
-        & button { border-color: $info !important; color: $info}
+        & button, & a.button { border-color: $info !important; color: $info}
     }
     &.warn { color: $orange;
         & p {color: darken($orange, 10%)}
@@ -161,19 +161,19 @@ hr {
     }
     &.error { color: $red;
         & p {color: darken($red, 10%)}
-        & button { border-color: $red !important; color: $red}
+        & button, & a.button { border-color: $red !important; color: $red}
     }
     &.progress { animation: glitched_text 2s infinite;}
 }
 .ui { padding-bottom: 1em; position: relative; padding-top: 1em;
     label { position: absolute; top: 0; left: 0; right: 0; line-height: 1em;
-        button { float: right; }
+        button, a.button { float: right; }
     }
     button { margin-right: 5px; }
     select { @include ui-has-caret(); }
     *:focus + label { color: $ui-act-fg }
 
-    &.short select, &.short input, &.short button { width: auto; min-width: 8em }
+    &.short select, &.short input, &.short button, &.short a.button { width: auto; min-width: 8em }
 }
 .starpos { color: darken($ui-text, 25%); margin-bottom: 0.5em }
 .starpos u { font-size: 0.8em; color: darken($ui-text, 25%); }

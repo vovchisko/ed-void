@@ -21,8 +21,8 @@
             </div>
 
             <div class="ui links">
-                <a href="http://ed-void.com/" target="_blank">New Pilot</a>
-                <a href="http://ed-void.com/" target="_blank">reset password</a>
+                <a class="button link" href="http://ed-void.com/" target="_blank">New Pilot</a>
+                <a class="button link" href="http://ed-void.com/" target="_blank">reset password</a>
             </div>
         </form>
     </div>
@@ -80,13 +80,12 @@
             input, button {
                 display: block; clear: both; width: 100%;
             }
-            button { }
             .msg {
                 text-transform: uppercase; margin: 10px 0 10px 0;
                 &.error { color: $ui-err;}
             }
             .ui.links { text-align: center;
-                button { display: inline-block; margin: 0 1em; clear: none; width: auto}
+                button, a.button { display: inline-block; margin: 0 1em; clear: none; width: auto}
             }
         }
     }
