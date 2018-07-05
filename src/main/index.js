@@ -55,10 +55,9 @@ function createWindow() {
     if (!IS_DEV) {
         UI.maximize();
         UI.webContents.on('did-finish-load', function () {
-            UI.webContents.insertCSS('html,body{ background-color: rgba(0,0,0,.9) !important;}')
+            UI.webContents.insertCSS('html,body{ background-color: transparent!important;}')
         });
     }
-
 
     UI.webContents.on('will-navigate', handleRedirect);
     UI.webContents.on('new-window', handleRedirect);
