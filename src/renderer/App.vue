@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <p style="-webkit-app-region: drag">DRAG ON ME</p>
         <alert></alert>
         <auth v-if="!mode.is_in && !mode.is_ready"></auth>
         <cfg v-if="mode.is_ready && mode.c_mode === 'cfg'"></cfg>
@@ -13,12 +14,13 @@
 <script>
 
     import {J, ISSH} from './ctrl/journal';
-    import Auth from "./components/auth";
-    import Cfg from "./components/cfg";
-    import Alert, {A} from "./components/alert";
+    import Auth from "./mods/auth";
+    import Cfg from "./mods/cfg";
+    import Alert, {A} from "./mods/alert";
     import MODE from './ctrl/mode';
     import IPC from './ctrl/ipc';
     import STAT from './ctrl/stat';
+    import CFG from './ctrl/cfg';
 
     J.on('ready', (cfg) => {
         MODE.is_in = true;
@@ -86,9 +88,13 @@
 
     MODE.is_in = !!J.cfg.api_key;
     J.go();
+    CFG.apply_ui_cfg();
 
     export default {
         components: {Alert, Auth, Cfg},
+        mounted: function () {
+            document.body.classList.add('env-' + process.env.NODE_ENV);
+        },
         data: () => {
             return {mode: MODE, log: STAT.log};
         },
@@ -102,4 +108,5 @@
     @import '~bootstrap/dist/css/bootstrap-grid.css';
     @import './styles/vars';
     @import './styles/base';
+    @import './styles/look';
 </style>

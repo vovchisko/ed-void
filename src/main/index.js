@@ -5,6 +5,9 @@ const UI_Settings = {
     width: 1400,
     useContentSize: true,
     show: false,
+    frame: false,
+    toolbar: false,
+    transparent: true,
 };
 
 const IS_DEV = (process.env.NODE_ENV === 'development');
@@ -52,12 +55,8 @@ function createWindow() {
     });
 
 
-    if (!IS_DEV) {
-        UI.maximize();
-        UI.webContents.on('did-finish-load', function () {
-            UI.webContents.insertCSS('html,body{ background-color: transparent!important;}')
-        });
-    }
+    if (!IS_DEV) UI.maximize();
+
 
     UI.webContents.on('will-navigate', handleRedirect);
     UI.webContents.on('new-window', handleRedirect);

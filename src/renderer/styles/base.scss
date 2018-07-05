@@ -25,10 +25,10 @@ input, textarea, select {
 }
 * { box-sizing: border-box; }
 *::selection { background: $purple; color: $white}
-*::placeholder { color: #444; }
+*::placeholder { color: opacify($ui-text, 0.5); }
 *:focus, *:active { outline: none !important; }
 pre { margin: 0; padding: 0; overflow: visible; font-size: 0.7em}
-html, body { height: 100%; background: $dark-deep; color: $ui-text; overflow-x: hidden }
+html, body { height: 100%; color: $ui-text; overflow-x: hidden }
 body { padding: 0.5em; font-size: 16px; line-height: 1.1em; margin: 0;}
 //
 h1 { @include hcaps(); font-size: 1.5em; padding: 1em 0 0.5em 0; margin: 0;}
