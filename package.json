@@ -1,8 +1,8 @@
 {
   "name": "ED-VOID",
-  "version": "0.2.0",
+  "version": "0.3.0-dev",
   "author": "Vladimir Ishchenko <vovchiko@gmail.com>",
-  "description": "ED-VOID Client",
+  "description": "ED-VOID Client / In-Development",
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -53,12 +53,10 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
-    "bootstrap": "^4.1.1",
+    "bootstrap-css-only": "^4.1.1",
     "deep-extend": "^0.6.0",
     "eventemitter3": "^3.1.0",
-    "jquery": "^3.3.1",
     "open": "0.0.5",
-    "popper.js": "^1.14.3",
     "vue": "^2.3.3",
     "vue-electron": "^1.0.6",
     "ws": "^5.2.0"

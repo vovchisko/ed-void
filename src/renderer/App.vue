@@ -104,8 +104,8 @@
 </script>
 
 <style lang="scss">
-    @import '~bootstrap/dist/css/bootstrap-reboot.css';
-    @import '~bootstrap/dist/css/bootstrap-grid.css';
+    @import '~bootstrap-css-only/css/bootstrap-reboot.min.css';
+    @import '~bootstrap-css-only/css/bootstrap-grid.min.css';
     @import './styles/vars';
     @import './styles/base';
     @import './styles/look';

@@ -1,4 +1,0 @@
-{ "timestamp":"2017-12-05T20:21:12Z", "event":"Fileheader", "part":1, "language":"English\\UK", "gameversion":"2.4", "build":"r159510/r0 " }
-{ "timestamp":"2017-12-05T20:21:12Z", "event":"Music", "MusicTrack":"NoTrack" }
-{ "timestamp":"2017-12-05T20:21:12Z", "event":"Music", "MusicTrack":"MainMenu" }
-{ "timestamp":"2017-12-05T20:27:45Z", "event":"NewCommander", "Name":"Sleep Runner", "Package":"Default" }
