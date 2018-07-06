@@ -1,11 +1,12 @@
-# [ED-VOID](http://ed-void.com/) Client Overlay
+# ED-VOID Client Overlay
 
 ED-VOID is THE ULTIMATE EXPLORER'S TOOL, designed by explorers for explorers. Provide fast fps-friendly overlay with basic "on-air" information and sync with ED-VOID network.
 
 It helps you with scanned stellar bodies, navigation, reporting your exploration data, and get extended body information, based on existing reports. Also can be used with mobile/desktop browser at the same time.
 
 Web-version available: http://ed-void.com/
-*server incompatible with dev-version of client yet. Please, download client on a [web-site](http://ed-void.com/)*
+
+*IMPORTANT: Server incompatible with dev-version of client yet. Please, download client on a [web-site](http://ed-void.com/)*
 
 ### COMING FEATURES
 - OVERLAY
