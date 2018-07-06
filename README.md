@@ -14,7 +14,7 @@ Web-version available: http://ed-void.com/
     - Racing Module - don't tell anyone!
     - Search for public reports / navigate.
     - Usefull Minimap for quick "tricky searches".
-    - + Overlay-version of most modules from web version.
+    - Overlay-version of most modules from web version.
 - WEB/MOBILE
     - "I'm a console guy!" option - allow to fill some data handy w/o journals.
     - Search for stellar bodies / stations / systems.
