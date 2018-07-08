@@ -10,6 +10,9 @@ const UI_Settings = {
     transparent: true,
 };
 
+let INTERACT_MODE = true;
+let IS_OVERLAY = !IS_DEV;
+
 const IS_DEV = (process.env.NODE_ENV === 'development');
 
 const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
@@ -21,18 +24,10 @@ const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) 
 
 if (isSecondInstance) app.quit();
 
-if (!IS_DEV) {
-    global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
-
-    UI_Settings.transparent = true;
-    UI_Settings.alwaysOnTop = true;
-    UI_Settings.frame = false;
-    UI_Settings.toolbar = false;
-} else {
-
-}
+if (!IS_DEV) global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
 
 let UI;
+
 const winURL = IS_DEV
     ? `http://localhost:9080`
     : `file://${__dirname}/index.html`;
@@ -54,21 +49,36 @@ function createWindow() {
         app.quit();
     });
 
-
-    if (!IS_DEV) UI.maximize();
-
+    UI.maximize();
 
     UI.webContents.on('will-navigate', handleRedirect);
     UI.webContents.on('new-window', handleRedirect);
-    UI.webContents.on('dom-ready', () => UI.show());
+    UI.webContents.on('dom-ready', () => {
+        UI.show();
+        send2UI('interact', INTERACT_MODE);
+    });
 }
 
 app.on('ready', () => {
-    globalShortcut.register('CommandOrControl+F1', () => {
-        console.log('CommandOrControl+F1 is pressed');
+    createWindow();
+
+    globalShortcut.register('F10', () => {
+        IS_OVERLAY = !IS_OVERLAY;
+
+        if (!IS_OVERLAY) INTERACT_MODE = true;
+        send2UI('mode:interact', INTERACT_MODE);
+        send2UI('mode:overlay', IS_OVERLAY);
+        
+        UI.setIgnoreMouseEvents(!INTERACT_MODE);
+        UI.setAlwaysOnTop(IS_OVERLAY);
     });
 
-    createWindow();
+    globalShortcut.register('F1', () => {
+        if (!IS_OVERLAY) return;
+        INTERACT_MODE = !INTERACT_MODE;
+        send2UI('mode:interact', INTERACT_MODE);
+        UI.setIgnoreMouseEvents(!INTERACT_MODE);
+    });
 });
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() });
 app.on('activate', () => { if (UI === null) createWindow() });

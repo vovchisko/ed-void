@@ -3,10 +3,11 @@ import CFG from './cfg'
 let MODE = {
     list: {
         cfg: 'config',
-        nav: 'nav'
     },
     is_in: false,
     is_ready: false,
+    is_interact: true,
+    is_overlay: true,
     c_mode: 'cfg',
     go: function (mode = null) {
         if (!this.is_in) this.is_in = true;

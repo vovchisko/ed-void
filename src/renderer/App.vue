@@ -1,13 +1,20 @@
 <template>
     <div id="app">
-        <p style="-webkit-app-region: drag">DRAG ON ME</p>
+        <nav v-bind:class="mode.is_interact ? 'interact' : ''">
+            <i class="i-menu"></i>
+            <button v-for="(m, mk) in mode.list" @click="mode.go(mk)" v-bind:class="mode.c_mode === mk ? 'semi-active' : ''">{{m}}</button>
+        </nav>
         <alert></alert>
+
+
         <auth v-if="!mode.is_in && !mode.is_ready"></auth>
         <cfg v-if="mode.is_ready && mode.c_mode === 'cfg'"></cfg>
 
-        <small>
+        <small class="log">
             <div v-for="l in log">{{l}}</div>
         </small>
+
+        <pre>{{mode}}</pre>
     </div>
 </template>
 
@@ -90,6 +97,9 @@
     J.go();
     CFG.apply_ui_cfg();
 
+    IPC.on('mode:interact', (mode) => { MODE.is_interact = mode; });
+    IPC.on('mode:overlay', (mode) => { MODE.is_overlay = mode; });
+
     export default {
         components: {Alert, Auth, Cfg},
         mounted: function () {
@@ -101,6 +111,7 @@
         name: 'ed-void-client',
     }
 
+
 </script>
 
 <style lang="scss">
@@ -109,4 +120,19 @@
     @import './styles/vars';
     @import './styles/base';
     @import './styles/look';
+    .log {
+        position: absolute;
+        left: 1em; bottom: 1em;
+    }
+    nav {
+        -webkit-app-region: drag;
+        i { font-size: 1.3em; margin-right: 1em; display: none;}
+        &.interact {
+            button { display: none; }
+            button.semi-active { display: inline-block; }
+            i { display: inline-block }
+        }
+    }
+
+
 </style>
