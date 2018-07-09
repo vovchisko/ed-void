@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <nav v-bind:class="mode.is_interact ? 'interact' : ''">
-            <i class="i-menu"></i>
-            <button v-for="(m, mk) in mode.list" @click="mode.go(mk)" v-bind:class="mode.c_mode === mk ? 'semi-active' : ''">{{m}}</button>
+        <nav>
+            <espan class="drag" v-if="mode.is_interact"><i class="i-menu"></i> ED VOID</espan>
+            <button v-if="mode.is_interact || mode.c_mode === m" v-for="(m) in mode.list" @click="mode.go(m)" v-bind:class="mode.c_mode === m ? 'semi-active' : ''">{{m}}</button>
         </nav>
         <alert></alert>
 
@@ -13,8 +13,6 @@
         <small class="log">
             <div v-for="l in log">{{l}}</div>
         </small>
-
-        <pre>{{mode}}</pre>
     </div>
 </template>
 
@@ -97,13 +95,11 @@
     J.go();
     CFG.apply_ui_cfg();
 
-    IPC.on('mode:interact', (mode) => { MODE.is_interact = mode; });
-    IPC.on('mode:overlay', (mode) => { MODE.is_overlay = mode; });
 
     export default {
         components: {Alert, Auth, Cfg},
         mounted: function () {
-            document.body.classList.add('env-' + process.env.NODE_ENV);
+            MODE.apply();
         },
         data: () => {
             return {mode: MODE, log: STAT.log};
@@ -120,17 +116,22 @@
     @import './styles/vars';
     @import './styles/base';
     @import './styles/look';
+    body { perspective: 55em;}
     .log {
         position: absolute;
-        left: 1em; bottom: 1em;
+        right: 7em;
+        top: 16em;
+        transform: rotate3d(0, 1, 0.1, -19deg);
+        color: #ff8800;
+        text-shadow: -3px 4px rgba(0, 0, 0, 0.5);
     }
     nav {
-        -webkit-app-region: drag;
-        i { font-size: 1.3em; margin-right: 1em; display: none;}
-        &.interact {
-            button { display: none; }
-            button.semi-active { display: inline-block; }
-            i { display: inline-block }
+        button { margin-right: 0.3em}
+        .drag {
+            -webkit-app-region: drag;
+            line-height: 1.1em;
+            padding-right: 2em;
+            i { font-size: 1.3em; margin-right: 0.3em; }
         }
     }
 

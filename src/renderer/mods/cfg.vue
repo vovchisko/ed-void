@@ -16,7 +16,6 @@
                     </select>
                     <label>ui effects</label>
                 </div>
-                <button>something</button>
             </div>
 
         </div>

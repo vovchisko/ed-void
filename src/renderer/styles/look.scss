@@ -1,9 +1,19 @@
-body.env-development {
-    background-color: rgba(0, 0, 0, .3);
-    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
-    background-size: 50px 50px;
-    box-shadow: 0 0 -1px 2px rgba(0, 0, 255, 0.5);
+body[env=development] {
+    // background-color: rgba(0, 0, 0, .3);
+    // background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+    // background-size: 50px 50px;
+    // box-shadow: 0 0 -1px 2px rgba(0, 0, 255, 0.5);
 }
-body.env-production {
-    background: transparent !important;
+body[env=production] {
+    //background: transparent !important;
+}
+body[overlay='on'] {
+    &[interact='on'] { background: rgba(0, 0, 0, .3) !important;}
+    &[interact='off'] { background: transparent !important;}
+}
+body[overlay='off'] {
+    background: #222222 !important;
+}
+html, body, * {
+    -webkit-font-smoothing: none !important;
 }

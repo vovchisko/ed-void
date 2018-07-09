@@ -2,7 +2,7 @@ import {app, BrowserWindow, ipcMain, shell, globalShortcut} from 'electron';
 
 const UI_Settings = {
     height: 800,
-    width: 1400,
+    width: 540,
     useContentSize: true,
     show: false,
     frame: false,
@@ -11,7 +11,7 @@ const UI_Settings = {
 };
 
 let INTERACT_MODE = true;
-let IS_OVERLAY = !IS_DEV;
+let IS_OVERLAY = false;
 
 const IS_DEV = (process.env.NODE_ENV === 'development');
 
@@ -43,19 +43,20 @@ const handleRedirect = (e, url) => {
 
 function createWindow() {
     UI = new BrowserWindow(UI_Settings);
+    UI.webContents.setFrameRate(2);
     UI.loadURL(winURL);
     UI.on('closed', () => {
         UI = null;
         app.quit();
     });
 
-    UI.maximize();
+    if (!IS_DEV) UI.maximize();
 
     UI.webContents.on('will-navigate', handleRedirect);
     UI.webContents.on('new-window', handleRedirect);
     UI.webContents.on('dom-ready', () => {
         UI.show();
-        send2UI('interact', INTERACT_MODE);
+        send2UI('set:interact', INTERACT_MODE);
     });
 }
 
@@ -66,19 +67,28 @@ app.on('ready', () => {
         IS_OVERLAY = !IS_OVERLAY;
 
         if (!IS_OVERLAY) INTERACT_MODE = true;
-        send2UI('mode:interact', INTERACT_MODE);
-        send2UI('mode:overlay', IS_OVERLAY);
-        
+        send2UI('set:interact', INTERACT_MODE);
+        send2UI('set:overlay', IS_OVERLAY);
+
         UI.setIgnoreMouseEvents(!INTERACT_MODE);
+        UI.setFocusable(INTERACT_MODE);
         UI.setAlwaysOnTop(IS_OVERLAY);
     });
 
     globalShortcut.register('F1', () => {
         if (!IS_OVERLAY) return;
         INTERACT_MODE = !INTERACT_MODE;
-        send2UI('mode:interact', INTERACT_MODE);
-        UI.setIgnoreMouseEvents(!INTERACT_MODE);
+        send2UI('set:interact', INTERACT_MODE);
+        UI.setIgnoreMouseEvents(!INTERACT_MODE)
+        UI.setFocusable(INTERACT_MODE);
     });
+
+    globalShortcut.register('F2', () => {
+        send2UI('mode:next', INTERACT_MODE);
+
+    });
+
+
 });
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() });
 app.on('activate', () => { if (UI === null) createWindow() });
