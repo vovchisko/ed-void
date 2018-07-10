@@ -1,8 +1,8 @@
 import {app, BrowserWindow, ipcMain, shell, globalShortcut} from 'electron';
 
 const UI_Settings = {
-    height: 800,
-    width: 540,
+    height: 540,
+    width: 720,
     useContentSize: true,
     show: false,
     frame: false,

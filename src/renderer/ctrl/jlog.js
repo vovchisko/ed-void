@@ -1,6 +1,6 @@
 import {J, ISSH} from "./journal";
 
-let STAT = {
+let JLOG = {
     _log_limit: 16,
     log: [],
     flush: function () {
@@ -14,6 +14,6 @@ let STAT = {
     }
 };
 
-J.on('log', (args) => { STAT.push(...args);});
+J.on('log', (args) => { JLOG.push(...args);});
 
-export default STAT;
+export default JLOG;

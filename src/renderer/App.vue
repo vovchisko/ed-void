@@ -1,18 +1,27 @@
 <template>
     <div id="app">
         <nav>
-            <espan class="drag" v-if="mode.is_interact"><i class="i-menu"></i> ED VOID</espan>
-            <button v-if="mode.is_interact || mode.c_mode === m" v-for="(m) in mode.list" @click="mode.go(m)" v-bind:class="mode.c_mode === m ? 'semi-active' : ''">{{m}}</button>
+            <espan class="drag" v-if="MODE.is_interact"><i class="i-menu"></i> ED VOID</espan>
+            <button v-if="MODE.is_interact || MODE.c_mode === m" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
         </nav>
         <alert></alert>
 
+        <auth v-if="!MODE.is_in && !MODE.is_ready"></auth>
+        <div v-if="MODE.is_ready && MODE.c_mode === 'log'">
+            <small class="log">
+                <div v-for="l in JLOG.log">{{l}}</div>
+            </small>
+        </div>
+        <div v-if="MODE.is_ready && MODE.c_mode === 'dev'">
+            <div class="row">
+                <div class="col-sm"><pre>MODE: {{MODE}}</pre></div>
+                <div class="col-sm"><pre>CFG: {{CFG}}</pre></div>
+            </div>
+        </div>
+        <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
 
-        <auth v-if="!mode.is_in && !mode.is_ready"></auth>
-        <cfg v-if="mode.is_ready && mode.c_mode === 'cfg'"></cfg>
 
-        <small class="log">
-            <div v-for="l in log">{{l}}</div>
-        </small>
+
     </div>
 </template>
 
@@ -24,7 +33,7 @@
     import Alert, {A} from "./mods/alert";
     import MODE from './ctrl/mode';
     import IPC from './ctrl/ipc';
-    import STAT from './ctrl/stat';
+    import JLOG from './ctrl/jlog';
     import CFG from './ctrl/cfg';
 
     J.on('ready', (cfg) => {
@@ -102,11 +111,10 @@
             MODE.apply();
         },
         data: () => {
-            return {mode: MODE, log: STAT.log};
+            return {MODE: MODE, JLOG: JLOG, CFG: CFG};
         },
         name: 'ed-void-client',
     }
-
 
 </script>
 
@@ -116,15 +124,7 @@
     @import './styles/vars';
     @import './styles/base';
     @import './styles/look';
-    body { perspective: 55em;}
-    .log {
-        position: absolute;
-        right: 7em;
-        top: 16em;
-        transform: rotate3d(0, 1, 0.1, -19deg);
-        color: #ff8800;
-        text-shadow: -3px 4px rgba(0, 0, 0, 0.5);
-    }
+
     nav {
         button { margin-right: 0.3em}
         .drag {
@@ -134,6 +134,5 @@
             i { font-size: 1.3em; margin-right: 0.3em; }
         }
     }
-
 
 </style>

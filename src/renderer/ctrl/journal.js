@@ -20,7 +20,7 @@ const log = function () {
     if (J) J.emit('log', arguments);
 };
 
-let SERVICE_DOMAIN = '192.168.1.4';//'ed-void.com';
+let SERVICE_DOMAIN = 'localhost';//'192.168.1.4';//'ed-void.com';
 
 let last_arg = '';
 for (let i = 0; i < process.argv.length; i++) {

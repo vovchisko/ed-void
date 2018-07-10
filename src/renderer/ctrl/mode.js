@@ -2,18 +2,18 @@ import CFG from './cfg'
 import IPC from './ipc'
 
 let MODE = {
-    list: ['home', 'mode3', 'mode4',  'dev', 'cfg'],
+    list: ['log', 'dev', 'cfg'],
     is_in: false,
     is_ready: false,
     is_interact: true,
     is_overlay: false,
-    c_mode: 'home',
+    c_mode: 'log',
     go: function (mode = null) {
         if (!this.is_in) this.is_in = true;
         if (mode) {
             this.c_mode = mode;
         } else {
-            this.c_mode = 'home';
+            this.c_mode = 'log';
         }
         CFG.c_mode = this.c_mode;
     },

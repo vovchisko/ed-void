@@ -14,6 +14,15 @@ body[overlay='on'] {
 body[overlay='off'] {
     background: #222222 !important;
 }
-html, body, * {
-    -webkit-font-smoothing: none !important;
+// CAREFUL WITH IT!
+body[ui-type='3d'] {
+    perspective: 55em;
+    .log {
+        position: absolute;
+        right: 7em;
+        top: 16em;
+        transform: rotate3d(0, 1, 0.1, -19deg);
+        color: #ff8800;
+        text-shadow: -3px 4px rgba(0, 0, 0, 0.5);
+    }
 }
