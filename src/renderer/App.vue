@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <nav>
-            <espan class="drag" v-if="MODE.is_interact"><i class="i-menu"></i> ED VOID</espan>
-            <button v-if="MODE.is_interact || MODE.c_mode === m" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
+            <span class="drag" v-if="MODE.is_interact"><i class="i-menu"></i> ED VOID</span>
+            <button  v-if="MODE.is_ready && (MODE.is_interact || MODE.c_mode === m)" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
         </nav>
         <alert></alert>
 

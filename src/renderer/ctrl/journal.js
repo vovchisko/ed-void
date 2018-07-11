@@ -20,18 +20,12 @@ const log = function () {
     if (J) J.emit('log', arguments);
 };
 
-let SERVICE_DOMAIN = 'localhost';//'192.168.1.4';//'ed-void.com';
-
-let last_arg = '';
-for (let i = 0; i < process.argv.length; i++) {
-    if (last_arg.trim() === '-s') SERVICE_DOMAIN = process.argv[i].trim();
-    last_arg = process.argv[i];
-}
+let SERVICE_DOMAIN = 'ed-void.com';
+let SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
+let API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
 
 const APP_NAME = 'ed-void';
 const APP_VERSION = '0.3b';
-const SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
-const API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
 const CFG_FILE = APP_NAME + '.cfg';
 const data_files = ['Status.json', 'Market.json', 'ModulesInfo.json', 'Outfitting.json', 'Shipyard.json'];
 
@@ -67,6 +61,12 @@ class Journal extends EE3 {
         this.files = [];
 
         this.cfg_read();
+
+        if(this.cfg.dev) {
+             SERVICE_DOMAIN = this.cfg.dev;
+             SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
+             API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
+        }
     }
 
     pre_check() {
