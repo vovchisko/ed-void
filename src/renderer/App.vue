@@ -2,7 +2,7 @@
     <div id="app">
         <nav>
             <span class="drag" v-if="MODE.is_interact"><i class="i-menu"></i> ED VOID</span>
-            <button  v-if="MODE.is_ready && (MODE.is_interact || MODE.c_mode === m)" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
+            <button v-if="MODE.is_ready && (MODE.is_interact || MODE.c_mode === m)" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
         </nav>
         <alert></alert>
 
@@ -14,12 +14,15 @@
         </div>
         <div v-if="MODE.is_ready && MODE.c_mode === 'dev'">
             <div class="row">
-                <div class="col-sm"><pre>MODE: {{MODE}}</pre></div>
-                <div class="col-sm"><pre>CFG: {{CFG}}</pre></div>
+                <div class="col-sm">
+                    <pre>MODE: {{MODE}}</pre>
+                </div>
+                <div class="col-sm">
+                    <pre>CFG: {{CFG}}</pre>
+                </div>
             </div>
         </div>
         <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
-
 
 
     </div>
@@ -40,6 +43,7 @@
         MODE.is_in = true;
         MODE.is_ready = true;
         MODE.go();
+        A.release();
     });
     J.on('stop', (code, err) => {
 
@@ -50,11 +54,25 @@
 
         if (code === ISSH.NET_SERVICE) {
             MODE.is_in = false;
-            return A.error({
-                text: 'ED-Void service unavailable',
-                desc: 'please, chek your internet connection or try again later',
-                acts: {'try again': () => {J.go();}}
-            }, true);
+            //return A.error({
+            //    text: 'service unavailable, reconnecting...',
+            //    desc: 'please, chek your internet connection or try again later',
+            //    acts: {'try again': () => {J.go();}}
+            //}, true);
+            A.lock({
+                text: 'service unavailable',
+                desc: 'attempting to reconnect in 10 seconds',
+                type: 'error'
+            });
+
+            setTimeout(() => {
+                A.lock({
+                    text: 'connecting to ed-void',
+                    type: 'warn'
+                });
+                J.go();
+            }, 10000);
+
         }
 
         if (code === ISSH.OTHER_CLIENT) {
@@ -124,7 +142,6 @@
     @import './styles/vars';
     @import './styles/base';
     @import './styles/look';
-
     nav {
         button { margin-right: 0.3em}
         .drag {

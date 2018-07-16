@@ -1,20 +1,29 @@
 <template>
-    <div v-if="A.stack.length" v-bind:class="['alert', 'modal', A.stack[0].type]">
-        <div class="edfx">
-            <i class="i-ed-alert"></i>
-            <h4>{{A.stack[0].text}}</h4>
-            <p v-if="A.stack[0].desc">{{A.stack[0].desc}}</p>
-
-            <div class="acts" v-if="A.stack[0].prompt" v-for="(prompt, p) in A.stack[0].prompt">
-                <div class="ui">
-                    <input type="text" v-model="prompt.val">
-                    <label>{{p}}</label>
-                </div>
-                <button v-for="(cb, p_act) in prompt.acts" v-on:click="prompt_act(p, p_act, prompt.val)">{{p_act}}</button>
+    <div>
+        <div v-bind:class="['alert', 'modal', A.busy.type]" v-if="A.busy.show">
+            <div class="edfx">
+                <i class="i-ed-alert"></i>
+                <h4 v-if="A.busy.text">{{A.busy.text}}</h4>
+                <p v-if="A.busy.desc">{{A.busy.desc}}</p>
             </div>
+        </div>
+        <div v-if="A.stack.length && !A.busy.show" v-bind:class="['alert', 'modal', A.stack[0].type]">
+            <div class="edfx">
+                <i class="i-ed-alert"></i>
+                <h4>{{A.stack[0].text}}</h4>
+                <p v-if="A.stack[0].desc">{{A.stack[0].desc}}</p>
 
-            <div class="acts" v-if="A.stack[0].acts">
-                <button v-for="(cb, action) in A.stack[0].acts" v-on:click="act(action)">{{action}}</button>
+                <div class="acts" v-if="A.stack[0].prompt" v-for="(prompt, p) in A.stack[0].prompt">
+                    <div class="ui">
+                        <input type="text" v-model="prompt.val">
+                        <label>{{p}}</label>
+                    </div>
+                    <button v-for="(cb, p_act) in prompt.acts" v-on:click="prompt_act(p, p_act, prompt.val)">{{p_act}}</button>
+                </div>
+
+                <div class="acts" v-if="A.stack[0].acts">
+                    <button v-for="(cb, action) in A.stack[0].acts" v-on:click="act(action)">{{action}}</button>
+                </div>
             </div>
         </div>
     </div>
@@ -22,7 +31,12 @@
 
 <script>
     const A = {
-        busy: {/*there is some "loading" object. separated from alert*/},
+        busy: {
+            show: false,
+            type: 'info',
+            text: '',
+            desc: '',
+        },
         stack: [],
         add: function (opt, the_only = false) {
             if (the_only) this.stack.splice(0, this.stack.length);
@@ -38,8 +52,19 @@
             this.add(opt, the_only);
         },
         error: function (opt, the_only = false) {
+            console.log(opt);
             opt.type = 'error';
             this.add(opt, the_only);
+        },
+        lock: function (opt = {}) {
+            this.busy.show = true;
+            this.busy.text = opt.text || 'processing, please wait';
+            this.busy.desc = opt.desc || '';
+            this.busy.type = opt.type || 'info';
+        },
+        release: function () {
+            this.busy.show = false;
+            return this;
         }
     };
     export {A}
