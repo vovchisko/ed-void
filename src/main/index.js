@@ -5,9 +5,6 @@ const UI_Settings = {
     width: 720,
     useContentSize: true,
     show: false,
-    frame: false,
-    toolbar: false,
-    transparent: true,
 };
 
 let INTERACT_MODE = true;
@@ -24,7 +21,12 @@ const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) 
 
 if (isSecondInstance) app.quit();
 
-if (!IS_DEV) global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
+if (!IS_DEV) {
+    global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
+    UI_Settings.frame = false;
+    UI_Settings.toolbar = false;
+    UI_Settings.transparent = true;
+}
 
 let UI;
 

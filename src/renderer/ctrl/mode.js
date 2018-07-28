@@ -2,7 +2,7 @@ import CFG from './cfg'
 import IPC from './ipc'
 
 let MODE = {
-    list: ['log', 'dev', 'cfg'],
+    list: ['log', 'navi', 'run', 'dev', 'cfg'],
     is_in: false,
     is_ready: false,
     is_interact: true,
@@ -20,7 +20,7 @@ let MODE = {
     next: function () {
         let next = 0;
         for (let i = 0; i < this.list.length; i++) {
-            if (this.list[i+1] !== 'cfg' && this.list[i] === this.c_mode && this.list[i + 1] !== undefined) {
+            if (this.list[i + 1] !== 'cfg' && this.list[i] === this.c_mode && this.list[i + 1] !== undefined) {
                 next = i + 1;
                 break;
             }

@@ -17,3 +17,4 @@ if (!CFG.ui_fx_level) CFG.ui_fx_level = 'full';
 
 
 export default CFG;
+

@@ -30,6 +30,7 @@
 </template>
 
 <script>
+
     const A = {
         busy: {
             show: false,
@@ -82,6 +83,8 @@
             },
         }
     }
+
+    
 </script>
 
 <style lang="scss">

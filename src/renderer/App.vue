@@ -5,7 +5,7 @@
             <button v-if="MODE.is_ready && (MODE.is_interact || MODE.c_mode === m)" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
         </nav>
         <alert></alert>
-
+        
         <auth v-if="!MODE.is_in && !MODE.is_ready"></auth>
         <div v-if="MODE.is_ready && MODE.c_mode === 'log'">
             <small class="log">
@@ -22,29 +22,102 @@
                 </div>
             </div>
         </div>
+        <navi v-if="MODE.is_ready && MODE.c_mode === 'navi'"></navi>
+        <run v-if="MODE.is_ready && MODE.c_mode === 'run'"></run>
         <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
-
-
+        <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
+    
     </div>
 </template>
 
 <script>
+    import Vue from "vue";
+    
+    import Alert, {A} from "./components/alert";
 
     import {J, ISSH} from './ctrl/journal';
     import Auth from "./mods/auth";
     import Cfg from "./mods/cfg";
-    import Alert, {A} from "./mods/alert";
+    import Navi from './mods/navi'
+    import Run from './mods/run.vue'
+
     import MODE from './ctrl/mode';
     import IPC from './ctrl/ipc';
     import JLOG from './ctrl/jlog';
     import CFG from './ctrl/cfg';
+    import NET from './ctrl/net';
 
+    export default {
+        components: {Alert, Auth, Cfg, Navi, Run},
+        mounted: function () {
+            MODE.apply();
+        },
+        data: () => {
+            return {MODE: MODE, JLOG: JLOG, CFG: CFG};
+        },
+        name: 'ed-void-client',
+    }
+
+
+    NET.on('uni:overload', (is_overload) => {
+        if (is_overload) {
+            A.lock({
+                type: 'info progress',
+                text: 'processing new data',
+                desc: 'plase wait...',
+            });
+        } else {
+            A.release();
+        }
+    });
+
+    Vue.filter('nn', function (num, frac = 3, min_frac = 0, err = 'ERR!') {
+        num = parseFloat(num);
+        if (isNaN(num) || typeof num !== "number") return err;
+        return (new Intl.NumberFormat('en-US', {
+            maximumFractionDigits: frac,
+            minimumFractionDigits: min_frac
+        })).format(num);
+    });
+
+    Vue.filter('timing', function (num) {
+        num = parseInt(num);
+        if (num && !isNaN(num) && typeof num === "number") {
+            let t = new Date(num);
+            return [
+                ("00" + t.getUTCHours()).slice(-2), ' : ',
+                ("00" + t.getUTCMinutes()).slice(-2), ' : ',
+                ("00" + t.getUTCSeconds()).slice(-2), '.',
+                ("000" + t.getUTCMilliseconds()).slice(-3)
+            ].join('');
+        } else{ return '-- : -- : --.---'}
+    });
+
+    Vue.filter('yn', function (value) {
+        if (typeof value !== "boolean") return value;
+        return value ? 'TRUE' : 'FALSE';
+    });
+
+    Vue.filter('isval', function (value) {
+        return value ? value : 'FALSE';
+    });
+
+    Vue.filter('date', function (value) {
+        if (value) {
+            return moment(String(value)).format('MM/DD/YYYY hh:mm')
+        }
+    });
+    
+    
+    
+    
     J.on('ready', (cfg) => {
         MODE.is_in = true;
         MODE.is_ready = true;
         MODE.go();
         A.release();
     });
+    
     J.on('stop', (code, err) => {
 
         if (code === ISSH.NO_AUTH) {
@@ -114,25 +187,13 @@
         console.log('J-STOPPED', {code, err});
     });
 
-    J.on('ws:any', (c, dat) => { console.log('J-WS-ANY:', c, dat); });
+    //J.on('ws:any', (c, dat) => { console.log('J-WS-ANY:', c, dat); });
 
     // INITIALIZATION
 
     MODE.is_in = !!J.cfg.api_key;
     J.go();
     CFG.apply_ui_cfg();
-
-
-    export default {
-        components: {Alert, Auth, Cfg},
-        mounted: function () {
-            MODE.apply();
-        },
-        data: () => {
-            return {MODE: MODE, JLOG: JLOG, CFG: CFG};
-        },
-        name: 'ed-void-client',
-    }
 
 </script>
 
