@@ -2,8 +2,8 @@
   "name": "ED-VOID",
   "version": "0.3.0-dev",
   "author": "Vladimir Ishchenko <vovchiko@gmail.com>",
-  "description": "ED-VOID Client / In-Development",
-  "license": null,
+  "description": "ED-VOID Client",
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
