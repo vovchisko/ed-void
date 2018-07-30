@@ -1,3 +1,4 @@
+@import "assets";
 /*
   MAIN COLORS
 */
@@ -30,19 +31,20 @@ $black: #000;
 /*
   UI COLOR PALETTE
 */
-$ui-fg: $light;
+$ui-fg: $gray;
 $ui-bg: $dark-deep;
-$ui-text: $light;
+$ui-text: $gray;
 $ui-err: $red;
 $ui-act-fg: $orange;
 
 $ui-line-h: 2.2em;
 
 $all-inputs: "[type=text], [type=password], [type=number], [type=email], [input=button], input:not([type]), select";
-
-@mixin hcaps { font-family: 'euro_capsregular', sans-serif; }
+@mixin single_line { overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+@mixin hcaps { font-family: 'euro_capsregular', sans-serif;  text-transform: lowercase }
 @mixin ui-basic {
-    font-size: inherit;
     display: table-cell;
     line-height: $ui-line-h;
     white-space: nowrap;
@@ -65,7 +67,9 @@ $all-inputs: "[type=text], [type=password], [type=number], [type=email], [input=
     width: 100%; display: block;
 }
 @mixin ui-has-caret {
-    background: transparent url("assets/caret.svg") no-repeat calc(100% - 8px) 50%;
+    background-image: url($asset_caret);
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
 }
 @mixin semiglitch {
     text-shadow: -2px -4px 0 rgba(0, 255, 240, .15), 2px 4px 0 rgba(255, 0, 230, .15);

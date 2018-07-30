@@ -96,5 +96,4 @@
 </script>
 
 <style lang="scss">
-    .ui.input-search.input-system .list button small { display: inline !important; font-size: inherit}
 </style>

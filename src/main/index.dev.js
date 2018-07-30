@@ -12,7 +12,7 @@ process.env.NODE_ENV = 'development';
 
 
 // Install `electron-debug` with `devtron`
-require('electron-debug')({enabled:true, showDevTools: 'docked'});
+require('electron-debug')({enabled:true, showDevTools: 'undocked'});
 
 // Install `vue-devtools`
 require('electron').app.on('ready', () => {

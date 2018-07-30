@@ -48,6 +48,4 @@
 </script>
 
 <style lang="scss">
-    @import '../styles/vars';
-    .star-dist { @include hcaps(); }
 </style>

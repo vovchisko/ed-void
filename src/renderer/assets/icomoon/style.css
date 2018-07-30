@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?fybr8c') format('truetype'),
-    url('fonts/icomoon.woff?fybr8c') format('woff'),
-    url('fonts/icomoon.svg?fybr8c#icomoon') format('svg');
+    url('fonts/icomoon.ttf?dicri1') format('truetype'),
+    url('fonts/icomoon.woff?dicri1') format('woff'),
+    url('fonts/icomoon.svg?dicri1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,6 +40,33 @@ i {
 }
 .i-chevron-down:before {
   content: "\e913";
+}
+.i-check-circle:before {
+  content: "\e934";
+}
+.i-hammer:before {
+  content: "\e92b";
+}
+.i-rocket:before {
+  content: "\e92c";
+}
+.i-shutter:before {
+  content: "\e92d";
+}
+.i-medal-2:before {
+  content: "\e92e";
+}
+.i-medal-3:before {
+  content: "\e92f";
+}
+.i-medal-empty:before {
+  content: "\e930";
+}
+.i-medal-1:before {
+  content: "\e931";
+}
+.i-map-marker-check:before {
+  content: "\e933";
 }
 .i-barcode:before {
   content: "\e92a";

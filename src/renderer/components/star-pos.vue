@@ -26,5 +26,4 @@
 </script>
 
 <style lang="scss">
-    .star-pos { }
 </style>

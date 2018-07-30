@@ -16,7 +16,7 @@ const REG_QUERY = `reg query "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\C
 const DEFAULT_DIR = path.join(os.homedir(), 'Saved Games\\Frontier Developments\\Elite Dangerous');
 
 const log = function () {
-    console.log(...arguments);
+    //console.log(...arguments);
     if (J) J.emit('log', arguments);
 };
 
@@ -62,10 +62,10 @@ class Journal extends EE3 {
 
         this.cfg_read();
 
-        if(this.cfg.dev) {
-             SERVICE_DOMAIN = this.cfg.dev;
-             SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
-             API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
+        if (this.cfg.dev) {
+            SERVICE_DOMAIN = this.cfg.dev;
+            SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
+            API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
         }
     }
 
@@ -202,14 +202,15 @@ class Journal extends EE3 {
     }
 
     ws_connect() {
-        log(`conection to ED-VOID...`);
+        log(`connecting`);
         this.ws = new WS(SERVICE, 'edvoid', {});
         this.ws.on('open', () => {
             this.ws_send('auth', this.cfg.api_key);
         });
 
         this.ws.on('error', (e) => {
-            this.stop(ISSH.NET_SERVICE, e)
+            this.stop(ISSH.NET_SERVICE, e);
+            log('network malfunction.');
         });
 
         this.ws.on('close', (code, reason) => {
@@ -222,10 +223,12 @@ class Journal extends EE3 {
                 this.cfg.api_key = '';
                 this.cfg_save();
                 ish = ISSH.NO_AUTH;
+                log('unauthorized access detected');
             }
 
             if (reason === 'other-client-connected') {
                 ish = ISSH.OTHER_CLIENT;
+                log('other client connected');
             }
 
             return this.stop(ish, {code, reason});
@@ -237,6 +240,7 @@ class Journal extends EE3 {
             if (!m) this.stop(ISSH.ERROR, {code: 'Unable to parse JSON from server', msg: msg});
             if (m.c === 'welcome') {
                 this.emit('ready', this.cfg);
+                log('ed-void online');
                 this._stopped = false;
             }
             this.emit('ws:any', m.c, m.dat);
@@ -423,7 +427,6 @@ class Journal extends EE3 {
                     }).catch((e) => { log('error in sending data record ' + f, e) });
             }).catch((e) => {
                 log('error in readding data ' + f, e);
-
             });
     }
 

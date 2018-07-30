@@ -6,7 +6,7 @@
         <navigator></navigator>
 
         <div class="container-fluid">
-
+            
             <div class="alert info edfx" v-if="N.PILOT.cmdr.run_id">
                 <i class="i-ed-alert"></i>
                 <h4>navigation module read-only</h4>
@@ -14,6 +14,10 @@
             </div>
 
             <div class="row" v-if="!N.PILOT.cmdr.run_id">
+                <div class="col-sm">
+                    <h5>destination</h5>
+                    <destination></destination>
+                </div>
                 <div class="col-sm">
                     <div class="ui" v-if="N.edit">
                         <button @click="set_goal(g)" v-for="g in N.DGOAL" v-bind:class="N.PILOT.dest.goal === g ? 'active':''">{{g}}</button>
@@ -70,6 +74,8 @@
     import InputSystem from "../components/input-system";
     import Navigator from "../components/navigator";
     import {A} from '../components/alert';
+    import Destination from "../components/destination";
+    import CurrPosition from "../components/curr-position";
 
     const N = {
         PILOT: PILOT,
@@ -86,7 +92,7 @@
 
     export default {
         name: "navi",
-        components: {InputSystem, InputStation, InputBody, Navigator},
+        components: {CurrPosition, Destination, InputSystem, InputStation, InputBody, Navigator},
         data: () => {
             return {
                 N: N,

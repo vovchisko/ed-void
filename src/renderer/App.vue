@@ -1,38 +1,46 @@
 <template>
     <div id="app">
-        <nav>
-            <span class="drag" v-if="MODE.is_interact"><i class="i-menu"></i> ED VOID</span>
-            <button v-if="MODE.is_ready && (MODE.is_interact || MODE.c_mode === m)" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
-        </nav>
+        
         <alert></alert>
         
         <auth v-if="!MODE.is_in && !MODE.is_ready"></auth>
-        <div v-if="MODE.is_ready && MODE.c_mode === 'log'">
-            <small class="log">
-                <div v-for="l in JLOG.log">{{l}}</div>
-            </small>
-        </div>
-        <div v-if="MODE.is_ready && MODE.c_mode === 'dev'">
-            <div class="row">
-                <div class="col-sm">
-                    <pre>MODE: {{MODE}}</pre>
-                </div>
-                <div class="col-sm">
-                    <pre>CFG: {{CFG}}</pre>
+        
+        <div class="container-fluid">
+            <nav>
+                <span class="drag" v-if="MODE.is_interact"><i class="i-menu"></i> ED VOID</span>
+                <button v-if="MODE.is_ready && (MODE.is_interact || MODE.c_mode === m)" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
+            </nav>
+            
+            <div v-if="MODE.is_ready && MODE.c_mode === 'log'">
+                <small class="log">
+                    <div v-for="l in JLOG.log">{{l}}</div>
+                </small>
+            </div>
+            
+            <div v-if="MODE.is_ready && MODE.c_mode === 'dev'">
+                <div class="row">
+                    <div class="col-sm">
+                        <pre>MODE: {{MODE}}</pre>
+                    </div>
+                    <div class="col-sm">
+                        <pre>CFG: {{CFG}}</pre>
+                    </div>
                 </div>
             </div>
+            
+            <navi v-if="MODE.is_ready && MODE.c_mode === 'navi'"></navi>
+            <run v-if="MODE.is_ready && MODE.c_mode === 'run'"></run>
+            <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
+        
         </div>
-        <navi v-if="MODE.is_ready && MODE.c_mode === 'navi'"></navi>
-        <run v-if="MODE.is_ready && MODE.c_mode === 'run'"></run>
-        <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
-        <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
-    
+        
+        <pre>{{MODE}}</pre>
     </div>
 </template>
 
 <script>
     import Vue from "vue";
-    
+
     import Alert, {A} from "./components/alert";
 
     import {J, ISSH} from './ctrl/journal';
@@ -90,7 +98,7 @@
                 ("00" + t.getUTCSeconds()).slice(-2), '.',
                 ("000" + t.getUTCMilliseconds()).slice(-3)
             ].join('');
-        } else{ return '-- : -- : --.---'}
+        } else { return '-- : -- : --.---'}
     });
 
     Vue.filter('yn', function (value) {
@@ -107,17 +115,15 @@
             return moment(String(value)).format('MM/DD/YYYY hh:mm')
         }
     });
-    
-    
-    
-    
+
+
     J.on('ready', (cfg) => {
         MODE.is_in = true;
         MODE.is_ready = true;
         MODE.go();
         A.release();
     });
-    
+
     J.on('stop', (code, err) => {
 
         if (code === ISSH.NO_AUTH) {
@@ -127,11 +133,6 @@
 
         if (code === ISSH.NET_SERVICE) {
             MODE.is_in = false;
-            //return A.error({
-            //    text: 'service unavailable, reconnecting...',
-            //    desc: 'please, chek your internet connection or try again later',
-            //    acts: {'try again': () => {J.go();}}
-            //}, true);
             A.lock({
                 text: 'service unavailable',
                 desc: 'attempting to reconnect in 10 seconds',
@@ -200,10 +201,16 @@
 <style lang="scss">
     @import '~bootstrap-css-only/css/bootstrap-reboot.min.css';
     @import '~bootstrap-css-only/css/bootstrap-grid.min.css';
+    @import '~@/assets/icomoon/style.css';
     @import './styles/vars';
     @import './styles/base';
-    @import './styles/look';
+    @import './styles/fonts';
+    @import './styles/fx';
+    
+    @import './styles/overlay';
     nav {
+        user-select: none;
+        cursor: default;
         button { margin-right: 0.3em}
         .drag {
             -webkit-app-region: drag;

@@ -1,61 +1,22 @@
 <template>
     <div class="navigator">
-        <div class="compass edfx" v-if="PILOT.dest.head !== null && PILOT.cmdr.body_id === PILOT.dest.body_id">
+        <div class="compass edfx" ref="elm_compass" v-if="PILOT.dest.head !== null && PILOT.cmdr.body_id === PILOT.dest.body_id">
             <div class="current" v-bind:style="NAV.style_ruler">
                 <b class="head"></b>
             </div>
             <div class="dest" v-if="PILOT.dest.head" v-bind:style="NAV.style_dest">
                 <b class="head" v-bind:class="NAV.dest_align">{{PILOT.dest.head}}</b>
+                
+                <span class="dist" v-if="PILOT.dest.dist"
+                      v-bind:class="PILOT.dest.dist !== null && PILOT.dest.dist <= PILOT.dest.min_dist">
+                    <small>DISTANCE:</small>
+                    {{PILOT.dest.dist | nn(3,3)}} KM
+                    <small v-if="PILOT.dest.min_dist "> check: {{PILOT.dest.min_dist | nn(3,3)}} KM</small>
+                </span>
             </div>
         </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm loc-curr">
-                    <h5>CURR. POSITION</h5>
-                    <div>
-                        <em v-if="PILOT.env.system"><b>SYSTEM</b><span>{{PILOT.env.system.name}}</span></em>
-                        <em v-if="PILOT.env.body"><b>BODY</b><span>{{PILOT.env.body.name}}</span></em>
-                        <em v-if="PILOT.env.station"><b>ST</b><span>{{PILOT.env.station.name}}</span></em>
-                        <em v-if="!PILOT.env.station && !PILOT.env.body"><b>&nbsp;</b><span>deep space</span></em>
-                        <em v-if="PILOT.status.lat !== null"><b>LAT</b><span>{{PILOT.status.lat | nn(4,4)}} <u>°</u></span></em>
-                        <em v-if="PILOT.status.lon !== null"><b>LON</b><span>{{PILOT.status.lon | nn(4,4)}} <u>°</u></span></em>
-                        <em v-if="PILOT.status.alt !== null"><b>ALT</b><span>{{PILOT.status.alt}} <u>M</u></span></em>
-                        <em v-if="PILOT.dest.dist"> <b>DIST</b><span>{{PILOT.dest.dist | nn(3,3)}} <u>KM</u></span> </em>
-                    </div>
-                </div>
-                <div class="col-sm loc-dest">
-                    <h5>DESTINATION</h5>
-                    <div>
-                        <em v-if="PILOT.dest.sys_id"
-                            v-bind:class="PILOT.dest.sys_id === PILOT.cmdr.sys_id ? 'check' : 'uncheck'">
-                            <b>SYS</b><span>{{PILOT.dest.sys_id}}</span>
-                        </em>
-                        <em v-if="PILOT.dest.st_id"
-                            v-bind:class="PILOT.dest.st_id === PILOT.cmdr.st_id ? 'check' : 'uncheck'">
-                            <b>ST</b><span>{{PILOT.dest.st_id}}</span>
-                        </em>
-                        <em v-if="PILOT.dest.body_id"
-                            v-bind:class="PILOT.dest.body_id === PILOT.cmdr.body_id ? 'check' : 'uncheck'">
-                            <b>BODY</b><span>{{PILOT.dest.body_id}}</span>
-                        </em>
-                        <em v-if="PILOT.dest.min_alt !== null"
-                            v-bind:class="PILOT.status.alt !== null && PILOT.status.alt <= PILOT.dest.min_alt ? 'check' : 'uncheck'">
-                            <b>MIN.ALT</b><span>{{PILOT.dest.min_alt}} <u>m</u></span>
-                        </em>
-                        <em v-if="PILOT.dest.lat !== null && PILOT.dest.lon !== null"
-                            v-bind:class="PILOT.dest.dist !== null && PILOT.dest.dist <= 2 ? 'check' : 'uncheck'">
-                            <b>LAT</b><span>{{PILOT.dest.lat | nn(4,4)}} <u>°</u></span>
-                            <b>LON</b><span>{{PILOT.dest.lon | nn(4,4)}} <u>°</u></span>
-                        </em>
-                        <em v-if="PILOT.dest.min_dist"
-                            v-bind:class="PILOT.dest.dist !== null && PILOT.dest.dist <= 2 ? 'check' : 'uncheck'">
-                            <b>MIN.DIST</b><span>{{PILOT.dest.min_dist | nn(3,3)}} <u>Km</u></span>
-                        </em>
-                        <em class="no-dest">no destination set</em>
-                    </div>
-                </div>
-            </div>
+        <div v-if="!PILOT.cmdr.body_id || !PILOT.dest.head || PILOT.cmdr.body_id !== PILOT.dest.body_id">
+            <destination></destination>
         </div>
     </div>
 
@@ -64,22 +25,34 @@
 <script>
     import PILOT from '../ctrl/pilot'
     import NET from '../ctrl/net'
+    import Destination from "./destination";
 
     const NAV = {
         style_ruler: {'background-position-x': 0},
         style_dest: {'background-position-x': 0},
     };
 
+    let $refs = null;
+
     export default {
         name: "navigator",
+        components: {Destination},
+        mounted: function () {
+            $refs = this.$refs;
+            update_head();
+        },
+        beforeDestroy: function () { $refs = null; },
         data: () => {return {NAV: NAV, PILOT: PILOT}}
     }
 
     NET.on('uni:status', () => update_head());
     NET.on('uni:dest', () => update_head());
+    NET.on('uni:dest-set', () => update_head());
 
     function update_head() {
-        let rw = window.innerWidth;
+        if (!$refs || !$refs.elm_compass) return;
+        let rw = $refs.elm_compass.clientWidth;
+        console.log(rw);
         let offset = (rw / 2) - PILOT.status.head * 4;
         NAV.style_ruler['background-position-x'] = offset + 'px';
         if (PILOT.dest.enabled) {
@@ -104,7 +77,7 @@
             .current {
                 image-rendering: pixelated;
                 position: relative;
-                background: transparent url('../assets/nav-ruler.gif') 0 5px repeat-x;
+                background: transparent url($asset_nav_ruler) 0 5px repeat-x;
                 width: 100%; height: 42px;
                 margin: 0;
                 transition: all linear 1s;
@@ -112,22 +85,22 @@
             }
             .dest {
                 image-rendering: pixelated;
-                background: transparent url('../assets/nav-ruler-dest.gif') 0 0 repeat-x;
-                width: 100%; height: 50px;
+                background: transparent url($asset_nav_ruler_dest) 0 0 repeat-x;
+                width: 100%; height: 55px;
                 position: relative;transition: all linear 500ms;
-
+                
                 .head {
                     transition: transform linear 0.5s;
                     width: 50px;
-                    font-size: 17px;
+                    font-size: 18px;
                     display: block;
                     text-align: center;
-                    border: 1px solid #555;
+                    border: 2px solid #555;
                     color: #555;
                     position: absolute;
                     left: 50%;;
-                    margin: 11px 0 0 -25px;}
-
+                    margin: 14px 0 0 -25px;}
+                
                 .head:after {content: "";width: 0;height: 0;border-left: 8px solid transparent;border-right: 8px solid transparent;border-bottom: 8px solid #555;display: block;position: absolute;left: 50%;margin: 3px 0 0 -8px;top: -14px;}
                 .head:before {content: "vector";
                     color: #676767;display: block;position: absolute;left: 50%;margin: 0 0 0 -100px;top: 21px;width: 200px;text-align: center;text-transform: uppercase;font-size: 15px;}
@@ -143,19 +116,19 @@
                 .head.err { animation: glitched_text 2.5s infinite; color: $red; border-color: $red; }
                 .head.err:after { border-bottom-color: $red; }
                 .head.err:before { content: 'destination data invalid'; color: $red }
+                
+                .dist {
+                    @include hcaps();
+                    position: absolute;
+                    right: 0; bottom: 0;
+                    font-size: 1.4em;
+                    text-align: right;
+                    small {display: block; font-size: 0.6em; line-height: 1 }
+                    
+                }
             }
         }
-
-        .loc-curr, .loc-dest {
-            h4 { margin-bottom: 0; }
-            em { @include hcaps(); font-size: 1em}
-            em > b { width: 30%}
-            em > span { width: 70%; text-align: left }
-            em.check { color: $green; }
-        }
-
-        .loc-dest em.no-dest {display: none; opacity: 0.5}
-        .loc-dest em:first-child {display: block !important;}
+        
         small { color: darken($ui-text, 25%);}
     }
 </style>

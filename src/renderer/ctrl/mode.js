@@ -31,12 +31,10 @@ let MODE = {
         document.body.setAttribute('env', process.env.NODE_ENV);
         document.body.setAttribute('interact', this.is_interact ? 'on' : 'off');
         document.body.setAttribute('overlay', this.is_overlay ? 'on' : 'off');
-
     }
 };
 
 MODE.c_mode = CFG.c_mode;
-
 
 IPC.on('set:interact', (mode) => {
     MODE.is_interact = mode;
@@ -45,6 +43,7 @@ IPC.on('set:interact', (mode) => {
 IPC.on('set:overlay', (mode) => {
     MODE.is_overlay = mode;
     MODE.apply();
+    console.log('BOOM!', MODE.is_overlay)
 });
 IPC.on('mode:next', () => { MODE.next(); });
 
