@@ -1,8 +1,7 @@
 import CFG from './cfg'
-import IPC from './ipc'
 
 let MODE = {
-    list: ['log', 'navi', 'run', 'dev', 'cfg'],
+    list: [],
     is_in: false,
     is_ready: false,
     is_interact: true,
@@ -27,24 +26,9 @@ let MODE = {
         }
         this.go(this.list[next]);
     },
-    apply: function () {
-        document.body.setAttribute('env', process.env.NODE_ENV);
-        document.body.setAttribute('interact', this.is_interact ? 'on' : 'off');
-        document.body.setAttribute('overlay', this.is_overlay ? 'on' : 'off');
-    }
+
 };
 
 MODE.c_mode = CFG.c_mode;
-
-IPC.on('set:interact', (mode) => {
-    MODE.is_interact = mode;
-    MODE.apply();
-});
-IPC.on('set:overlay', (mode) => {
-    MODE.is_overlay = mode;
-    MODE.apply();
-    console.log('BOOM!', MODE.is_overlay)
-});
-IPC.on('mode:next', () => { MODE.next(); });
 
 export default MODE;

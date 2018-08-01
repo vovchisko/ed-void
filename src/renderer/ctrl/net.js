@@ -42,7 +42,7 @@ class Network extends EventEmitter3 {
     }
 
     send(c, dat) {
-        J.ws_send(c,dat);
+        J.ws_send(c, dat);
     };
 
 }
@@ -50,5 +50,6 @@ class Network extends EventEmitter3 {
 const NET = new Network();
 
 NET.on('uni:alert', (a) => A.add(a));
+
 
 export default NET;

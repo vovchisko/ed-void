@@ -240,7 +240,7 @@ class Journal extends EE3 {
             if (!m) this.stop(ISSH.ERROR, {code: 'Unable to parse JSON from server', msg: msg});
             if (m.c === 'welcome') {
                 this.emit('ready', this.cfg);
-                log('ed-void online');
+                log('ed-void systems online');
                 this._stopped = false;
             }
             this.emit('ws:any', m.c, m.dat);

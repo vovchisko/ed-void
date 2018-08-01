@@ -98,7 +98,7 @@ a {
     &:hover { text-decoration: underline; color: $cyan}
 }
 .float-right {float: right }
-#app { padding-bottom: 2em; }
+#app { padding-bottom: 1em; }
 //
 i { vertical-align: middle; display: inline-block; }
 .wide { width: 100%; display: block; }
@@ -177,9 +177,12 @@ hr {
 }
 
 
-
 .starpos { color: darken($ui-text, 25%); margin-bottom: 0.5em }
 .starpos u { font-size: 0.8em; color: darken($ui-text, 25%); }
+
+.star-dist { @include hcaps(); }
+
+
 .tip-box {
     padding-left: 3.5em;
     &.warn > .icon { color: $orange}
@@ -193,3 +196,31 @@ hr {
         small { display: block; font-size: 0.9em; line-height: 1.2em }
     }
 }
+
+.ui.input-search {
+    &.z-overall { z-index: 200; }
+    & .remove { visibility: hidden; }
+    &:hover .remove { visibility: visible}
+    input { @include hcaps(); }
+    input:focus::placeholder { color: darken($ui-text, 25%); }
+    .list { visibility: hidden; transition-duration: 300ms;}
+    input:focus ~ .list { visibility: visible; transition-duration: 0ms;}
+    .list {
+        z-index: 2000;
+        position: absolute;
+        padding: 0.2em 0;
+        top: 100%; width: 100%;
+        background: darken($ui-bg, 3%);
+        button {
+            @include single_line();
+            text-align: left;
+            width: 100%;
+            display: block;
+            padding: 0.3em 0.5em;
+            & > small {opacity: 0.5; display: block; }
+            &.cancel { color: $orange}
+        }
+    }
+    label .inline-msg { color: $ui-text; }
+}
+.ui.input-search.input-system .list button small { display: inline !important; font-size: inherit}

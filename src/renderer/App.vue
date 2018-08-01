@@ -2,39 +2,18 @@
     <div id="app">
         
         <alert></alert>
+        <auth v-if="!MODE.is_in"></auth>
         
-        <auth v-if="!MODE.is_in && !MODE.is_ready"></auth>
+        <navbar></navbar>
         
-        <div class="container-fluid">
-            <nav>
-                <span class="drag" v-if="MODE.is_interact"><i class="i-menu"></i> ED VOID</span>
-                <button v-if="MODE.is_ready && (MODE.is_interact || MODE.c_mode === m)" v-for="(m) in MODE.list" @click="MODE.go(m)" v-bind:class="MODE.c_mode === m ? 'semi-active' : ''">{{m}}</button>
-            </nav>
-            
-            <div v-if="MODE.is_ready && MODE.c_mode === 'log'">
-                <small class="log">
-                    <div v-for="l in JLOG.log">{{l}}</div>
-                </small>
-            </div>
-            
-            <div v-if="MODE.is_ready && MODE.c_mode === 'dev'">
-                <div class="row">
-                    <div class="col-sm">
-                        <pre>MODE: {{MODE}}</pre>
-                    </div>
-                    <div class="col-sm">
-                        <pre>CFG: {{CFG}}</pre>
-                    </div>
-                </div>
-            </div>
-            
-            <navi v-if="MODE.is_ready && MODE.c_mode === 'navi'"></navi>
-            <run v-if="MODE.is_ready && MODE.c_mode === 'run'"></run>
-            <cfg v-if="MODE.is_ready && MODE.c_mode === 'cfg'"></cfg>
-        
+        <div class="container-fluid" v-if="MODE.is_in && MODE.is_ready">
+            <jlog v-if=" MODE.c_mode === 'log'"></jlog>
+            <navi v-if=" MODE.c_mode === 'navi'"></navi>
+            <run v-if="MODE.c_mode === 'run'"></run>
+            <cfg v-if=" MODE.c_mode === 'cfg'"></cfg>
+            <dev v-if=" MODE.c_mode === 'dev'"></dev>
         </div>
-        
-        <pre>{{MODE}}</pre>
+    
     </div>
 </template>
 
@@ -46,19 +25,24 @@
     import {J, ISSH} from './ctrl/journal';
     import Auth from "./mods/auth";
     import Cfg from "./mods/cfg";
+    import Jlog from "./mods/jlog";
     import Navi from './mods/navi'
     import Run from './mods/run.vue'
+    import Dev from './mods/dev.vue'
 
     import MODE from './ctrl/mode';
     import IPC from './ctrl/ipc';
     import JLOG from './ctrl/jlog';
     import CFG from './ctrl/cfg';
     import NET from './ctrl/net';
+    import Navbar from "./mods/navbar";
+
+    MODE.list.push('log', 'cmdr', 'navi', 'run', 'cfg');
 
     export default {
-        components: {Alert, Auth, Cfg, Navi, Run},
+        components: {Navbar, Alert, Auth, Jlog, Cfg, Navi, Run, Dev},
         mounted: function () {
-            MODE.apply();
+            IPC.apply_to_mode();
         },
         data: () => {
             return {MODE: MODE, JLOG: JLOG, CFG: CFG};
@@ -124,6 +108,13 @@
         A.release();
     });
 
+
+    NET.on('uni:user', (user) => {
+        if (user.dev && !MODE.list.includes('dev'))
+            MODE.list.push('dev');
+    });
+
+
     J.on('stop', (code, err) => {
 
         if (code === ISSH.NO_AUTH) {
@@ -135,7 +126,7 @@
             MODE.is_in = false;
             A.lock({
                 text: 'service unavailable',
-                desc: 'attempting to reconnect in 10 seconds',
+                desc: 'attempting to reconnect. please wait',
                 type: 'error'
             });
 
@@ -162,13 +153,12 @@
             return A.warn({
                 text: 'Unable to locate journals!',
                 desc: 'Void can`t automatically locate your journals. Specify path manually:',
-                act: {'do something': () => {console.log('something!')}},
                 prompt: {
                     'please, specify correct journal path': {
                         val: J.cfg.journal_path,
                         acts: {
                             'apply path': function (input) {
-                                console.log('okay: ', input);
+
                                 J.cfg.journal_path = input;
                                 J.cfg.last_journal = -1;
                                 J.cfg.last_record = -1;
@@ -206,7 +196,6 @@
     @import './styles/base';
     @import './styles/fonts';
     @import './styles/fx';
-    
     @import './styles/overlay';
     nav {
         user-select: none;
