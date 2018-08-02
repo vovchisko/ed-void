@@ -15,11 +15,10 @@
                 </span>
             </div>
         </div>
-        <div v-if="!PILOT.cmdr.body_id || !PILOT.dest.head || PILOT.cmdr.body_id !== PILOT.dest.body_id">
+        <div v-if="PILOT.dest.head === null || PILOT.cmdr.body_id !== PILOT.dest.body_id">
             <destination></destination>
         </div>
     </div>
-
 </template>
 
 <script>
@@ -91,15 +90,16 @@
                 
                 .head {
                     transition: transform linear 0.5s;
-                    width: 50px;
+                    width: 55px;
                     font-size: 18px;
                     display: block;
                     text-align: center;
-                    border: 2px solid #555;
+                    border: 1px solid #555;
                     color: #555;
                     position: absolute;
                     left: 50%;;
-                    margin: 14px 0 0 -25px;}
+                    margin: 14px 0 0 -25px;
+                }
                 
                 .head:after {content: "";width: 0;height: 0;border-left: 8px solid transparent;border-right: 8px solid transparent;border-bottom: 8px solid #555;display: block;position: absolute;left: 50%;margin: 3px 0 0 -8px;top: -14px;}
                 .head:before {content: "vector";

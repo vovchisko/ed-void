@@ -1,65 +1,62 @@
 <template>
     <div id="navi">
-
-        <header>{{env.system? env.system.name : 'UNDEFINED SYSTEM'}}{{env.body ? ' / ' + env.body.short_name : '' }}{{env.station ? ' / ' + env.station.name : '' }}</header>
-
-        <navigator></navigator>
         
-        <div class="container-fluid">
-        <hr>
-            <div class="alert info edfx" v-if="N.PILOT.cmdr.run_id">
+        <header>{{env.system? env.system.name : 'UNDEFINED SYSTEM'}}{{env.body ? ' / ' + env.body.short_name : '' }}{{env.station ? ' / ' + env.station.name : '' }}</header>
+        
+        <navigator class="ov ov-nav"></navigator>
+        
+        <div class="ov ov-right-top ov-interact" v-if="N.PILOT.cmdr.run_id">
+            <div class="alert info edfx">
                 <i class="i-ed-alert"></i>
                 <h4>navigation module read-only</h4>
                 <p>you can't change your destination manually duiring void-run</p>
             </div>
-
-            <div class="row" v-if="!N.PILOT.cmdr.run_id">
-                <div class="col-sm">
-                    <div class="ui" v-if="N.edit">
-                        <button @click="set_goal(g)" v-for="g in N.DGOAL" v-bind:class="N.PILOT.dest.goal === g ? 'active':''">{{g}}</button>
-                    </div>
-    
-                    <div v-if="N.edit">
-                        <div v-if="N.PILOT.dest.goal === N.DGOAL.STATION">
-                            <input-station :id.sync="N.PILOT.dest.st_id" label="target station"></input-station>
-                        </div>
-        
-                        <div v-if="N.PILOT.dest.goal ===  N.DGOAL.SYSTEM">
-                            <input-system :id.sync="N.PILOT.dest.sys_id" label="target system"></input-system>
-                        </div>
-        
-                        <div v-if="N.PILOT.dest.goal ===  N.DGOAL.BODY">
-                            <input-body :id.sync="N.PILOT.dest.body_id" label="target body (approach)"></input-body>
-                        </div>
-        
-                        <div v-if="N.PILOT.dest.goal === N.DGOAL.SURFACE">
-                            <input-body :id.sync="N.PILOT.dest.body_id" label="target body"></input-body>
-                            <div class="ui">
-                                <input type="number" min="-90" max="90" step="any" @focus="$event.target.select()" v-model="N.PILOT.dest.lat">
-                                <label>lat</label>
-                            </div>
-                            <div class="ui">
-                                <input type="number" min="-180" max="180" step="any" @focus="$event.target.select()" v-model="N.PILOT.dest.lon">
-                                <label>lon</label>
-                            </div>
-                            <div class="ui" v-if="N.PILOT.dest.f.includes('-CR')">
-                                <input type="number" @focus="$event.target.select()" v-model="N.PILOT.dest.r">
-                                <label>target body radius</label>
-                            </div>
-                        </div>
-    
-                    </div>
-    
-                    <div class="ui">
-                        <button v-if="!N.edit" v-on:click="dest_edit()"><i class="i-aim"></i> edit destination</button>
-                        <button v-if="N.edit" v-on:click="dest_apply()"><i class="i-aim"></i> apply destination</button>&nbsp;
-                        <button v-on:click="dest_clear()" v-if="N.PILOT.dest.goal"><i class="i-cross"></i> clear</button>
-                    </div>
-
+        </div>
+        <div class="row" v-if="!N.PILOT.cmdr.run_id">
+            <div class="col-sm ov ov-main ov-interact">
+                <div class="ui" v-if="N.edit">
+                    <button @click="set_goal(g)" v-for="g in N.DGOAL" v-bind:class="N.PILOT.dest.goal === g ? 'active':''">{{g}}</button>
                 </div>
-                <div class="col-sm">
-                    <curr-position></curr-position>
+                
+                <div v-if="N.edit">
+                    <div v-if="N.PILOT.dest.goal === N.DGOAL.STATION">
+                        <input-station :id.sync="N.PILOT.dest.st_id" label="target station"></input-station>
+                    </div>
+                    
+                    <div v-if="N.PILOT.dest.goal ===  N.DGOAL.SYSTEM">
+                        <input-system :id.sync="N.PILOT.dest.sys_id" label="target system"></input-system>
+                    </div>
+                    
+                    <div v-if="N.PILOT.dest.goal ===  N.DGOAL.BODY">
+                        <input-body :id.sync="N.PILOT.dest.body_id" label="target body (approach)"></input-body>
+                    </div>
+                    
+                    <div v-if="N.PILOT.dest.goal === N.DGOAL.SURFACE">
+                        <input-body :id.sync="N.PILOT.dest.body_id" label="target body"></input-body>
+                        <div class="ui">
+                            <input type="number" min="-90" max="90" step="any" @focus="$event.target.select()" v-model="N.PILOT.dest.lat">
+                            <label>lat</label>
+                        </div>
+                        <div class="ui">
+                            <input type="number" min="-180" max="180" step="any" @focus="$event.target.select()" v-model="N.PILOT.dest.lon">
+                            <label>lon</label>
+                        </div>
+                        <div class="ui" v-if="N.PILOT.dest.f.includes('-CR')">
+                            <input type="number" @focus="$event.target.select()" v-model="N.PILOT.dest.r">
+                            <label>target body radius</label>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="ui">
+                    <button v-if="!N.edit" v-on:click="dest_edit()"><i class="i-aim"></i> edit destination</button>
+                    <button v-if="N.edit" v-on:click="dest_apply()"><i class="i-aim"></i> apply destination</button>&nbsp;
+                    <button v-on:click="dest_clear()" v-if="N.PILOT.dest.goal"><i class="i-cross"></i> clear</button>
+                </div>
+            
+            </div>
+            <div class="col-sm ov ov-left ov-interact">
+                <curr-position></curr-position>
             </div>
         </div>
     </div>
@@ -122,14 +119,13 @@
         if (dest.f && dest.f.includes('/ER')) { N.edit = true; }
     });
 
-
 </script>
 
 <style lang="scss">
     @import "../styles/vars";
-
+    
     // NAV MODULE
-
+    
     #navi {
         .alert.info { margin-top: 2em}
     }

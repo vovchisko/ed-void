@@ -15,11 +15,61 @@
                 <div class="col-sm">
                     <pre>CFG: {{CFG}}</pre>
                 </div>
+                <div class="col-sm">
+                    <pre>MODE: {{MODE}}</pre>
+                </div>
             </div>
         </div>
         
         <div class="container-fluid" v-if="c_tab === 'test'">
-            TEST
+            <div class="ov ov-nav">ov-nav
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
+            <div class="ov ov-top-line ov-solid">top-line
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
+            <div class="ov ov-right-top">right-top
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
+            <div class="ov ov-right ov-solid">right
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
+            <div class="ov ov-left-top">left-top
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
+            <div class="ov ov-left ov-solid">left
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
+            <div class="ov ov-center ">center
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
+            <div class="ov ov-center-long ov-interact">center-long
+                <div class="alert info edfx">
+                    <i class="i-ed-alert"></i>
+                    <h4>ui-block postion example</h4>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -27,6 +77,10 @@
 <script>
     import PILOT from '../ctrl/pilot'
     import CFG from '../ctrl/cfg'
+    import MODE from '../ctrl/mode';
+    import Navigator from "../components/navigator";
+    import Destination from "../components/destination";
+    import CurrPosition from "../components/curr-position";
 
     const dev = {
         pipe: [],
@@ -36,20 +90,28 @@
 
     export default {
         name: "dev",
-        components: {},
+        components: {CurrPosition, Destination, Navigator},
+
         data: () => {
             return {
                 c_tab: 'test',
                 tabs: ['test', 'stat'],
+                MODE: MODE,
                 PILOT: PILOT,
                 CFG: CFG,
             }
         },
-        methods: {}
+
     }
 
 </script>
 
 <style lang="scss">
+    
+    body {
+        // background-image: url('../../public/assets/overlay-test/6.jpg') !important;
+        background-size: contain !important;
+        background-position: 50% !important;
+        background-repeat: no-repeat !important;}
 
 </style>

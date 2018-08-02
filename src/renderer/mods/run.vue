@@ -14,15 +14,14 @@
         
         <!-- TRACKS -->
         
-        <div class="container-fluid" v-if="state==='tracks' && !PILOT.cmdr.run_id">
+        <div class="ov ov-main ov-interact" v-if="state==='tracks' && !PILOT.cmdr.run_id">
             <h3>tracks</h3>
             <div class="tracks">
                 <div v-for="track in R.tracks" class="track">
-                    <div class="row">
+                    <div class="row keep">
                         <div class="col-sm-8 listed">
                             <h4>{{track.name}} <span>{{track.type}}</span></h4>
                             <p>{{track.desc}}</p>
-                            <em><b>vehicle</b><span>{{track.vehicle}}</span></em>
                             <em><b>sponsor</b><span>{{track.sponsor}}</span></em>
                         </div>
                         <div class="col-sm-2">
@@ -35,17 +34,17 @@
         
         <!-- RUN LIST IN SETUP  -->
         
-        <div class="container-fluid runs" v-if="state==='runs' && !PILOT.cmdr.run_id">
-            <h5>active runs &nbsp;
+        <div class="runs ov ov-main ov-interact" v-if="state==='runs' && !PILOT.cmdr.run_id">
+            <h5>active runs
                 <button v-on:click="get_runs()" class="link"><i class="i-sync"></i> refresh</button>
             </h5>
             
-            <div v-if="!R.runs.length" class="alert edfx">
-                <br>
-                <i class="i-ed-alert"></i>
-                <h3>no active runs found</h3>
-                <p>you can host one from TRACKS section</p>
-            
+            <div v-if="!R.runs.length" class="ov-center-top">
+                <div class="alert edfx">
+                    <i class="i-ed-alert"></i>
+                    <h3>no active runs found</h3>
+                    <p>you can host one from TRACKS section</p>
+                </div>
             </div>
             
             <div v-if="R.runs.length">
@@ -76,7 +75,7 @@
         
         <div class="active-run" v-if="PILOT.cmdr.run_id">
             
-            <div class="run-status">
+            <div class="run-status ov ov-top-line">
                 <small>{{R.run.name}}</small>
                 <div v-if="R.run.status === R.RUNST.SETUP">
                     <h2 class="edfx" v-if="R.run.c_down===null">waiting for other pilots</h2>
@@ -92,36 +91,39 @@
             
             </div>
             
-            <navigator></navigator>
             
-            <div class="run-pilots">
-                <div class="row pilot" v-for="(pilot, k) in R.run.chart">
-                    <div class="col-sm">
-                        <b>{{pilot.pos}} - {{pilot._id.split('/')[1]}}</b>
-                    </div>
-                    <div class="col-sm pilot-status" v-if="R.run.status === R.RUNST.SETUP">
+            
+            <navigator class="ov ov-nav"></navigator>
+            
+            <div class=" ov ov-left">
+                <div class="run-pilots">
+                    <div class="row keep pilot" v-for="(pilot, k) in R.run.chart">
+                        <div class="col-sm">
+                            <b>{{pilot.pos}} - {{pilot._id.split('/')[1]}}</b>
+                        </div>
+                        <div class="col-sm">
+                            <div class="pilot-status" v-if="R.run.status === R.RUNST.SETUP">
                         <span v-if="pilot.x > 0">DIST:
                             <star-dist v-if="pilot.x > 0"
                                        :dest="R.run.loc.st_id || R.run.loc.sys_id ||R.run.loc.body_id"
                                        :pos="pilot.sys_id"></star-dist>
                         </span>
+                                
+                                <span v-if="pilot.x <= 0 && pilot._id !== PILOT.cmdr._id">{{pilot.status}}</span>
+                                <button class="link semi-active" v-on:click="run_ready()" v-if="R.run.status === 'setup' && PILOT.dest.x === 0 && pilot._id === PILOT.cmdr._id">
+                                    {{R.run.pilots[PILOT.cmdr._id].status === R.RUNNER.READY ? 'ready' : 'get ready!' }}
+                                    <i v-if="R.run.pilots[PILOT.cmdr._id].status === R.RUNNER.READY" class="i-cross"></i>
+                                </button>
+                            </div>
+                            <div v-if="R.run.status !== R.RUNST.SETUP">
+                                {{pilot.t | timing}} - {{pilot.status}}<br>
+                                {{pilot.score}} Pt
+                            </div>
                         
-                        <span v-if="pilot.x <= 0 && pilot._id !== PILOT.cmdr._id">{{pilot.status}}</span>
-                        <button class="link semi-active" v-on:click="run_ready()" v-if="R.run.status === 'setup' && PILOT.dest.x === 0 && pilot._id === PILOT.cmdr._id">
-                            {{R.run.pilots[PILOT.cmdr._id].status === R.RUNNER.READY ? 'ready' : 'get ready!' }}
-                            <i v-if="R.run.pilots[PILOT.cmdr._id].status === R.RUNNER.READY" class="i-cross"></i>
-                        </button>
+                        </div>
                     </div>
-                    <div class="col-sm" v-if="R.run.status !== R.RUNST.SETUP">
-                        {{pilot.t | timing}} - {{pilot.status}}
-                    </div>
-                    <div class="col-sm">
-                        {{pilot.score}} Pt
-                    </div>
-                
                 </div>
             </div>
-        
         </div>
         
         <!--div class="row">
@@ -314,7 +316,7 @@
         padding: 1em 0;
         @include hcaps();
         b { color: $orange; font-weight: normal }
-        .pilot { line-height: 2em}
+        .pilot { margin: 0 0.5em}
     }
     .run-item {
         &:last-of-type { border-bottom: 1px solid #1e1e23; }

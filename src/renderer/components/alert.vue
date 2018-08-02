@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="A.busy.show || A.stack.length">
         <div v-bind:class="['alert', 'modal', A.busy.type]" v-if="A.busy.show">
             <div class="edfx">
                 <i class="i-ed-alert"></i>

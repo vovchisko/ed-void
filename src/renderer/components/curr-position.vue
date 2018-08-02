@@ -1,5 +1,7 @@
 <template>
     <div class="loc-curr">
+        <h5>curr. position</h5>
+    
         <em v-if="PILOT.env.system"><b>SYSTEM</b><span>{{PILOT.env.system.name}}</span></em>
         <em v-if="PILOT.env.body"><b>BODY</b><span>{{PILOT.env.body.name}}</span></em>
         <em v-if="PILOT.env.station"><b>ST</b><span>{{PILOT.env.station.name}}</span></em>

@@ -41,7 +41,7 @@
                 this.v1 = typeof this.pos === 'string' ? this.pos.split('@')[1].split('/')[0].split(':') : this.pos.map(x => x);
                 this.v2 = typeof this.dest === 'string' ? this.dest.split('@')[1].split('/')[0].split(':') : this.dest.map(x => x);
                 let d = TOOLS.distance(this.v1, this.v2) / 32;
-                this.dist = d ? this.$options.filters.nn(d, 0, 0) + ' ly' : 'curr. sustem';
+                this.dist = d ? this.$options.filters.nn(d, 0, 0) + ' ly' : 'curr. system';
             }
         }
     }

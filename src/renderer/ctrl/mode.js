@@ -15,6 +15,7 @@ let MODE = {
             this.c_mode = 'log';
         }
         CFG.c_mode = this.c_mode;
+        CFG.save();
     },
     next: function () {
         let next = 0;

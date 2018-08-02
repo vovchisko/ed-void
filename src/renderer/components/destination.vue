@@ -1,5 +1,7 @@
 <template>
     <div class="loc-dest">
+        <h5>destination</h5>
+        
         <em v-if="PILOT.dest.sys_id"
             v-bind:class="PILOT.dest.sys_id === PILOT.cmdr.sys_id ? 'check' : 'uncheck'">
             <b>SYS</b><span>{{PILOT.dest.sys_id}}</span>
@@ -22,7 +24,7 @@
             <b>LON</b><span>{{PILOT.dest.lon | nn(4,4)}} <u>°</u></span>
         </em>
         
-        <em class="no-dest">no destination set</em>
+        <em class="no-dest">destination not specified</em>
     </div>
 </template>
 
@@ -37,7 +39,6 @@
 
 <style lang="scss">
     @import '../styles/vars';
-    
     .loc-dest {
         h4 { margin-bottom: 0; }
         em { @include hcaps(); font-size: 1em}
@@ -45,7 +46,6 @@
         em > span { width: 70%; text-align: left }
         em.check { color: $green; }
     }
-    
     .loc-dest em.no-dest {display: none; opacity: 0.5}
-    .loc-dest em:first-child {display: block !important;}
+    .loc-dest em:first-of-type {display: block !important;}
 </style>

@@ -7,6 +7,7 @@ const PILOT = {
         name: null,
         sys_id: null,
         body_id: null,
+        st_id: null,
         starpos: [0, 0, 0],
         last_rec: null,
     },
