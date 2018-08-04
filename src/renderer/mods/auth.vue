@@ -1,28 +1,32 @@
 <template>
     <div id="auth">
         <form>
-
+            
             <h2>ed-void login</h2>
-
+            
             <div v-bind:class="['msg',msg.type]">{{msg.text}}</div>
-
+            
             <div class="ui">
                 <input type="email" v-model="auth.email"/>
                 <label>Email</label>
             </div>
-
+            
             <div class="ui">
                 <input type="password" v-model="auth.pass"/>
                 <label>Password</label>
             </div>
-
+            
             <div class="ui">
                 <button type="button" v-on:click="signin()">Sign in</button>
             </div>
-
+            
             <div class="ui links">
                 <a class="button link" href="http://ed-void.com/" target="_blank">New Pilot</a>
                 <a class="button link" href="http://ed-void.com/" target="_blank">reset password</a>
+            </div>
+            
+            <div class="version">
+                <small>{{MODE.version}}</small>
             </div>
         </form>
     </div>
@@ -31,6 +35,7 @@
 <script>
 
     import {J} from '../ctrl/journal';
+    import MODE from '../ctrl/mode';
 
     export default {
         name: "auth",
@@ -41,7 +46,8 @@
                 auth: {
                     email: '',
                     pass: '',
-                }
+                },
+                MODE: MODE
             }
         },
         methods: {
