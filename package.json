@@ -3,6 +3,7 @@
   "version": "0.3.0-dev",
   "author": "Vladimir Ishchenko <vovchiko@gmail.com>",
   "description": "ED-VOID Client",
+  "repository": "https://github.com/vovchisko/ed-void",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {

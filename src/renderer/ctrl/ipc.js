@@ -36,3 +36,5 @@ IPC.on('set:overlay', (mode) => {
     IPC.apply_to_mode();
 });
 IPC.on('mode:next', () => { MODE.next(); });
+
+MODE.version = process.env.npm_package_version;

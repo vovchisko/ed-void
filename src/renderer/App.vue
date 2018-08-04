@@ -15,7 +15,6 @@
             <dev v-if=" MODE.c_mode === 'dev'"></dev>
         </div>
     
-        <small>v0.3.0-dev</small>
     </div>
 </template>
 
