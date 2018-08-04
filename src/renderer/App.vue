@@ -9,6 +9,7 @@
         <div class="container-fluid" v-if="MODE.is_in && MODE.is_ready">
             <jlog v-if=" MODE.c_mode === 'log'"></jlog>
             <cmdr v-if=" MODE.c_mode === 'cmdr'"></cmdr>
+            <edata v-if=" MODE.c_mode === 'edata'"></edata>
             <navi v-if=" MODE.c_mode === 'navi'"></navi>
             <run v-if="MODE.c_mode === 'run'"></run>
             <cfg v-if=" MODE.c_mode === 'cfg'"></cfg>
@@ -27,6 +28,7 @@
     import Auth from "./mods/auth";
     import Cfg from "./mods/cfg";
     import Jlog from "./mods/jlog";
+    import Edata from "./mods/edata";
     import Cmdr from "./mods/cmdr";
     import Navi from './mods/navi'
     import Run from './mods/run'
@@ -39,10 +41,10 @@
     import NET from './ctrl/net';
     import Navbar from "./mods/navbar";
 
-    MODE.list.push('log', 'cmdr', 'navi', 'run', 'cfg');
+    MODE.list.push('log', 'cmdr', 'run', 'edata', 'navi',  'cfg');
 
     export default {
-        components: {Navbar, Alert, Auth, Jlog, Cmdr, Cfg, Navi, Run, Dev},
+        components: {Navbar, Alert, Auth, Edata, Jlog, Cmdr, Cfg, Navi, Run, Dev},
         mounted: function () {
             IPC.apply_to_mode();
         },

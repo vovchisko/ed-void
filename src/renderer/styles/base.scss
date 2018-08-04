@@ -106,7 +106,7 @@ i { vertical-align: middle; display: inline-block; }
 //
 // BASE DATA LISTS
 //
-em {font-style: normal;display: block; font-size: 0.8em; }
+em {font-style: normal;display: block; }
 em > b {font-weight: normal; display: block;width: 50%;float: left; padding-right: 5px;}
 em > span {font-style: normal; display: block;width: 50%;float: left; padding-left: 5px}
 em > span u {font-style: normal; }
@@ -125,8 +125,8 @@ em::after, .cls::after { content: ""; clear: both; display: table; }
 .em-block {}
 .listed {
     em { margin-bottom: 0.8em }
-    em > b { font-size: 0.8em; width: 100%; padding: 0;}
-    em > span { font-size: 1.0em; color: lighten($ui-fg, 20%); width: 100%; padding: 0;}
+    em > b { width: 100%; padding: 0;}
+    em > span { color: lighten($ui-fg, 20%); width: 100%; padding: 0;}
     em > span > small { color: darken($ui-fg, 20%) }
 }
 .solid-word { white-space: nowrap; display: inline-block }

@@ -6,6 +6,9 @@ body[overlay='off'] {
     background: #222 !important;
 }
 body[overlay='on'] {
+
+    #nav-clickout { background: transparent !important; }
+
     #app {
         height: 100%;
         width: 100%;
@@ -20,7 +23,7 @@ body[overlay='on'] {
         .ov-interact { display: none;}
     }
     &[interact='on'] {
-        .ov-interact { @extend .ov-solid}
+        .ov-interact { @extend .ov-solid; }
     }
 
     * { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.27)}
@@ -37,9 +40,10 @@ body[overlay='on'] {
 
     .ov-solid {
         border-radius: 0px;
-        border-top: 1px solid orange;
-        background: repeating-linear-gradient(rgba(76, 37, 20, 0.6), rgba(76, 37, 20, 0.33) 1px, rgba(76, 37, 20, 0.6) 3px, rgba(76, 37, 20, 0.67) 4px);
-        box-shadow: 0 0 1em rgba(255, 136, 0, 0.53) inset, 0 0 1em rgba(255, 136, 0, 0.28);
+        border-top: 1px solid rgba(255, 165, 0, 0.35);
+        background-color: rgba(0, 0, 0, 0.5);
+        //background: repeating-linear-gradient(rgba(76, 37, 20, 0.6), rgba(76, 37, 20, 0.33) 1px, rgba(76, 37, 20, 0.6) 3px, rgba(76, 37, 20, 0.67) 4px);
+        //box-shadow: 0 0 1em rgba(255, 136, 0, 0.53) inset, 0 0 1em rgba(255, 136, 0, 0.28);
     }
 
     .ov-top-line { left: 33%; right: 33%; top: -3%; transform: rotate3d(1, 0, 0, -35deg) scale(0.9); transform-origin: 50% 100%}

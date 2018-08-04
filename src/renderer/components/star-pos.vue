@@ -1,12 +1,12 @@
 <template>
-    <span v-bind:class="['star-pos', err ? 'err' : '']">
+    <span class="star-pos">
         {{e_pos[0]}} : {{e_pos[1]}} : {{e_pos[2]}}
     </span>
 </template>
 
 <script>
     export default {
-        name: "starpos",
+        name: "star-pos",
         props: {
             pos: {type: Array, default: [0, 0, 0]}
         },

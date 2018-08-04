@@ -4,42 +4,51 @@
         <header>
             exploration data
         </header>
-        
-        <div class="row summary">
-            <div class="col-sm edfx">
-                <h2 class="main">
-                    <span>estimated data value</span>
-                    <b>{{exp.total | nn()}} <u>Cr</u></b>
-                    <small>* discovery bonus not included</small>
-                </h2>
-            </div>
-            <div class="col-sm edfx">
-                <div class="counters justified">
-                    <em><b>data collected in</b> <span>{{exp.sys_count}} <u>systems</u></span></em>
-                    <em><b>stars</b> <span>{{exp.summ.s}}</span></em>
-                    <em><b>planets</b> <span>{{exp.summ.p}}</span></em>
-                    <em><b>clusters</b> <span>{{exp.summ.c}}</span></em>
+        <div class="ov ov-right-top">
+            <div class="row summary">
+                <div class="col-sm edfx">
+                    <h2 class="main">
+                        <span>estimated data value</span>
+                        <b>{{exp.total | nn()}} <u>Cr</u></b>
+                        <small>* discovery bonus not included</small>
+                    </h2>
                 </div>
-            </div>
-        </div>
-        
-        <edata-here detailed="true"></edata-here>
-        
-        <div class="systems">
-            <h4 class="edfx edfx-delay-3" v-if="exp.total">
-                <button class="link" v-on:click="refresh_exp()"><i class="i-sync"></i> load full data log</button>
-            </h4>
-            <div class="sys edfx" v-for="s in exp.systems">
-                <div class="row ">
-                    <div class="col-sm">
-                        <h5>{{s.name}}<br><span>{{s.val | nn()}} Cr</span></h5>
-                    </div>
-                    <div class="col-sm justified">
-                        <em v-for="(b,k) in s.bodies"><b>{{s.name}} {{k}}</b><span>{{b.v | nn()}} <u>Cr</u></span></em>
+                <div class="col-sm edfx">
+                    <div class="counters justified">
+                        <em><b>data collected in</b> <span>{{exp.sys_count}} <u>systems</u></span></em>
+                        <em><b>stars</b> <span>{{exp.summ.s}}</span></em>
+                        <em><b>planets</b> <span>{{exp.summ.p}}</span></em>
+                        <em><b>clusters</b> <span>{{exp.summ.c}}</span></em>
                     </div>
                 </div>
             </div>
+            
+            <edata-here detailed="true"></edata-here>
         </div>
+        
+        <div class="systems ov ov-center-long ov-interact">
+            <div class="alert edfx" v-if="!exp.total">
+                <i class="i-ed-alert"></i>
+                <h3>No exploration data stored</h3>
+                <p>No exploration data to sell or display. Scan stellar bodies to collect data.</p>
+            </div>
+            <div v-if="exp.total">
+                <h4 class="edfx edfx-delay-3">
+                    <button class="link" v-on:click="refresh_exp()"><i class="i-sync"></i> load full data log</button>
+                </h4>
+                <div class="sys edfx" v-for="s in exp.systems">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h5>{{s.name}}<br><span>{{s.val | nn()}} Cr</span></h5>
+                        </div>
+                        <div class="col-sm justified">
+                            <em v-for="(b,k) in s.bodies"><b>{{s.name}} {{k}}</b><span>{{b.v | nn()}} <u>Cr</u></span></em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </div>
 </template>
 

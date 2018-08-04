@@ -71,7 +71,7 @@ app.on('ready', () => {
         if (!IS_OVERLAY) return;
         INTERACT_MODE = !INTERACT_MODE;
         send2UI('set:interact', INTERACT_MODE);
-        UI.setIgnoreMouseEvents(!INTERACT_MODE)
+        UI.setIgnoreMouseEvents(!INTERACT_MODE);
         UI.setFocusable(INTERACT_MODE);
     });
 

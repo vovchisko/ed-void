@@ -10,6 +10,11 @@ class PilotDetails {
             st_id: null,
             starpos: [0, 0, 0],
             last_rec: null,
+            void_run: {
+                win: 0,
+                total: 0,
+                score: 0,
+            }
         };
         this.status = {
             flags: 0,

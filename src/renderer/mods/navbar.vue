@@ -11,7 +11,7 @@
             </nav>
         </div>
         <div id="nav-clickout" v-if="toggle" v-on:click="toggle=false">
-            <small class="version" v-if="MODE.version">{{MODE.version}}</small>
+            <small class="version" v-if="MODE.version">version: {{MODE.version}}</small>
         </div>
     </div>
 
@@ -61,7 +61,7 @@
             overflow: hidden;
             text-overflow: ellipsis; }
         
-        #nav-clickout { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1;
+        #nav-clickout { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1; background: rgba(0, 0, 0, .4);
             .version { position: absolute; left: 1em; bottom: 1em; background: rgba(0, 0, 0, .3); padding: 0 1em; font-size: 0.8em; }
         }
     }

@@ -6,7 +6,7 @@
     import TOOLS from '../ctrl/tools'
 
     export default {
-        name: "starpos",
+        name: "star-dist",
         props: {
             pos: {default: () => { return [0, 0, 0]}},
             dest: {default: () => { return [0, 0, 0]}},

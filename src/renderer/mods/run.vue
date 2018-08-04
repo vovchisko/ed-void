@@ -17,7 +17,7 @@
         <div class="ov ov-main ov-interact" v-if="state==='tracks' && !PILOT.cmdr.run_id">
             <h3>tracks</h3>
             <div class="tracks">
-                <div v-for="track in R.tracks" class="track">
+                <div v-for="track in R.tracks" class="track edfx">
                     <div class="row keep">
                         <div class="col-sm-8 listed">
                             <h4>{{track.name}} <span>{{track.type}}</span></h4>
@@ -48,7 +48,7 @@
             </div>
             
             <div v-if="R.runs.length">
-                <div class="row run-item" v-for="r in R.runs">
+                <div class="row run-item edfx" v-for="r in R.runs">
                     <div class="col-sm">
                         <small>run track</small>
                         <b>{{r.name}}</b>
@@ -91,8 +91,6 @@
             
             </div>
             
-            
-            
             <navigator class="ov ov-nav"></navigator>
             
             <div class=" ov ov-left">
@@ -125,18 +123,7 @@
                 </div>
             </div>
         </div>
-        
-        <!--div class="row">
-            <div class="col-sm">
-                <pre>RUNS {{R.runs}}</pre>
-            </div>
-            <div class="col-sm">
-                <pre>RUN {{R.run}}</pre>
-            </div>
-            <div class="col-sm">
-                <pre>PILOT.DEST {{PILOT.dest}}</pre>
-            </div>
-        </div-->
+    
     </div>
 </template>
 
@@ -209,6 +196,7 @@
                     }).catch((err) => { console.log('s-tracks', err)});
             },
             get_runs: function () {
+                this.R.runs.splice(0, this.R.runs.length);
                 NET.send('run-list');
             },
             new_run: function (track_id) {
