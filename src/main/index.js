@@ -63,24 +63,17 @@ function createWindow() {
     });
 }
 
-/**
- * Auto Updater
- *
- * Uncomment the following code below and install `electron-updater` to
- * support auto updating. Code Signing with a valid certificate is required.
- * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-electron-builder.html#auto-updating
- */
-
-import {autoUpdater} from 'electron-updater'
-
-autoUpdater.on('update-downloaded', () => {
-    autoUpdater.quitAndInstall()
-});
-
 app.on('ready', () => {
-    if (process.env.NODE_ENV === 'production') autoUpdater.checkForUpdates();
 
     createWindow();
+
+    globalShortcut.register('F1', () => {
+        if (!IS_OVERLAY) return;
+        INTERACT_MODE = !INTERACT_MODE;
+        send2UI('set:interact', INTERACT_MODE);
+        UI.setIgnoreMouseEvents(!INTERACT_MODE)
+        UI.setFocusable(INTERACT_MODE);
+    });
 
     globalShortcut.register('F3', () => {
         IS_OVERLAY = !IS_OVERLAY;
@@ -94,14 +87,6 @@ app.on('ready', () => {
         UI.setAlwaysOnTop(IS_OVERLAY);
     });
 
-    globalShortcut.register('F1', () => {
-        if (!IS_OVERLAY) return;
-        INTERACT_MODE = !INTERACT_MODE;
-        send2UI('set:interact', INTERACT_MODE);
-        UI.setIgnoreMouseEvents(!INTERACT_MODE)
-        UI.setFocusable(INTERACT_MODE);
-    });
-
     globalShortcut.register('F2', () => {
         send2UI('mode:next', INTERACT_MODE);
 
@@ -109,6 +94,7 @@ app.on('ready', () => {
 
 
 });
+
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() });
 app.on('activate', () => { if (UI === null) createWindow() });
 
@@ -123,7 +109,6 @@ ipcMain.on('ipc', function (event, c, data) {
 
 });
 
-// todo: decide where we going to track hot-keys and how to display overlay
 function send2UI(c, data) {
     if (UI && UI.webContents) {
         UI.webContents.send('ipc', c, data);
