@@ -17,7 +17,7 @@
             </div>
             
             <div class="ui">
-                <button type="button" v-on:click="signin()">Sign in</button>
+                <button type="submit" v-on:click="signin($event)">Sign in</button>
             </div>
             
             <div class="ui links">
@@ -51,7 +51,8 @@
             }
         },
         methods: {
-            signin: function () {
+            signin: function (event) {
+                if (event) event.preventDefault();
                 J.get_api_key(this.auth.email, this.auth.pass)
                     .then((r) => {
                         if (!r.result) {
@@ -94,5 +95,6 @@
                 button, a.button { display: inline-block; margin: 0 1em; clear: none; width: auto}
             }
         }
+        .version { text-align: center; opacity: 0.7}
     }
 </style>

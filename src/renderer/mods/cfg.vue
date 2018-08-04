@@ -1,5 +1,6 @@
 <template>
     <div id="cfg">
+        <header>config</header>
         <div class="row">
             <div class="col-sm">
                 <h2>overlay ui settings </h2>
