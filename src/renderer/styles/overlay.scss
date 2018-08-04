@@ -6,15 +6,14 @@ body[overlay='off'] {
     background: #222 !important;
 }
 body[overlay='on'] {
-    font-size: 0.75vmax !important; //todo: notice it overrides user options!
     #app {
         height: 100%;
         width: 100%;
         border-style: solid;
         border-color: transparent;
-        border-width: 4em;
+        border-width: 3em 2em 2em 2em;
         position: fixed;
-        perspective: 55vmax;
+        perspective: 60vmax;
     }
 
     &[interact='off'] {
@@ -25,7 +24,7 @@ body[overlay='on'] {
     }
 
     * { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.27)}
-    #navbar {margin-top: -3em;}
+    #navbar {margin-top: -2em;}
     .row { display: block; }
     .row.keep { display: flex;}
 

@@ -4,16 +4,18 @@
         <alert></alert>
         <auth v-if="!MODE.is_in"></auth>
         
-        <navbar></navbar>
+        <navbar v-if="MODE.is_in && MODE.is_ready"></navbar>
         
         <div class="container-fluid" v-if="MODE.is_in && MODE.is_ready">
             <jlog v-if=" MODE.c_mode === 'log'"></jlog>
+            <cmdr v-if=" MODE.c_mode === 'cmdr'"></cmdr>
             <navi v-if=" MODE.c_mode === 'navi'"></navi>
             <run v-if="MODE.c_mode === 'run'"></run>
             <cfg v-if=" MODE.c_mode === 'cfg'"></cfg>
             <dev v-if=" MODE.c_mode === 'dev'"></dev>
         </div>
     
+        <small>v0.3.0-dev</small>
     </div>
 </template>
 
@@ -26,9 +28,10 @@
     import Auth from "./mods/auth";
     import Cfg from "./mods/cfg";
     import Jlog from "./mods/jlog";
+    import Cmdr from "./mods/cmdr";
     import Navi from './mods/navi'
-    import Run from './mods/run.vue'
-    import Dev from './mods/dev.vue'
+    import Run from './mods/run'
+    import Dev from './mods/dev'
 
     import MODE from './ctrl/mode';
     import IPC from './ctrl/ipc';
@@ -40,7 +43,7 @@
     MODE.list.push('log', 'cmdr', 'navi', 'run', 'cfg');
 
     export default {
-        components: {Navbar, Alert, Auth, Jlog, Cfg, Navi, Run, Dev},
+        components: {Navbar, Alert, Auth, Jlog, Cmdr, Cfg, Navi, Run, Dev},
         mounted: function () {
             IPC.apply_to_mode();
         },

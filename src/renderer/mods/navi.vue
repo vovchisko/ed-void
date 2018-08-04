@@ -55,9 +55,7 @@
                 </div>
             
             </div>
-            <div class="col-sm ov ov-left ov-interact">
-                <curr-position></curr-position>
-            </div>
+
         </div>
     </div>
 </template>

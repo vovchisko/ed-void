@@ -8,12 +8,17 @@ const EE3 = require('eventemitter3');
 const os = require('os');
 const exec = require('child_process').exec;
 const extend = require('deep-extend');
+const mkdirp = require('mkdirp');
 
 const readFileAsync = util.promisify(fs.readFile);
 
 const REG_KEY = '{4C5C32FF-BB9D-43B0-B5B4-2D72E54EAAA4}';
 const REG_QUERY = `reg query "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders" /v ` + REG_KEY;
 const DEFAULT_DIR = path.join(os.homedir(), 'Saved Games\\Frontier Developments\\Elite Dangerous');
+
+const CFG_DIR = process.env.NODE_ENV === 'development' ? '.' : path.resolve((process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : process.env.HOME)) + '/ed-void');
+
+mkdirp.sync(CFG_DIR);
 
 const log = function () {
     //console.log(...arguments);
@@ -25,8 +30,12 @@ let SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
 let API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
 
 const APP_NAME = 'ed-void';
-const APP_VERSION = '0.3b';
-const CFG_FILE = APP_NAME + '.cfg';
+const APP_VERSION = '0.3.0-dev';
+const CFG_FILE = path.resolve(CFG_DIR + '/' + APP_NAME + '.cfg');
+
+console.log();
+console.log(CFG_FILE);
+
 const data_files = ['Status.json', 'Market.json', 'ModulesInfo.json', 'Outfitting.json', 'Shipyard.json'];
 
 const ISSH = {

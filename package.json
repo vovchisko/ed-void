@@ -52,12 +52,11 @@
     }
   },
   "dependencies": {
-    "axios": "^0.16.1",
     "bootstrap-css-only": "^4.1.1",
     "deep-extend": "^0.6.0",
     "electron-updater": "^3.0.3",
     "eventemitter3": "^3.1.0",
-    "open": "0.0.5",
+    "mkdirp": "^0.5.1",
     "vue": "^2.3.3",
     "vue-electron": "^1.0.6",
     "ws": "^5.2.0"

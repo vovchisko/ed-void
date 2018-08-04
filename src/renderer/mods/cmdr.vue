@@ -3,9 +3,8 @@
         <header>
             CMDR PROFILE
         </header>
-
+        
         <pre>{{CMDR}}</pre>
-
     </div>
 </template>
 
