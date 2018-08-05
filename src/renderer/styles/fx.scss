@@ -1,7 +1,7 @@
 @import 'vars';
 @mixin edfx-glitch($shift:2, $fill:0.1) {
-    text-shadow: #{$shift}em -#{$shift*2}em 0 RGBA(0, 255, 240, #{$fill}),
-    -#{$shift}em #{$shift*2}em 0 RGBA(255, 0, 230, #{$fill});
+    text-shadow: #{$shift}px -#{$shift*10}px 0 RGBA(0, 255, 240, #{$fill}),
+    -#{$shift}px #{$shift*10}px 0 RGBA(255, 0, 230, #{$fill});
 }
 @mixin edfx-glitch0 {
     text-shadow: none;
@@ -23,7 +23,7 @@
     }
     40% { @include edfx-glitch(1, 0.5); }
     50% { transform: translateY(0); background: transparent;}
-    51% { @include edfx-glitch(0.2, 0.3); transform: translateY(0.2em)}
+    51% { @include edfx-glitch(0.2, 0.3); transform: translateY(5px)}
     70% { transform: translateY(0)}
     100% { transform: none; opacity: 1; }
 }
@@ -53,8 +53,8 @@
     100% { transform: none; opacity: 1; }
 }
 $speed-full: 320;
-$speed-medium: 220;
-$speed-low: 180;
+$speed-medium: 280;
+$speed-low: 200;
 
 body[edfx-lv='full'] {
     .edfx, .ui { opacity: 0; animation: edfx-animation-full #{$speed-full}ms steps(2) forwards; }

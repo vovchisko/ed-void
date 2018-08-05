@@ -17,8 +17,15 @@
                     </select>
                     <label>ui effects</label>
                 </div>
-            </div>
 
+                <div class="ui short">
+                    <select v-model="cfg.show_key_tips" @change="cgf_apply()">
+                        <option value="hide">hide</option>
+                        <option value="show">show</option>
+                    </select>
+                    <label>key tips</label>
+                </div>
+            </div>
         </div>
     </div>
 </template>

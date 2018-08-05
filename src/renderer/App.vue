@@ -1,7 +1,8 @@
 <template>
     <div id="app">
         <div class="syntetic-header">
-            <button v-on:click="toggle_window()"><i class="i-chevron-down"></i></button>
+            <button v-on:click="ctrl_close()"><i class="i-cross"></i></button>
+            <button v-on:click="ctrl_minimize()"><i class="i-chevron-down"></i></button>
             <div class="header">ed-void</div>
         </div>
         <alert></alert>
@@ -17,6 +18,12 @@
             <run v-if="MODE.c_mode === 'run'"></run>
             <cfg v-if=" MODE.c_mode === 'cfg'"></cfg>
             <dev v-if=" MODE.c_mode === 'dev'"></dev>
+        </div>
+
+        <div class="key-tips" v-if="CFG.show_key_tips==='show'">
+            <span><b>F1</b> overlay focus/release</span>
+            <span><b>F2</b> next mod</span>
+            <span><b>F3</b> toggle overlay</span>
         </div>
     </div>
 </template>
@@ -58,7 +65,16 @@
             return {MODE: MODE, JLOG: JLOG, CFG: CFG, A: A};
         },
         methods: {
-            toggle_window() {
+            ctrl_close() {
+                A.warn({
+                    text: 'do you really want to exit?',
+                    acts: {
+                        'yes, shutdown': () => { IPC.send('shutdown', null); },
+                        'cancel': () => { IPC.send('shutdown', null); }
+                    }
+                })
+            },
+            ctrl_minimize() {
                 remote.BrowserWindow.getFocusedWindow().minimize();
             }
         }
@@ -88,7 +104,7 @@
 
     Vue.filter('timing', function (num) {
         num = parseInt(num);
-        if (num && !isNaN(num) && typeof num === "number") {
+        if (!isNaN(num) && typeof num === "number") {
             let t = new Date(num);
             return [
                 ("00" + t.getUTCHours()).slice(-2), ' : ',
@@ -96,7 +112,7 @@
                 ("00" + t.getUTCSeconds()).slice(-2), '.',
                 ("000" + t.getUTCMilliseconds()).slice(-3)
             ].join('');
-        } else { return '-- : -- : --.---'}
+        } else { return '00 : 00 : 00.000'}
     });
 
     Vue.filter('yn', function (value) {
@@ -232,7 +248,7 @@
         line-height: 2.2em;
         height: 2.2em;
         margin: 5px 10px 5px 0;
-        width: 200px;
+        width: 300px;
         z-index: 19999;
         -webkit-app-region: drag;
         .header {
@@ -243,9 +259,27 @@
                 content: ''; position: absolute; left: 0; bottom: 0; width: 1em; height: 1em;
                 border-color: $ui-fg; border-style: solid; border-width: 0 0 1px 1px; }
         }
-        button { float: right; -webkit-app-region: no-drag; }
+        button {
+            float: right; -webkit-app-region: no-drag;
+            margin-left: 0.3em;
+            i { font-size: 1.1em; }
+        }
     }
     #app {
+        .key-tips {
+            position: absolute;
+            bottom: 0.5em;
+            right: 0.5em;
+            span {
+                text-transform: uppercase;
+                font-size: 0.8em;
+                display: inline-block;
+                margin-left: 0.5em;
+                color: rgba(255,255,255,0.3);
+                b { color: rgba(255,255,255,0.5); }
+            }
+        }
     }
+
 
 </style>

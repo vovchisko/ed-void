@@ -14,10 +14,10 @@ let JLOG = {
     }
 };
 
-setInterval(()=>{
-    JLOG.log.splice(0, 1);
-},2000);
-
 J.on('log', (args) => { JLOG.push(...args);});
 
 export default JLOG;
+
+const _j_log_timer = setInterval(() => {
+    JLOG.log.splice(0, 1);
+}, 5000);

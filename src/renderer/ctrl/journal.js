@@ -16,7 +16,8 @@ const REG_KEY = '{4C5C32FF-BB9D-43B0-B5B4-2D72E54EAAA4}';
 const REG_QUERY = `reg query "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders" /v ` + REG_KEY;
 const DEFAULT_DIR = path.join(os.homedir(), 'Saved Games\\Frontier Developments\\Elite Dangerous');
 
-const CFG_DIR = process.env.NODE_ENV === 'development' ? '.' : path.resolve((process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : process.env.HOME)) + '/ed-void');
+let CFG_DIR = path.resolve((process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : process.env.HOME)) + '/ed-void');
+//if (process.env.NODE_ENV === 'development') CFG_DIR = '.';
 mkdirp.sync(CFG_DIR);
 
 const log = function () {
@@ -60,6 +61,7 @@ class Journal extends EE3 {
             gameversion: '',
             last_journal: -1,
             last_record: -1,
+            show_key_tips: 'show',
         };
 
         this._stopped = true;
