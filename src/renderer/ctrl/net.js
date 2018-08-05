@@ -22,7 +22,7 @@ class Network extends EventEmitter3 {
 
     api(method, data, lock = null) {
         if (lock !== false) A.lock({text: VARS.API_PROCESSING_MSG[method] || 'please wait, processing'});
-        return fetch('http://' + window.location.hostname + /*(location.port ? ':' + 4200 : '') +*/ '/api/' + method, {
+        return fetch('http://' + J.SERVICE_DOMAIN +  '/api/' + method, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {api_key: CFG.api_key || 'none'}

@@ -14,6 +14,10 @@ let JLOG = {
     }
 };
 
+setInterval(()=>{
+    JLOG.log.splice(0, 1);
+},2000);
+
 J.on('log', (args) => { JLOG.push(...args);});
 
 export default JLOG;

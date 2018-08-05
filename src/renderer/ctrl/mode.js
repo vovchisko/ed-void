@@ -7,7 +7,6 @@ let MODE = {
     is_interact: true,
     is_overlay: false,
     c_mode: 'log',
-    version: 'web',
     go: function (mode = null) {
         if (!this.is_in) this.is_in = true;
         if (mode) {

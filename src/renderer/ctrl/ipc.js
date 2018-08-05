@@ -1,6 +1,7 @@
 import {ipcRenderer} from 'electron';
 import {EventEmitter} from 'eventemitter3';
 import MODE from "./mode";
+import {J} from "./journal";
 
 class IPC_Controller extends EventEmitter {
     constructor() {
@@ -37,4 +38,4 @@ IPC.on('set:overlay', (mode) => {
 });
 IPC.on('mode:next', () => { MODE.next(); });
 
-MODE.version = process.env.npm_package_version;
+

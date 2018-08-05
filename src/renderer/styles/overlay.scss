@@ -1,3 +1,5 @@
+html, body { background: transparent}
+
 body[overlay='on'] {
     &[interact='on'] { background: rgba(0, 0, 0, .3) !important;}
     &[interact='off'] { background: transparent !important;}
@@ -7,15 +9,18 @@ body[overlay='off'] {
 }
 body[overlay='on'] {
 
+    .alert.modal {
+        background: transparent !important;
+        .wrap { background: rgba(0, 0, 0, .7); }
+    }
+
     #nav-clickout { background: transparent !important; }
 
     #app {
-        height: 100%;
-        width: 100%;
-        border-style: solid;
-        border-color: transparent;
-        border-width: 3em 2em 2em 2em;
         position: fixed;
+        left: 5px; top: 5px; bottom: 5px; right: 5px; overflow: auto;
+        padding: 0;
+        margin: 0;
         perspective: 60vmax;
     }
 
@@ -27,7 +32,7 @@ body[overlay='on'] {
     }
 
     * { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.27)}
-    #navbar {margin-top: -2em;}
+    //  #navbar {margin-top: -2em; margin-left: -2em}
     .row { display: block; }
     .row.keep { display: flex;}
 
@@ -46,15 +51,15 @@ body[overlay='on'] {
         //box-shadow: 0 0 1em rgba(255, 136, 0, 0.53) inset, 0 0 1em rgba(255, 136, 0, 0.28);
     }
 
-    .ov-top-line { left: 33%; right: 33%; top: -3%; transform: rotate3d(1, 0, 0, -35deg) scale(0.9); transform-origin: 50% 100%}
-    .ov-nav { left: 33%; right: 33%; top: 8%; transform: rotate3d(1, 0, 0, -25deg) scale(0.9); transform-origin: 50% 100%}
-    .ov-center { top: 30%; left: 30%; right: 30%; z-index: 20; }
-    .ov-center-long { padding: 1em; left: 33%; top: 15%; right: 33%; height: 80%; max-height: 80%; overflow: auto; z-index: 10 }
-    .ov-main { padding: 1em; left: 23%; top: 15%; right: 23%; height: 80%; max-height: 80%; overflow: auto; z-index: 30 }
+    .ov-top-line { left: 33%; right: 33%; top: 5%; transform: rotate3d(1, 0, 0, -35deg) scale(0.9); transform-origin: 50% 0%}
+    .ov-nav { left: 33%; right: 33%; top: 11%; transform: rotate3d(1, 0, 0, -25deg) scale(0.9); transform-origin: 50% 0%}
+    .ov-center { top: 25%; left: 30%; right: 30%; z-index: 20; }
+    .ov-center-long { padding: 1em; left: 33%; top: 22%; right: 33%; height: 70%; max-height: 80%; overflow: auto; z-index: 10 }
+    .ov-main { padding: 1em; left: 23%; top: 15%; right: 23%; height: 70%; max-height: 80%; overflow: auto; z-index: 30 }
 
-    .ov-right-top { right: 0%; top: 25%; width: 31%; transform: rotate3d(0, 1, 0, -35deg); transform-origin: 100% 0%}
-    .ov-right {right: 0%; top: 45%; width: 31%; transform: rotate3d(0, 1, 0, -35deg); transform-origin: 100% 0%}
-    .ov-left-top { left: 0%; top: 25%; width: 31%; transform: rotate3d(0, 1, 0, 35deg);transform-origin: 0 100% }
-    .ov-left {left: 0%; top: 45%; width: 31%; transform: rotate3d(0, 1, 0, 35deg); transform-origin: 0 100%}
+    .ov-right-top { right: 3%; top: 25%; width: 28%; transform: rotate3d(0, 1, 0, -35deg); transform-origin: 100% 0%}
+    .ov-right {right: 3%; top: 45%; width: 28%; transform: rotate3d(0, 1, 0, -35deg); transform-origin: 100% 0%}
+    .ov-left-top { left: 3%; top: 25%; width: 28%; transform: rotate3d(0, 1, 0, 35deg);transform-origin: 0 100% }
+    .ov-left {left: 3%; top: 45%; width: 28%; transform: rotate3d(0, 1, 0, 35deg); transform-origin: 0 100%}
 
 }

@@ -1,10 +1,15 @@
 import {app, BrowserWindow, ipcMain, shell, globalShortcut} from 'electron';
 
 const UI_Settings = {
+    show: true,
     height: 540,
     width: 720,
+    minHeight: 540,
+    minWidth: 720,
     useContentSize: true,
-    show: false,
+    toolbar: false,
+    frame: false,
+    transparent: true,
 };
 
 let INTERACT_MODE = true;
@@ -23,11 +28,7 @@ if (isSecondInstance) app.quit();
 
 if (!IS_DEV) {
     global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
-    UI_Settings.frame = false;
-    UI_Settings.toolbar = false;
-    UI_Settings.transparent = true;
 }
-
 
 let UI;
 
@@ -46,7 +47,6 @@ const handleRedirect = (e, url) => {
 
 function createWindow() {
     UI = new BrowserWindow(UI_Settings);
-    UI.webContents.setFrameRate(2);
     UI.loadURL(winURL);
     UI.on('closed', () => {
         UI = null;
@@ -85,11 +85,11 @@ app.on('ready', () => {
         UI.setIgnoreMouseEvents(!INTERACT_MODE);
         UI.setFocusable(INTERACT_MODE);
         UI.setAlwaysOnTop(IS_OVERLAY);
+
     });
 
     globalShortcut.register('F2', () => {
         send2UI('mode:next', INTERACT_MODE);
-
     });
 
 

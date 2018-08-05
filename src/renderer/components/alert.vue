@@ -1,14 +1,14 @@
 <template>
     <div v-if="A.busy.show || A.stack.length">
         <div v-bind:class="['alert', 'modal', A.busy.type]" v-if="A.busy.show">
-            <div class="edfx">
+            <div class="edfx wrap">
                 <i class="i-ed-alert"></i>
                 <h4 v-if="A.busy.text">{{A.busy.text}}</h4>
                 <p v-if="A.busy.desc">{{A.busy.desc}}</p>
             </div>
         </div>
         <div v-if="A.stack.length && !A.busy.show" v-bind:class="['alert', 'modal', A.stack[0].type]">
-            <div class="edfx">
+            <div class="edfx wrap">
                 <i class="i-ed-alert"></i>
                 <h4>{{A.stack[0].text}}</h4>
                 <p v-if="A.stack[0].desc">{{A.stack[0].desc}}</p>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-     const A = {
+    const A = {
         busy: {
             show: false,
             type: 'info',
@@ -87,6 +87,7 @@
 <style lang="scss">
     @import "../styles/vars";
     .alert.modal {
+        .wrap {padding: 2em 0; }
         position: fixed;
         left: 0; top: 0; right: 0; bottom: 0;
         z-index: 9999;

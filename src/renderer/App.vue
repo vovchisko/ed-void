@@ -1,11 +1,14 @@
 <template>
     <div id="app">
-        
+        <div class="syntetic-header">
+            <button v-on:click="toggle_window()"><i class="i-chevron-down"></i></button>
+            <div class="header">ed-void</div>
+        </div>
         <alert></alert>
-        <auth v-if="!MODE.is_in"></auth>
-        
+        <auth v-if="!MODE.is_in && !A.busy.show && !A.stack.length"></auth>
+
         <navbar v-if="MODE.is_in && MODE.is_ready"></navbar>
-        
+
         <div class="container-fluid" v-if="MODE.is_in && MODE.is_ready">
             <jlog v-if=" MODE.c_mode === 'log'"></jlog>
             <cmdr v-if=" MODE.c_mode === 'cmdr'"></cmdr>
@@ -15,12 +18,14 @@
             <cfg v-if=" MODE.c_mode === 'cfg'"></cfg>
             <dev v-if=" MODE.c_mode === 'dev'"></dev>
         </div>
-    
     </div>
 </template>
 
 <script>
     import Vue from "vue";
+
+    const {remote} = require('electron');
+
 
     import Alert, {A} from "./components/alert";
 
@@ -41,17 +46,22 @@
     import NET from './ctrl/net';
     import Navbar from "./mods/navbar";
 
-    MODE.list.push('log', 'cmdr', 'run', 'edata', 'navi',  'cfg');
+    MODE.list.push('log', 'cmdr', 'run', 'edata', 'navi', 'cfg');
 
     export default {
+        name: 'ed-void-client',
         components: {Navbar, Alert, Auth, Edata, Jlog, Cmdr, Cfg, Navi, Run, Dev},
         mounted: function () {
             IPC.apply_to_mode();
         },
         data: () => {
-            return {MODE: MODE, JLOG: JLOG, CFG: CFG};
+            return {MODE: MODE, JLOG: JLOG, CFG: CFG, A: A};
         },
-        name: 'ed-void-client',
+        methods: {
+            toggle_window() {
+                remote.BrowserWindow.getFocusedWindow().minimize();
+            }
+        }
     }
 
 
@@ -128,20 +138,15 @@
 
         if (code === ISSH.NET_SERVICE) {
             MODE.is_in = false;
-            A.lock({
+            A.error({
                 text: 'service unavailable',
-                desc: 'attempting to reconnect. please wait',
-                type: 'error'
+                desc: 'connection to server refused',
+                type: 'error',
+                acts: {
+                    'ary again': function () { J.go(); },
+                    'shutdown': function () {IPC.send('shutdown', ISSH.OTHER_CLIENT)}
+                }
             });
-
-            setTimeout(() => {
-                A.lock({
-                    text: 'connecting to ed-void',
-                    type: 'warn'
-                });
-                J.go();
-            }, 10000);
-
         }
 
         if (code === ISSH.OTHER_CLIENT) {
@@ -149,7 +154,7 @@
             return A.error({
                 text: 'ed-void connection malfunction',
                 desc: 'server registered another connection and terminated this session',
-                acts: {'shutdown': () => {IPC.send('shutdown', ISSH.OTHER_CLIENT)}}
+                acts: {'shutdown': function () {IPC.send('shutdown', ISSH.OTHER_CLIENT)}}
             })
         }
 
@@ -180,15 +185,25 @@
 
         MODE.is_ready = false;
         console.log('J-STOPPED', {code, err});
+
+        if (code === ISSH.OTHER_CLIENT) {
+            MODE.is_ready = false;
+            return A.error({
+                text: 'ed-void system malfunction',
+                desc: 'code: [' + code + ']',
+                acts: {'shutdown': () => {IPC.send('shutdown', ISSH.OTHER_CLIENT)}}
+            })
+        }
     });
 
     //J.on('ws:any', (c, dat) => { console.log('J-WS-ANY:', c, dat); });
 
     // INITIALIZATION
 
-    MODE.is_in = !!J.cfg.api_key;
     J.go();
+    MODE.is_in = !!J.cfg.api_key;
     CFG.apply_ui_cfg();
+
 
 </script>
 
@@ -199,18 +214,38 @@
     @import './styles/vars';
     @import './styles/base';
     @import './styles/fonts';
-    @import './styles/fx';
     @import './styles/overlay';
+    @import './styles/fx';
     nav {
         user-select: none;
         cursor: default;
         button { margin-right: 0.3em}
         .drag {
-            -webkit-app-region: drag;
             line-height: 1.1em;
             padding-right: 2em;
             i { font-size: 1.3em; margin-right: 0.3em; }
         }
+    }
+    .syntetic-header {
+        position: absolute;
+        right: 0; top: 0;
+        line-height: 2.2em;
+        height: 2.2em;
+        margin: 5px 10px 5px 0;
+        width: 200px;
+        z-index: 19999;
+        -webkit-app-region: drag;
+        .header {
+            @include hcaps;
+            line-height: 2.2em;
+            padding: 0 1em;
+            &:after {
+                content: ''; position: absolute; left: 0; bottom: 0; width: 1em; height: 1em;
+                border-color: $ui-fg; border-style: solid; border-width: 0 0 1px 1px; }
+        }
+        button { float: right; -webkit-app-region: no-drag; }
+    }
+    #app {
     }
 
 </style>

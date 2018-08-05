@@ -17,7 +17,6 @@ const REG_QUERY = `reg query "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\C
 const DEFAULT_DIR = path.join(os.homedir(), 'Saved Games\\Frontier Developments\\Elite Dangerous');
 
 const CFG_DIR = process.env.NODE_ENV === 'development' ? '.' : path.resolve((process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : process.env.HOME)) + '/ed-void');
-
 mkdirp.sync(CFG_DIR);
 
 const log = function () {
@@ -72,10 +71,13 @@ class Journal extends EE3 {
         this.cfg_read();
 
         if (this.cfg.dev) {
+            // OVERRIDE TARGET SERVER
             SERVICE_DOMAIN = this.cfg.dev;
             SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
             API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
         }
+
+        this.SERVICE_DOMAIN = SERVICE_DOMAIN; //for other modules, specially for NET
     }
 
     pre_check() {
@@ -178,6 +180,8 @@ class Journal extends EE3 {
     }
 
     cfg_save() {
+
+
         let lines = [];
         for (let p in this.cfg)
             if (p[0] !== '_' && typeof this.cfg[p] !== 'function')
@@ -396,8 +400,7 @@ class Journal extends EE3 {
 
                 if (records.length < 1) return;
 
-                let l = `[${this.cfg.cmdr}] ${records[0].timestamp} ` +
-                    `${records.length > 1 ? records.length : records[0].event} ...`;
+                let l = `${records.length > 1 ? records.length + ' events ' : records[0].event} ...`;
 
                 await this.record(records)
                     .then((res) => {
@@ -427,8 +430,7 @@ class Journal extends EE3 {
 
                 rec._data = f.split('.')[0].toLowerCase();
 
-                let l = `[${this.cfg.cmdr}] ${rec.timestamp} ` +
-                    `${rec.event} ... `;
+                let l = `${rec.event} ... `;
 
                 this.record([rec])
                     .then((res) => {

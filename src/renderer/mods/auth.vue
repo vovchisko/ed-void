@@ -1,32 +1,31 @@
 <template>
     <div id="auth">
         <form>
-            
+
             <h2>ed-void login</h2>
-            
+
             <div v-bind:class="['msg',msg.type]">{{msg.text}}</div>
-            
+
             <div class="ui">
                 <input type="email" v-model="auth.email"/>
                 <label>Email</label>
             </div>
-            
+
             <div class="ui">
                 <input type="password" v-model="auth.pass"/>
                 <label>Password</label>
             </div>
-            
+
             <div class="ui">
                 <button type="submit" v-on:click="signin($event)">Sign in</button>
             </div>
-            
+
             <div class="ui links">
                 <a class="button link" href="http://ed-void.com/" target="_blank">New Pilot</a>
                 <a class="button link" href="http://ed-void.com/" target="_blank">reset password</a>
             </div>
-            
+
             <div class="version">
-                <small>{{MODE.version}}</small>
             </div>
         </form>
     </div>
@@ -36,6 +35,7 @@
 
     import {J} from '../ctrl/journal';
     import MODE from '../ctrl/mode';
+    import {A} from '../components/alert'
 
     export default {
         name: "auth",
@@ -53,18 +53,19 @@
         methods: {
             signin: function (event) {
                 if (event) event.preventDefault();
+                A.lock({text: 'connecting to ed-void'});
                 J.get_api_key(this.auth.email, this.auth.pass)
                     .then((r) => {
+                        A.release();
                         if (!r.result) {
-                            this.msg.type = r.type;
-                            this.msg.text = r.text;
+                            A.add(r);
                         } else {
                             J.go();
                         }
                     })
                     .catch((r) => {
-                        this.msg.type = r.type;
-                        this.msg.text = r.text;
+                        A.release();
+                        A.add(r);
                     });
             }
         }
@@ -81,7 +82,7 @@
         h2 { @include hcaps(); font-size: 2em; }
         form {
             width: 18em;
-            margin: 0 auto;
+            margin: 2em auto 0 auto;
             padding: calc(50vh - 300px + 1em) 0 3em 0;
             border: $ui-bg;
             input, button {
@@ -92,9 +93,8 @@
                 &.error { color: $ui-err;}
             }
             .ui.links { text-align: center;
-                button, a.button { display: inline-block; margin: 0 1em; clear: none; width: auto}
+                button, a.button { display: inline-block; margin: 0 1em; clear: none; width: auto; @include hcaps}
             }
         }
-        .version { text-align: center; opacity: 0.7}
     }
 </style>
