@@ -3,7 +3,7 @@
         <header>
             <button v-for="t in tabs" v-on:click="c_tab = t" v-bind:class="t === c_tab ? 'active':''">{{t}}</button>
         </header>
-        
+
         <div v-if="c_tab === 'stat'">
             <div class="row">
                 <div class="col-sm">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container-fluid" v-if="c_tab === 'test'">
             <div class="ov ov-nav">ov-nav
                 <div class="alert info edfx">
@@ -78,9 +78,6 @@
     import PILOT from '../ctrl/pilot'
     import CFG from '../ctrl/cfg'
     import MODE from '../ctrl/mode';
-    import Navigator from "../components/navigator";
-    import Destination from "../components/destination";
-    import CurrPosition from "../components/curr-position";
 
     const dev = {
         pipe: [],
@@ -90,8 +87,7 @@
 
     export default {
         name: "dev",
-        components: {CurrPosition, Destination, Navigator},
-
+        components: {},
         data: () => {
             return {
                 c_tab: 'test',
@@ -101,17 +97,14 @@
                 CFG: CFG,
             }
         },
+        methods: {
 
+        }
     }
+
 
 </script>
 
 <style lang="scss">
-    
-    body {
-        // background-image: url('../../public/assets/overlay-test/6.jpg') !important;
-        background-size: contain !important;
-        background-position: 50% !important;
-        background-repeat: no-repeat !important;}
 
 </style>

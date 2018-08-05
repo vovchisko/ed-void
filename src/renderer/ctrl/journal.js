@@ -17,7 +17,7 @@ const REG_QUERY = `reg query "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\C
 const DEFAULT_DIR = path.join(os.homedir(), 'Saved Games\\Frontier Developments\\Elite Dangerous');
 
 let CFG_DIR = path.resolve((process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : process.env.HOME)) + '/ed-void');
-//if (process.env.NODE_ENV === 'development') CFG_DIR = '.';
+if (process.env.NODE_ENV === 'development') CFG_DIR = '.';
 mkdirp.sync(CFG_DIR);
 
 const log = function () {
@@ -30,7 +30,7 @@ let SERVICE = `ws://${SERVICE_DOMAIN}:4202`;
 let API_SERVICE = `http://${SERVICE_DOMAIN}/api`;
 
 const APP_NAME = 'ed-void';
-const APP_VERSION = '0.3.0-dev';
+const APP_VERSION = '0.3.0-beta';
 const CFG_FILE = path.resolve(CFG_DIR + '/' + APP_NAME + '.cfg');
 
 console.log();
