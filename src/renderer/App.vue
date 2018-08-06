@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <div class="syntetic-header">
-            <button v-on:click="ctrl_close()"><i class="i-cross"></i></button>
+        <div class="syntetic-header" >
+            <button v-on:click="ctrl_close()" v-if="!A.busy.show"><i class="i-cross"></i></button>
             <button v-on:click="ctrl_minimize()"><i class="i-chevron-down"></i></button>
             <div class="header">ed-void</div>
         </div>
@@ -70,7 +70,7 @@
                     text: 'do you really want to exit?',
                     acts: {
                         'yes, shutdown': () => { IPC.send('shutdown', null); },
-                        'cancel': () => { IPC.send('shutdown', null); }
+                        'cancel': () => { }
                     }
                 })
             },

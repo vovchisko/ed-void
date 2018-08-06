@@ -3,7 +3,7 @@
         <header>system log</header>
         <div class="jlog ov ov-left">
             <p>LOG :: CMDR {{PILOT.cmdr.name}}</p>
-            <div v-for="(l, i) in JLOG.log" :key="l">
+            <div v-for="(l, i) in JLOG.log">
                 {{l}}
             </div>
             <div v-if="JLOG.log.length === 0">status: sleep</div>
