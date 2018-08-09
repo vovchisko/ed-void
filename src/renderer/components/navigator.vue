@@ -109,7 +109,7 @@
                 .head.alg0:before {content: '[ ok ]'; color: #0098f9; }
                 .head.alg1 {border-color: #FF8800;color: #FF8800;}
                 .head.alg1:after {border-bottom-color: #FF8800;top: -14px;}
-                .head.alg1:before {content: 'missaligment'; color: #FF8800; }
+                .head.alg1:before {content: 'misaligned'; color: #FF8800; }
                 .head.alg2 {border-color: $red;color: $red;}
                 .head.alg2:after {border-bottom-color: $red; top: -14px;}
                 .head.alg2:before {content: 'wrong course vector!'; color: $red; }

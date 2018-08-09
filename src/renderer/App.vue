@@ -159,7 +159,7 @@
                 desc: 'connection to server refused',
                 type: 'error',
                 acts: {
-                    'ary again': function () { J.go(); },
+                    'try again': function () { J.go(); },
                     'shutdown': function () {IPC.send('shutdown', ISSH.OTHER_CLIENT)}
                 }
             });
