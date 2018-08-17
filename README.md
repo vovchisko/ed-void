@@ -4,9 +4,9 @@ ED-VOID is THE ULTIMATE EXPLORER'S TOOL, designed by explorers for explorers. Pr
 
 It helps you with scanned stellar bodies, navigation, reporting your exploration data, and get extended body information, based on existing reports. Also can be used with mobile/desktop browser at the same time.
 
-[Home Page](https://ed-void.com)
-[Support project on Patreon](https://www.patreon.com/edvoid)
-[Discord Server](http://discord.io/ed-void)
+- [Home Page](https://ed-void.com)
+- [Support project on Patreon](https://www.patreon.com/edvoid)
+- [Discord Server](http://discord.io/ed-void)
 
 ### VERSIONS
 **v.0.3b - OVERLAY**
