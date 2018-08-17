@@ -8,29 +8,14 @@ Web-version available: http://ed-void.com/
 
 *IMPORTANT: Server incompatible with dev-version of client yet. Please, download client on a [web-site](http://ed-void.com/)*
 
-### COMING FEATURES
-- OVERLAY
-    - Auto-update.
-    - Racing Module - don't tell anyone!
-    - Search for public reports / navigate.
-    - Usefull Minimap for quick "tricky searches".
-    - Overlay-version of most modules from web version.
-- WEB/MOBILE
-    - "I'm a console guy!" option - allow to fill some data handy w/o journals.
-    - Search for stellar bodies / stations / systems.
-    - Search for commodities to sell (right from your cargo) or to buy.
-    - Racing Mode - multiplayer racing, kids! eeee!
-    - Many-many crazy things not listed :3
-    - Browser version of minimap.
-
-
 ### VERSIONS
-**v.0.3dev - EXTREMELY-UNSTABLE**
+**v.0.3b - OVERLAY**
+- Overlay (boom!)
 - Installer
-- Migrated to electron-based client
 - Journal reader performance ++
-- Overlay prototype with basic feature - login :3
 - Cross-cleint modules (any module can be used on client and overlay)
+- Multiplayer Racing Mode
+- UI update
 
 
 **v.0.2b - CLI VERSION**
