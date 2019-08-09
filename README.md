@@ -1,4 +1,4 @@
-# ED-VOID Client Overlay [ development stopped ]
+# ED-VOID Client Overlay [ development stopped... for now ]
 
 ED-VOID is THE ULTIMATE EXPLORER'S TOOL, designed by explorers for explorers. Provide fast fps-friendly overlay with basic "on-air" information and sync with ED-VOID network.
 
